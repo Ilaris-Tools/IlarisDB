@@ -1,0 +1,123 @@
+bär:
+  name: Bär
+  beschreibung: Raubtier der Wälder; großer Gegner
+  klasse: tier
+  kampfwerte:
+    WS: 11/13, Koloss I
+    MR: 6
+    GS: 6
+    INI: 2
+  waffen:
+    - name: Prankenhieb
+      RW: 1
+      VT: 6
+      AT: 13
+      TP: 2W6+6
+      notiz: Niederwerfen (–4), Doppelangriff
+    - name: Biss
+      RW: 0
+      VT: 3
+      AT: 14
+      TP: 4W6+6
+      notiz: Zerbrechlich
+  kampfvorteile: [Standfest, Sturmangriff]
+  attribute: 
+    GE: 16 
+    KO: 42
+    KK: 40
+    MU: 16
+  fertigkeiten: # todo fertigkeiten in eigene datei und ids als keys benutzen?
+    Wachsamkeit: 16
+    Pirschen: 8
+    Laufen: 16
+    Zähigkeit: 14
+
+baumdrache:
+  name: Baumdrache
+  beschreibung: tierhafter Drache ohne magische Fähigkeiten
+  kampfwerte:
+    WS: 4/6
+    MR: 8
+    GS: 1, fliegend 12
+    INI: 5
+  vorteile: [Flugfähig, Resistenz I (Feuer)]
+  waffen:
+    - name: Klauen
+      RW: 0
+      VT: 6
+      AT: 10
+      TP: 2W6+1
+    - name: Feueratem
+      bemerkung: Wer zum Ziel eines Angriffs wird, muss eine Zähikeits-Probe (16) ablegen, um nicht 1 Punkt Erschöpfung zu erleiden.
+  kampfvorteile: [Niederwerfen, Sturmangriff (max. +6)]
+  attribute: 
+    GE: 20
+    KO: 6
+    KK: 6
+    MU: 8
+  fertigkeiten: Wachsamkeit 10, Zähigkeit 6
+
+blutfischschwarm:
+  name: Blutfischschwarm
+  beschreibung: gierige Fressmaschinen der Dschungelflüsse; großer Gegner
+  kampfwerte:
+    WS: 3, Koloss II
+    MR: 2 für ein einzelnes Tier
+    GS: schwimmend 3
+    INI: 1
+  vorteile:
+    - Wasserwesen
+    - Schmerzimmun II
+    - Resistenz II (Stichwaffen)
+    - Verwundbarkeit IV (Flächenschaden)
+  waffen:
+    - name: Biss
+      RW: 0
+      VT: 4
+      AT: 14
+      TP: 2W6+3
+  kampfvorteile: 
+    - Zusätzliche Attacke II
+  fertigkeiten: 
+    Pirschen: 16
+    Schwimmen: 8
+    Wachsamkeit: 14
+
+elefant:
+  name: Elefant
+  beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
+  kampfwerte:
+    WS: 15/16, Koloss II
+    MR: 4
+    GS: 9
+    INI: 1
+  waffen:
+    - name: Stoßzähne
+      RW: 1
+      VT: 6
+      AT: 8
+      TP: 5W6+4
+      bemerkung: Niederwerfen
+    - name: Trampeln
+      RW: 1
+      VT: 4
+      AT: 6
+      TP: 3W20
+      bemerkung: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+  kampfvorteile: 
+    - Standfest
+    - Überrennen
+    - Unaufhaltsam
+    - Zerstörerisch I und II
+  attribute: 
+    KO: 140
+    KK: 120
+    MU: 10
+  fertigkeiten: 
+    Laufen: 14
+    Wachsamkeit: 12
+    Zähigkeit: 14
+  varianten: 
+    - "Elefantenrüstung (WS: +0/+2, GS: –1)"
+    - "Kriegselefant (AT: und VT: +4)"
+    - "Mammut (WS +2/+3, Resistenz gegen Kälte, TP: +5, KO 200, KK 160)"
