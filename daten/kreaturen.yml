@@ -55,7 +55,9 @@ baumdrache:
     KO: 6
     KK: 6
     MU: 8
-  fertigkeiten: Wachsamkeit 10, Zähigkeit 6
+  fertigkeiten: 
+    Wachsamkeit: 10
+    Zähigkeit: 6
 
 blutfischschwarm:
   name: Blutfischschwarm
@@ -85,6 +87,7 @@ blutfischschwarm:
 
 elefant:
   name: Elefant
+  klasse: tier
   beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
   kampfwerte:
     WS: 15/16, Koloss II
