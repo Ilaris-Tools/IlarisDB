@@ -6,16 +6,33 @@ baer:
     MU: 16
   beschreibung: Raubtier der Wälder; großer Gegner
   id: baer
-  kampfvorteile:
-  - name: Standfest
-  - name: Sturmangriff
-  kampfwerte:
-    GS: 6
-    INI: 2
-    MR: 6
-    WS: 11
-    WSE: 13
-    koloss: 1
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 13
+      RW: 1
+      TPP: 6
+      TPW: 2
+      VT: 6
+      name: Prankenhieb
+      notiz: Niederwerfen (–4), Doppelangriff
+    - AT: 14
+      RW: 0
+      TP: 4W6+6
+      TPP: '6'
+      TPW: '4'
+      VT: 3
+      name: Biss
+      notiz: Zerbrechlich
+    werte:
+      GS: 6
+      INI: 2
+      MR: 6
+      WS: 11
+      WSE: 13
+      koloss: 1
   klasse: tier
   name: Bär
   quelle: ilaris
@@ -28,22 +45,6 @@ baer:
     wert: 16
   - name: Zähigkeit
     wert: 14
-  waffen:
-  - AT: 13
-    RW: 1
-    TPP: 6
-    TPW: 2
-    VT: 6
-    name: Prankenhieb
-    notiz: Niederwerfen (–4), Doppelangriff
-  - AT: 14
-    RW: 0
-    TP: 4W6+6
-    TPP: '6'
-    TPW: '4'
-    VT: 3
-    name: Biss
-    notiz: Zerbrechlich
 baumdrache:
   attribute:
     GE: 20
@@ -52,16 +53,28 @@ baumdrache:
     MU: 8
   beschreibung: tierhafter Drache ohne magische Fähigkeiten
   id: baumdrache
-  kampfvorteile:
-  - Niederwerfen
-  - Sturmangriff (max. +6)
-  kampfwerte:
-    GS: 1
-    GSF: 12
-    INI: 5
-    MR: 8
-    WS: 4
-    WSE: 6
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Sturmangriff (max. +6)
+    waffen:
+    - AT: 10
+      RW: 0
+      TP: 2W6+1
+      TPP: '1'
+      TPW: '2'
+      VT: 6
+      name: Klauen
+    - info: Wer zum Ziel eines Angriffs wird, muss eine Zähikeits-Probe (16) ablegen,
+        um nicht 1 Punkt Erschöpfung zu erleiden.
+      name: Feueratem
+    werte:
+      GS: 1
+      GSF: 12
+      INI: 5
+      MR: 8
+      WS: 4
+      WSE: 6
   name: Baumdrache
   quelle: ilaris
   talente:
@@ -70,33 +83,31 @@ baumdrache:
   - name: Zähigkeit
     wert: 6
   vorteile:
-  - Flugfähig
-  - Resistenz I (Feuer)
-  waffen:
-  - AT: 10
-    RW: 0
-    TP: 2W6+1
-    TPP: '1'
-    TPW: '2'
-    VT: 6
-    name: Klauen
-  - info: Wer zum Ziel eines Angriffs wird, muss eine Zähikeits-Probe (16) ablegen,
-      um nicht 1 Punkt Erschöpfung zu erleiden.
-    name: Feueratem
+  - name: Flugfähig
+  - name: Resistenz I (Feuer)
 blutfischschwarm:
   beschreibung: gierige Fressmaschinen der Dschungelflüsse; großer Gegner
   id: blutfischschwarm
-  kampfvorteile:
-  - Zusätzliche Attacke II
-  kampfwerte:
-    EWS: 3
-    GS: 0
-    GSS: 3
-    INI: 1
-    MR: 2
-    WS: 3
-    info: MR pro einzelnes Tier, Fortbewegung nur schwimmend
-    koloss: 2
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke II
+    waffen:
+    - AT: 14
+      RW: 0
+      TP: 2W6+3
+      TPP: '3'
+      TPW: '2'
+      VT: 4
+      name: Biss
+    werte:
+      EWS: 3
+      GS: 0
+      GSS: 3
+      INI: 1
+      MR: 2
+      WS: 3
+      info: MR pro einzelnes Tier, Fortbewegung nur schwimmend
+      koloss: 2
   name: Blutfischschwarm
   quelle: ilaris
   talente:
@@ -107,18 +118,10 @@ blutfischschwarm:
   - name: Wachsamkeit
     wert: 14
   vorteile:
-  - Wasserwesen
-  - Schmerzimmun II
-  - Resistenz II (Stichwaffen)
-  - Verwundbarkeit IV (Flächenschaden)
-  waffen:
-  - AT: 14
-    RW: 0
-    TP: 2W6+3
-    TPP: '3'
-    TPW: '2'
-    VT: 4
-    name: Biss
+  - name: Wasserwesen
+  - name: Schmerzimmun II
+  - name: Resistenz II (Stichwaffen)
+  - name: Verwundbarkeit IV (Flächenschaden)
 elefant:
   attribute:
     KK: 120
@@ -126,18 +129,36 @@ elefant:
     MU: 10
   beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
   id: elefant
-  kampfvorteile:
-  - Standfest
-  - Überrennen
-  - Unaufhaltsam
-  - Zerstörerisch I und II
-  kampfwerte:
-    EWS: 16
-    GS: 9
-    INI: 1
-    MR: 4
-    WS: 15
-    koloss: 2
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Überrennen
+    - name: Unaufhaltsam
+    - name: Zerstörerisch I und II
+    waffen:
+    - AT: 8
+      RW: 1
+      TP: 5W6+4
+      TPP: '4'
+      TPW: '5'
+      VT: 6
+      info: Niederwerfen
+      name: Stoßzähne
+    - AT: 6
+      RW: 1
+      TP: 3W20
+      TPP: 0
+      TPW20: '3'
+      VT: 4
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      name: Trampeln
+    werte:
+      EWS: 16
+      GS: 9
+      INI: 1
+      MR: 4
+      WS: 15
+      koloss: 2
   klasse: tier
   name: Elefant
   quelle: ilaris
@@ -152,23 +173,6 @@ elefant:
   - 'Elefantenrüstung (WS: +0/+2, GS: –1)'
   - 'Kriegselefant (AT: und VT: +4)'
   - 'Mammut (WS +2/+3, Resistenz gegen Kälte, TP: +5, KO: 200, KK: 160)'
-  waffen:
-  - AT: 8
-    RW: 1
-    TP: 5W6+4
-    TPP: '4'
-    TPW: '5'
-    VT: 6
-    info: Niederwerfen
-    name: Stoßzähne
-  - AT: 6
-    RW: 1
-    TP: 3W20
-    TPP: 0
-    TPW20: '3'
-    VT: 4
-    info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
-    name: Trampeln
 fernhaendlerpaktierer:
   attribute:
     CH: 14
@@ -193,13 +197,23 @@ fernhaendlerpaktierer:
     Situation wird der Fernhändler einen Kreis der Verdammnis aufsteigen. Er füllt
     damit seine GuP auf, steigert den PW in Dämonische Hilfe auf 14 und erhält die
     Anrufung Ertränken, mit der er sich gegen Angreifer zur Wehr setzt.'
-  kampfvorteile: Durchatmen
-  kampfwerte:
-    GS: 4
-    INI: 5
-    MR: 9
-    WS: 5
-    schips: 1
+  kampf:
+    vorteile:
+    - name: Durchatmen
+    waffen:
+    - AT: 11
+      RW: 0
+      TP: 1W6+1
+      TPP: '1'
+      TPW: '1'
+      VT: 11
+      name: Dolch
+    werte:
+      GS: 4
+      INI: 5
+      MR: 9
+      WS: 5
+      schips: 1
   name: Fernhändler und Paktierer
   paktfertigkeiten:
   - name: Dämonische Hilfe Charyptoroth
@@ -211,9 +225,10 @@ fernhaendlerpaktierer:
     - Wasserleiche erheben
     wert: 10
   pakttradition: Erzdämonische Tradition I, 25 GuP
-  profanvorteile:
-  - Eindrucksvoll I und II
-  - Vorausschauend I und II
+  profan:
+    vorteile:
+    - name: Eindrucksvoll I und II
+    - name: Vorausschauend I und II
   quelle: ilaris
   talente:
   - name: Andergast & Nostria (Gebräuche)
@@ -234,15 +249,10 @@ fernhaendlerpaktierer:
     wert: 11
   - name: Zähigkeit
     wert: 8
-  vorteile: Gefahreninstinkt, Kreis der Verdammnis I, Willensstark I
-  waffen:
-  - AT: 11
-    RW: 0
-    TP: 1W6+1
-    TPP: '1'
-    TPW: '1'
-    VT: 11
-    name: Dolch
+  vorteile:
+  - name: Gefahreninstinkt
+  - name: Kreis der Verdammnis I
+  - name: Willensstark I
 ghul:
   attribute:
     GE: 8
@@ -252,12 +262,36 @@ ghul:
     MU: 8
   beschreibung: ansteckender und gieriger Leichenfresser
   id: ghul
-  kampfwerte:
-    GS: 6
-    INI: 6
-    MR: 9
-    WS: 4
-    WSE: 5
+  kampf:
+    waffen:
+    - AT: 6
+      RW: 1
+      TP: 1W6
+      TPP: 0
+      TPW: '1'
+      VT: 6
+      info: Stumpf, Zerbrechlich, Hochansteckend (Jede erlittene Wunde erhöht das
+        Chance einer Ansteckung mit Wundbrand oder einer anderen Krankheit um 50%.
+        Eine Probe auf Gifte und Krankheiten (24) eliminiert das Risiko.)
+      name: Unbewaffnet
+    - AT: 6
+      RW: 0
+      TP: 2W6+0
+      TPP: '0'
+      TPW: '2'
+      VT: 6
+      info: Zerbrechlich, Ghulgift (Stufe 16, Verzögerung 0 Aktionen, Wirkungs- dauer
+        8 Stunden; Proben auf körperliche   attribute und Fertigkeiten sind kumulativ
+        um –4 erschwert. Fällt bei der KO-Probe eine 1-4, verwandelt sich der Vergiftete
+        binnen 1W6 Tagen selbst in einen Ghul, wenn keine Probe auf Gifte und Krankheiten
+        (28) gelingt.)
+      name: Zähne
+    werte:
+      GS: 6
+      INI: 6
+      MR: 9
+      WS: 4
+      WSE: 5
   name: Ghul
   quelle: ilaris
   talente:
@@ -266,33 +300,10 @@ ghul:
   - name: Wachsamkeit
     wert: 6
   vorteile:
-  - Empfindlichkeit II (Sonnenlicht)
-  - Immunität (Einfluss)
-  - Lichtscheu
-  - Schreckgestalt I
-  waffen:
-  - AT: 6
-    RW: 1
-    TP: 1W6
-    TPP: 0
-    TPW: '1'
-    VT: 6
-    info: Stumpf, Zerbrechlich, Hochansteckend (Jede erlittene Wunde erhöht das Chance
-      einer Ansteckung mit Wundbrand oder einer anderen Krankheit um 50%. Eine Probe
-      auf Gifte und Krankheiten (24) eliminiert das Risiko.)
-    name: Unbewaffnet
-  - AT: 6
-    RW: 0
-    TP: 2W6+0
-    TPP: '0'
-    TPW: '2'
-    VT: 6
-    info: Zerbrechlich, Ghulgift (Stufe 16, Verzögerung 0 Aktionen, Wirkungs- dauer
-      8 Stunden; Proben auf körperliche   attribute und Fertigkeiten sind kumulativ
-      um –4 erschwert. Fällt bei der KO-Probe eine 1-4, verwandelt sich der Vergiftete
-      binnen 1W6 Tagen selbst in einen Ghul, wenn keine Probe auf Gifte und Krankheiten
-      (28) gelingt.)
-    name: Zähne
+  - name: Empfindlichkeit II (Sonnenlicht)
+  - name: Immunität (Einfluss)
+  - name: Lichtscheu
+  - name: Schreckgestalt I
 goblin:
   GS: 5
   INI: 3
@@ -309,6 +320,31 @@ goblin:
     MU: 4
   beschreibung: rotpelzige Landplage des Nordens
   id: goblin
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 2
+      TP: 2W6-1
+      TPP: 0
+      TPW: '2'
+      VT: 8
+      info: Wendig
+      name: Holzspeer
+    - AT: 8
+      RW: 1
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 8
+      info: Kopflastig, Stumpf
+      name: Keule
+    - FK: 8
+      LZ: 0
+      RW: 16
+      TP: 2W6+1
+      TPP: '1'
+      TPW: '2'
+      name: Kurzbogen
   name: Goblin
   quelle: ilaris
   talente:
@@ -321,32 +357,8 @@ goblin:
   - name: Zähigkeit
     wert: 4
   vorteile:
-  - Angepasst I (Dunkelheit)
-  - Resistenz gegen Kälte
-  waffen:
-  - AT: 8
-    RW: 2
-    TP: 2W6-1
-    TPP: 0
-    TPW: '2'
-    VT: 8
-    info: Wendig
-    name: Holzspeer
-  - AT: 8
-    RW: 1
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 8
-    info: Kopflastig, Stumpf
-    name: Keule
-  - FK: 8
-    LZ: 0
-    RW: 16
-    TP: 2W6+1
-    TPP: '1'
-    TPW: '2'
-    name: Kurzbogen
+  - name: Angepasst I (Dunkelheit)
+  - name: Resistenz gegen Kälte
 greif:
   KaP: 64
   attribute:
@@ -357,19 +369,35 @@ greif:
   beschreibung: Mythenwesen und mächtiger Diener Praios‘; großer Gegner
   id: greif
   info: '*gegen unheilige Kreaturen: TP:  +1W6, WS +2, AT/VT:  +2, Liturgien +4'
-  kampfvorteile:
-  - Zusätzlicher Attacke I
-  - Haltet stand!
-  - Hammerschlag
-  - Niederwerfen
-  - Standfest
-  - Sturmangriff
-  kampfwerte:
-    GS: 6, fliegend 13
-    INI: 8
-    MR: 20
-    WS: 14
-    WSE: 16
+  kampf:
+    vorteile:
+    - name: Zusätzlicher Attacke I
+    - name: Haltet stand!
+    - name: Hammerschlag
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 17
+      RW: 1
+      TP: 2W6+4
+      TPP: '4'
+      TPW: '2'
+      VT: 11
+      name: Prankenhieb
+    - AT: 17
+      RW: 0
+      TP: 3W6+4
+      TPP: '4'
+      TPW: '3'
+      VT: 2
+      name: Schnabelhieb
+    werte:
+      GS: 6, fliegend 13
+      INI: 8
+      MR: 20
+      WS: 14
+      WSE: 16
   karmavorteile:
   - Aura der Heiligkeit
   - Gesegnete Waffe*
@@ -397,25 +425,10 @@ greif:
   - name: Zähigkeit
     wert: 16
   vorteile:
-  - Flugfähig
-  - Willensstark II
-  - Geisterpanzer (WS 20)
-  - Unbeugsamkeit
-  waffen:
-  - AT: 17
-    RW: 1
-    TP: 2W6+4
-    TPP: '4'
-    TPW: '2'
-    VT: 11
-    name: Prankenhieb
-  - AT: 17
-    RW: 0
-    TP: 3W6+4
-    TPP: '4'
-    TPW: '3'
-    VT: 2
-    name: Schnabelhieb
+  - name: Flugfähig
+  - name: Willensstark II
+  - name: Geisterpanzer (WS 20)
+  - name: Unbeugsamkeit
 harpyie:
   attribute:
     GE: 16
@@ -424,15 +437,24 @@ harpyie:
     MU: 4
   beschreibung: wahnsinnige Verschmelzung von Vogel und Frau
   id: harpyie
-  kampfvorteile:
-  - Niederwerfen
-  - Sturmangriff
-  kampfwerte:
-    GS: 2
-    GSF: 14
-    INI: 8
-    MR: 4
-    WS: 4
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 0
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 8
+      name: Klauen
+    werte:
+      GS: 2
+      GSF: 14
+      INI: 8
+      MR: 4
+      WS: 4
   name: Harpyie
   quelle: ilaris
   talente:
@@ -440,15 +462,8 @@ harpyie:
     wert: 12
   - name: Wachsamkeit
     wert: 10
-  vorteile: Flieger
-  waffen:
-  - AT: 12
-    RW: 0
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 8
-    name: Klauen
+  vorteile:
+  - name: Flieger
 hoehlenspinne:
   attribute:
     KK: 4
@@ -456,33 +471,32 @@ hoehlenspinne:
     MU: 4
   beschreibung: einzelgängerische Spinne mit Lähmungsgift
   id: hoehlenspinne
-  info: 'Das Netz der Spinne ist im Fackelschein mit einer Wachsamkeits-Probe (24)
+  info: Das Netz der Spinne ist im Fackelschein mit einer Wachsamkeits-Probe (24)
     zu erkennen. Misslingt die Probe, verfängt sich ein Opfer im Netz, das wie ein
     Umklammern (–4, 20) wirkt.
-
-    '
-  kampfwerte:
-    GS: 3
-    INI: 3
-    MR: 9
-    WS: 3
-    WSE: 4
+  kampf:
+    waffen:
+    - AT: 9
+      RW: 0
+      TP: 1W6+2
+      TPP: '2'
+      TPW: '1'
+      VT: 6
+      info: Giftig (Spinnengift, Stufe 20, Verzögerung 0, Wirkungsdauer 8 Stunden;
+        körperliche   attribute und Fertigkeiten sind kumulativ um –1 erschwert)
+      name: Biss
+    werte:
+      GS: 3
+      INI: 3
+      MR: 9
+      WS: 3
+      WSE: 4
   name: Höhlenspinne
   talente: Wachsamkeit 14, Pirschen 14, Zähigkeit 8
   vorteile:
-  - Angepasst II (Dunkelheit)
-  - Immunität (Niederwerfen
-  - Umreißen und ähnliche Effekte)
-  waffen:
-  - AT: 9
-    RW: 0
-    TP: 1W6+2
-    TPP: '2'
-    TPW: '1'
-    VT: 6
-    info: Giftig (Spinnengift, Stufe 20, Verzögerung 0, Wirkungsdauer 8 Stunden; körperliche   attribute
-      und Fertigkeiten sind kumulativ um –1 erschwert)
-    name: Biss
+  - name: Angepasst II (Dunkelheit)
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
 hornechse:
   attribute:
     GE: 6
@@ -491,9 +505,19 @@ hornechse:
     MU: 12
   beschreibung: friedfertiger Pflanzenfresser und Reittier der Achaz; großer Gegner
   id: hornechse
-  kampfvorteile:
-  - Sturmangriff
-  - Überrennen
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: Überrennen
+    waffen:
+    - AT: 8
+      RW: 0
+      TP: 4W6+6
+      TPP: '6'
+      TPW: '4'
+      VT: 4
+      info: Niederwerfen (–8)
+      name: Horn
   name: Hornechse
   talente:
   - name: Wachsamkeit
@@ -501,17 +525,8 @@ hornechse:
   - name: Zähigkeit
     wert: 16
   vorteile:
-  - Angepasst I (Sumpf)
-  - Verwundbarkeit I (Eis)
-  waffen:
-  - AT: 8
-    RW: 0
-    TP: 4W6+6
-    TPP: '6'
-    TPW: '4'
-    VT: 4
-    info: Niederwerfen (–8)
-    name: Horn
+  - name: Angepasst I (Sumpf)
+  - name: Verwundbarkeit I (Eis)
 hyralkor:
   Vorgehen: 'Hyralkor bleibt auf Distanz und nutzt seine Flammenangriffe. Nur wenn
     seine Flügel schwer verletzt wurden oder er in beengten Verhältnissen kämpft,
@@ -535,7 +550,85 @@ hyralkor:
     handlungsunfähig und heißes Blut schießt aus der Wunde (Akrobatik (24) oder 4W6
     Schadenspunkte). Kampfunfähigkeit: Hyralkor flieht, wenn er 6 Wunden erlitten
     hat. In seinem Hort kämpft er jedoch bis zum Tod.'
-  astral:
+  attribute:
+    GE: 12
+    KK: 200
+    KL: 20
+    KO: 220
+    MU: 30
+  beschreibung: Herrscher seines Landstrichs; sehr großer Endgegner
+  id: hyralkor
+  kampf:
+    vorteile:
+    - name: Hammerschlag
+    - name: Offensiver Kampfstil
+    - name: Sturmangriff
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 19
+      RW: 2
+      TP: 2W20+10
+      TPP: '2'
+      TPW20: '10'
+      VT: 10
+      info: Zerbrechlich
+      name: Biss
+    - FK: 12
+      LZ: 0
+      RW: 32
+      TP: 5W6+8
+      TPP: '8'
+      TPW: '5'
+      info: Nachbrennen
+      name: Flammenstrahl
+    - FK: 12
+      LZ: 0
+      RW: 16
+      TP: 4W6+4
+      TPP: '4'
+      TPW: '4'
+      info: Flächenangriff (90° vor dem Drachen), Nachbrennen
+      name: Flammeninferno
+    - AT: 11
+      RW: 0
+      TP: 3W20
+      TPP: 0
+      TPW20: '3'
+      VT: 6
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      name: Trampeln (Beine)
+    - AT: 16
+      RW: 1
+      TP: 2W20+5
+      TPP: '2'
+      TPW20: '5'
+      VT: 10
+      info: Niederwerfen (–8)
+      name: Pranken (Beine)
+    - AT: 16
+      RW: 1-8
+      TP: 4W6+2
+      TPP: '2'
+      TPW: '4'
+      VT: 8
+      info: Flächenangriff (90° hinter dem Drachen), Niederwerfen (–4)
+      name: Schwanzhieb (S.)
+    - AT: 20
+      RW: 4
+      VT: 6
+      info: Flächenangriff (360 ° um den Drachen), Zurückstoßen, Raumgreifend (nur
+        einsetzbar, wenn Hyralkor seine Flügel voll spannen kann)
+      name: Windstoß (Flügel)
+    werte:
+      GS: 4
+      GSF: 10
+      INI: 9
+      MR: 17
+      WS: Spezial
+      WSS: Kopf 9/11, Koloss I Rumpf 13/17, Koloss II Beine 12/16 Schwanz 9/11 Flügel
+        9/11
+      schips: 2
+  magie:
     asp: 140
     fertigkeiten:
     - name: Einfluss
@@ -573,30 +666,6 @@ hyralkor:
     vorteile:
     - info: Reichweite und Wirkungsdauer jedes Zaubers ist vervielfacht
       name: Drachenmagie
-  attribute:
-    GE: 12
-    KK: 200
-    KL: 20
-    KO: 220
-    MU: 30
-  beschreibung: Herrscher seines Landstrichs; sehr großer Endgegner
-  id: hyralkor
-  kampfvorteile:
-  - Hammerschlag
-  - Offensiver Kampfstil
-  - Sturmangriff
-  - Zusätzliche Attacke I
-  kampfwerte:
-    GS: 4
-    GSF: 10
-    INI: 9
-    MR: 17
-    WS: Spezial
-    WSS: 'Kopf 9/11, Koloss I Rumpf 13/17, Koloss II Beine 12/16 Schwanz 9/11 Flügel
-      9/11
-
-      '
-    schips: 2
   name: Hyralkor, ein Kaiserdrache
   quelle: ilaris
   talente:
@@ -613,68 +682,13 @@ hyralkor:
   - name: Zähigkeit
     wert: 24
   vorteile:
-  - Aura (Hitze
-  - Zähigkeit (28) jede INI:phase
-  - 1 Wunde)
-  - Flugfähig
-  - Immunität (Feuer)
-  - Schreckgestalt II
-  - Verwundbarkeit I (Eis)
-  waffen:
-  - AT: 19
-    RW: 2
-    TP: 2W20+10
-    TPP: '2'
-    TPW20: '10'
-    VT: 10
-    info: Zerbrechlich
-    name: Biss
-  - FK: 12
-    LZ: 0
-    RW: 32
-    TP: 5W6+8
-    TPP: '8'
-    TPW: '5'
-    info: Nachbrennen
-    name: Flammenstrahl
-  - FK: 12
-    LZ: 0
-    RW: 16
-    TP: 4W6+4
-    TPP: '4'
-    TPW: '4'
-    info: Flächenangriff (90° vor dem Drachen), Nachbrennen
-    name: Flammeninferno
-  - AT: 11
-    RW: 0
-    TP: 3W20
-    TPP: 0
-    TPW20: '3'
-    VT: 6
-    info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
-    name: Trampeln (Beine)
-  - AT: 16
-    RW: 1
-    TP: 2W20+5
-    TPP: '2'
-    TPW20: '5'
-    VT: 10
-    info: Niederwerfen (–8)
-    name: Pranken (Beine)
-  - AT: 16
-    RW: 1-8
-    TP: 4W6+2
-    TPP: '2'
-    TPW: '4'
-    VT: 8
-    info: Flächenangriff (90° hinter dem Drachen), Niederwerfen (–4)
-    name: Schwanzhieb (S.)
-  - AT: 20
-    RW: 4
-    VT: 6
-    info: Flächenangriff (360 ° um den Drachen), Zurückstoßen, Raumgreifend (nur einsetzbar,
-      wenn Hyralkor seine Flügel voll spannen kann)
-    name: Windstoß (Flügel)
+  - name: Aura (Hitze
+  - name: Zähigkeit (28) jede INI:phase
+  - name: 1 Wunde)
+  - name: Flugfähig
+  - name: Immunität (Feuer)
+  - name: Schreckgestalt II
+  - name: Verwundbarkeit I (Eis)
 krakenmolch:
   attribute:
     KK: 12
@@ -682,19 +696,44 @@ krakenmolch:
     MU: 20
   beschreibung: vielarmiger Schrecken der Küsten und Sümpfe; großer Gegner
   id: krakenmolch
-  kampfvorteile:
-  - Zusätzliche Attacke II
-  kampfwerte:
-    GS: 2
-    GSS: 9
-    INI: 2
-    MR: 16
-    WS: spezial
-    WSS: 'Rumpf 10/12, Koloss I
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke II
+    waffen:
+    - AT: 12
+      RW: 1
+      TP: 4W6+4
+      TPP: '4'
+      TPW: '4'
+      VT: 4
+      name: Biss
+    - AT: 14
+      RW: 8
+      TP: 2W6+4
+      TPP: '4'
+      TPW: '2'
+      VT: 10
+      info: Niederwerfen
+      name: Tentakelhieb
+    - AT: 13
+      RW: 8
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 10
+      info: Umklammern (–4, 22)
+      name: Tentakelklammer
+    werte:
+      GS: 2
+      GSS: 9
+      INI: 2
+      MR: 16
+      WS: spezial
+      WSS: 'Rumpf 10/12, Koloss I
 
-      8 Tentakel 8/10
+        8 Tentakel 8/10
 
-      '
+        '
   name: Krakenmolch
   quelle: ilaris
   talente:
@@ -705,33 +744,9 @@ krakenmolch:
   - name: Wachsamkeit
     wert: 10
   vorteile:
-  - Amphibisch
-  - Angepasst II (Wasser)
-  - Schreckgestalt I
-  waffen:
-  - AT: 12
-    RW: 1
-    TP: 4W6+4
-    TPP: '4'
-    TPW: '4'
-    VT: 4
-    name: Biss
-  - AT: 14
-    RW: 8
-    TP: 2W6+4
-    TPP: '4'
-    TPW: '2'
-    VT: 10
-    info: Niederwerfen
-    name: Tentakelhieb
-  - AT: 13
-    RW: 8
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 10
-    info: Umklammern (–4, 22)
-    name: Tentakelklammer
+  - name: Amphibisch
+  - name: Angepasst II (Wasser)
+  - name: Schreckgestalt I
 kriegermumie:
   attribute:
     GE: 12
@@ -743,46 +758,45 @@ kriegermumie:
     talent: Skelettarius oder Totes handle! (20) aus einem mumifizierten Leichnam,
       24 AsP
   id: kriegermumie
-  kampfvorteile:
-  - Kraftvoller Kampf III (Befreiungsschlag)
-  - Hammerschlag
-  - Niederwerfen
-  kampfwerte:
-    GS: 4
-    INI: 5
-    MR: 12
-    WS: 10/12
+  kampf:
+    vorteile:
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Hammerschlag
+    - name: Niederwerfen
+    waffen:
+    - AT: 16
+      RW: 1
+      TP: 5W6+4
+      TPP: '4'
+      TPW: '5'
+      VT: 10
+      name: Khunchomer
+      notiz: Niederwerfen, Unaufhaltsam
+    - AT: 14
+      RW: 0
+      TP: 2W6+6
+      TPP: '6'
+      TPW: '2'
+      VT: 10
+      info: Stumpf, Ansteckend (Jede erlittene Wunde erhöht die Chance einer Ansteckung
+        mit Wundbrand um 25%.  Eine Probe auf Gifte und Krankheiten (20) eliminiert
+        das Risiko.)
+      name: Hände
+    werte:
+      GS: 4
+      INI: 5
+      MR: 12
+      WS: 10/12
   name: Kriegermumie
   quelle: ilaris
   talente: Laufen 8, Untertauchen 6, Wachsamkeit 8
   vorteile:
-  - Astralsinn
-  - Körperlosigkeit
-  - Resistenz I (Stichwaffen)
-  - Verwundbarkeit II (Feuer)
-  - Schmerzimmun II
-  - Schreckgestalt II
-  waffen:
-  - AT: 16
-    RW: 1
-    TP: 5W6+4
-    TPP: '4'
-    TPW: '5'
-    VT: 10
-    name: Khunchomer
-    notiz: Niederwerfen, Unaufhaltsam
-  - AT: 14
-    RW: 0
-    TP: 2W6+6
-    TPP: '6'
-    TPW: '2'
-    VT: 10
-    info: 'Stumpf, Ansteckend (Jede erlittene Wunde erhöht die Chance einer Ansteckung
-      mit Wundbrand um 25%.  Eine Probe auf Gifte und Krankheiten (20) eliminiert
-      das Risiko.)
-
-      '
-    name: Hände
+  - name: Astralsinn
+  - name: Körperlosigkeit
+  - name: Resistenz I (Stichwaffen)
+  - name: Verwundbarkeit II (Feuer)
+  - name: Schmerzimmun II
+  - name: Schreckgestalt II
 kriegspferd:
   attribute:
     GE: 8
@@ -793,15 +807,33 @@ kriegspferd:
   id: kriegspferd
   info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
     VT: auf den PW Reiten abgelegt werden.'
-  kampfvorteile:
-  - Rüstungsgewöhnung
-  - Standfest
-  - im Reiterkampf WM +1
-  kampfwerte:
-    GS: 10
-    INI: 1
-    MR: 6
-    WS: 15
+  kampf:
+    vorteile:
+    - name: Rüstungsgewöhnung
+    - name: Standfest
+    - name: im Reiterkampf WM +1
+    waffen:
+    - AT: 12
+      RW: 1
+      TP: 2W6+2
+      TPP: '2'
+      TPW: '2'
+      VT: 5
+      info: Niederwerfen
+      name: Tritt
+    - AT: 12
+      RW: 0
+      TP: 1W6+3
+      TPP: '3'
+      TPW: '1'
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 10
+      INI: 1
+      MR: 6
+      WS: 15
   name: Kriegspferd
   quelle: ilaris
   talente:
@@ -815,23 +847,6 @@ kriegspferd:
   - 'Tralloper (WS: 16, GS: 8, TP:  +2, WM 0)'
   - 'Reittier (WS: 13, GS: 12, TP:  –2, WM –1)'
   - 'Reitpony (WS: 11, GS: 10, TP:  –2, WM 0)'
-  waffen:
-  - AT: 12
-    RW: 1
-    TP: 2W6+2
-    TPP: '2'
-    TPW: '2'
-    VT: 5
-    info: Niederwerfen
-    name: Tritt
-  - AT: 12
-    RW: 0
-    TP: 1W6+3
-    TPP: '3'
-    TPW: '1'
-    VT: 2
-    info: Zerbrechlich
-    name: Biss
 leibwaechter:
   attribute:
     CH: 6
@@ -844,26 +859,53 @@ leibwaechter:
     MU: 8
   beschreibung: persönlicher Wächter eines Würdenträgers
   id: leibwaechter
-  kampfvorteile:
-  - Schildkampf III (Schildwall)
-  - Aufmerksamkeit
-  - Ausfall
-  - Defensiver Kampfstil
-  - Kampfreflexe
-  - Niederwerfen
-  - Standfest
-  - Sturmangriff
-  - Waffenloser Kampf
-  kampfwerte:
-    GS: 6
-    INI: 12
-    MR: 5
-    WS: 4
-    WSE: 5
+  kampf:
+    vorteile:
+    - name: Schildkampf III (Schildwall)
+    - name: Aufmerksamkeit
+    - name: Ausfall
+    - name: Defensiver Kampfstil
+    - name: Kampfreflexe
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    - name: Waffenloser Kampf
+    waffen:
+    - AT: 13
+      RW: 1
+      TP: 2W6+3
+      TPP: '3'
+      TPW: '2'
+      VT: 16
+      info: Wendig
+      name: Amazonensäbel
+    - AT: 15
+      RW: 0
+      TP: 1W6+2
+      TPP: '2'
+      TPW: '1'
+      VT: 18
+      info: Schild, Stumpf
+      name: Holzschild
+    - AT: 14
+      RW: 0
+      TP: 1W6+4
+      TPP: '4'
+      TPW: '1'
+      VT: 14
+      info: Kopflastig, Stumpf, Wendig, Zerbrechlich
+      name: Faust
+    werte:
+      GS: 6
+      INI: 12
+      MR: 5
+      WS: 4
+      WSE: 5
   name: Leibwächter
-  profanvorteile:
-  - Flink I und II
-  - Vorausschauend I und II
+  profan:
+    vorteile:
+    - name: Flink I und II
+    - name: Vorausschauend I und II
   quelle: ilaris
   talente:
   - name: Einhandklingenwaffen
@@ -880,31 +922,6 @@ leibwaechter:
     wert: 15
   - name: Zähigkeit
     wert: 12
-  waffen:
-  - AT: 13
-    RW: 1
-    TP: 2W6+3
-    TPP: '3'
-    TPW: '2'
-    VT: 16
-    info: Wendig
-    name: Amazonensäbel
-  - AT: 15
-    RW: 0
-    TP: 1W6+2
-    TPP: '2'
-    TPW: '1'
-    VT: 18
-    info: Schild, Stumpf
-    name: Holzschild
-  - AT: 14
-    RW: 0
-    TP: 1W6+4
-    TPP: '4'
-    TPW: '1'
-    VT: 14
-    info: Kopflastig, Stumpf, Wendig, Zerbrechlich
-    name: Faust
 morfu:
   attribute:
     KK: 8
@@ -912,12 +929,23 @@ morfu:
     MU: 10
   beschreibung: schleimige Giftschnecke, die ihre Stacheln verschießt; großer Gegner
   id: morfu
-  kampfwerte:
-    GS: 1
-    INI: 0
-    MR: 16
-    WS: 4
-    WSE: 6
+  kampf:
+    waffen:
+    - FK: 8
+      LZ: 1
+      RW: 8
+      TP: 2W6+2
+      TPP: '2'
+      TPW: '2'
+      info: Morfugift (Stufe 20, Verzögerung 4 Aktionen, Wirkungsdauer sofort; das
+        Ziel erleidet eine Wunde)
+      name: Dornensalve
+    werte:
+      GS: 1
+      INI: 0
+      MR: 16
+      WS: 4
+      WSE: 6
   name: Morfu
   quelle: ilaris
   talente:
@@ -926,19 +954,9 @@ morfu:
   - name: Wachsamkeit
     wert: 8
   vorteile:
-  - Immunität (Niederwerfen
-  - Umreißen und ähnliche Effekte)
-  - Resistenz I (Stumpfe Waffen)
-  waffen:
-  - FK: 8
-    LZ: 1
-    RW: 8
-    TP: 2W6+2
-    TPP: '2'
-    TPW: '2'
-    info: Morfugift (Stufe 20, Verzögerung 4 Aktionen, Wirkungsdauer sofort; das Ziel
-      erleidet eine Wunde)
-    name: Dornensalve
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
+  - name: Resistenz I (Stumpfe Waffen)
 oger:
   attribute:
     GE: 4
@@ -948,18 +966,36 @@ oger:
     MU: 20
   beschreibung: stinkender Vielfraß und Menschenfresser; großer Gegner
   id: oger
-  kampfvorteile:
-  - Kraftvoller Kampf III (Befreiungsschlag)
-  - Niederwerfen
-  - Sturmangriff
-  kampfwerte:
-    GS: 6
-    INI: 4
-    MR: 8
-    WS: 12
-    WSE: 14
-    info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt
-      eine MR von 0)
+  kampf:
+    vorteile:
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 14
+      RW: 1
+      TP: 2W6+4
+      TPP: '4'
+      TPW: '2'
+      VT: 8
+      info: Stumpf
+      name: Faust
+    - AT: 14
+      RW: 2
+      TP: 4W6+6
+      TPP: '6'
+      TPW: '4'
+      VT: 8
+      info: Stumpf, Niederwerfen (–4)
+      name: Keule
+    werte:
+      GS: 6
+      INI: 4
+      MR: 8
+      WS: 12
+      WSE: 14
+      info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt
+        eine MR von 0)
   name: Oger
   quelle: ilaris
   talente:
@@ -973,23 +1009,6 @@ oger:
     wert: 16
   varianten:
   - 'Kriegsoger (WS: +2/+2, TP:  +4, Kampfwerte +2)'
-  waffen:
-  - AT: 14
-    RW: 1
-    TP: 2W6+4
-    TPP: '4'
-    TPW: '2'
-    VT: 8
-    info: Stumpf
-    name: Faust
-  - AT: 14
-    RW: 2
-    TP: 4W6+6
-    TPP: '6'
-    TPW: '4'
-    VT: 8
-    info: Stumpf, Niederwerfen (–4)
-    name: Keule
 ogerstatue:
   attribute:
     KK: 44
@@ -999,14 +1018,26 @@ ogerstatue:
     beispieldienste: Lastentransport (+4, 1 Tag); Wache (1 Tag); Kampf (–4, 1 Minute)
     talent: Stein wandle! (28) aus Bronzeplatten, 32 AsP
   id: ogerstatue
-  kampfvorteile: Zusätzliche Attacke I, Unaufhaltsam
-  kampfwerte:
-    GS: 1
-    INI: –1
-    MR: 20
-    WS: 10
-    WSE: 16
-    koloss: 1
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 12
+      RW: 2
+      TP: 2W20+6
+      TPP: '2'
+      TPW20: '6'
+      VT: 4
+      info: Niederwerfen (–4)
+      name: Faust
+    werte:
+      GS: 1
+      INI: –1
+      MR: 20
+      WS: 10
+      WSE: 16
+      koloss: 1
   name: Ogerstatue
   quelle: ilaris
   talente:
@@ -1014,16 +1045,11 @@ ogerstatue:
     wert: –2
   - name: Wachsamkeit
     wert: 4
-  vorteile: Immunität (Gifte, Krankheiten), Resistenz II (Feuer, Stichwaffen)
-  waffen:
-  - AT: 12
-    RW: 2
-    TP: 2W20+6
-    TPP: '2'
-    TPW20: '6'
-    VT: 4
-    info: Niederwerfen (–4)
-    name: Faust
+  vorteile:
+  - name: Immunität (Gifte
+  - name: Krankheiten)
+  - name: Resistenz II (Feuer
+  - name: Stichwaffen)
 orkkrieger:
   attribute:
     CH: 2
@@ -1036,19 +1062,45 @@ orkkrieger:
     MU: 14
   beschreibung: durchschnittlicher orkischer Kämpfer
   id: orkkrieger
-  kampfvorteile:
-  - Kraftvoller Kampf II
-  - Natürliche Rüstung
-  - Niederwerfen
-  - Offensiver Kampfstil
-  - Rüstungsgewöhnung
-  - Waffenloser Kampf
-  kampfwerte:
-    GS: 4
-    INI: 3
-    MR: 5
-    WS: 5
-    WSE: 8
+  kampf:
+    vorteile:
+    - name: Kraftvoller Kampf II
+    - name: Natürliche Rüstung
+    - name: Niederwerfen
+    - name: Offensiver Kampfstil
+    - name: Rüstungsgewöhnung
+    - name: Waffenloser Kampf
+    waffen:
+    - AT: 10
+      RW: 1
+      TP: 2W6+6
+      TPP: '6'
+      TPW: '2'
+      VT: 10
+      info: Kopflastig
+      name: Arbach
+    - AT: 10
+      RW: 1
+      TP: 3W6+6
+      TPP: '6'
+      TPW: '3'
+      VT: 10
+      info: Kopflastig, Zweihändig
+      name: Kriegshammer
+    - AT: 9
+      RW: 0
+      TP: 1W6+2
+      TPP: '2'
+      TPW: '1'
+      VT: 9
+      info: Kopflastig, Stumpf, Wendig, Zerbrechlich
+      name: Faust
+    werte:
+      GS: 4
+      INI: 3
+      MR: 5
+      WS: 5
+      WSE: 8
   name: Ork-Krieger
   quelle: ilaris
   talente:
@@ -1058,31 +1110,6 @@ orkkrieger:
     wert: 6
   - name: Zähigkeit
     wert: 12
-  waffen:
-  - AT: 10
-    RW: 1
-    TP: 2W6+6
-    TPP: '6'
-    TPW: '2'
-    VT: 10
-    info: Kopflastig
-    name: Arbach
-  - AT: 10
-    RW: 1
-    TP: 3W6+6
-    TPP: '6'
-    TPW: '3'
-    VT: 10
-    info: Kopflastig, Zweihändig
-    name: Kriegshammer
-  - AT: 9
-    RW: 0
-    TP: 1W6+2
-    TPP: '2'
-    TPW: '1'
-    VT: 9
-    info: Kopflastig, Stumpf, Wendig, Zerbrechlich
-    name: Faust
 orkkundschafter:
   attribute:
     CH: 2
@@ -1095,12 +1122,33 @@ orkkundschafter:
     MU: 10
   beschreibung: wildniserfahrener orkischer Kundschafter oder Räuber
   id: orkkundschafter
-  kampfvorteile: Natürliche Rüstung, Scharfschuss, Reflexschuss
-  kampfwerte:
-    GS: 5
-    INI: 4
-    MR: 5
-    WS: 5/6
+  kampf:
+    vorteile:
+    - name: Natürliche Rüstung
+    - name: Scharfschuss
+    - name: Reflexschuss
+    waffen:
+    - AT: 8
+      RW: 0
+      TP: 2W6+2
+      TPP: '2'
+      TPW: '2'
+      VT: 8
+      info: Rüstungsbrechend
+      name: Skraja
+    - FK: 11
+      LZ: 1
+      RW: 32
+      TP: 2W6+3
+      TPP: '3'
+      TPW: '2'
+      info: Zweihändig
+      name: Ork. Reiterbogen
+    werte:
+      GS: 5
+      INI: 4
+      MR: 5
+      WS: 5/6
   name: Ork-Kundschafter
   quelle: ilaris
   talente:
@@ -1118,25 +1166,50 @@ orkkundschafter:
     wert: 10
   - name: Zähigkeit
     wert: 8
-  waffen:
-  - AT: 8
-    RW: 0
-    TP: 2W6+2
-    TPP: '2'
-    TPW: '2'
-    VT: 8
-    info: Rüstungsbrechend
-    name: Skraja
-  - FK: 11
-    LZ: 1
-    RW: 32
-    TP: 2W6+3
-    TPP: '3'
-    TPW: '2'
-    info: Zweihändig
-    name: Ork. Reiterbogen
 perldrache:
-  astral:
+  attribute:
+    GE: 12
+    KK: 70
+    KO: 74
+    MU: 20
+  beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
+  id: perldrache
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    - name: Zerstörerisch I
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 12
+      RW: 2
+      TP: 5W6+4
+      TPP: '4'
+      TPW: '5'
+      VT: 8
+      name: Biss
+    - AT: 12
+      RW: 1
+      TP: 4W6+4
+      TPP: '4'
+      TPW: '4'
+      VT: 12
+      name: Klauenhieb
+    - AT: 14
+      RW: 2
+      TP: 2W6+2
+      TPP: '2'
+      TPW: '2'
+      VT: 8
+      info: Flächenangriff (180° hinter dem Drachen)
+      name: Schwanzschlag
+    werte:
+      GS: 2, schwimmend 6, fliegend 18
+      INI: 6
+      MR: 12
+      WS: 8/10, Koloss II
+  magie:
     asp: 24
     fertigkeiten:
     - name: Hellsicht
@@ -1147,24 +1220,6 @@ perldrache:
       talente:
       - Nach SL-Entscheid
       wert: 12
-  attribute:
-    GE: 12
-    KK: 70
-    KO: 74
-    MU: 20
-  beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
-  id: perldrache
-  kampfvorteile:
-  - Niederwerfen
-  - Standfest
-  - Sturmangriff
-  - Zerstörerisch I
-  - Zusätzliche Attacke I
-  kampfwerte:
-    GS: 2, schwimmend 6, fliegend 18
-    INI: 6
-    MR: 12
-    WS: 8/10, Koloss II
   name: Perldrache
   quelle: ilaris
   talente:
@@ -1181,54 +1236,40 @@ perldrache:
   varianten:
   - Westwinddrache (keine AsP und Zauberfähigkeiten)
   vorteile:
-  - Angepasst I (Wasser)
-  - Aura (Hitze
-  - Zähigkeit (20) alle 4 INI:phasen
-  - 1 Wunde)
-  - Flugfähig
-  - Resistenz II (Feuer)
-  - Schreckgestalt I
-  waffen:
-  - AT: 12
-    RW: 2
-    TP: 5W6+4
-    TPP: '4'
-    TPW: '5'
-    VT: 8
-    name: Biss
-  - AT: 12
-    RW: 1
-    TP: 4W6+4
-    TPP: '4'
-    TPW: '4'
-    VT: 12
-    name: Klauenhieb
-  - AT: 14
-    RW: 2
-    TP: 2W6+2
-    TPP: '2'
-    TPW: '2'
-    VT: 8
-    info: Flächenangriff (180° hinter dem Drachen)
-    name: Schwanzschlag
+  - name: Angepasst I (Wasser)
+  - name: Aura (Hitze
+  - name: Zähigkeit (20) alle 4 INI:phasen
+  - name: 1 Wunde)
+  - name: Flugfähig
+  - name: Resistenz II (Feuer)
+  - name: Schreckgestalt I
 pestrattenschwarm:
+  beispieldienste: Stall leerfessen (1 Stunde, +4); andere Lebewesen fressen (1 Minute);
+    nur bestimmtes Lebewesen fressen (1 Minute, –4)
   beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
-  beschwörung:
-    beispieldienste: 'Stall leerfessen (1 Stunde, +4); andere Lebewesen fressen (1
-      Minute); nur bestimmtes Lebewesen fressen (1 Minute, –4)
-
-      '
-    talent: Skelettarius oder Totes handle! (16) aus Rattenkadavern, 16 AsP
+  beschwörung: Skelettarius oder Totes handle! (16) aus Rattenkadavern, 16 AsP
   id: pestrattenschwarm
-  kampfvorteile:
-  - Zusätzliche Attacke I
-  kampfwerte:
-    GS: 2
-    INI: 0
-    MR: 2
-    WS: 4
-    info: MR für einzelnes Tier
-    koloss: 2
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 14
+      RW: 0
+      TP: 2W6–1
+      TPP: 0
+      TPW: '2'
+      VT: 6
+      info: Hochansteckend (Jede erlittene Wunde erhöht das Risiko einer Ansteckung
+        mit Wundbrand um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert
+        das Risiko.)
+      name: Biss
+    werte:
+      GS: 2
+      INI: 0
+      MR: 2
+      WS: 4
+      info: MR für einzelnes Tier
+      koloss: 2
   name: Pestrattenschwarm
   quelle: ilaris
   talente:
@@ -1242,23 +1283,10 @@ pestrattenschwarm:
   - 'Sehr großer Schwarm (WS: +1, AT:  +2, Zusätzliche Attacke II, Beschwörungsschwierigkeit
     20, 24 AsP)'
   vorteile:
-  - Astralsinn
-  - Resistenz II (Stichwaffen)
-  - Schmerzimmun II
-  - Verwundbarkeit IV (Flächenschaden)
-  waffen:
-  - AT: 14
-    RW: 0
-    TP: 2W6–1
-    TPP: 0
-    TPW: '2'
-    VT: 6
-    info: 'Hochansteckend (Jede erlittene Wunde erhöht das Risiko einer Ansteckung
-      mit Wundbrand um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert das
-      Risiko.)
-
-      '
-    name: Biss
+  - name: Astralsinn
+  - name: Resistenz II (Stichwaffen)
+  - name: Schmerzimmun II
+  - name: Verwundbarkeit IV (Flächenschaden)
 raeuber:
   attribute:
     CH: 4
@@ -1271,13 +1299,39 @@ raeuber:
     MU: 8
   beschreibung: ausgehungerte Halsabschneider auf der Suche nach leichter Beute
   id: raeuber
-  info: 'Der Räuber steht beispielhaft für schwache humanoide Gegner, die für einen
-    echten Kämpfer kaum eine Gefahr darstellen.'
-  kampfwerte:
-    GS: 4
-    INI: 2
-    MR: 5
-    WS: 4
+  info: Der Räuber steht beispielhaft für schwache humanoide Gegner, die für einen
+    echten Kämpfer kaum eine Gefahr darstellen.
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 1
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 8
+      info: Stumpf, Kopflastig
+      name: Keule
+    - AT: 8
+      RW: 2
+      TP: 2W6+1
+      TPP: '1'
+      TPW: '2'
+      VT: 8
+      info: Wendig
+      name: Holzspeer
+    - FK: 8
+      LZ: 0
+      RW: 16
+      TP: 2W6+1
+      TPP: '1'
+      TPW: '2'
+      info: Zweihändig
+      name: Kurzbogen
+    werte:
+      GS: 4
+      INI: 2
+      MR: 5
+      WS: 4
   name: Räuber
   quelle: ilaris
   talente:
@@ -1287,31 +1341,8 @@ raeuber:
     wert: 6
   - name: Zähigkeit
     wert: 4
-  waffen:
-  - AT: 8
-    RW: 1
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 8
-    info: Stumpf, Kopflastig
-    name: Keule
-  - AT: 8
-    RW: 2
-    TP: 2W6+1
-    TPP: '1'
-    TPW: '2'
-    VT: 8
-    info: Wendig
-    name: Holzspeer
-  - FK: 8
-    LZ: 0
-    RW: 16
-    TP: 2W6+1
-    TPP: '1'
-    TPW: '2'
-    name: Kurzbogen
-    info: Zweihändig
+  vorteile:
+  - name: Zweihändig
 riese:
   attribute:
     GE: 6
@@ -1320,21 +1351,57 @@ riese:
     MU: 20
   beschreibung: Unsterblicher Gigant; sehr großer Gegner
   id: riese
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I (nur Trampeln)
+    - name: Standfest
+    - name: Sturmangriff
+    - name: Unaufhaltsam
+    - name: Zerstörerisch I und II
+    waffen:
+    - AT: 16
+      RW: 2
+      TP: 2W20+5
+      TPP: '2'
+      TPW20: '5'
+      VT: 12
+      info: Niederwerfen (–12)
+      name: Faust
+    - AT: 18
+      RW: 5
+      RWM: 2
+      TP: 3W20+10
+      TPP: '3'
+      TPW20: '10'
+      VT: 12
+      info: Flächenangriff (180° vor dem Riesen), Niederwerfen (–16), Zurückstoßen
+      name: Baumstamm
+    - (wird nicht durch erfolgreiche VT: gestoppt)
+      AT: 16
+      RW: 1
+      TP: 4W20
+      TPP: 0
+      TPW20: '4'
+      VT: 6
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–16), Überrennen
+      name: Trampeln
+    - AT: 14
+      LZ: 1
+      RW: 16
+      TP: 3W20
+      TPP: 0
+      TPW20: '3'
+      info: Flächenangriff (1 Schritt Radius um das Hauptziel), Niederwerfen (–12)
+      name: Felsbrocken
+    werte:
+      GS: 9
+      INI: 6
+      MR: 16
+      WS: 16
+      WSE: 19
+      koloss: 2
+      schips: 4
   kampfunfähigkeit: Der Riese flieht, wenn er 6 Wunden erlitten hat.
-  kampfvorteile:
-  - Zusätzliche Attacke I (nur Trampeln)
-  - Standfest
-  - Sturmangriff
-  - Unaufhaltsam
-  - Zerstörerisch I und II
-  kampfwerte:
-    GS: 9
-    INI: 6
-    MR: 16
-    WS: 16
-    WSE: 19
-    koloss: 2
-    schips: 4
   name: Riese
   quelle: ilaris
   schwachpunkte: 'Im Nacken des Riesen, vom Boden unsichtbar, liegt eine armdicke
@@ -1344,9 +1411,7 @@ riese:
     müssen sich nur noch alle Umstehenden in Sicherheit bringen, wenn sich der Riese
     in Schmerzen zu Boden wirft und alles niederwalzt (in 3 Schritt Umkreis GE: oder
     Akrobatik 30, sonst 3W20 TP:  ). Das kostet den Riesen 1 Aktion und gibt Umstehenden
-    die Chance auf einen Passierschlag.
-
-    '
+    die Chance auf einen Passierschlag.'
   talente:
   - name: Laufen
     wert: 16
@@ -1354,77 +1419,45 @@ riese:
     wert: 10
   - name: Zähigkeit
     wert: 26
-  vorgehen: 'Eine Übermacht hält sich der Riese mit Befreiungsschlägen mit einem Baumstamm
+  vorgehen: Eine Übermacht hält sich der Riese mit Befreiungsschlägen mit einem Baumstamm
     vom Leib, während er die Gegner unter sich niedertrampelt. Wegen des Vorteils
     Unaufhaltsam sollte seinen Angriffen unbedingt ausgewichen werden. Sollte ihm
     ein Fernkämpfer oder Zauberer gefährlich werden, stürmt er auf ihn zu (und trampelt
     alles im Weg nieder) oder bewirft ihn mit gewaltigen Felsbrocken.
-
-    '
-  vorteile: Schreckgestalt II, Unbeugsamkeit, Willensstark II
-  waffen:
-  - AT: 16
-    RW: 2
-    TP: 2W20+5
-    TPP: '2'
-    TPW20: '5'
-    VT: 12
-    info: Niederwerfen (–12)
-    name: Faust
-  - AT: 18
-    RW: 2–5
-    TP: 3W20+10
-    TPP: '3'
-    TPW20: '10'
-    VT: 12
-    info: Flächenangriff (180° vor dem Riesen), Niederwerfen (–16), Zurückstoßen
-    name: Baumstamm
-  - (wird nicht durch erfolgreiche VT: gestoppt)
-    AT: 16
-    RW: 1
-    TP: 4W20
-    TPP: 0
-    TPW20: '4'
-    VT: 6
-    info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–16), Überrennen
-    name: Trampeln
-  - AT: 14
-    LZ: 1
-    RW: 16
-    TP: 3W20
-    TPP: 0
-    TPW20: '3'
-    info: Flächenangriff (1 Schritt Radius um das Hauptziel), Niederwerfen (–12)
-    name: Felsbrocken
+  vorteile:
+  - name: Schreckgestalt II
+  - name: Unbeugsamkeit
+  - name: Willensstark II
 riesenamoebe:
   beschreibung: allesfressender Schleimhaufen; großer Gegner
   id: riesenamoebe
-  kampfwerte:
-    GS: 1
-    INI: 0
-    MR: 14
-    WS: 6
+  kampf:
+    waffen:
+    - AT: 6
+      RW: 1
+      TP: 1W6+0
+      TPP: '0'
+      TPW: '1'
+      VT: 2
+      info: Umklammern (–2, 16), Ätzend (Ein Opfer in der Umklammerung erleidet in
+        jeder INI:phase 2W6 SP. Die Riesenamöbe kann nur ein Opfer Umklammern.)
+      name: Scheinarm
+    werte:
+      GS: 1
+      INI: 0
+      MR: 14
+      WS: 6
   name: Riesenamöbe
   talente:
   - name: Laufen
     wert: –8
   vorteile:
-  - Immunität (Niederwerfen
-  - Umreißen und ähnliche Effekte)
-  - Körperlosigkeit
-  - Resistenz I (Stichwaffen
-  - stumpfe Waffen)
-  - Schmerzimmun II
-  waffen:
-  - AT: 6
-    RW: 1
-    TP: 1W6+0
-    TPP: '0'
-    TPW: '1'
-    VT: 2
-    info: Umklammern (–2, 16), Ätzend (Ein Opfer in der Umklammerung erleidet in jeder
-      INI:phase 2W6 SP. Die Riesenamöbe kann nur ein Opfer Umklammern.)
-    name: Scheinarm
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
+  - name: Körperlosigkeit
+  - name: Resistenz I (Stichwaffen
+  - name: stumpfe Waffen)
+  - name: Schmerzimmun II
 riesenkaiman:
   attribute:
     KK: 20
@@ -1432,13 +1465,31 @@ riesenkaiman:
     MU: 10
   beschreibung: gefährlicher Jäger der südlichen Gewässer
   id: riesenkaiman
-  kampfvorteile:
-  - Zusätzliche Attacke I
-  kampfwerte:
-    GS: 4, schwimmend 4
-    INI: 4
-    MR: 4
-    WS: 13/15
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 8
+      RW: 0
+      TP: 4W6+4
+      TPP: '4'
+      TPW: '4'
+      VT: 6
+      info: Zerbrechlich
+      name: Biss
+    - AT: 6
+      RW: 2
+      TP: 1W6+2
+      TPP: '2'
+      TPW: '1'
+      VT: 2
+      info: Flächenangriff (90° hinter dem Kaiman), Niederwerfen
+      name: Schwanz
+    werte:
+      GS: 4, schwimmend 4
+      INI: 4
+      MR: 4
+      WS: 13/15
   name: Riesenkaiman
   quelle: ilaris
   talente:
@@ -1449,47 +1500,53 @@ riesenkaiman:
   - name: Wachsamkeit 6
     wert: null
   vorteile:
-  - Amphibisch
-  - Immunität (Niederwerfen
-  - Umreißen und ähnliche Effekte)
-  - Verwundbarkeit (Eis)
-  waffen:
-  - AT: 8
-    RW: 0
-    TP: 4W6+4
-    TPP: '4'
-    TPW: '4'
-    VT: 6
-    info: Zerbrechlich
-    name: Biss
-  - AT: 6
-    RW: 2
-    TP: 1W6+2
-    TPP: '2'
-    TPW: '1'
-    VT: 2
-    info: Flächenangriff (90° hinter dem Kaiman), Niederwerfen
-    name: Schwanz
+  - name: Amphibisch
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
+  - name: Verwundbarkeit (Eis)
 riesenkraken:
   attribute:
     KK: 22
     KO: 220
   beschreibung: Albtraum vieler Seefahrer; sehr großer Endgegner
   id: riesenkraken
-  kampfvorteile:
-  - Zusätzliche Attacke IV (nur Tentakel)
-  - Unaufhaltsam
-  kampfwerte:
-    GS: 6
-    INI: 2
-    MR: 20
-    WS: spezial
-    WSS: 'Rumpf 13/17, Koloss II
-
-      10 Tentakel 13/14
-
-      '
-    schips: 2
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke IV (nur Tentakel)
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 14
+      RW: 1
+      TP: 3W20+10
+      TPP: '3'
+      TPW20: '10'
+      VT: 2
+      info: Rüstungsbrechend
+      name: Biss (Rumpf)
+    - AT: 18
+      RW: 2–12
+      TP: 4W6+2
+      TPP: '2'
+      TPW: '4'
+      VT: 8
+      info: Flächenangriff (45°), Niederwerfen (–8), Zurückstoßen
+      name: Tentakelhieb
+    - AT: 15
+      RW: 2–10
+      TP: 4W6
+      TPP: 0
+      TPW: '4'
+      VT: 8
+      info: Umklammern (–4, 32)
+      name: Tentakelklammer
+    werte:
+      GS: 6
+      INI: 2
+      MR: 20
+      WS: spezial
+      WSS: Rumpf 13/17, 10 Tentakel 13/14
+      koloss: 2
+      schips: 2
   name: Riesenkraken
   quelle: ilaris
   schwachpunkte: 'Der Riesenkraken greift aus der Tiefe an, weswegen er hervorragend
@@ -1503,9 +1560,7 @@ riesenkraken:
     ersetzt die KK-Probe, nicht aber die IN-Probe. Die Verbrennungen führen zu einer
     Tobsucht, bei der der Kraken alle umklammerten Gegner loslässt und mit 6 Tentakeln
     und voller Offensive auf das Schiff einschlägt. Kampfunfähigkeit: Der Kraken flieht,
-    wenn er 4 Wunden erlitten oder die Hälfte seiner Tentakel verloren hat.
-
-    '
+    wenn er 4 Wunden erlitten oder die Hälfte seiner Tentakel verloren hat.'
   talente:
   - name: Pirschen
     wert: 14
@@ -1517,38 +1572,11 @@ riesenkraken:
     fest, während er mit den anderen das Deck verheert. Dazu nutzt er mindestens drei
     seiner zusätzlichen Attacken als Tentakelhiebe. Unterdessen versucht er, einzelne
     Opfer zu fressen: Zuerst umfasst er sie mit einer Tentakelklammer, in der nächsten
-    Aktion zieht er sie zu seinem Maul und in der übernächsten Aktion beißt er zu.
-
-    '
+    Aktion zieht er sie zu seinem Maul und in der übernächsten Aktion beißt er zu.'
   vorteile:
-  - Schreckgestalt III
-  - Wasserwesen
-  - Willensstark II
-  waffen:
-  - AT: 14
-    RW: 1
-    TP: 3W20+10
-    TPP: '3'
-    TPW20: '10'
-    VT: 2
-    info: Rüstungsbrechend
-    name: Biss (Rumpf)
-  - AT: 18
-    RW: 2–12
-    TP: 4W6+2
-    TPP: '2'
-    TPW: '4'
-    VT: 8
-    info: Flächenangriff (45°), Niederwerfen (–8), Zurückstoßen
-    name: Tentakelhieb
-  - AT: 15
-    RW: 2–10
-    TP: 4W6
-    TPP: 0
-    TPW: '4'
-    VT: 8
-    info: Umklammern (–4, 32)
-    name: Tentakelklammer
+  - name: Schreckgestalt III
+  - name: Wasserwesen
+  - name: Willensstark II
 ritter:
   attribute:
     CH: 10
@@ -1562,29 +1590,72 @@ ritter:
   beschreibung: erfahrener Veteran vieler Gefechte gegen den Ork
   id: ritter
   info: Mit einem * markierte Kampfstile sind nicht in die Kampfwerte eingerechnet.
-  kampfvorteile:
-  - 'Reiterkampf III* (VT, AT, TP:  +3)'
-  - 'abgesessen Schildkampf III* (VT:  +3) oder Kraftvoller Kampf III* (TP:  +3)'
-  - Ausfall
-  - Haltet stand!
-  - Hammerschlag
-  - Kampfreflexe
-  - Muskelprotz
-  - Niederwerfen
-  - Offensiver Kampfstil
-  - Rüstungsgewöhnung
-  - Durchatmen
-  kampfwerte:
-    GS: 2
-    GSR: 8
-    INI: 8
-    MR: 5
-    WS: 5
-    WSE: 9
+  kampf:
+    vorteile:
+    - name: 'Reiterkampf III* (VT, AT, TP:  +3)'
+    - name: 'abgesessen Schildkampf III* (VT:  +3) oder Kraftvoller Kampf III* (TP:  +3)'
+    - name: Ausfall
+    - name: Haltet stand!
+    - name: Hammerschlag
+    - name: Kampfreflexe
+    - name: Muskelprotz
+    - name: Niederwerfen
+    - name: Offensiver Kampfstil
+    - name: Rüstungsgewöhnung
+    - name: Durchatmen
+    waffen:
+    - AT: 11
+      RW: 1
+      TP: 2W6+6
+      TPP: '6'
+      TPW: '2'
+      VT: 11
+      info: Kopflastig
+      name: Breitschwert
+    - AT: 13
+      RW: 0
+      TP: 2W6+1
+      TPP: '1'
+      TPW: '2'
+      VT: 13
+      info: Schild, Stumpf
+      name: Großschild
+    - AT: 9
+      RW: 2
+      TP: 3W6+7
+      TPP: '7'
+      TPW: '3'
+      VT: 9
+      info: Kopflastig, Zweihändig
+      name: Andergaster
+    - AT: 9
+      RW: 2
+      TP: 3W6+4
+      TPP: '4'
+      TPW: '3'
+      VT: 0
+      name: Kriegslanze
+    - AT: 15
+      RW: 1
+      TP: 2W6+6
+      TPP: '6'
+      TPW: '2'
+      VT: 15
+      info: Niederwerfen
+      name: Tralloper
+    werte:
+      GS: 2
+      GSR: 8
+      INI: 8
+      MR: 5
+      WS: 5
+      WSE: 9
   name: Ritter
-  profanvorteile:
-  - Abgehärtet I und II
-  - Eindrucksvoll I
+  klasse: humanoid
+  profan:
+    vorteile:
+    - name: Abgehärtet I und II
+    - name: Eindrucksvoll I
   quelle: ilaris
   talente:
   - name: Anführen
@@ -1599,47 +1670,8 @@ ritter:
     wert: 7
   - name: Zähigkeit
     wert: 12
-  waffen:
-  - AT: 11
-    RW: 1
-    TP: 2W6+6
-    TPP: '6'
-    TPW: '2'
-    VT: 11
-    info: Kopflastig
-    name: Breitschwert
-  - AT: 13
-    RW: 0
-    TP: 2W6+1
-    TPP: '1'
-    TPW: '2'
-    VT: 13
-    info: Schild, Stumpf
-    name: Großschild
-  - AT: 9
-    RW: 2
-    TP: 3W6+7
-    TPP: '7'
-    TPW: '3'
-    VT: 9
-    info: Kopflastig, Zweihändig
-    name: Andergaster
-  - AT: 9
-    RW: 2
-    TP: 3W6+4
-    TPP: '4'
-    TPW: '3'
-    VT: 0
-    name: Kriegslanze
-  - AT: 15
-    RW: 1
-    TP: 2W6+6
-    TPP: '6'
-    TPW: '2'
-    VT: 15
-    info: Niederwerfen
-    name: Tralloper
 saebelzahntiger:
+  klasse: tier
   attribute:
     GE: 20
     KK: 20
@@ -1647,15 +1679,33 @@ saebelzahntiger:
     MU: 18
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
   id: saebelzahntiger
-  kampfvorteile:
-  - Standfest
-  - Sturmangriff
-  kampfwerte:
-    GS: 11
-    INI: 10
-    MR: 6
-    WS: 11
-    WSE: 12
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 16
+      RW: 1
+      TP: 2W6+4
+      TPP: '4'
+      TPW: '2'
+      VT: 12
+      info: Doppelangriff, Niederwerfen (–4)
+      name: Prankenhieb
+    - AT: 16
+      RW: 0
+      TP: 5W6+2
+      TPP: '2'
+      TPW: '5'
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 11
+      INI: 10
+      MR: 6
+      WS: 11
+      WSE: 12
   name: Säbelzahntiger
   quelle: ilaris
   talente:
@@ -1671,27 +1721,11 @@ saebelzahntiger:
   - 'Löwe (WS: –1,   attribute und TP:  –4)'
   - 'Panther (–1W6+2 TP, Pirschen 24, GE: 28, KO: 24, KK: 16)'
   vorteile:
-  - Angepasst II (Dunkelheit)
-  - Blitzschnell (erleidet keine Passierschläge
-  - wenn er sich aus dem Nahkampf zurückzieht)
-  waffen:
-  - AT: 16
-    RW: 1
-    TP: 2W6+4
-    TPP: '4'
-    TPW: '2'
-    VT: 12
-    info: Doppelangriff, Niederwerfen (–4)
-    name: Prankenhieb
-  - AT: 16
-    RW: 0
-    TP: 5W6+2
-    TPP: '2'
-    TPW: '5'
-    VT: 2
-    info: Zerbrechlich
-    name: Biss
+  - name: Angepasst II (Dunkelheit)
+  - name: Blitzschnell (erleidet keine Passierschläge
+  - name: wenn er sich aus dem Nahkampf zurückzieht)
 schroeter:
+  klasse: tier
   attribute:
     GE: 4
     KK: 8
@@ -1699,36 +1733,37 @@ schroeter:
     MU: 4
   beschreibung: Landplage oder exotisches Haustier
   id: schroeter
-  kampfvorteile:
-  - Doppelangriff
-  - Standfest
-  kampfwerte:
-    GS: 1
-    INI: 0
-    MR: 13
-    WS: 4
-    WSE: 7
+  kampf:
+    vorteile:
+    - name: Doppelangriff
+    - name: Standfest
+    waffen:
+    - AT: 9
+      RW: 1
+      TP: 2W6+2
+      TPP: '2'
+      TPW: '2'
+      VT: 4
+      info: Rüstungsbrechend, Umklammern (–2, 18)
+      name: Zange
+    - AT: 12
+      RW: 0
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 2
+      info: Rüstungsbrechend
+      name: Biss
+    werte:
+      GS: 1
+      INI: 0
+      MR: 13
+      WS: 4
+      WSE: 7
   name: Schröter
   talente:
   - Wachsamkeit 12
   - Zähigkeit 10
-  waffen:
-  - AT: 9
-    RW: 1
-    TP: 2W6+2
-    TPP: '2'
-    TPW: '2'
-    VT: 4
-    info: Rüstungsbrechend, Umklammern (–2, 18)
-    name: Zange
-  - AT: 12
-    RW: 0
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 2
-    info: Rüstungsbrechend
-    name: Biss
 skelett:
   attribute:
     GE: 4
@@ -1740,11 +1775,34 @@ skelett:
     beschwörung: Skelettarius oder Totes handle! (12) aus einer skelettierten Leiche,
       8 AsP
   id: skelett
-  kampfwerte:
-    GS: 3
-    INI: 2
-    MR: 5
-    WS: 4
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 0
+      TP: 1W6+2
+      TPP: '2'
+      TPW: '1'
+      VT: 5
+      name: Hände
+    - AT: 8
+      RW: 1
+      TP: 2W6+3
+      TPP: '3'
+      TPW: '2'
+      VT: 5
+      name: Streitaxt
+    - AT: 7
+      RW: 2
+      TP: 3W6+4
+      TPP: '4'
+      TPW: '3'
+      VT: 4
+      name: Stoßspeer
+    werte:
+      GS: 3
+      INI: 2
+      MR: 5
+      WS: 4
   name: Skelett
   quelle: ilaris
   talente:
@@ -1757,31 +1815,9 @@ skelett:
   varianten:
   - 'Anderen Waffen oder zusätzliche Rüstung (WS: +0/+1, Kampfwerte –1)'
   vorteile:
-  - Astralsinn
-  - Resistenz II (Stichwaffen)
-  - Rudel
-  waffen:
-  - AT: 8
-    RW: 0
-    TP: 1W6+2
-    TPP: '2'
-    TPW: '1'
-    VT: 5
-    name: Hände
-  - AT: 8
-    RW: 1
-    TP: 2W6+3
-    TPP: '3'
-    TPW: '2'
-    VT: 5
-    name: Streitaxt
-  - AT: 7
-    RW: 2
-    TP: 3W6+4
-    TPP: '4'
-    TPW: '3'
-    VT: 4
-    name: Stoßspeer
+  - name: Astralsinn
+  - name: Resistenz II (Stichwaffen)
+  - name: Rudel
 soeldner:
   attribute:
     CH: 6
@@ -1794,27 +1830,63 @@ soeldner:
     MU: 10
   beschreibung: verlässlicher Mietling oder undisziplinierter Halsabschneider
   id: soeldner
-  info: 'Der Söldner steht beispielhaft für alle humanoiden Gegner
-
-    mit gewisser Kampferfahrung. Er stellt für unerfahrene Kämpfercharak-
-
-    tere eine gewisse Herausforderung dar und ist Nichtkämpfern überlegen.
-
-
-    Kampfstile mit * sind nicht in die Kampfwerte eingerechnet.
-
-    '
-  kampfvorteile:
-  - 'Schildkampf I* (VT:  +1) oder Kraftvoller Kampf I* (TP:  +1) oder Schneller Kampf
-    I* (AT:  +1)'
-  - Niederwerfen
-  - Rüstungsgewöhnung
-  kampfwerte:
-    GS: 5
-    INI: 3
-    MR: 5
-    WS: 5
-    WSE: 6
+  info: Der Söldner steht beispielhaft für alle humanoiden Gegner mit gewisser Kampferfahrung.
+    Er stellt für unerfahrene Kämpfercharak- tere eine gewisse Herausforderung dar
+    und ist Nichtkämpfern überlegen. Kampfstile mit * sind nicht in die Kampfwerte
+    eingerechnet.
+  kampf:
+    vorteile:
+    - name: 'Schildkampf I* (VT:  +1)'
+    - name: 'Kraftvoller Kampf I* (TP:  +1)'
+    - name: 'Schneller Kampf I* (AT:  +1)'
+    - name: Niederwerfen
+    - name: Rüstungsgewöhnung
+    waffen:
+    - AT: 11
+      RW: 1
+      TP: 2W6+3
+      TPP: '3'
+      TPW: '2'
+      VT: 11
+      name: Säbel
+    - AT: 11
+      RW: 1
+      TP: 2W6+3
+      TPP: '3'
+      TPW: '2'
+      VT: 11
+      info: Kopflastig
+      name: Streitaxt
+    - AT: 12
+      RW: 0
+      TP: 1W6
+      TPP: 0
+      TPW: '1'
+      VT: 12
+      info: Schild, Stumpf
+      name: Holzschild
+    - AT: 11
+      RW: 2
+      TP: 3W6
+      TPP: 0
+      TPW: '3'
+      VT: 11
+      info: Wendig, Zweihändig
+      name: Speer
+    - AT: 11
+      RW: 2
+      TP: 2W6+3
+      TPP: '3'
+      TPW: '2'
+      VT: 11
+      info: Kopflastig, Rüstungsbrechend, Zweihändig
+      name: Hellebarde
+    werte:
+      GS: 5
+      INI: 3
+      MR: 5
+      WS: 5
+      WSE: 6
   name: Söldner
   quelle: ilaris
   talente:
@@ -1828,46 +1900,6 @@ soeldner:
   - 'Söldnerveteran (WS: +0/+1, INI: +5, Kampffertigkeiten +2, Kampfstil auf Stufe
     II, Kampfreflexe, Standfest, Waffenloser Kampf, Durchatmen und leicht erhöhte   attribute
     und Fertigkeiten)'
-  waffen:
-  - AT: 11
-    RW: 1
-    TP: 2W6+3
-    TPP: '3'
-    TPW: '2'
-    VT: 11
-    name: Säbel
-  - AT: 11
-    RW: 1
-    TP: 2W6+3
-    TPP: '3'
-    TPW: '2'
-    VT: 11
-    info: Kopflastig
-    name: Streitaxt
-  - AT: 12
-    RW: 0
-    TP: 1W6
-    TPP: 0
-    TPW: '1'
-    VT: 12
-    info: Schild, Stumpf
-    name: Holzschild
-  - AT: 11
-    RW: 2
-    TP: 3W6
-    TPP: 0
-    TPW: '3'
-    VT: 11
-    info: Wendig, Zweihändig
-    name: Speer
-  - AT: 11
-    RW: 2
-    TP: 2W6+3
-    TPP: '3'
-    TPW: '2'
-    VT: 11
-    info: Kopflastig, Rüstungsbrechend, Zweihändig
-    name: Hellebarde
 soeldnerkommandant:
   attribute:
     CH: 16
@@ -1880,30 +1912,57 @@ soeldnerkommandant:
     MU: 14
   beschreibung: charismatischer Befehlshaber einer größeren Einheit
   id: soeldnerkommandant
-  kampfvorteile:
-  - Schneller Kampf II
-  - Defensiver Kampfstil
-  - Formiert euch!
-  - Haltet stand!
-  - Kampfreflexe
-  - Keine Gefangenen!
-  - Niederwerfen
-  - Rüstungsgewöhnung
-  - Standfest
-  - Sturmangriff
-  - Durchatmen
-  kampfwerte:
-    GS: 5
-    INI: 10
-    MR: 13
-    WS: 5
-    WSE: 7
+  kampf:
+    vorteile:
+    - name: Schneller Kampf II
+    - name: Defensiver Kampfstil
+    - name: Formiert euch!
+    - name: Haltet stand!
+    - name: Kampfreflexe
+    - name: Keine Gefangenen!
+    - name: Niederwerfen
+    - name: Rüstungsgewöhnung
+    - name: Standfest
+    - name: Sturmangriff
+    - name: Durchatmen
+    waffen:
+    - AT: 16
+      RW: 2
+      TP: 2W6+5
+      TPP: '5'
+      TPW: '2'
+      VT: 14
+      info: Wendig, Zweihändig
+      name: Tuzakmesser
+    - AT: 16
+      RW: 0
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 14
+      info: Wendig
+      name: Kurzschwert
+    - AT: 8
+      RW: 0
+      TP: 1W6+1
+      TPP: '1'
+      TPW: '1'
+      VT: 8
+      info: Stumpf, Zerbrechlich
+      name: Faust
+    werte:
+      GS: 5
+      INI: 10
+      MR: 13
+      WS: 5
+      WSE: 7
   name: Söldnerkommandant
-  profanvorteile:
-  - Abgehärtet I
-  - Soziale Anpassungsfähigkeit
-  - Eindrucksvoll I und II
-  - Vorausschauend I und II
+  profan:
+    vorteile:
+    - name: Abgehärtet I
+    - name: Soziale Anpassungsfähigkeit
+    - name: Eindrucksvoll I und II
+    - name: Vorausschauend I und II
   talente:
   - name: Anführen
     wert: 15
@@ -1915,32 +1974,8 @@ soeldnerkommandant:
     wert: 12
   - name: Überreden
     wert: 13
-  vorteile: Willensstark I und II
-  waffen:
-  - AT: 16
-    RW: 2
-    TP: 2W6+5
-    TPP: '5'
-    TPW: '2'
-    VT: 14
-    info: Wendig, Zweihändig
-    name: Tuzakmesser
-  - AT: 16
-    RW: 0
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 14
-    info: Wendig
-    name: Kurzschwert
-  - AT: 8
-    RW: 0
-    TP: 1W6+1
-    TPP: '1'
-    TPW: '1'
-    VT: 8
-    info: Stumpf, Zerbrechlich
-    name: Faust
+  vorteile:
+  - name: Willensstark I und II
 stadtwache:
   attribute:
     CH: 8
@@ -1953,19 +1988,46 @@ stadtwache:
     MU: 8
   beschreibung: stets beschäftigter Hüter von Recht und Ordnung
   id: stadtwache
-  kampfvorteile:
-  - Schneller Kampf I
-  - Standfest
-  kampfwerte:
-    GS: 4
-    INI: 6
-    MR: 5
-    WS: 4
-    WSE: 5
+  kampf:
+    vorteile:
+    - name: Schneller Kampf I
+    - name: Standfest
+    waffen:
+    - AT: 8
+      RW: 2
+      TP: 2W6+2
+      TPP: '2'
+      TPW: '2'
+      VT: 7
+      info: Kopflastig, Rüstungsbrechend, Zweihändig
+      name: Hellebarde
+    - AT: 10
+      RW: 0
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 9
+      info: Wendig
+      name: Kurzschwert
+    - FK: 8
+      LZ: 4
+      RW: 20
+      TP: 3W6+1
+      TPP: '1'
+      TPW: '3'
+      info: Zweihändig
+      name: Leichte Armbrust
+    werte:
+      GS: 4
+      INI: 6
+      MR: 5
+      WS: 4
+      WSE: 5
   name: Stadtwache
-  profanvorteile:
-  - Vorausschauend I und II
-  - Scharfsinnig I
+  profan:
+    vorteile:
+    - name: Vorausschauend I und II
+    - name: Scharfsinnig I
   quelle: ilaris
   talente:
   - name: Einschüchtern
@@ -1974,36 +2036,45 @@ stadtwache:
     wert: 8
   - name: Menschenkenntnis
     wert: 11
-  waffen:
-  - AT: 8
-    RW: 2
-    TP: 2W6+2
-    TPP: '2'
-    TPW: '2'
-    VT: 7
-    info: Kopflastig, Rüstungsbrechend, Zweihändig
-    name: Hellebarde
-  - AT: 10
-    RW: 0
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 9
-    info: Wendig
-    name: Kurzschwert
-  - FK: 8
-    LZ: 4
-    RW: 20
-    TP: 3W6+1
-    TPP: '1'
-    TPW: '3'
-    info: Zweihändig
-    name: Leichte Armbrust
 sumupriester:
-  astral:
+  attribute:
+    CH: 8
+    FF: 4
+    GE: 4
+    IN: 16
+    KK: 4
+    KL: 16
+    KO: 8
+    MU: 10
+  beschreibung: Beschützer der Natur, weiser Ratgeber, unerbittlicher Feind
+  id: sumupriester
+  kampf:
+    waffen:
+    - AT: 9
+      RW: 2
+      TP: 1W6+1
+      TPP: '1'
+      TPW: '1'
+      VT: 9
+      info: Stumpf, Wendig, Zweihändig
+      name: Kampfstab
+    - AT: 4
+      RW: 0
+      TP: 1W6+1
+      TPP: '1'
+      TPW: '1'
+      VT: 4
+      info: Magisch, Unzerstörbar
+      name: Vulkanglasdolch
+    werte:
+      GS: 4
+      INI: 8
+      MR: 5
+      WS: 5
+  magie:
     asp: 38
     fertigkeiten:
-    - name: Dolchrituale 9
+    - name: Dolchrituale
       talente:
       - Blut des Dolches
       - Ernte des Dolches
@@ -2034,33 +2105,18 @@ sumupriester:
       - Schutz des Dolches
       - Wettermeisterschaft
       wert: 11
-    tradition: Tradition der Druiden III
     vorteile:
-    - Astrale Regeneration
-    - Effizientes Zaubern
-    - Flexibles Zaubern
-    - Kontrolliertes Zaubern
-    - Kraftlinienmagie
-    - Unitatio
-  attribute:
-    CH: 8
-    FF: 4
-    GE: 4
-    IN: 16
-    KK: 4
-    KL: 16
-    KO: 8
-    MU: 10
-  beschreibung: Beschützer der Natur, weiser Ratgeber, unerbittlicher Feind
-  id: sumupriester
-  kampfwerte:
-    GS: 4
-    INI: 8
-    MR: 5
-    WS: 5
+    - name: Astrale Regeneration
+    - name: Effizientes Zaubern
+    - name: Flexibles Zaubern
+    - name: Kontrolliertes Zaubern
+    - name: Kraftlinienmagie
+    - name: Unitatio
+    - name: Tradition der Druiden III
   name: Sumupriester
-  profanvorteile:
-  - Scharfsinnig I und II
+  profan:
+    vorteile:
+    - name: Scharfsinnig I und II
   quelle: ilaris
   talente:
   - name: Andergast & Nostria
@@ -2083,39 +2139,48 @@ sumupriester:
     wert: 10
   - name: Willenskraft
     wert: 8
-  waffen:
-  - AT: 9
-    RW: 2
-    TP: 1W6+1
-    TPP: '1'
-    TPW: '1'
-    VT: 9
-    info: Stumpf, Wendig, Zweihändig
-    name: Kampfstab
-  - AT: 4
-    RW: 0
-    TP: 1W6+1
-    TPP: '1'
-    TPW: '1'
-    VT: 4
-    info: Magisch, Unzerstörbar
-    name: Vulkanglasdolch
 tatzelwurm:
   attribute:
     KK: 26
     KO: 32
   beschreibung: stinkender Vertreter der niederen Drachen; großer Gegner
   id: tatzelwurm
-  kampfvorteile:
-  - Zusätzliche Attacke I
-  - Standfest
-  kampfwerte:
-    GS: 3
-    INI: 2
-    MR: 8
-    WS: 10
-    WSE: 12
-    koloss: 1
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    - name: Standfest
+    waffen:
+    - AT: 15
+      RW: 1
+      TP: 4W6+2
+      TPP: '2'
+      TPW: '4'
+      VT: 4
+      info: Zerbrechlich
+      name: Biss
+    - AT: 12
+      RW: 1
+      TP: 3W6+1
+      TPP: '1'
+      TPW: '3'
+      VT: 6
+      info: Niederwerfen (–4)
+      name: Klauen
+    - AT: 10
+      RW: 2
+      TP: 2W6+1
+      TPP: '1'
+      TPW: '2'
+      VT: 4
+      info: Niederwerfen, Flächenangriff (180° hinter dem Wurm)
+      name: Schwanz
+    werte:
+      GS: 3
+      INI: 2
+      MR: 8
+      WS: 10
+      WSE: 12
+      koloss: 1
   name: Tatzelwurm
   quelle: ilaris
   talente:
@@ -2124,36 +2189,11 @@ tatzelwurm:
   - name: Wachsamkeit
     wert: 8
   vorteile:
-  - Aura (Gestank
-  - Zähigkeit (16) jede INI:phase
-  - –2 auf körperliche Proben (kumulativ) für 1 Tag)
-  - Resistenz I (Feuer)
-  - Schreckgestalt I
-  waffen:
-  - AT: 15
-    RW: 1
-    TP: 4W6+2
-    TPP: '2'
-    TPW: '4'
-    VT: 4
-    info: Zerbrechlich
-    name: Biss
-  - AT: 12
-    RW: 1
-    TP: 3W6+1
-    TPP: '1'
-    TPW: '3'
-    VT: 6
-    info: Niederwerfen (–4)
-    name: Klauen
-  - AT: 10
-    RW: 2
-    TP: 2W6+1
-    TPP: '1'
-    TPW: '2'
-    VT: 4
-    info: Niederwerfen, Flächenangriff (180° hinter dem Wurm)
-    name: Schwanz
+  - name: Aura (Gestank)
+  - name: Zähigkeit (16) jede INI:phase
+  - name: –2 auf körperliche Proben (kumulativ) für 1 Tag)
+  - name: Resistenz I (Feuer)
+  - name: Schreckgestalt I
 troll:
   attribute:
     KK: 32
@@ -2162,18 +2202,44 @@ troll:
     MU: 12
   beschreibung: jähzorniger Überlebender einer uralten Kultur; großer Gegner
   id: troll
-  kampfvorteile:
-  - Ausfall
-  - Kraftvoller Kampf III (Befreiungsschlag)
-  - Atemtechnik
-  - Sturmangriff
-  kampfwerte:
-    GS: 7
-    INI: 3
-    MR: 8
-    WS: 12
-    WSE: 13
-    koloss: 1
+  kampf:
+    vorteile:
+    - name: Ausfall
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Atemtechnik
+    - name: Sturmangriff
+    waffen:
+    - AT: 15
+      RW: 1
+      TP: 4W6+1
+      TPP: '1'
+      TPW: '4'
+      VT: 9
+      info: Niederwerfen (–4), Stumpf
+      name: Faust
+    - AT: 14
+      RW: 2
+      TP: 5W6+4
+      TPP: '4'
+      TPW: '5'
+      VT: 8
+      info: Niederwerfen (–8), Stumpf
+      name: Keule
+    - AT: 15
+      RW: 2
+      TP: 6W6+4
+      TPP: '4'
+      TPW: '6'
+      VT: 9
+      info: Niederwerfen (–8)
+      name: Axt
+    werte:
+      GS: 7
+      INI: 3
+      MR: 8
+      WS: 12
+      WSE: 13
+      koloss: 1
   name: Troll
   quelle: ilaris
   talente:
@@ -2183,33 +2249,35 @@ troll:
     wert: 8
   - name: Wachsamkeit
     wert: 12
-  waffen:
-  - AT: 15
-    RW: 1
-    TP: 4W6+1
-    TPP: '1'
-    TPW: '4'
-    VT: 9
-    info: Niederwerfen (–4), Stumpf
-    name: Faust
-  - AT: 14
-    RW: 2
-    TP: 5W6+4
-    TPP: '4'
-    TPW: '5'
-    VT: 8
-    info: Niederwerfen (–8), Stumpf
-    name: Keule
-  - AT: 15
-    RW: 2
-    TP: 6W6+4
-    TPP: '4'
-    TPW: '6'
-    VT: 9
-    info: Niederwerfen (–8)
-    name: Axt
 waldschrat:
-  astral:
+  attribute:
+    KK: 32
+    KO: 34
+    MU: 12
+  beschreibung: baumartiger Hüter der Wälder; großer Gegner
+  id: waldschrat
+  kampf:
+    vorteile:
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Atemtechnik
+    - name: Standfest
+    waffen:
+    - AT: 15
+      RW: 1
+      TP: 5W6
+      TPP: 0
+      TPW: '5'
+      VT: 6
+      info: Niederwerfen (–4)
+      name: Asthieb
+    werte:
+      GS: 6
+      INI: 3
+      MR: 10
+      WS: 10
+      WSE: 14
+      koloss: I
+  magie:
     asp: 16 AsP
     fertigkeiten:
     - name: Humus
@@ -2221,23 +2289,6 @@ waldschrat:
       - Wand aus Dornen
       - Weisheit der Bäume
       wert: 12
-  attribute:
-    KK: 32
-    KO: 34
-    MU: 12
-  beschreibung: baumartiger Hüter der Wälder; großer Gegner
-  id: waldschrat
-  kampfvorteile:
-  - Kraftvoller Kampf III (Befreiungsschlag)
-  - Atemtechnik
-  - Standfest
-  kampfwerte:
-    GS: 6
-    INI: 3
-    MR: 10
-    WS: 10
-    WSE: 14
-    koloss: I
   name: Waldschrat
   quelle: ilaris
   talente:
@@ -2250,17 +2301,8 @@ waldschrat:
   varianten:
   - Nichtmagischer Waldschrat (verfügt über keine Magie)
   vorteile:
-  - Tarnung (im Wald)
-  - Verwundbarkeit I (Feuer)
-  waffen:
-  - AT: 15
-    RW: 1
-    TP: 5W6
-    TPP: 0
-    TPW: '5'
-    VT: 6
-    info: Niederwerfen (–4)
-    name: Asthieb
+  - name: Tarnung (im Wald)
+  - name: Verwundbarkeit I (Feuer)
 weisserhetzer:
   attribute:
     GE: 16
@@ -2272,17 +2314,26 @@ weisserhetzer:
   beschwörung: Chimaeroform (16) aus einem Wolf und einem Karmanath oder Tuur-Amash,
     16 AsP
   id: weisserhetzer
-  kampfvorteile:
-  - Zusätzliche Attacke I
-  - Niederwerfen
-  - Standfest
-  - Sturmangriff
-  kampfwerte:
-    GS: 8
-    INI: 5
-    MR: 7
-    WS: 4
-    WSE: 5
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 11
+      RW: 1
+      TP: 2W6+2
+      TPP: '2'
+      TPW: '2'
+      VT: 9
+      name: Biss
+    werte:
+      GS: 8
+      INI: 5
+      MR: 7
+      WS: 4
+      WSE: 5
   name: Weisser Hetzer
   quelle: ilaris
   talente:
@@ -2293,15 +2344,7 @@ weisserhetzer:
   - name: Wachsamkeit
     wert: 18
   vorteile:
-  - Angepasst II (Dunkelheit)
-  waffen:
-  - AT: 11
-    RW: 1
-    TP: 2W6+2
-    TPP: '2'
-    TPW: '2'
-    VT: 9
-    name: Biss
+  - name: Angepasst II (Dunkelheit)
 wildschwein:
   attribute:
     GE: 8
@@ -2309,16 +2352,26 @@ wildschwein:
     KO: 22
   beschreibung: gefräßiger Schädling und goblinisches Reittier
   id: wildschwein
-  kampfvorteile:
-  - Standfest
-  - Sturmangriff
-  - im Reiterkampf WM +0
-  kampfwerte:
-    GS: 7
-    INI: 3
-    MR: 3
-    WS: 9
-    WSE: 11
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Sturmangriff
+    - name: im Reiterkampf WM +0
+    waffen:
+    - AT: 10
+      RW: 0
+      TP: 2W6+4
+      TPP: '4'
+      TPW: '2'
+      VT: 3
+      info: Niederwerfen
+      name: Stoß
+    werte:
+      GS: 7
+      INI: 3
+      MR: 3
+      WS: 9
+      WSE: 11
   name: Wildschwein
   quelle: ilaris
   talente:
@@ -2332,15 +2385,6 @@ wildschwein:
     wert: 4
   varianten:
   - 'Kriegswildschwein (WS: 11/13, TP:  +2, WM +1)'
-  waffen:
-  - AT: 10
-    RW: 0
-    TP: 2W6+4
-    TPP: '4'
-    TPW: '2'
-    VT: 3
-    info: Niederwerfen
-    name: Stoß
 wolf:
   attribute:
     GE: 14
@@ -2349,16 +2393,26 @@ wolf:
     MU: 6
   beschreibung: verbreitetes Rudeltier
   id: wolf
-  kampfvorteile:
-  - Niederwerfen
-  - Standfest
-  - Sturmangriff
-  kampfwerte:
-    GS: 8
-    INI: 2
-    MR: 2
-    WS: 4
-    WSE: 5
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 6
+      RW: 0
+      TP: 2W6
+      TPP: 0
+      TPW: '2'
+      VT: 6
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 2
+      MR: 2
+      WS: 4
+      WSE: 5
   name: Wolf
   quelle: ilaris
   talente:
@@ -2377,13 +2431,4 @@ wolf:
   - 'Rudelführer (WS: +2/+2, Kampfwerte +4, TP:  +2, Anführen 15, zusätzlich Haltet
     stand!, Keine Gefangenen!)'
   vorteile:
-  - Angepasst II (Dunkelheit)
-  waffen:
-  - AT: 6
-    RW: 0
-    TP: 2W6
-    TPP: 0
-    TPW: '2'
-    VT: 6
-    info: Zerbrechlich
-    name: Biss
+  - name: Angepasst II (Dunkelheit)
