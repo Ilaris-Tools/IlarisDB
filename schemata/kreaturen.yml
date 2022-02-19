@@ -1,0 +1,99 @@
+map(include('kreatur'))
+---
+kreatur:
+  name: str()
+  beschreibung: str()
+  quelle: str(required=False)
+  id: str(required=False)
+  klasse: str(required=False)
+  info: str(required=False)
+  attribute: map(required=False)
+  talente: list(include('talent'), required=False)
+  freiefertigkeiten: list(include('fertigkeit'), required=False)
+  vorteile: list(include('vorteil'), required=False)
+  kampf: include('kampf', required=False)
+  profan: include('profan', required=False)
+  magie: include('magie', required=False)
+  karma: include('karma', required=False)
+  pakt: include('pakt', required=False)
+  sonstiges: include('sonstiges', required=False)
+  varianten: list(str(), required=False)
+  tools: map(required=False)
+---
+kampf:
+  vorteile: list(include('vorteil'), required=False)
+  fertigkeiten: list(include('fertigkeit'), required=False)
+  werte: include('kampfwerte', required=False)
+  waffen: list(include('waffe'), required=False)
+---
+profan:
+  vorteile: list(include('vorteil'), required=False)
+  fertigkeiten: list(include('fertigkeit'), required=False)
+---
+magie:
+  vorteile: list(include('vorteil'), required=False)
+  fertigkeiten: list(include('fertigkeit'), required=False)
+  asp: int(required=False)
+---
+karma: 
+  vorteile: list(include('vorteil'))
+  fertigkeiten: list(include('fertigkeit'))
+  kap: int(required=False)
+---
+pakt: 
+  vorteile: list(include('vorteil'))
+  fertigkeiten: list(include('fertigkeit'))
+  gup: int(required=False)
+---
+sonstiges:
+  beschwörung: str(required=False)
+  beispieldienste: str(required=False)
+  vorgehen: str(required=False)
+  schwachpunkte: str(required=False)
+---
+vorteil:
+  id: str(required=False)
+  name: str(required=False)
+  stufe: int(required=False)
+  detail: str(required=False)
+  info: str(required=False)
+---
+fertigkeit:
+  id: str(required=False)
+  name: str(required=False)
+  wert: int(required=False)
+  talente: list(include('talent'), required=False)
+---
+talent:
+  id: str(required=False)
+  name: str(required=False)
+  wert: int(required=False)
+---
+waffe:
+  name: str()
+  id: str(required=False)
+  AT: int(required=False)
+  VT: int(required=False)
+  FK: int(required=False)
+  LZ: int(required=False)
+  TP: str(required=False)
+  TPP: int(required=False)
+  TPW: int(required=False)
+  TPW20: int(required=False)
+  RW: int(required=False)
+  RWM: int(required=False)
+  info: str(required=False)
+---
+kampfwerte:
+  WS: int(required=False)
+  WSE: int(required=False)
+  WSS: str(required=False)
+  MR: int(required=False)
+  koloss: int(required=False)
+  GS: int(required=False)
+  GSS: int(required=False)
+  GSR: int(required=False)
+  GSF: int(required=False)
+  INI: int(required=False)
+  schips: int(required=False)
+  info: str(required=False)
