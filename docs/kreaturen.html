@@ -4,13 +4,13 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="docs/css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body>
     <ul>
         {% for k in site.data.kreaturen %}
-        <li>{{ k[1] }}</li>
+        <li>{{ k[1].name }}</li>
         {% endfor %}
     </ul>
 </body>
