@@ -8,11 +8,26 @@
 </head>
 
 <body>
-    <ul>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">DB</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Kreaturen</li>
+        </ol>
+    </nav>
+    <div>
         {% for k in site.data.kreaturen %}
-        <li>{{ k[1].name }}</li>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ k[1].name }}
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ k[1].beschreibung }}</h6>
+                <p class="card-text">{% for att in k[1].attribute %}{{ att[0] }}: {{ att[1]}} {% endfor %}</p>
+                <a href="#" class="card-link">Mehr Anzeigen</a>
+            </div>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 </body>
 
 </html>
