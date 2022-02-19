@@ -3,10 +3,14 @@
 
 <html>
 
+<head>
+    <link rel="stylesheet" href="docs/css/style.css">
+</head>
+
 <body>
     <ul>
         {% for k in site.data.kreaturen %}
-        <li>{{ k[0] }}</li>
+        <li>{{ k[1] }}</li>
         {% endfor %}
     </ul>
 </body>
