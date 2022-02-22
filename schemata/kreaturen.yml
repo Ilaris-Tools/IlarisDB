@@ -3,6 +3,7 @@ map(include('kreatur'))
 kreatur:
   name: str()
   beschreibung: str()
+  klasse: str()
   quelle: str(required=False)
   id: str(required=False)
   klasse: str(required=False)
@@ -17,8 +18,10 @@ kreatur:
   karma: include('karma', required=False)
   pakt: include('pakt', required=False)
   sonstiges: include('sonstiges', required=False)
-  varianten: list(str(), required=False)
+  varianten: list(include('variante'), required=False)
   tools: map(required=False)
+  variantevon: str(required=False)
+  unterschied: str(required=False)
 ---
 kampf:
   vorteile: list(include('vorteil'), required=False)

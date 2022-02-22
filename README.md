@@ -1,6 +1,19 @@
 # IlarisDB
 Sammelstelle für strukturierte Ilaris Daten, wie Kreaturen, NSCs, Zauber usw..
 
+## Begriffe und Abkürzungen
+Ich habe ein paar zusätzliche Abkürzungen und Felder verwendet um besimte Dinge feiner aufzusplitten, bzw. eindeutige Datentypen zuweisen zu können (zB. TP `2W6+4` teilt sich auf in TPW: `2` und TPP: `4`). Hier ist eine Liste die ich versuche aktuell zu halten:
+
+* `GSF` Geschwindigkeit (fliegend)
+* `GSR` Geschwindigkeit (reitend)
+* `GSS` Geschwindigkeit (schwimmend)
+* `RWM` Minimale Reichweite, wenn ein Bereich als RW angegeben ist
+* `TPP` TP Plus.. der Wert der zum Würfel addiert wird.
+* `TPW` Die Anzahl W6 für TP Wurf
+* `TPW20` Anzahl W20 (nicht kombinierbar mit `TPW`)
+* `WSE` Effektive Wundsschwelle (WS*)
+* `WSS` Spezielle Wundschwelle als Text (in kombination mit WS=-1)
+
 ## Die Datenbank
 Wir haben vorerst davon abgesehen eine "echte" Datenbank zu erstellen, da sich strukturierte Textdateien vorerst einfacher handhaben lassen und nicht verloren gehen falls das Projekt einschläft. Das Ziel ist hier Daten rund um das Ilaris Regelsystem strukturiert zu sammeln, sodass sie von anderen Tools genutzt werden können. Mit einfachen Scripten könnten zum Beispiel Tokens für VTTs oder Monsterboxen für das Latex-Template generiert werden. 
 
@@ -9,6 +22,7 @@ Der Kern der Informationen sind die einfach zu handhabenden yaml-Dateien im Ordn
 
 #### Schema
 TODO: 
+
 
 ## Daten
 
