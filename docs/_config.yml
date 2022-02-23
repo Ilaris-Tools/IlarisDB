@@ -22,7 +22,7 @@ title: IllarisDB
 email: mail@sarbot.de
 description: >- # this means to ignore newlines until "baseurl:"
   Eine Datenbank und Webansicht für Kreaturen und andere Dinge in Ilaris.
-baseurl: "/IllarisDB/" # the subpath of your site, e.g. /blog
+baseurl: "/IllarisDB" # the subpath of your site, e.g. /blog
 url: "https://ilaris-dev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  lukruh
