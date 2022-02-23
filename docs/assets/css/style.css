@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Courgette:200,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:200,300,400,500,600);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Pro);
+
+@font-face {
+    font-family: Aniron;
+    src: url(/assets/fonts/aniron.regular.ttf);
+}
+
+body {
+    font-family: Crimson Pro;
+
+}
+a {
+    color: #450c15;
+}
+
+code {
+    color: #c17239;
+}
+
+strong {
+    font-family: Cinzel;
+    color: #450c15;
+}
+
+h1,h2 {
+    font-family: Aniron;
+    color: #450c15;
+}
+
+h3,h4 {
+    font-family: Cinzel;
+    color: #450c15;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+
+
+.navbar {
+    border-bottom:1px solid #450c15;
+    border-radius: 0px;
+}
+
+a.navlink {
+    color: #450c15;
+}
+
+.card.togglecard {
+    visibility: hidden;
+    display: none;
+}
+
+.card.togglecard.active {
+    visibility: visible;
+    display: block;
+}
+
+h5.card-title {
+    font-family: Cinzel;
+    color: #450c15;
+    font-weight: bold;
+}
+
+.flex-vertical-center { 
+    align-items: center; 
+} 
+
+.textblock {
+    padding: 1rem;
+}
+
+hr {
+    color: #450c15;
+    margin: 0;
+}
+
+.list-group-item.active {
+    color: black;
+    background-color: #d8bcbd44;
+    border-color: #450c15;
+}
+
+.list-group-item-action:hover{
+    background-color: #fff8dd66;
+}
+
+.tagbox {
+    display: flex;
+    justify-content: space-between;
+}

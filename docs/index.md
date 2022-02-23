@@ -3,6 +3,5 @@ layout: default
 ---
 
 ## IlarisDB
-Hier könnte ein kleiner DB-Explorer entstehen.
+Hier entsteht die Dokumentation und ein Webbrowser für die aktuelle version, der IlarisDB.
 
-[Kreaturen](kreaturen.html)

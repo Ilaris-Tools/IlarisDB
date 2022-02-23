@@ -15,7 +15,8 @@ Ich habe ein paar zusätzliche Abkürzungen und Felder verwendet um besimte Ding
 * `WSS` Spezielle Wundschwelle als Text (in kombination mit WS=-1)
 
 ## Die Datenbank
-Wir haben vorerst davon abgesehen eine "echte" Datenbank zu erstellen, da sich strukturierte Textdateien vorerst einfacher handhaben lassen und nicht verloren gehen falls das Projekt einschläft. Das Ziel ist hier Daten rund um das Ilaris Regelsystem strukturiert zu sammeln, sodass sie von anderen Tools genutzt werden können. Mit einfachen Scripten könnten zum Beispiel Tokens für VTTs oder Monsterboxen für das Latex-Template generiert werden. 
+Wir haben vorerst davon abgesehen eine "echte" Datenbank zu erstellen, da sich strukturierte Textdateien einfacher handhaben lassen und nicht verloren gehen falls das Projekt einschläft. Das Ziel ist hier Daten rund um das Ilaris Regelsystem strukturiert zu sammeln, sodass sie von anderen Tools genutzt werden können. Mit einfachen Scripten können zum Beispiel Tokens für VTTs oder Monsterboxen für das Latex-Template generiert werden. Die einzelnen "tabellen" liegen im Ordner `daten`, die tabellen können durch ids aufeinander verweisen, sind aber ohne Probleme einzeln nutzbar. 
+[Weitere Infos]()
 
 ### Struktur
 Der Kern der Informationen sind die einfach zu handhabenden yaml-Dateien im Ordner `Daten` sein. Jede Datei kann dabei als eine Art Tabelle verstanden werden, in denen Inhaltlich ähnlich aufgebaute Objekte gespeichert werden. Zum Beispiel `vorteile.yaml` oder `kreaturen.yaml`. Die Dateien sollen dabei lose verknüpft sein, das heisst, in den Vorteilen einer Kreatur beispielsweise, kann eine `id` (einzigartiges Wort ohne Sonderzeichen) hinterlegt werden über die Details zum jeweiligen voteil aus einer anderen Datei ausgelesen werden. Idee der losen Kopplung ist, dass sich jeder nur das herauspicken kann, was er/sie braucht ohne dabei auf eine aktuelle konsistente und vollständige Datenbank achten zu müssen. 
