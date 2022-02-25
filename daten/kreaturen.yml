@@ -5,6 +5,11 @@ altergolem:
     KO: 28
     MU: 12
   beschreibung: hinterhältiger Jäger aus Stein
+  eigenschaften:
+  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
+  - name: Angepasst II (Dunkelheit)
+  - name: Tarnung (in der Stadt)
+  - name: Geisterpanzer
   info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt eine
     MR von 0)
   kampf:
@@ -42,11 +47,6 @@ altergolem:
     wert: 16
   unterschied: 'Alter Golem (Kampfwerte -4, INI -2, GS -4, TP: +4, WS +2/+4)'
   variantevon: gargyl
-  vorteile:
-  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
-  - name: Angepasst II (Dunkelheit)
-  - name: Tarnung (in der Stadt)
-  - name: Geisterpanzer
 baer:
   attribute:
     GE: 16
@@ -105,6 +105,9 @@ baumdrache:
     KO: 6
     MU: 8
   beschreibung: tierhafter Drache ohne magische Fähigkeiten
+  eigenschaften:
+  - name: Flugfähig
+  - name: Resistenz I (Feuer)
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -137,9 +140,6 @@ baumdrache:
     wert: 10
   - name: Zähigkeit
     wert: 6
-  vorteile:
-  - name: Flugfähig
-  - name: Resistenz I (Feuer)
 bergloewe:
   attribute:
     GE: 16
@@ -198,6 +198,11 @@ bergloewe:
   variantevon: sandloewe
 blutfischschwarm:
   beschreibung: gierige Fressmaschinen der Dschungelflüsse; großer Gegner
+  eigenschaften:
+  - name: Wasserwesen
+  - name: Schmerzimmun II
+  - name: Resistenz II (Stichwaffen)
+  - name: Verwundbarkeit IV (Flächenschaden)
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
@@ -230,11 +235,6 @@ blutfischschwarm:
     wert: 8
   - name: Wachsamkeit
     wert: 14
-  vorteile:
-  - name: Wasserwesen
-  - name: Schmerzimmun II
-  - name: Resistenz II (Stichwaffen)
-  - name: Verwundbarkeit IV (Flächenschaden)
 elefant:
   attribute:
     KK: 120
@@ -348,6 +348,10 @@ fernhaendlerpaktierer:
     KO: 8
     MU: 12
   beschreibung: ein gewitzter Händler und Paktierer der Charyptoroth
+  eigenschaften:
+  - name: Gefahreninstinkt
+  - name: Kreis der Verdammnis I
+  - name: Willensstark I
   freiefertigkeiten:
   - name: Händler
     wert: 3
@@ -422,10 +426,6 @@ fernhaendlerpaktierer:
     wert: 11
   - name: Zähigkeit
     wert: 8
-  vorteile:
-  - name: Gefahreninstinkt
-  - name: Kreis der Verdammnis I
-  - name: Willensstark I
 fleckenhai:
   attribute:
     GE: 14
@@ -433,6 +433,8 @@ fleckenhai:
     KO: 20
     MU: 12
   beschreibung: Räuber der Meere
+  eigenschaften:
+  - name: Wasserwesen
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -469,8 +471,6 @@ fleckenhai:
   unterschied: 'WS 7/9, TP: 1W6+3, Gift (Stufe 24, Verzögerung 0, Intervall 0, 1 Wunde,
     WD 1W6 Tage, Lähmung: körperliche Proben -2, kumulativ'
   variantevon: streifenhai
-  vorteile:
-  - name: Wasserwesen
 gargyl:
   attribute:
     GE: 6
@@ -478,6 +478,12 @@ gargyl:
     KO: 28
     MU: 12
   beschreibung: hinterhältiger Jäger aus Stein
+  eigenschaften:
+  - name: Flugfähig
+  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
+  - name: Angepasst II (Dunkelheit)
+  - name: Tarnung (in der Stadt)
+  - name: Geisterpanzer
   info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt eine
     MR von 0)
   kampf:
@@ -514,12 +520,6 @@ gargyl:
     wert: 10
   - name: Zähigkeit
     wert: 16
-  vorteile:
-  - name: Flugfähig
-  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
-  - name: Angepasst II (Dunkelheit)
-  - name: Tarnung (in der Stadt)
-  - name: Geisterpanzer
 ghul:
   attribute:
     GE: 8
@@ -528,6 +528,11 @@ ghul:
     KO: 8
     MU: 8
   beschreibung: ansteckender und gieriger Leichenfresser
+  eigenschaften:
+  - name: Empfindlichkeit II (Sonnenlicht)
+  - name: Immunität (Einfluss)
+  - name: Lichtscheu
+  - name: Schreckgestalt I
   kampf:
     waffen:
     - AT: 6
@@ -570,11 +575,6 @@ ghul:
     wert: 8
   - name: Wachsamkeit
     wert: 6
-  vorteile:
-  - name: Empfindlichkeit II (Sonnenlicht)
-  - name: Immunität (Einfluss)
-  - name: Lichtscheu
-  - name: Schreckgestalt I
 goblin:
   attribute:
     CH: 4
@@ -586,6 +586,9 @@ goblin:
     KO: 4
     MU: 4
   beschreibung: rotpelzige Landplage des Nordens
+  eigenschaften:
+  - name: Angepasst I (Dunkelheit)
+  - name: Resistenz gegen Kälte
   kampf:
     waffen:
     - AT: 8
@@ -634,9 +637,6 @@ goblin:
     wert: 6
   - name: Zähigkeit
     wert: 4
-  vorteile:
-  - name: Angepasst I (Dunkelheit)
-  - name: Resistenz gegen Kälte
 greif:
   attribute:
     GE: 16
@@ -644,6 +644,11 @@ greif:
     KO: 26
     MU: 40
   beschreibung: Mythenwesen und mächtiger Diener Praios‘; großer Gegner
+  eigenschaften:
+  - name: Flugfähig
+  - name: Willensstark II
+  - name: Geisterpanzer (WS 20)
+  - name: Unbeugsamkeit
   info: '*gegen unheilige Kreaturen: TP:  +1W6, WS +2, AT/VT:  +2, Liturgien +4'
   kampf:
     vorteile:
@@ -711,11 +716,6 @@ greif:
     wert: 16
   - name: Zähigkeit
     wert: 16
-  vorteile:
-  - name: Flugfähig
-  - name: Willensstark II
-  - name: Geisterpanzer (WS 20)
-  - name: Unbeugsamkeit
 grosserhund:
   attribute:
     GE: 14
@@ -723,6 +723,8 @@ grosserhund:
     KO: 6
     MU: 6
   beschreibung: verbreitetes Rudeltier
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -759,8 +761,6 @@ grosserhund:
     wert: 4
   unterschied: identisch
   variantevon: wolf
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 gruftassel:
   attribute:
     GE: 4
@@ -768,6 +768,8 @@ gruftassel:
     KO: 12
     MU: 4
   beschreibung: flinker Aasfresser
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Doppelangriff
@@ -799,8 +801,6 @@ gruftassel:
     wert: 10
   - name: Zähigkeit
     wert: 10
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 hammerhai:
   attribute:
     GE: 14
@@ -808,6 +808,8 @@ hammerhai:
     KO: 20
     MU: 12
   beschreibung: Räuber der Meere
+  eigenschaften:
+  - name: Wasserwesen
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -844,8 +846,6 @@ hammerhai:
   unterschied: 'WS 10/12, TP: 2W6 Kampfwerte -2, Raserei 2 (bei Verletzung: AT+2,
     VT-2, TP+2'
   variantevon: streifenhai
-  vorteile:
-  - name: Wasserwesen
 harpyie:
   attribute:
     GE: 16
@@ -853,6 +853,8 @@ harpyie:
     KO: 4
     MU: 4
   beschreibung: wahnsinnige Verschmelzung von Vogel und Frau
+  eigenschaften:
+  - name: Flieger
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -881,14 +883,16 @@ harpyie:
     wert: 12
   - name: Wachsamkeit
     wert: 10
-  vorteile:
-  - name: Flieger
 hoehlenspinne:
   attribute:
     KK: 4
     KO: 4
     MU: 4
   beschreibung: einzelgängerische Spinne mit Lähmungsgift
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
   info: Das Netz der Spinne ist im Fackelschein mit einer Wachsamkeits-Probe (24)
     zu erkennen. Misslingt die Probe, verfängt sich ein Opfer im Netz, das wie ein
     Umklammern (–4, 20) wirkt.
@@ -920,10 +924,6 @@ hoehlenspinne:
     wert: 14
   - name: Zähigkeit
     wert: 8
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-  - name: Immunität (Niederwerfen
-  - name: Umreißen und ähnliche Effekte)
 hornechse:
   attribute:
     GE: 6
@@ -931,6 +931,9 @@ hornechse:
     KO: 54
     MU: 12
   beschreibung: friedfertiger Pflanzenfresser und Reittier der Achaz; großer Gegner
+  eigenschaften:
+  - name: Angepasst I (Sumpf)
+  - name: Verwundbarkeit I (Eis)
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -953,9 +956,6 @@ hornechse:
     wert: 8
   - name: Zähigkeit
     wert: 16
-  vorteile:
-  - name: Angepasst I (Sumpf)
-  - name: Verwundbarkeit I (Eis)
 hyralkor:
   attribute:
     GE: 12
@@ -964,6 +964,14 @@ hyralkor:
     KO: 220
     MU: 30
   beschreibung: Herrscher seines Landstrichs; sehr großer Endgegner
+  eigenschaften:
+  - name: Aura (Hitze
+  - name: Zähigkeit (28) jede INI:phase
+  - name: 1 Wunde)
+  - name: Flugfähig
+  - name: Immunität (Feuer)
+  - name: Schreckgestalt II
+  - name: Verwundbarkeit I (Eis)
   kampf:
     vorteile:
     - name: Hammerschlag
@@ -1124,14 +1132,6 @@ hyralkor:
     wert: 12
   - name: Zähigkeit
     wert: 24
-  vorteile:
-  - name: Aura (Hitze
-  - name: Zähigkeit (28) jede INI:phase
-  - name: 1 Wunde)
-  - name: Flugfähig
-  - name: Immunität (Feuer)
-  - name: Schreckgestalt II
-  - name: Verwundbarkeit I (Eis)
 ifirnshai:
   attribute:
     GE: 14
@@ -1139,6 +1139,8 @@ ifirnshai:
     KO: 20
     MU: 12
   beschreibung: Räuber der Meere
+  eigenschaften:
+  - name: Wasserwesen
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -1174,8 +1176,6 @@ ifirnshai:
   unterschied: 'WS 10/12 koloss: 2, AT: 14, VT: 0, TP: 2W20+4, Attribute +12, sehr
     großer Gegner, Raserei 5 (bei Verletzung: AT+5, VT-5, TP+5'
   variantevon: streifenhai
-  vorteile:
-  - name: Wasserwesen
 kampfhund:
   attribute:
     GE: 14
@@ -1183,6 +1183,8 @@ kampfhund:
     KO: 8
     MU: 6
   beschreibung: verbreitetes Rudeltier
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -1219,8 +1221,6 @@ kampfhund:
     wert: 4
   unterschied: 'GS: –1, Kampfwerte +1, KK, KO: +2, Laufen –4'
   variantevon: wolf
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 khoramsbestie:
   attribute:
     GE: 14
@@ -1228,6 +1228,8 @@ khoramsbestie:
     KO: 8
     MU: 6
   beschreibung: verbreitetes Rudeltier
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -1264,14 +1266,16 @@ khoramsbestie:
     wert: 4
   unterschied: 'Kampfwerte +2, KK, KO: +2'
   variantevon: wolf
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 krakenmolch:
   attribute:
     KK: 12
     KO: 100
     MU: 20
   beschreibung: vielarmiger Schrecken der Küsten und Sümpfe; großer Gegner
+  eigenschaften:
+  - name: Amphibisch
+  - name: Angepasst II (Wasser)
+  - name: Schreckgestalt I
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
@@ -1326,15 +1330,18 @@ krakenmolch:
     wert: 14
   - name: Wachsamkeit
     wert: 10
-  vorteile:
-  - name: Amphibisch
-  - name: Angepasst II (Wasser)
-  - name: Schreckgestalt I
 kriegermumie:
   attribute:
     GE: 12
     KK: 32
   beschreibung: starker Wächter und letzter Anblick für zahlreiche Grabräuber
+  eigenschaften:
+  - name: Astralsinn
+  - name: Körperlosigkeit
+  - name: Resistenz I (Stichwaffen)
+  - name: Verwundbarkeit II (Feuer)
+  - name: Schmerzimmun II
+  - name: Schreckgestalt II
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III (Befreiungsschlag)
@@ -1384,13 +1391,6 @@ kriegermumie:
     wert: 6
   - name: Wachsamkeit
     wert: 8
-  vorteile:
-  - name: Astralsinn
-  - name: Körperlosigkeit
-  - name: Resistenz I (Stichwaffen)
-  - name: Verwundbarkeit II (Feuer)
-  - name: Schmerzimmun II
-  - name: Schreckgestalt II
 kriegselefant:
   attribute:
     KK: 120
@@ -1723,6 +1723,10 @@ loewe:
     KO: 18
     MU: 14
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
+  - name: Blitzschnell (erleidet keine Passierschläge
+  - name: wenn er sich aus dem Nahkampf zurückzieht)
   kampf:
     vorteile:
     - name: Standfest
@@ -1768,10 +1772,6 @@ loewe:
     wert: 16
   unterschied: 'WS: –1,   attribute und TP:  –4'
   variantevon: saebelzahntiger
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
 mamut:
   attribute:
     KK: 160
@@ -1831,6 +1831,10 @@ morfu:
     KO: 8
     MU: 10
   beschreibung: schleimige Giftschnecke, die ihre Stacheln verschießt; großer Gegner
+  eigenschaften:
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
+  - name: Resistenz I (Stumpfe Waffen)
   kampf:
     waffen:
     - FK: 8
@@ -1858,10 +1862,6 @@ morfu:
     wert: -10
   - name: Wachsamkeit
     wert: 8
-  vorteile:
-  - name: Immunität (Niederwerfen
-  - name: Umreißen und ähnliche Effekte)
-  - name: Resistenz I (Stumpfe Waffen)
 nachtwind:
   attribute:
     GE: 2
@@ -1869,6 +1869,10 @@ nachtwind:
     KO: -2
     MU: 4
   beschreibung: Sehr kleiner, magiehassender, geflügelter Jäger
+  eigenschaften:
+  - name: Magiegespür
+  - name: Flieger
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Sturmangriff (max. +2 TP)
@@ -1898,10 +1902,6 @@ nachtwind:
     wert: 18
   - name: Zähigkeit
     wert: -4
-  vorteile:
-  - name: Magiegespür
-  - name: Flieger
-  - name: Angepasst II (Dunkelheit)
 oger:
   attribute:
     GE: 4
@@ -2017,6 +2017,11 @@ ogerstatue:
     KK: 44
     KO: 48
   beschreibung: behäbige Bronzestatue eines Ogers; großer Gegner
+  eigenschaften:
+  - name: Immunität (Gifte
+  - name: Krankheiten)
+  - name: Resistenz II (Feuer
+  - name: Stichwaffen)
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -2050,11 +2055,6 @@ ogerstatue:
     wert: -2
   - name: Wachsamkeit
     wert: 4
-  vorteile:
-  - name: Immunität (Gifte
-  - name: Krankheiten)
-  - name: Resistenz II (Feuer
-  - name: Stichwaffen)
 orkkrieger:
   attribute:
     CH: 2
@@ -2189,6 +2189,10 @@ panther:
     KO: 22
     MU: 18
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
+  - name: Blitzschnell (erleidet keine Passierschläge)
+  - name: wenn er sich aus dem Nahkampf zurückzieht)
   kampf:
     vorteile:
     - name: Standfest
@@ -2234,10 +2238,6 @@ panther:
     wert: 16
   unterschied: ''
   variantevon: saebelzahntiger
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
 perldrache:
   attribute:
     GE: 12
@@ -2245,6 +2245,12 @@ perldrache:
     KO: 74
     MU: 20
   beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
+  eigenschaften:
+  - name: Angepasst I (Wasser)
+  - name: Aura (Hitze Zähigkeit (20) alle 4 INI:phasen 1 Wunde)
+  - name: Flugfähig
+  - name: Resistenz II (Feuer)
+  - name: Schreckgestalt I
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -2315,12 +2321,6 @@ perldrache:
     wert: 10
   - name: Zähigkeit
     wert: 24
-  vorteile:
-  - name: Angepasst I (Wasser)
-  - name: Aura (Hitze Zähigkeit (20) alle 4 INI:phasen 1 Wunde)
-  - name: Flugfähig
-  - name: Resistenz II (Feuer)
-  - name: Schreckgestalt I
 perldrachewestwinddrache:
   attribute:
     GE: 12
@@ -2328,6 +2328,14 @@ perldrachewestwinddrache:
     KO: 74
     MU: 20
   beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
+  eigenschaften:
+  - name: Angepasst I (Wasser)
+  - name: Aura (Hitze
+  - name: Zähigkeit (20) alle 4 INI:phasen
+  - name: 1 Wunde)
+  - name: Flugfähig
+  - name: Resistenz II (Feuer)
+  - name: Schreckgestalt I
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -2389,16 +2397,13 @@ perldrachewestwinddrache:
     wert: 24
   unterschied: keine AsP und Zauberfähigkeiten
   variantevon: perldrache
-  vorteile:
-  - name: Angepasst I (Wasser)
-  - name: Aura (Hitze
-  - name: Zähigkeit (20) alle 4 INI:phasen
-  - name: 1 Wunde)
-  - name: Flugfähig
-  - name: Resistenz II (Feuer)
-  - name: Schreckgestalt I
 pestrattenschwarm:
   beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
+  eigenschaften:
+  - name: Astralsinn
+  - name: Resistenz II (Stichwaffen)
+  - name: Schmerzimmun II
+  - name: Verwundbarkeit IV (Flächenschaden)
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -2436,13 +2441,13 @@ pestrattenschwarm:
     wert: 4
   - name: Wachsamkeit
     wert: 16
-  vorteile:
+pestrattenschwarmsehrgrosserschwarm:
+  beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
+  eigenschaften:
   - name: Astralsinn
   - name: Resistenz II (Stichwaffen)
   - name: Schmerzimmun II
   - name: Verwundbarkeit IV (Flächenschaden)
-pestrattenschwarmsehrgrosserschwarm:
-  beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
@@ -2483,11 +2488,6 @@ pestrattenschwarmsehrgrosserschwarm:
   unterschied: 'WS: +1, AT:  +2, Zusätzliche Attacke II, Beschwörungsschwierigkeit
     20, 24 AsP'
   variantevon: pestrattenschwarm
-  vorteile:
-  - name: Astralsinn
-  - name: Resistenz II (Stichwaffen)
-  - name: Schmerzimmun II
-  - name: Verwundbarkeit IV (Flächenschaden)
 raeuber:
   attribute:
     CH: 4
@@ -2499,6 +2499,8 @@ raeuber:
     KO: 6
     MU: 8
   beschreibung: ausgehungerte Halsabschneider auf der Suche nach leichter Beute
+  eigenschaften:
+  - name: Zweihändig
   info: Der Räuber steht beispielhaft für schwache humanoide Gegner, die für einen
     echten Kämpfer kaum eine Gefahr darstellen.
   kampf:
@@ -2548,8 +2550,6 @@ raeuber:
     wert: 6
   - name: Zähigkeit
     wert: 4
-  vorteile:
-  - name: Zweihändig
 reitpony:
   attribute:
     GE: 8
@@ -2657,6 +2657,10 @@ riese:
     KO: 130
     MU: 20
   beschreibung: Unsterblicher Gigant; sehr großer Gegner
+  eigenschaften:
+  - name: Schreckgestalt II
+  - name: Unbeugsamkeit
+  - name: Willensstark II
   info: 'kampfunfähigkeit: Der Riese flieht, wenn er 6 Wunden erlitten hat.'
   kampf:
     vorteile:
@@ -2740,12 +2744,15 @@ riese:
     wert: 10
   - name: Zähigkeit
     wert: 26
-  vorteile:
-  - name: Schreckgestalt II
-  - name: Unbeugsamkeit
-  - name: Willensstark II
 riesenamoebe:
   beschreibung: allesfressender Schleimhaufen; großer Gegner
+  eigenschaften:
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
+  - name: Körperlosigkeit
+  - name: Resistenz I (Stichwaffen
+  - name: stumpfe Waffen)
+  - name: Schmerzimmun II
   kampf:
     waffen:
     - AT: 6
@@ -2769,19 +2776,17 @@ riesenamoebe:
   talente:
   - name: Laufen
     wert: -8
-  vorteile:
-  - name: Immunität (Niederwerfen
-  - name: Umreißen und ähnliche Effekte)
-  - name: Körperlosigkeit
-  - name: Resistenz I (Stichwaffen
-  - name: stumpfe Waffen)
-  - name: Schmerzimmun II
 riesenkaiman:
   attribute:
     KK: 20
     KO: 38
     MU: 10
   beschreibung: gefährlicher Jäger der südlichen Gewässer
+  eigenschaften:
+  - name: Amphibisch
+  - name: Immunität (Niederwerfen
+  - name: Umreißen und ähnliche Effekte)
+  - name: Verwundbarkeit (Eis)
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -2823,16 +2828,15 @@ riesenkaiman:
     wert: null
   - name: Wachsamkeit 6
     wert: null
-  vorteile:
-  - name: Amphibisch
-  - name: Immunität (Niederwerfen
-  - name: Umreißen und ähnliche Effekte)
-  - name: Verwundbarkeit (Eis)
 riesenkraken:
   attribute:
     KK: 22
     KO: 220
   beschreibung: Albtraum vieler Seefahrer; sehr großer Endgegner
+  eigenschaften:
+  - name: Schreckgestalt III
+  - name: Wasserwesen
+  - name: Willensstark II
   kampf:
     vorteile:
     - name: Zusätzliche Attacke IV (nur Tentakel)
@@ -2907,12 +2911,13 @@ riesenkraken:
     wert: 18
   - name: Wachsamkeit
     wert: 12
-  vorteile:
-  - name: Schreckgestalt III
-  - name: Wasserwesen
-  - name: Willensstark II
 riesenspringelschwarm:
   beschreibung: sehr kleines, scheußliches Sumpfgezücht
+  eigenschaften:
+  - name: Wasserwesen
+  - name: Resistenz I (Stichwaffen)
+  - name: Schmerzimmun II
+  - name: Verwundbarkeit IV (Flächenschaden)
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -2944,11 +2949,6 @@ riesenspringelschwarm:
     wert: 6
   - name: Wachsamkeit
     wert: 16
-  vorteile:
-  - name: Wasserwesen
-  - name: Resistenz I (Stichwaffen)
-  - name: Schmerzimmun II
-  - name: Verwundbarkeit IV (Flächenschaden)
 ritter:
   attribute:
     CH: 10
@@ -3058,6 +3058,10 @@ saebelzahntiger:
     KO: 22
     MU: 18
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
+  - name: Blitzschnell (erleidet keine Passierschläge
+  - name: wenn er sich aus dem Nahkampf zurückzieht)
   kampf:
     vorteile:
     - name: Standfest
@@ -3101,10 +3105,6 @@ saebelzahntiger:
     wert: 18
   - name: Zähigkeit
     wert: 16
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
 sandloewe:
   attribute:
     GE: 20
@@ -3263,6 +3263,8 @@ schwerthai:
     KO: 20
     MU: 12
   beschreibung: Räuber der Meere
+  eigenschaften:
+  - name: Wasserwesen
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -3308,13 +3310,15 @@ schwerthai:
   unterschied: '(WS 11/13, Schwert: RW: 1, AT: 12, VT: 3, TP: 3W6+4, Umklammern (4),
     Rüstungsbrechend)'
   variantevon: streifenhai
-  vorteile:
-  - name: Wasserwesen
 skelett:
   attribute:
     GE: 4
     KK: 8
   beschreibung: schwaches untotes Kanonenfutter
+  eigenschaften:
+  - name: Astralsinn
+  - name: Resistenz II (Stichwaffen)
+  - name: Rudel
   kampf:
     waffen:
     - AT: 8
@@ -3364,15 +3368,15 @@ skelett:
     wert: 8
   - name: Wachsamkeit
     wert: 5
-  vorteile:
-  - name: Astralsinn
-  - name: Resistenz II (Stichwaffen)
-  - name: Rudel
 skelettruestung:
   attribute:
     GE: 4
     KK: 8
   beschreibung: schwaches untotes Kanonenfutter
+  eigenschaften:
+  - name: Astralsinn
+  - name: Resistenz II (Stichwaffen)
+  - name: Rudel
   kampf:
     waffen:
     - AT: 8
@@ -3424,10 +3428,6 @@ skelettruestung:
     wert: 5
   unterschied: 'WS: +0/+1, Kampfwerte –1'
   variantevon: skelett
-  vorteile:
-  - name: Astralsinn
-  - name: Resistenz II (Stichwaffen)
-  - name: Rudel
 soeldner:
   attribute:
     CH: 6
@@ -3527,6 +3527,8 @@ soeldnerkommandant:
     KO: 12
     MU: 14
   beschreibung: charismatischer Befehlshaber einer größeren Einheit
+  eigenschaften:
+  - name: Willensstark I und II
   kampf:
     vorteile:
     - name: Schneller Kampf II
@@ -3596,8 +3598,6 @@ soeldnerkommandant:
     wert: 12
   - name: Überreden
     wert: 13
-  vorteile:
-  - name: Willensstark I und II
 soeldnerveteran:
   attribute:
     CH: 8
@@ -3767,6 +3767,8 @@ streifenhai:
     KO: 20
     MU: 12
   beschreibung: Räuber der Meere
+  eigenschaften:
+  - name: Wasserwesen
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -3799,8 +3801,6 @@ streifenhai:
     wert: 12
   - name: Zähigkeit
     wert: 14
-  vorteile:
-  - name: Wasserwesen
 sumpfranze:
   attribute:
     GE: 12
@@ -3953,6 +3953,12 @@ tatzelwurm:
     KK: 26
     KO: 32
   beschreibung: stinkender Vertreter der niederen Drachen; großer Gegner
+  eigenschaften:
+  - name: Aura (Gestank)
+  - name: Zähigkeit (16) jede INI:phase
+  - name: –2 auf körperliche Proben (kumulativ) für 1 Tag)
+  - name: Resistenz I (Feuer)
+  - name: Schreckgestalt I
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -4003,12 +4009,6 @@ tatzelwurm:
     wert: 0
   - name: Wachsamkeit
     wert: 8
-  vorteile:
-  - name: Aura (Gestank)
-  - name: Zähigkeit (16) jede INI:phase
-  - name: –2 auf körperliche Proben (kumulativ) für 1 Tag)
-  - name: Resistenz I (Feuer)
-  - name: Schreckgestalt I
 tigerhai:
   attribute:
     GE: 20
@@ -4016,6 +4016,9 @@ tigerhai:
     KO: 26
     MU: 18
   beschreibung: Räuber der Meere
+  eigenschaften:
+  - name: Wasserwesen
+  - name: großer Gegner
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -4051,9 +4054,6 @@ tigerhai:
     wert: 14
   unterschied: 'WS 12/14 koloss: 1 TP: 4W6+2, Attribute +6, großer Gegner'
   variantevon: streifenhai
-  vorteile:
-  - name: Wasserwesen
-  - name: großer Gegner
 tralloper:
   attribute:
     GE: 8
@@ -4276,6 +4276,9 @@ waldschratnichtmagisch:
     KO: 34
     MU: 12
   beschreibung: baumartiger Hüter der Wälder; großer Gegner
+  eigenschaften:
+  - name: Tarnung (im Wald)
+  - name: Verwundbarkeit I (Feuer)
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III (Befreiungsschlag)
@@ -4311,15 +4314,14 @@ waldschratnichtmagisch:
     wert: 14
   unterschied: verfügt über keine Magie
   variantevon: waldschrat
-  vorteile:
-  - name: Tarnung (im Wald)
-  - name: Verwundbarkeit I (Feuer)
 weisserhetzer:
   attribute:
     GE: 16
     KK: 8
     KO: 4
   beschreibung: zweiköpfige Chimäre aus Wolf und Dämon
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -4357,8 +4359,6 @@ weisserhetzer:
     wert: 12
   - name: Wachsamkeit
     wert: 18
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 wildschwein:
   attribute:
     GE: 8
@@ -4406,6 +4406,8 @@ wolf:
     KO: 6
     MU: 6
   beschreibung: verbreitetes Rudeltier
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -4440,8 +4442,6 @@ wolf:
     wert: 18
   - name: Zähigkeit
     wert: 4
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 wolfrudelfuehrer:
   attribute:
     GE: 14
@@ -4449,6 +4449,8 @@ wolfrudelfuehrer:
     KO: 6
     MU: 6
   beschreibung: verbreitetes Rudeltier
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -4490,8 +4492,6 @@ wolfrudelfuehrer:
   unterschied: 'WS: +2/+2, Kampfwerte +4, TP:  +2, Anführen 15, zusätzlich Haltet
     stand!, Keine Gefangenen!'
   variantevon: wolf
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 yeti:
   attribute:
     CH: 4
@@ -4503,6 +4503,9 @@ yeti:
     KO: 20
     MU: 16
   beschreibung: großer, haariger Schneeschrat
+  eigenschaften:
+  - name: Angepasst I (Dunkelheit)
+  - name: Resistenz gegen Kälte
   kampf:
     vorteile:
     - name: Natürliche Rüstung
@@ -4556,6 +4559,3 @@ yeti:
     wert: 14
   - name: Zähigkeit
     wert: 16
-  vorteile:
-  - name: Angepasst I (Dunkelheit)
-  - name: Resistenz gegen Kälte

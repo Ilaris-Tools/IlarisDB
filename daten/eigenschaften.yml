@@ -1,0 +1,28 @@
+ausweichenindenlimbus:
+  - name: Ausweichen in den Limbus
+  - info: >
+      Die Kreatur kann mit einer Reaktion in den Limbus ausweichen. Sie
+      regeneriert dort eine Wunde und taucht zu Beginn ihrer nächsten Initiativephase maximal 7 Schritt
+      vom Ort ihres Verschwindens wieder auf. Diese Fähigkeit ist danach erst in 1W6 Initiativephasen
+      wieder einsetzbar.
+kritischekonsistenz:
+  - name: Kritische Konsistenz
+  - info: >
+      Wenn die Kreatur mit einem Treffer 3 oder mehr Wunden erleidet, wird sie
+      sofort vernichtet.
+lebensraub:
+  - name: Lebensraub
+  - info: >
+      Wenn die Kreatur ihrem Ziel mit einem Angriff mindestens eine Wunde zufügt,
+      regeneriert sie dafür eine eigene Wunde.
+limbusreisender:
+  - name: Limbusreisender
+    info: >
+      Die Kreatur kann sich nach Belieben in den näheren Limbus begeben. Für den
+      Übergang in oder aus dem Limbus benötigt die Kreatur eine Vorbereitungszeit von 1 Minute und darf
+      sich nicht im Kampf befinden. Die Kreatur kann den Beschwörer mit auf ihre Limbusreise nehmen.
+verbindungzumbeschwoerer:
+  - name: Verbindung zum Beschwörer
+    info: >
+      Der Beschwörer kann in Trance die Sinneseindrücke des Dämons
+      wahrnehmen. Dies erfordert Konzentration.

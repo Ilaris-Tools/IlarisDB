@@ -11,7 +11,7 @@ kreatur:
   attribute: map(required=False)
   talente: list(include('talent'), required=False)
   freiefertigkeiten: list(include('fertigkeit'), required=False)
-  vorteile: list(include('vorteil'), required=False)
+  eigenschaften: list(include('eigenschaft'), required=False)
   kampf: include('kampf', required=False)
   profan: include('profan', required=False)
   magie: include('magie', required=False)
@@ -105,3 +105,8 @@ tp:
   plus: int(required=False)
   anzahl: int(required=False)
   W: int(required=False)
+---
+eigenschaft:
+  name: str(required=False)
+  id: str(required=False)
+  info: str(required=False)
