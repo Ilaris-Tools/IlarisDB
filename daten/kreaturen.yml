@@ -1,3 +1,52 @@
+altergolem:
+  attribute:
+    GE: 6
+    KK: 24
+    KO: 28
+    MU: 12
+  beschreibung: hinterhältiger Jäger aus Stein
+  info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt eine
+    MR von 0)
+  kampf:
+    vorteile:
+    - name: Doppelangriff
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff (max. +6 TP)
+    waffen:
+    - AT: 8
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
+      TPP: 6
+      VT: 2
+      name: Klauen
+    werte:
+      GS: 2
+      INI: 2
+      MR: 12
+      WS: 10
+      WSE: 16
+      koloss: 1
+  klasse: mythen
+  name: Alter Golem
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Untertauchen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 10
+  - name: Zähigkeit
+    wert: 16
+  unterschied: 'Alter Golem (Kampfwerte -4, INI -2, GS -4, TP: +4, WS +2/+4)'
+  variantevon: gargyl
+  vorteile:
+  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
+  - name: Angepasst II (Dunkelheit)
+  - name: Tarnung (in der Stadt)
+  - name: Geisterpanzer
 baer:
   attribute:
     GE: 16
@@ -5,7 +54,6 @@ baer:
     KO: 42
     MU: 16
   beschreibung: Raubtier der Wälder; großer Gegner
-  id: baer
   kampf:
     vorteile:
     - name: Standfest
@@ -13,16 +61,21 @@ baer:
     waffen:
     - AT: 13
       RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
       TPP: 6
-      TPW: 2
       VT: 6
       info: Niederwerfen (–4), Doppelangriff
       name: Prankenhieb
     - AT: 14
       RW: 0
-      TP: 4W6+6
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 6
       TPP: 6
-      TPW: 4
       VT: 3
       info: Zerbrechlich
       name: Biss
@@ -52,7 +105,6 @@ baumdrache:
     KO: 6
     MU: 8
   beschreibung: tierhafter Drache ohne magische Fähigkeiten
-  id: baumdrache
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -60,9 +112,11 @@ baumdrache:
     waffen:
     - AT: 10
       RW: 0
-      TP: 2W6+1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
       TPP: 1
-      TPW: 2
       VT: 6
       name: Klauen
     - info: Wer zum Ziel eines Angriffs wird, muss eine Zähikeits-Probe (16) ablegen,
@@ -86,18 +140,75 @@ baumdrache:
   vorteile:
   - name: Flugfähig
   - name: Resistenz I (Feuer)
+bergloewe:
+  attribute:
+    GE: 16
+    KK: 20
+    KO: 16
+    MU: 12
+  beschreibung: Stolzer König der Khômwüste
+  kampf:
+    vorteile:
+    - name: Doppelangriff
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 13
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      TPP: 2
+      VT: 1
+      info: Zerbrechlich
+      name: Biss
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 6
+      info: Wendig
+      name: Prankenhieb
+    werte:
+      GS: 6
+      INI: 4
+      MR: 2
+      WS: 6
+      WSE: 7
+  klasse: tier
+  name: Berglöwe
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Laufen
+    wert: 20
+  - name: Pirschen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 14
+  - name: Zähigkeit
+    wert: 12
+  - name: Klettern
+    wert: 20
+  unterschied: WS 6/7, Kampfwerte +1, Attribute -4, GS -2, Klettern 20
+  variantevon: sandloewe
 blutfischschwarm:
   beschreibung: gierige Fressmaschinen der Dschungelflüsse; großer Gegner
-  id: blutfischschwarm
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
     waffen:
     - AT: 14
       RW: 0
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 4
       name: Biss
     werte:
@@ -130,7 +241,6 @@ elefant:
     KO: 140
     MU: 10
   beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
-  id: elefant
   kampf:
     vorteile:
     - name: Standfest
@@ -140,17 +250,21 @@ elefant:
     waffen:
     - AT: 8
       RW: 1
-      TP: 5W6+4
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
       TPP: 4
-      TPW: 5
       VT: 6
       info: Niederwerfen
       name: Stoßzähne
     - AT: 6
       RW: 1
-      TP: 3W20
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 0
       TPP: 0
-      TPW20: 3
       VT: 4
       info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
       name: Trampeln
@@ -171,13 +285,12 @@ elefant:
     wert: 12
   - name: Zähigkeit
     wert: 14
-elefantelefantenruestung:
+elefantruestung:
   attribute:
     KK: 120
     KO: 140
     MU: 10
   beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
-  id: elefantelefantenruestung
   kampf:
     vorteile:
     - name: Standfest
@@ -187,17 +300,21 @@ elefantelefantenruestung:
     waffen:
     - AT: 8
       RW: 1
-      TP: 5W6+4
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
       TPP: 4
-      TPW: 5
       VT: 6
       info: Niederwerfen
       name: Stoßzähne
     - AT: 6
       RW: 1
-      TP: 3W20
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 0
       TPP: 0
-      TPW20: 3
       VT: 4
       info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
       name: Trampeln
@@ -220,105 +337,6 @@ elefantelefantenruestung:
     wert: 14
   unterschied: 'WS: +0/+2, GS: –1'
   variantevon: elefant
-elefantkriegselefant:
-  attribute:
-    KK: 120
-    KO: 140
-    MU: 10
-  beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
-  id: elefantkriegselefant
-  kampf:
-    vorteile:
-    - name: Standfest
-    - name: Überrennen
-    - name: Unaufhaltsam
-    - name: Zerstörerisch I und II
-    waffen:
-    - AT: 12
-      RW: 1
-      TP: 5W6+4
-      TPP: 4
-      TPW: 5
-      VT: 10
-      info: Niederwerfen
-      name: Stoßzähne
-    - AT: 10
-      RW: 1
-      TP: 3W20
-      TPP: 0
-      TPW20: 3
-      VT: 8
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
-      name: Trampeln
-    werte:
-      GS: 9
-      INI: 1
-      MR: 4
-      WS: 15
-      WSE: 16
-      koloss: 2
-  klasse: tier
-  name: Kriegselefant
-  quelle: ilaris
-  talente:
-  - name: Laufen
-    wert: 14
-  - name: Wachsamkeit
-    wert: 12
-  - name: Zähigkeit
-    wert: 14
-  unterschied: 'AT: und VT: +4'
-  variantevon: elefant
-elefantmamut:
-  attribute:
-    KK: 160
-    KO: 200
-    MU: 10
-  beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
-  id: elefantmamut
-  kampf:
-    vorteile:
-    - name: Standfest
-    - name: Überrennen
-    - name: Unaufhaltsam
-    - name: Zerstörerisch I und II
-    - name: Resistenz gegen Kälte
-    waffen:
-    - AT: 8
-      RW: 1
-      TP: 5W6+4
-      TPP: 9
-      TPW: 5
-      VT: 6
-      info: Niederwerfen
-      name: Stoßzähne
-    - AT: 6
-      RW: 1
-      TP: 3W20
-      TPP: 5
-      TPW20: 3
-      VT: 4
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
-      name: Trampeln
-    werte:
-      GS: 9
-      INI: 1
-      MR: 4
-      WS: 17
-      WSE: 19
-      koloss: 2
-  klasse: tier
-  name: Mamut
-  quelle: ilaris
-  talente:
-  - name: Laufen
-    wert: 14
-  - name: Wachsamkeit
-    wert: 12
-  - name: Zähigkeit
-    wert: 14
-  unterschied: 'WS +2/+3, Resistenz gegen Kälte, TP: +5, KO: 200, KK: 160'
-  variantevon: elefant
 fernhaendlerpaktierer:
   attribute:
     CH: 14
@@ -339,7 +357,6 @@ fernhaendlerpaktierer:
     wert: 2
   - name: Weinkenner
     wert: 1
-  id: fernhaendlerpaktierer
   info: 'Als angesehener Bürger Nostrias ist der Fernhändler eine Quelle für Gerüchte
     und Nachrichten aus fernen Landen und führt das eine oder andere exotische Stück
     in seinem Sortiment. Um Konkurrenten zu schaden oder verbotene Waren zu schmuggeln,
@@ -353,9 +370,11 @@ fernhaendlerpaktierer:
     waffen:
     - AT: 11
       RW: 0
-      TP: 1W6+1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
       TPP: 1
-      TPW: 1
       VT: 11
       name: Dolch
     werte:
@@ -407,6 +426,100 @@ fernhaendlerpaktierer:
   - name: Gefahreninstinkt
   - name: Kreis der Verdammnis I
   - name: Willensstark I
+fleckenhai:
+  attribute:
+    GE: 14
+    KK: 20
+    KO: 20
+    MU: 12
+  beschreibung: Räuber der Meere
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 3
+      TPP: 3
+      VT: 4
+      info: 'Zerbrechlich, Gift (Stufe 24, Verzögerung 0, Intervall 0, 1 Wunde, WD
+        1W6 Tage, Lähmung: körperliche Proben -2, kumulativ)'
+      name: Biss
+    werte:
+      GS: 8
+      INI: 4
+      MR: 4
+      WS: 7
+      WSE: 9
+  klasse: tier
+  name: Fleckenhai
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 8
+  - name: Schwimmen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  unterschied: 'WS 7/9, TP: 1W6+3, Gift (Stufe 24, Verzögerung 0, Intervall 0, 1 Wunde,
+    WD 1W6 Tage, Lähmung: körperliche Proben -2, kumulativ'
+  variantevon: streifenhai
+  vorteile:
+  - name: Wasserwesen
+gargyl:
+  attribute:
+    GE: 6
+    KK: 24
+    KO: 28
+    MU: 12
+  beschreibung: hinterhältiger Jäger aus Stein
+  info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt eine
+    MR von 0)
+  kampf:
+    vorteile:
+    - name: Doppelangriff
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff (max. +6 TP)
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 6
+      name: Klauen
+    werte:
+      GS: 6
+      GSF: 10
+      INI: 4
+      MR: 12
+      WS: 8
+      WSE: 12
+      koloss: 1
+  klasse: mythen
+  name: Gargyl
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Untertauchen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 10
+  - name: Zähigkeit
+    wert: 16
+  vorteile:
+  - name: Flugfähig
+  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
+  - name: Angepasst II (Dunkelheit)
+  - name: Tarnung (in der Stadt)
+  - name: Geisterpanzer
 ghul:
   attribute:
     GE: 8
@@ -415,14 +528,15 @@ ghul:
     KO: 8
     MU: 8
   beschreibung: ansteckender und gieriger Leichenfresser
-  id: ghul
   kampf:
     waffen:
     - AT: 6
       RW: 1
-      TP: 1W6
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
       TPP: 0
-      TPW: 1
       VT: 6
       info: Stumpf, Zerbrechlich, Hochansteckend (Jede erlittene Wunde erhöht das
         Chance einer Ansteckung mit Wundbrand oder einer anderen Krankheit um 50%.
@@ -430,9 +544,11 @@ ghul:
       name: Unbewaffnet
     - AT: 6
       RW: 0
-      TP: 2W6+0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 6
       info: Zerbrechlich, Ghulgift (Stufe 16, Verzögerung 0 Aktionen, Wirkungs- dauer
         8 Stunden; Proben auf körperliche   attribute und Fertigkeiten sind kumulativ
@@ -470,38 +586,43 @@ goblin:
     KO: 4
     MU: 4
   beschreibung: rotpelzige Landplage des Nordens
-  id: goblin
   kampf:
     waffen:
     - AT: 8
       RW: 2
-      TP: 2W6-1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: -1
       TPP: -1
-      TPW: 2
       VT: 8
       info: Wendig
       name: Holzspeer
     - AT: 8
       RW: 1
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 8
       info: Kopflastig, Stumpf
       name: Keule
     - FK: 8
       LZ: 0
       RW: 16
-      TP: 2W6+1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
       TPP: 1
-      TPW: 2
       name: Kurzbogen
     werte:
       GS: 5
       INI: 3
       MR: 4
       WS: 4
-  klasse: tier
+  klasse: humanoid
   name: Goblin
   quelle: ilaris
   talente:
@@ -523,7 +644,6 @@ greif:
     KO: 26
     MU: 40
   beschreibung: Mythenwesen und mächtiger Diener Praios‘; großer Gegner
-  id: greif
   info: '*gegen unheilige Kreaturen: TP:  +1W6, WS +2, AT/VT:  +2, Liturgien +4'
   kampf:
     vorteile:
@@ -536,16 +656,20 @@ greif:
     waffen:
     - AT: 17
       RW: 1
-      TP: 2W6+4
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
       TPP: 4
-      TPW: 2
       VT: 11
       name: Prankenhieb
     - AT: 17
       RW: 0
-      TP: 3W6+4
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
       TPP: 4
-      TPW: 3
       VT: 2
       name: Schnabelhieb
     werte:
@@ -592,6 +716,136 @@ greif:
   - name: Willensstark II
   - name: Geisterpanzer (WS 20)
   - name: Unbeugsamkeit
+grosserhund:
+  attribute:
+    GE: 14
+    KK: 6
+    KO: 6
+    MU: 6
+  beschreibung: verbreitetes Rudeltier
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 6
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 2
+      MR: 2
+      WS: 4
+      WSE: 5
+  klasse: tier
+  name: Großer Hund
+  quelle: ilaris
+  talente:
+  - name: Laufen
+    wert: 24
+  - name: Pirschen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 18
+  - name: Zähigkeit
+    wert: 4
+  unterschied: identisch
+  variantevon: wolf
+  vorteile:
+  - name: Angepasst II (Dunkelheit)
+gruftassel:
+  attribute:
+    GE: 4
+    KK: 6
+    KO: 12
+    MU: 4
+  beschreibung: flinker Aasfresser
+  kampf:
+    vorteile:
+    - name: Doppelangriff
+    - name: Standfest
+    waffen:
+    - AT: 9
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 5
+      info: Rüstungsbrechend
+      name: Zange
+    werte:
+      GS: 5
+      INI: 3
+      MR: 11
+      WS: 4
+      WSE: 6
+  klasse: tier
+  name: Gruftassel
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 10
+  - name: Zähigkeit
+    wert: 10
+  vorteile:
+  - name: Angepasst II (Dunkelheit)
+hammerhai:
+  attribute:
+    GE: 14
+    KK: 20
+    KO: 20
+    MU: 12
+  beschreibung: Räuber der Meere
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: 'Raserei 2 (bei Verletzung: AT+2, VT-2, TP+2)'
+    waffen:
+    - AT: 8
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 4
+      MR: 4
+      WS: 10
+      WSE: 12
+  klasse: tier
+  name: Hammerhai
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 8
+  - name: Schwimmen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  unterschied: 'WS 10/12, TP: 2W6 Kampfwerte -2, Raserei 2 (bei Verletzung: AT+2,
+    VT-2, TP+2'
+  variantevon: streifenhai
+  vorteile:
+  - name: Wasserwesen
 harpyie:
   attribute:
     GE: 16
@@ -599,7 +853,6 @@ harpyie:
     KO: 4
     MU: 4
   beschreibung: wahnsinnige Verschmelzung von Vogel und Frau
-  id: harpyie
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -607,9 +860,11 @@ harpyie:
     waffen:
     - AT: 12
       RW: 0
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 8
       name: Klauen
     werte:
@@ -634,7 +889,6 @@ hoehlenspinne:
     KO: 4
     MU: 4
   beschreibung: einzelgängerische Spinne mit Lähmungsgift
-  id: hoehlenspinne
   info: Das Netz der Spinne ist im Fackelschein mit einer Wachsamkeits-Probe (24)
     zu erkennen. Misslingt die Probe, verfängt sich ein Opfer im Netz, das wie ein
     Umklammern (–4, 20) wirkt.
@@ -642,9 +896,11 @@ hoehlenspinne:
     waffen:
     - AT: 9
       RW: 0
-      TP: 1W6+2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
       TPP: 2
-      TPW: 1
       VT: 6
       info: Giftig (Spinnengift, Stufe 20, Verzögerung 0, Wirkungsdauer 8 Stunden;
         körperliche   attribute und Fertigkeiten sind kumulativ um –1 erschwert)
@@ -675,7 +931,6 @@ hornechse:
     KO: 54
     MU: 12
   beschreibung: friedfertiger Pflanzenfresser und Reittier der Achaz; großer Gegner
-  id: hornechse
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -683,9 +938,11 @@ hornechse:
     waffen:
     - AT: 8
       RW: 0
-      TP: 4W6+6
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 6
       TPP: 6
-      TPW: 4
       VT: 4
       info: Niederwerfen (–8)
       name: Horn
@@ -707,7 +964,6 @@ hyralkor:
     KO: 220
     MU: 30
   beschreibung: Herrscher seines Landstrichs; sehr großer Endgegner
-  id: hyralkor
   kampf:
     vorteile:
     - name: Hammerschlag
@@ -717,50 +973,62 @@ hyralkor:
     waffen:
     - AT: 19
       RW: 2
-      TP: 2W20+10
+      TP:
+        W: 20
+        anzahl: 2
+        plus: 10
       TPP: 10
-      TPW20: 2
       VT: 10
       info: Zerbrechlich
       name: Biss
     - FK: 12
       LZ: 0
       RW: 32
-      TP: 5W6+8
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 8
       TPP: 8
-      TPW: 5
       info: Nachbrennen
       name: Flammenstrahl
     - FK: 12
       LZ: 0
       RW: 16
-      TP: 4W6+4
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
       TPP: 4
-      TPW: 4
       info: Flächenangriff (90° vor dem Drachen), Nachbrennen
       name: Flammeninferno
     - AT: 11
       RW: 0
-      TP: 3W20
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 0
       TPP: 0
-      TPW20: 3
       VT: 6
       info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
       name: Trampeln (Beine)
     - AT: 16
       RW: 1
-      TP: 2W20+5
+      TP:
+        W: 20
+        anzahl: 2
+        plus: 5
       TPP: 5
-      TPW20: 2
       VT: 10
       info: Niederwerfen (–8)
       name: Pranken (Beine)
     - AT: 16
       RW: 8
       RWM: 1
-      TP: 4W6+2
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
       TPP: 2
-      TPW: 4
       VT: 8
       info: Flächenangriff (90° hinter dem Drachen), Niederwerfen (–4)
       name: Schwanzhieb (S.)
@@ -864,37 +1132,176 @@ hyralkor:
   - name: Immunität (Feuer)
   - name: Schreckgestalt II
   - name: Verwundbarkeit I (Eis)
+ifirnshai:
+  attribute:
+    GE: 14
+    KK: 20
+    KO: 20
+    MU: 12
+  beschreibung: Räuber der Meere
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 4
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 4
+      MR: 4
+      WS: 9
+      WSE: 11
+  klasse: tier
+  name: Ifirnshai
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 8
+  - name: Schwimmen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  unterschied: 'WS 10/12 koloss: 2, AT: 14, VT: 0, TP: 2W20+4, Attribute +12, sehr
+    großer Gegner, Raserei 5 (bei Verletzung: AT+5, VT-5, TP+5'
+  variantevon: streifenhai
+  vorteile:
+  - name: Wasserwesen
+kampfhund:
+  attribute:
+    GE: 14
+    KK: 8
+    KO: 8
+    MU: 6
+  beschreibung: verbreitetes Rudeltier
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 6
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 7
+      INI: 3
+      MR: 3
+      WS: 5
+      WSE: 6
+  klasse: tier
+  name: Kampfhund
+  quelle: ilaris
+  talente:
+  - name: Laufen
+    wert: 20
+  - name: Pirschen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 18
+  - name: Zähigkeit
+    wert: 4
+  unterschied: 'GS: –1, Kampfwerte +1, KK, KO: +2, Laufen –4'
+  variantevon: wolf
+  vorteile:
+  - name: Angepasst II (Dunkelheit)
+khoramsbestie:
+  attribute:
+    GE: 14
+    KK: 8
+    KO: 8
+    MU: 6
+  beschreibung: verbreitetes Rudeltier
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 6
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 10
+      INI: 4
+      MR: 4
+      WS: 4
+      WSE: 6
+  klasse: tier
+  name: Khoramsbestie
+  quelle: ilaris
+  talente:
+  - name: Laufen
+    wert: 24
+  - name: Pirschen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 18
+  - name: Zähigkeit
+    wert: 4
+  unterschied: 'Kampfwerte +2, KK, KO: +2'
+  variantevon: wolf
+  vorteile:
+  - name: Angepasst II (Dunkelheit)
 krakenmolch:
   attribute:
     KK: 12
     KO: 100
     MU: 20
   beschreibung: vielarmiger Schrecken der Küsten und Sümpfe; großer Gegner
-  id: krakenmolch
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
     waffen:
     - AT: 12
       RW: 1
-      TP: 4W6+4
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
       TPP: 4
-      TPW: 4
       VT: 4
       name: Biss
     - AT: 14
       RW: 8
-      TP: 2W6+4
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
       TPP: 4
-      TPW: 2
       VT: 10
       info: Niederwerfen
       name: Tentakelhieb
     - AT: 13
       RW: 8
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 10
       info: Umklammern (–4, 22)
       name: Tentakelklammer
@@ -928,7 +1335,6 @@ kriegermumie:
     GE: 12
     KK: 32
   beschreibung: starker Wächter und letzter Anblick für zahlreiche Grabräuber
-  id: kriegermumie
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III (Befreiungsschlag)
@@ -937,17 +1343,21 @@ kriegermumie:
     waffen:
     - AT: 16
       RW: 1
-      TP: 5W6+4
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
       TPP: 4
-      TPW: 5
       VT: 10
       info: Niederwerfen, Unaufhaltsam
       name: Khunchomer
     - AT: 14
       RW: 0
-      TP: 2W6+6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
       TPP: 6
-      TPW: 2
       VT: 10
       info: Stumpf, Ansteckend (Jede erlittene Wunde erhöht die Chance einer Ansteckung
         mit Wundbrand um 25%.  Eine Probe auf Gifte und Krankheiten (20) eliminiert
@@ -981,6 +1391,58 @@ kriegermumie:
   - name: Verwundbarkeit II (Feuer)
   - name: Schmerzimmun II
   - name: Schreckgestalt II
+kriegselefant:
+  attribute:
+    KK: 120
+    KO: 140
+    MU: 10
+  beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Überrennen
+    - name: Unaufhaltsam
+    - name: Zerstörerisch I und II
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
+      TPP: 4
+      VT: 10
+      info: Niederwerfen
+      name: Stoßzähne
+    - AT: 10
+      RW: 1
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 0
+      TPP: 0
+      VT: 8
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      name: Trampeln
+    werte:
+      GS: 9
+      INI: 1
+      MR: 4
+      WS: 15
+      WSE: 16
+      koloss: 2
+  klasse: tier
+  name: Kriegselefant
+  quelle: ilaris
+  talente:
+  - name: Laufen
+    wert: 14
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  unterschied: 'AT: und VT: +4'
+  variantevon: elefant
 kriegspferd:
   attribute:
     GE: 8
@@ -988,7 +1450,6 @@ kriegspferd:
     KO: 24
     MU: 12
   beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
-  id: kriegspferd
   info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
     VT: auf den PW Reiten abgelegt werden.'
   kampf:
@@ -999,17 +1460,21 @@ kriegspferd:
     waffen:
     - AT: 12
       RW: 1
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 5
       info: Niederwerfen
       name: Tritt
     - AT: 12
       RW: 0
-      TP: 1W6+3
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 3
       TPP: 3
-      TPW: 1
       VT: 2
       info: Zerbrechlich
       name: Biss
@@ -1026,14 +1491,13 @@ kriegspferd:
     wert: 10
   - name: Zähigkeit
     wert: 10
-kriegspferdleichtepferderuestung:
+kriegspferdleichteruestung:
   attribute:
     GE: 8
     KK: 26
     KO: 24
     MU: 12
   beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
-  id: kriegspferd
   info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
     VT: auf den PW Reiten abgelegt werden.'
   kampf:
@@ -1044,17 +1508,21 @@ kriegspferdleichtepferderuestung:
     waffen:
     - AT: 12
       RW: 1
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 5
       info: Niederwerfen
       name: Tritt
     - AT: 12
       RW: 0
-      TP: 1W6+3
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 3
       TPP: 3
-      TPW: 1
       VT: 2
       info: Zerbrechlich
       name: Biss
@@ -1074,14 +1542,13 @@ kriegspferdleichtepferderuestung:
     wert: 10
   unterschied: 'WS: +0/+1'
   variantevon: kriegspferd
-kriegspferdmittlerepferderuestung:
+kriegspferdmittlereruestung:
   attribute:
     GE: 8
     KK: 26
     KO: 24
     MU: 12
   beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
-  id: kriegspferdmittlerepferderuestung
   info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
     VT: auf den PW Reiten abgelegt werden.'
   kampf:
@@ -1092,17 +1559,21 @@ kriegspferdmittlerepferderuestung:
     waffen:
     - AT: 11
       RW: 1
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 4
       info: Niederwerfen
       name: Tritt
     - AT: 11
       RW: 0
-      TP: 1W6+3
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 3
       TPP: 3
-      TPW: 1
       VT: 1
       info: Zerbrechlich
       name: Biss
@@ -1122,147 +1593,48 @@ kriegspferdmittlerepferderuestung:
     wert: 10
   unterschied: 'WS: +0/+2, GS und Kampfwerte –1'
   variantevon: kriegspferd
-kriegspferdreitpony:
+kriegswildschwein:
   attribute:
     GE: 8
-    KK: 26
-    KO: 24
-    MU: 12
-  beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
-  id: Kriegspferdreitpony
-  info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
-    VT: auf den PW Reiten abgelegt werden.'
+    KK: 18
+    KO: 22
+  beschreibung: gefräßiger Schädling und goblinisches Reittier
   kampf:
     vorteile:
-    - name: Rüstungsgewöhnung
     - name: Standfest
-    - name: im Reiterkampf WM +1
+    - name: Sturmangriff
+    - name: im Reiterkampf WM +0
     waffen:
-    - AT: 12
-      RW: 1
-      TP: 2W6+2
-      TPP: 0
-      TPW: 2
-      VT: 5
-      info: Niederwerfen
-      name: Tritt
-    - AT: 12
+    - AT: 11
       RW: 0
-      TP: 1W6+3
-      TPP: 1
-      TPW: 1
-      VT: 2
-      info: Zerbrechlich
-      name: Biss
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
+      TPP: 6
+      VT: 4
+      info: Niederwerfen
+      name: Stoß
     werte:
-      GS: 10
-      INI: 1
-      MR: 6
+      GS: 7
+      INI: 3
+      MR: 3
       WS: 11
+      WSE: 13
   klasse: tier
-  name: Reitpony
+  name: Kriegswildschwein
   quelle: ilaris
   talente:
+  - name: Laufen
+    wert: 12
+  - name: Pirschen
+    wert: 4
   - name: Wachsamkeit
     wert: 10
   - name: Zähigkeit
-    wert: 10
-  unterschied: 'WS: 11, GS: 10, TP:  –2, WM 0'
-  variantevon: kriegspferd
-kriegspferdreittier:
-  attribute:
-    GE: 8
-    KK: 26
-    KO: 24
-    MU: 12
-  beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
-  id: kriegspferdreittier
-  info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
-    VT: auf den PW Reiten abgelegt werden.'
-  kampf:
-    vorteile:
-    - name: Rüstungsgewöhnung
-    - name: Standfest
-    - name: im Reiterkampf WM +1
-    waffen:
-    - AT: 12
-      RW: 1
-      TP: 2W6+2
-      TPP: 0
-      TPW: 2
-      VT: 5
-      info: Niederwerfen
-      name: Tritt
-    - AT: 12
-      RW: 0
-      TP: 1W6+3
-      TPP: 1
-      TPW: 1
-      VT: 2
-      info: Zerbrechlich
-      name: Biss
-    werte:
-      GS: 12
-      INI: 1
-      MR: 6
-      WS: 13
-  klasse: tier
-  name: Reitpferd
-  quelle: ilaris
-  talente:
-  - name: Wachsamkeit
-    wert: 10
-  - name: Zähigkeit
-    wert: 10
-  unterschied: 'WS: 13, GS: 12, TP:  –2, WM –1'
-  variantevon: kriegspferd
-kriegspferdtralloper:
-  attribute:
-    GE: 8
-    KK: 26
-    KO: 24
-    MU: 12
-  beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
-  id: kriegspferdtralloper
-  info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
-    VT: auf den PW Reiten abgelegt werden.'
-  kampf:
-    vorteile:
-    - name: Rüstungsgewöhnung
-    - name: Standfest
-    - name: im Reiterkampf WM +1
-    waffen:
-    - AT: 12
-      RW: 1
-      TP: 2W6+2
-      TPP: 4
-      TPW: 2
-      VT: 5
-      info: Niederwerfen
-      name: Tritt
-    - AT: 12
-      RW: 0
-      TP: 1W6+3
-      TPP: 5
-      TPW: 1
-      VT: 2
-      info: Zerbrechlich
-      name: Biss
-    werte:
-      GS: 8
-      INI: 1
-      MR: 6
-      WS: 16
-  klasse: tier
-  name: Tralloper
-  quelle: ilaris
-  talente:
-  - name: Wachsamkeit
-    wert: 10
-  - name: Zähigkeit
-    wert: 10
-  unterschied: 'WS: 16, GS: 8, TP:  +2, WM 0'
-  variantevon: kriegspferd
+    wert: 4
+  unterschied: 'WS: 11/13, TP:  +2, WM +1'
+  variantevon: wildschwein
 leibwaechter:
   attribute:
     CH: 6
@@ -1274,7 +1646,6 @@ leibwaechter:
     KO: 10
     MU: 8
   beschreibung: persönlicher Wächter eines Würdenträgers
-  id: leibwaechter
   kampf:
     vorteile:
     - name: Schildkampf III (Schildwall)
@@ -1289,25 +1660,31 @@ leibwaechter:
     waffen:
     - AT: 13
       RW: 1
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 16
       info: Wendig
       name: Amazonensäbel
     - AT: 15
       RW: 0
-      TP: 1W6+2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
       TPP: 2
-      TPW: 1
       VT: 18
       info: Schild, Stumpf
       name: Holzschild
     - AT: 14
       RW: 0
-      TP: 1W6+4
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 4
       TPP: 4
-      TPW: 1
       VT: 14
       info: Kopflastig, Stumpf, Wendig, Zerbrechlich
       name: Faust
@@ -1339,21 +1716,131 @@ leibwaechter:
     wert: 15
   - name: Zähigkeit
     wert: 12
+loewe:
+  attribute:
+    GE: 16
+    KK: 16
+    KO: 18
+    MU: 14
+  beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 12
+      info: Doppelangriff, Niederwerfen (–4)
+      name: Prankenhieb
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 5
+        plus: -2
+      TPP: -2
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 11
+      INI: 10
+      MR: 6
+      WS: 10
+      WSE: 11
+  klasse: tier
+  name: Löwe
+  quelle: ilaris
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Pirschen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 18
+  - name: Zähigkeit
+    wert: 16
+  unterschied: 'WS: –1,   attribute und TP:  –4'
+  variantevon: saebelzahntiger
+  vorteile:
+  - name: Angepasst II (Dunkelheit)
+  - name: Blitzschnell (erleidet keine Passierschläge
+  - name: wenn er sich aus dem Nahkampf zurückzieht)
+mamut:
+  attribute:
+    KK: 160
+    KO: 200
+    MU: 10
+  beschreibung: gutmütiger Pflanzenfresser; sehr großer Gegner
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Überrennen
+    - name: Unaufhaltsam
+    - name: Zerstörerisch I und II
+    - name: Resistenz gegen Kälte
+    waffen:
+    - AT: 8
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 9
+      TPP: 9
+      VT: 6
+      info: Niederwerfen
+      name: Stoßzähne
+    - AT: 6
+      RW: 1
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 5
+      TPP: 5
+      VT: 4
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      name: Trampeln
+    werte:
+      GS: 9
+      INI: 1
+      MR: 4
+      WS: 17
+      WSE: 19
+      koloss: 2
+  klasse: tier
+  name: Mamut
+  quelle: ilaris
+  talente:
+  - name: Laufen
+    wert: 14
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  unterschied: 'WS +2/+3, Resistenz gegen Kälte, TP: +5, KO: 200, KK: 160'
+  variantevon: elefant
 morfu:
   attribute:
     KK: 8
     KO: 8
     MU: 10
   beschreibung: schleimige Giftschnecke, die ihre Stacheln verschießt; großer Gegner
-  id: morfu
   kampf:
     waffen:
     - FK: 8
       LZ: 1
       RW: 8
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       info: Morfugift (Stufe 20, Verzögerung 4 Aktionen, Wirkungsdauer sofort; das
         Ziel erleidet eine Wunde)
       name: Dornensalve
@@ -1375,6 +1862,46 @@ morfu:
   - name: Immunität (Niederwerfen
   - name: Umreißen und ähnliche Effekte)
   - name: Resistenz I (Stumpfe Waffen)
+nachtwind:
+  attribute:
+    GE: 2
+    KK: -6
+    KO: -2
+    MU: 4
+  beschreibung: Sehr kleiner, magiehassender, geflügelter Jäger
+  kampf:
+    vorteile:
+    - name: Sturmangriff (max. +2 TP)
+    waffen:
+    - AT: 13
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
+      TPP: 1
+      VT: 6
+      name: Krallen
+    werte:
+      GS: 1
+      GSF: 10
+      INI: 2
+      MR: 4
+      WS: 2
+  klasse: tier
+  name: Nachtwind
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 18
+  - name: Zähigkeit
+    wert: -4
+  vorteile:
+  - name: Magiegespür
+  - name: Flieger
+  - name: Angepasst II (Dunkelheit)
 oger:
   attribute:
     GE: 4
@@ -1383,7 +1910,6 @@ oger:
     KO: 20
     MU: 20
   beschreibung: stinkender Vielfraß und Menschenfresser; großer Gegner
-  id: oger
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III (Befreiungsschlag)
@@ -1392,17 +1918,21 @@ oger:
     waffen:
     - AT: 14
       RW: 1
-      TP: 2W6+4
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
       TPP: 4
-      TPW: 2
       VT: 8
       info: Stumpf
       name: Faust
     - AT: 14
       RW: 2
-      TP: 4W6+6
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 6
       TPP: 6
-      TPW: 4
       VT: 8
       info: Stumpf, Niederwerfen (–4)
       name: Keule
@@ -1434,7 +1964,6 @@ ogerkriegsoger:
     KO: 20
     MU: 20
   beschreibung: stinkender Vielfraß und Menschenfresser; großer Gegner
-  id: ogerkriegsoger
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III (Befreiungsschlag)
@@ -1443,17 +1972,21 @@ ogerkriegsoger:
     waffen:
     - AT: 14
       RW: 1
-      TP: 2W6+4
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 8
       TPP: 8
-      TPW: 2
       VT: 8
       info: Stumpf
       name: Faust
     - AT: 14
       RW: 2
-      TP: 4W6+6
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 8
       TPP: 8
-      TPW: 4
       VT: 8
       info: Stumpf, Niederwerfen (–4)
       name: Keule
@@ -1484,7 +2017,6 @@ ogerstatue:
     KK: 44
     KO: 48
   beschreibung: behäbige Bronzestatue eines Ogers; großer Gegner
-  id: ogerstatue
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -1492,9 +2024,11 @@ ogerstatue:
     waffen:
     - AT: 12
       RW: 2
-      TP: 2W20+6
+      TP:
+        W: 20
+        anzahl: 2
+        plus: 6
       TPP: 6
-      TPW20: 2
       VT: 4
       info: Niederwerfen (–4)
       name: Faust
@@ -1532,7 +2066,6 @@ orkkrieger:
     KO: 12
     MU: 14
   beschreibung: durchschnittlicher orkischer Kämpfer
-  id: orkkrieger
   kampf:
     vorteile:
     - name: Kraftvoller Kampf II
@@ -1544,25 +2077,31 @@ orkkrieger:
     waffen:
     - AT: 10
       RW: 1
-      TP: 2W6+6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
       TPP: 6
-      TPW: 2
       VT: 10
       info: Kopflastig
       name: Arbach
     - AT: 10
       RW: 1
-      TP: 3W6+6
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 6
       TPP: 6
-      TPW: 3
       VT: 10
       info: Kopflastig, Zweihändig
       name: Kriegshammer
     - AT: 9
       RW: 0
-      TP: 1W6+2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
       TPP: 2
-      TPW: 1
       VT: 9
       info: Kopflastig, Stumpf, Wendig, Zerbrechlich
       name: Faust
@@ -1593,7 +2132,6 @@ orkkundschafter:
     KO: 12
     MU: 10
   beschreibung: wildniserfahrener orkischer Kundschafter oder Räuber
-  id: orkkundschafter
   kampf:
     vorteile:
     - name: Natürliche Rüstung
@@ -1602,18 +2140,22 @@ orkkundschafter:
     waffen:
     - AT: 8
       RW: 0
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 8
       info: Rüstungsbrechend
       name: Skraja
     - FK: 11
       LZ: 1
       RW: 32
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       info: Zweihändig
       name: Ork. Reiterbogen
     werte:
@@ -1640,6 +2182,62 @@ orkkundschafter:
     wert: 10
   - name: Zähigkeit
     wert: 8
+panther:
+  attribute:
+    GE: 20
+    KK: 20
+    KO: 22
+    MU: 18
+  beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      TPP: 4
+      VT: 12
+      info: Doppelangriff, Niederwerfen (–4)
+      name: Prankenhieb
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 2
+      TPP: 2
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 11
+      INI: 10
+      MR: 6
+      WS: 11
+      WSE: 12
+  klasse: tier
+  name: Panther
+  quelle: ilaris
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Pirschen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 18
+  - name: Zähigkeit
+    wert: 16
+  unterschied: ''
+  variantevon: saebelzahntiger
+  vorteile:
+  - name: Angepasst II (Dunkelheit)
+  - name: Blitzschnell (erleidet keine Passierschläge
+  - name: wenn er sich aus dem Nahkampf zurückzieht)
 perldrache:
   attribute:
     GE: 12
@@ -1647,7 +2245,6 @@ perldrache:
     KO: 74
     MU: 20
   beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
-  id: perldrache
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -1658,23 +2255,29 @@ perldrache:
     waffen:
     - AT: 12
       RW: 2
-      TP: 5W6+4
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
       TPP: 4
-      TPW: 5
       VT: 8
       name: Biss
     - AT: 12
       RW: 1
-      TP: 4W6+4
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
       TPP: 4
-      TPW: 4
       VT: 12
       name: Klauenhieb
     - AT: 14
       RW: 2
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 8
       info: Flächenangriff (180° hinter dem Drachen)
       name: Schwanzschlag
@@ -1714,9 +2317,7 @@ perldrache:
     wert: 24
   vorteile:
   - name: Angepasst I (Wasser)
-  - name: Aura (Hitze
-  - name: Zähigkeit (20) alle 4 INI:phasen
-  - name: 1 Wunde)
+  - name: Aura (Hitze Zähigkeit (20) alle 4 INI:phasen 1 Wunde)
   - name: Flugfähig
   - name: Resistenz II (Feuer)
   - name: Schreckgestalt I
@@ -1727,7 +2328,6 @@ perldrachewestwinddrache:
     KO: 74
     MU: 20
   beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
-  id: perldrache
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -1738,23 +2338,29 @@ perldrachewestwinddrache:
     waffen:
     - AT: 12
       RW: 2
-      TP: 5W6+4
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
       TPP: 4
-      TPW: 5
       VT: 8
       name: Biss
     - AT: 12
       RW: 1
-      TP: 4W6+4
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
       TPP: 4
-      TPW: 4
       VT: 12
       name: Klauenhieb
     - AT: 14
       RW: 2
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 8
       info: Flächenangriff (180° hinter dem Drachen)
       name: Schwanzschlag
@@ -1793,16 +2399,17 @@ perldrachewestwinddrache:
   - name: Schreckgestalt I
 pestrattenschwarm:
   beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
-  id: pestrattenschwarm
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
     waffen:
     - AT: 14
       RW: 0
-      TP: 2W6–1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 6
       info: Hochansteckend (Jede erlittene Wunde erhöht das Risiko einer Ansteckung
         mit Wundbrand um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert
@@ -1836,16 +2443,17 @@ pestrattenschwarm:
   - name: Verwundbarkeit IV (Flächenschaden)
 pestrattenschwarmsehrgrosserschwarm:
   beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
-  id: pestrattenschwarmsehrgrosserschwarm
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
     waffen:
     - AT: 16
       RW: 0
-      TP: 2W6–1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 6
       info: Hochansteckend (Jede erlittene Wunde erhöht das Risiko einer Ansteckung
         mit Wundbrand um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert
@@ -1891,33 +2499,38 @@ raeuber:
     KO: 6
     MU: 8
   beschreibung: ausgehungerte Halsabschneider auf der Suche nach leichter Beute
-  id: raeuber
   info: Der Räuber steht beispielhaft für schwache humanoide Gegner, die für einen
     echten Kämpfer kaum eine Gefahr darstellen.
   kampf:
     waffen:
     - AT: 8
       RW: 1
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 8
       info: Stumpf, Kopflastig
       name: Keule
     - AT: 8
       RW: 2
-      TP: 2W6+1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
       TPP: 1
-      TPW: 2
       VT: 8
       info: Wendig
       name: Holzspeer
     - FK: 8
       LZ: 0
       RW: 16
-      TP: 2W6+1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
       TPP: 1
-      TPW: 2
       info: Zweihändig
       name: Kurzbogen
     werte:
@@ -1937,6 +2550,106 @@ raeuber:
     wert: 4
   vorteile:
   - name: Zweihändig
+reitpony:
+  attribute:
+    GE: 8
+    KK: 26
+    KO: 24
+    MU: 12
+  beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
+  info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
+    VT: auf den PW Reiten abgelegt werden.'
+  kampf:
+    vorteile:
+    - name: Rüstungsgewöhnung
+    - name: Standfest
+    - name: im Reiterkampf WM +1
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 5
+      info: Niederwerfen
+      name: Tritt
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
+      TPP: 1
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 10
+      INI: 1
+      MR: 6
+      WS: 11
+  klasse: tier
+  name: Reitpony
+  quelle: ilaris
+  talente:
+  - name: Wachsamkeit
+    wert: 10
+  - name: Zähigkeit
+    wert: 10
+  unterschied: 'WS: 11, GS: 10, TP:  –2, WM 0'
+  variantevon: kriegspferd
+reittier:
+  attribute:
+    GE: 8
+    KK: 26
+    KO: 24
+    MU: 12
+  beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
+  info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
+    VT: auf den PW Reiten abgelegt werden.'
+  kampf:
+    vorteile:
+    - name: Rüstungsgewöhnung
+    - name: Standfest
+    - name: im Reiterkampf WM +1
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 5
+      info: Niederwerfen
+      name: Tritt
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
+      TPP: 1
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 12
+      INI: 1
+      MR: 6
+      WS: 13
+  klasse: tier
+  name: Reitpferd
+  quelle: ilaris
+  talente:
+  - name: Wachsamkeit
+    wert: 10
+  - name: Zähigkeit
+    wert: 10
+  unterschied: 'WS: 13, GS: 12, TP:  –2, WM –1'
+  variantevon: kriegspferd
 riese:
   attribute:
     GE: 6
@@ -1944,7 +2657,6 @@ riese:
     KO: 130
     MU: 20
   beschreibung: Unsterblicher Gigant; sehr großer Gegner
-  id: riese
   info: 'kampfunfähigkeit: Der Riese flieht, wenn er 6 Wunden erlitten hat.'
   kampf:
     vorteile:
@@ -1956,36 +2668,44 @@ riese:
     waffen:
     - AT: 16
       RW: 2
-      TP: 2W20+5
+      TP:
+        W: 20
+        anzahl: 2
+        plus: 5
       TPP: 5
-      TPW20: 2
       VT: 12
       info: Niederwerfen (–12)
       name: Faust
     - AT: 18
       RW: 5
       RWM: 2
-      TP: 3W20+10
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 10
       TPP: 10
-      TPW20: 3
       VT: 12
       info: 'Flächenangriff (180° vor dem Riesen), Niederwerfen (–16), Zurückstoßen
         (wird nicht durch erfolgreiche VT: gestoppt)'
       name: Baumstamm
     - AT: 16
       RW: 1
-      TP: 4W20
+      TP:
+        W: 20
+        anzahl: 4
+        plus: 0
       TPP: 0
-      TPW20: 4
       VT: 6
       info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–16), Überrennen
       name: Trampeln
     - AT: 14
       LZ: 1
       RW: 16
-      TP: 3W20
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 0
       TPP: 0
-      TPW20: 3
       info: Flächenangriff (1 Schritt Radius um das Hauptziel), Niederwerfen (–12)
       name: Felsbrocken
     werte:
@@ -2026,14 +2746,15 @@ riese:
   - name: Willensstark II
 riesenamoebe:
   beschreibung: allesfressender Schleimhaufen; großer Gegner
-  id: riesenamoebe
   kampf:
     waffen:
     - AT: 6
       RW: 1
-      TP: 1W6+0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
       TPP: 0
-      TPW: 1
       VT: 2
       info: Umklammern (–2, 16), Ätzend (Ein Opfer in der Umklammerung erleidet in
         jeder INI:phase 2W6 SP. Die Riesenamöbe kann nur ein Opfer Umklammern.)
@@ -2061,24 +2782,27 @@ riesenkaiman:
     KO: 38
     MU: 10
   beschreibung: gefährlicher Jäger der südlichen Gewässer
-  id: riesenkaiman
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
     waffen:
     - AT: 8
       RW: 0
-      TP: 4W6+4
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
       TPP: 4
-      TPW: 4
       VT: 6
       info: Zerbrechlich
       name: Biss
     - AT: 6
       RW: 2
-      TP: 1W6+2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
       TPP: 2
-      TPW: 1
       VT: 2
       info: Flächenangriff (90° hinter dem Kaiman), Niederwerfen
       name: Schwanz
@@ -2109,7 +2833,6 @@ riesenkraken:
     KK: 22
     KO: 220
   beschreibung: Albtraum vieler Seefahrer; sehr großer Endgegner
-  id: riesenkraken
   kampf:
     vorteile:
     - name: Zusätzliche Attacke IV (nur Tentakel)
@@ -2117,27 +2840,33 @@ riesenkraken:
     waffen:
     - AT: 14
       RW: 1
-      TP: 3W20+10
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 10
       TPP: 10
-      TPW20: 3
       VT: 2
       info: Rüstungsbrechend
       name: Biss (Rumpf)
     - AT: 18
       RW: 12
       RWM: 2
-      TP: 4W6+2
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
       TPP: 2
-      TPW: 4
       VT: 8
       info: Flächenangriff (45°), Niederwerfen (–8), Zurückstoßen
       name: Tentakelhieb
     - AT: 15
       RW: 10
       RWM: 2
-      TP: 4W6
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 0
       TPP: 0
-      TPW: 4
       VT: 8
       info: Umklammern (–4, 32)
       name: Tentakelklammer
@@ -2182,6 +2911,44 @@ riesenkraken:
   - name: Schreckgestalt III
   - name: Wasserwesen
   - name: Willensstark II
+riesenspringelschwarm:
+  beschreibung: sehr kleines, scheußliches Sumpfgezücht
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      TPP: 0
+      VT: 4
+      info: Rüstungsbrechend
+      name: Biss
+    werte:
+      GS: 2
+      INI: 3
+      MR: 4
+      WS: 2
+      info: MR pro Tier
+      koloss: 2
+  klasse: tier
+  name: Riesenspringelschwarm
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Schwimmen
+    wert: 6
+  - name: Pirschen
+    wert: 6
+  - name: Wachsamkeit
+    wert: 16
+  vorteile:
+  - name: Wasserwesen
+  - name: Resistenz I (Stichwaffen)
+  - name: Schmerzimmun II
+  - name: Verwundbarkeit IV (Flächenschaden)
 ritter:
   attribute:
     CH: 10
@@ -2193,7 +2960,6 @@ ritter:
     KO: 12
     MU: 14
   beschreibung: erfahrener Veteran vieler Gefechte gegen den Ork
-  id: ritter
   info: Mit einem * markierte Kampfstile sind nicht in die Kampfwerte eingerechnet.
   kampf:
     vorteile:
@@ -2211,40 +2977,50 @@ ritter:
     waffen:
     - AT: 11
       RW: 1
-      TP: 2W6+6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
       TPP: 6
-      TPW: 2
       VT: 11
       info: Kopflastig
       name: Breitschwert
     - AT: 13
       RW: 0
-      TP: 2W6+1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
       TPP: 1
-      TPW: 2
       VT: 13
       info: Schild, Stumpf
       name: Großschild
     - AT: 9
       RW: 2
-      TP: 3W6+7
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 7
       TPP: 7
-      TPW: 3
       VT: 9
       info: Kopflastig, Zweihändig
       name: Andergaster
     - AT: 9
       RW: 2
-      TP: 3W6+4
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
       TPP: 4
-      TPW: 3
       VT: 0
       name: Kriegslanze
     - AT: 15
       RW: 1
-      TP: 2W6+6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
       TPP: 6
-      TPW: 2
       VT: 15
       info: Niederwerfen
       name: Tralloper
@@ -2282,7 +3058,6 @@ saebelzahntiger:
     KO: 22
     MU: 18
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
-  id: saebelzahntiger
   kampf:
     vorteile:
     - name: Standfest
@@ -2290,17 +3065,21 @@ saebelzahntiger:
     waffen:
     - AT: 16
       RW: 1
-      TP: 2W6+4
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
       TPP: 4
-      TPW: 2
       VT: 12
       info: Doppelangriff, Niederwerfen (–4)
       name: Prankenhieb
     - AT: 16
       RW: 0
-      TP: 5W6+2
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 2
       TPP: 2
-      TPW: 5
       VT: 2
       info: Zerbrechlich
       name: Biss
@@ -2326,112 +3105,112 @@ saebelzahntiger:
   - name: Angepasst II (Dunkelheit)
   - name: Blitzschnell (erleidet keine Passierschläge
   - name: wenn er sich aus dem Nahkampf zurückzieht)
-saebelzahntigerloewe:
-  attribute:
-    GE: 16
-    KK: 16
-    KO: 18
-    MU: 14
-  beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
-  id: saebelzahntigerloewe
-  kampf:
-    vorteile:
-    - name: Standfest
-    - name: Sturmangriff
-    waffen:
-    - AT: 16
-      RW: 1
-      TP: 2W6+0
-      TPP: 0
-      TPW: 2
-      VT: 12
-      info: Doppelangriff, Niederwerfen (–4)
-      name: Prankenhieb
-    - AT: 16
-      RW: 0
-      TP: 5W6-2
-      TPP: -2
-      TPW: 5
-      VT: 2
-      info: Zerbrechlich
-      name: Biss
-    werte:
-      GS: 11
-      INI: 10
-      MR: 6
-      WS: 10
-      WSE: 11
-  klasse: tier
-  name: Löwe
-  quelle: ilaris
-  talente:
-  - name: Laufen
-    wert: 16
-  - name: Pirschen
-    wert: 18
-  - name: Wachsamkeit
-    wert: 18
-  - name: Zähigkeit
-    wert: 16
-  unterschied: 'WS: –1,   attribute und TP:  –4'
-  variantevon: saebelzahntiger
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
-saebelzahntigerpanther:
+sandloewe:
   attribute:
     GE: 20
-    KK: 20
-    KO: 22
-    MU: 18
-  beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
-  id: saebelzahntigerpanther
+    KK: 24
+    KO: 20
+    MU: 16
+  beschreibung: Stolzer König der Khômwüste
   kampf:
     vorteile:
+    - name: Doppelangriff
+    - name: Niederwerfen
     - name: Standfest
     - name: Sturmangriff
     waffen:
-    - AT: 16
-      RW: 1
-      TP: 2W6+4
-      TPP: 4
-      TPW: 2
-      VT: 12
-      info: Doppelangriff, Niederwerfen (–4)
-      name: Prankenhieb
-    - AT: 16
+    - AT: 12
       RW: 0
-      TP: 5W6+2
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
       TPP: 2
-      TPW: 5
       VT: 2
       info: Zerbrechlich
       name: Biss
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 6
+      info: Wendig
+      name: Prankenhieb
     werte:
-      GS: 11
-      INI: 10
-      MR: 6
-      WS: 11
-      WSE: 12
+      GS: 8
+      INI: 4
+      MR: 2
+      WS: 8
+      WSE: 9
   klasse: tier
-  name: Panther
-  quelle: ilaris
+  name: Sandlöwe
+  quelle: allgemeinemacchiato
   talente:
   - name: Laufen
-    wert: 16
+    wert: 20
   - name: Pirschen
     wert: 18
   - name: Wachsamkeit
-    wert: 18
+    wert: 14
   - name: Zähigkeit
-    wert: 16
-  unterschied: ''
-  variantevon: saebelzahntiger
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
+    wert: 12
+schattenloewe:
+  attribute:
+    GE: 20
+    KK: 24
+    KO: 20
+    MU: 16
+  beschreibung: Stolzer König der Khômwüste
+  kampf:
+    vorteile:
+    - name: Doppelangriff
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      TPP: 2
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 6
+      info: Wendig
+      name: Prankenhieb
+    werte:
+      GS: 6
+      INI: 4
+      MR: 2
+      WS: 7
+      WSE: 8
+  klasse: tier
+  name: Sandlöwe
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Laufen
+    wert: 20
+  - name: Pirschen
+    wert: 24
+  - name: Wachsamkeit
+    wert: 14
+  - name: Zähigkeit
+    wert: 12
+  unterschied: WS 7/8, GS -2, Pirschen 24
+  variantevon: sandloewe
 schroeter:
   attribute:
     GE: 4
@@ -2439,7 +3218,6 @@ schroeter:
     KO: 14
     MU: 4
   beschreibung: Landplage oder exotisches Haustier
-  id: schroeter
   kampf:
     vorteile:
     - name: Doppelangriff
@@ -2447,17 +3225,21 @@ schroeter:
     waffen:
     - AT: 9
       RW: 1
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 4
       info: Rüstungsbrechend, Umklammern (–2, 18)
       name: Zange
     - AT: 12
       RW: 0
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 2
       info: Rüstungsbrechend
       name: Biss
@@ -2474,33 +3256,92 @@ schroeter:
     wert: 12
   - name: Zähigkeit
     wert: 10
+schwerthai:
+  attribute:
+    GE: 14
+    KK: 20
+    KO: 20
+    MU: 12
+  beschreibung: Räuber der Meere
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      TPP: 4
+      VT: 3
+      info: Umklammern (4), Rüstungsbrechend
+      name: Schwert
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 4
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 4
+      MR: 4
+      WS: 11
+      WSE: 13
+  klasse: tier
+  name: Schwerthai
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 8
+  - name: Schwimmen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  unterschied: '(WS 11/13, Schwert: RW: 1, AT: 12, VT: 3, TP: 3W6+4, Umklammern (4),
+    Rüstungsbrechend)'
+  variantevon: streifenhai
+  vorteile:
+  - name: Wasserwesen
 skelett:
   attribute:
     GE: 4
     KK: 8
   beschreibung: schwaches untotes Kanonenfutter
-  id: skelett
   kampf:
     waffen:
     - AT: 8
       RW: 0
-      TP: 1W6+2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
       TPP: 2
-      TPW: 1
       VT: 5
       name: Hände
     - AT: 8
       RW: 1
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 5
       name: Streitaxt
     - AT: 7
       RW: 2
-      TP: 3W6+4
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
       TPP: 4
-      TPW: 3
       VT: 4
       name: Stoßspeer
     werte:
@@ -2532,28 +3373,33 @@ skelettruestung:
     GE: 4
     KK: 8
   beschreibung: schwaches untotes Kanonenfutter
-  id: skelettruestung
   kampf:
     waffen:
     - AT: 8
       RW: 0
-      TP: 1W6+2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
       TPP: 2
-      TPW: 1
       VT: 5
       name: Hände
     - AT: 8
       RW: 1
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 5
       name: Streitaxt
     - AT: 7
       RW: 2
-      TP: 3W6+4
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
       TPP: 4
-      TPW: 3
       VT: 4
       name: Stoßspeer
     werte:
@@ -2593,7 +3439,6 @@ soeldner:
     KO: 10
     MU: 10
   beschreibung: verlässlicher Mietling oder undisziplinierter Halsabschneider
-  id: soeldner
   info: Der Söldner steht beispielhaft für alle humanoiden Gegner mit gewisser Kampferfahrung.
     Er stellt für unerfahrene Kämpfercharak- tere eine gewisse Herausforderung dar
     und ist Nichtkämpfern überlegen. Kampfstile mit * sind nicht in die Kampfwerte
@@ -2608,40 +3453,50 @@ soeldner:
     waffen:
     - AT: 11
       RW: 1
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 11
       name: Säbel
     - AT: 11
       RW: 1
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 11
       info: Kopflastig
       name: Streitaxt
     - AT: 12
       RW: 0
-      TP: 1W6
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
       TPP: 0
-      TPW: 1
       VT: 12
       info: Schild, Stumpf
       name: Holzschild
     - AT: 11
       RW: 2
-      TP: 3W6
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 0
       TPP: 0
-      TPW: 3
       VT: 11
       info: Wendig, Zweihändig
       name: Speer
     - AT: 11
       RW: 2
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 11
       info: Kopflastig, Rüstungsbrechend, Zweihändig
       name: Hellebarde
@@ -2672,7 +3527,6 @@ soeldnerkommandant:
     KO: 12
     MU: 14
   beschreibung: charismatischer Befehlshaber einer größeren Einheit
-  id: soeldnerkommandant
   kampf:
     vorteile:
     - name: Schneller Kampf II
@@ -2689,25 +3543,31 @@ soeldnerkommandant:
     waffen:
     - AT: 16
       RW: 2
-      TP: 2W6+5
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 5
       TPP: 5
-      TPW: 2
       VT: 14
       info: Wendig, Zweihändig
       name: Tuzakmesser
     - AT: 16
       RW: 0
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 14
       info: Wendig
       name: Kurzschwert
     - AT: 8
       RW: 0
-      TP: 1W6+1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
       TPP: 1
-      TPW: 1
       VT: 8
       info: Stumpf, Zerbrechlich
       name: Faust
@@ -2749,7 +3609,6 @@ soeldnerveteran:
     KO: 10
     MU: 11
   beschreibung: verlässlicher Mietling oder undisziplinierter Halsabschneider
-  id: soeldnerveteran
   info: Der Söldner steht beispielhaft für alle humanoiden Gegner mit gewisser Kampferfahrung.
     Er stellt für unerfahrene Kämpfercharak- tere eine gewisse Herausforderung dar
     und ist Nichtkämpfern überlegen. Kampfstile mit * sind nicht in die Kampfwerte
@@ -2768,40 +3627,50 @@ soeldnerveteran:
     waffen:
     - AT: 13
       RW: 1
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
       TPP: 4
-      TPW: 2
       VT: 12
       name: Säbel
     - AT: 13
       RW: 1
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
       TPP: 4
-      TPW: 2
       VT: 12
       info: Kopflastig
       name: Streitaxt
     - AT: 14
       RW: 0
-      TP: 1W6
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
       TPP: 1
-      TPW: 1
       VT: 13
       info: Schild, Stumpf
       name: Holzschild
     - AT: 13
       RW: 2
-      TP: 3W6
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
       TPP: 1
-      TPW: 3
       VT: 12
       info: Wendig, Zweihändig
       name: Speer
     - AT: 13
       RW: 2
-      TP: 2W6+3
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
       TPP: 3
-      TPW: 2
       VT: 11
       info: Kopflastig, Rüstungsbrechend, Zweihändig
       name: Hellebarde
@@ -2836,7 +3705,6 @@ stadtwache:
     KO: 6
     MU: 8
   beschreibung: stets beschäftigter Hüter von Recht und Ordnung
-  id: stadtwache
   kampf:
     vorteile:
     - name: Schneller Kampf I
@@ -2844,26 +3712,32 @@ stadtwache:
     waffen:
     - AT: 8
       RW: 2
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 7
       info: Kopflastig, Rüstungsbrechend, Zweihändig
       name: Hellebarde
     - AT: 10
       RW: 0
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 9
       info: Wendig
       name: Kurzschwert
     - FK: 8
       LZ: 4
       RW: 20
-      TP: 3W6+1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
       TPP: 1
-      TPW: 3
       info: Zweihändig
       name: Leichte Armbrust
     werte:
@@ -2886,6 +3760,87 @@ stadtwache:
     wert: 8
   - name: Menschenkenntnis
     wert: 11
+streifenhai:
+  attribute:
+    GE: 14
+    KK: 20
+    KO: 20
+    MU: 12
+  beschreibung: Räuber der Meere
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 4
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 4
+      MR: 4
+      WS: 9
+      WSE: 11
+  klasse: tier
+  name: Streifenhai
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 8
+  - name: Schwimmen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  vorteile:
+  - name: Wasserwesen
+sumpfranze:
+  attribute:
+    GE: 12
+    KK: 4
+    KO: 8
+    MU: 4
+  beschreibung: feiges Affenwesen
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 4
+      TPP: 4
+      VT: 6
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 6
+      INI: 3
+      MR: 2
+      WS: 3
+      WSE: 4
+  klasse: tier
+  name: Sumpfranze
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Laufen
+    wert: 20
+  - name: Pirschen
+    wert: 10
+  - name: Wachsamkeit
+    wert: 14
+  - name: Zähigkeit
+    wert: 4
 sumupriester:
   attribute:
     CH: 8
@@ -2897,22 +3852,25 @@ sumupriester:
     KO: 8
     MU: 10
   beschreibung: Beschützer der Natur, weiser Ratgeber, unerbittlicher Feind
-  id: sumupriester
   kampf:
     waffen:
     - AT: 9
       RW: 2
-      TP: 1W6+1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
       TPP: 1
-      TPW: 1
       VT: 9
       info: Stumpf, Wendig, Zweihändig
       name: Kampfstab
     - AT: 4
       RW: 0
-      TP: 1W6+1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
       TPP: 1
-      TPW: 1
       VT: 4
       info: Magisch, Unzerstörbar
       name: Vulkanglasdolch
@@ -2995,7 +3953,6 @@ tatzelwurm:
     KK: 26
     KO: 32
   beschreibung: stinkender Vertreter der niederen Drachen; großer Gegner
-  id: tatzelwurm
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -3003,25 +3960,31 @@ tatzelwurm:
     waffen:
     - AT: 15
       RW: 1
-      TP: 4W6+2
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
       TPP: 2
-      TPW: 4
       VT: 4
       info: Zerbrechlich
       name: Biss
     - AT: 12
       RW: 1
-      TP: 3W6+1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
       TPP: 1
-      TPW: 3
       VT: 6
       info: Niederwerfen (–4)
       name: Klauen
     - AT: 10
       RW: 2
-      TP: 2W6+1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
       TPP: 1
-      TPW: 2
       VT: 4
       info: Niederwerfen, Flächenangriff (180° hinter dem Wurm)
       name: Schwanz
@@ -3046,6 +4009,101 @@ tatzelwurm:
   - name: –2 auf körperliche Proben (kumulativ) für 1 Tag)
   - name: Resistenz I (Feuer)
   - name: Schreckgestalt I
+tigerhai:
+  attribute:
+    GE: 20
+    KK: 26
+    KO: 26
+    MU: 18
+  beschreibung: Räuber der Meere
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
+      TPP: 2
+      VT: 4
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 4
+      MR: 4
+      WS: 12
+      WSE: 14
+      koloss: 1
+  klasse: tier
+  name: Tigerhai
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 8
+  - name: Schwimmen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: 14
+  unterschied: 'WS 12/14 koloss: 1 TP: 4W6+2, Attribute +6, großer Gegner'
+  variantevon: streifenhai
+  vorteile:
+  - name: Wasserwesen
+  - name: großer Gegner
+tralloper:
+  attribute:
+    GE: 8
+    KK: 26
+    KO: 24
+    MU: 12
+  beschreibung: kampferprobtes Reittier aus den Ställen Elenvinas; großer Gegner
+  info: 'Im Reiterkampf sind hauptsächlich WS:, GS: und TP:  bedeutend, da AT: und
+    VT: auf den PW Reiten abgelegt werden.'
+  kampf:
+    vorteile:
+    - name: Rüstungsgewöhnung
+    - name: Standfest
+    - name: im Reiterkampf WM +1
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      TPP: 4
+      VT: 5
+      info: Niederwerfen
+      name: Tritt
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 5
+      TPP: 5
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 8
+      INI: 1
+      MR: 6
+      WS: 16
+  klasse: tier
+  name: Tralloper
+  quelle: ilaris
+  talente:
+  - name: Wachsamkeit
+    wert: 10
+  - name: Zähigkeit
+    wert: 10
+  unterschied: 'WS: 16, GS: 8, TP:  +2, WM 0'
+  variantevon: kriegspferd
 troll:
   attribute:
     KK: 32
@@ -3053,7 +4111,6 @@ troll:
     KO: 34
     MU: 12
   beschreibung: jähzorniger Überlebender einer uralten Kultur; großer Gegner
-  id: troll
   kampf:
     vorteile:
     - name: Ausfall
@@ -3063,25 +4120,31 @@ troll:
     waffen:
     - AT: 15
       RW: 1
-      TP: 4W6+1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 1
       TPP: 1
-      TPW: 4
       VT: 9
       info: Niederwerfen (–4), Stumpf
       name: Faust
     - AT: 14
       RW: 2
-      TP: 5W6+4
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
       TPP: 4
-      TPW: 5
       VT: 8
       info: Niederwerfen (–8), Stumpf
       name: Keule
     - AT: 15
       RW: 2
-      TP: 6W6+4
+      TP:
+        W: 6
+        anzahl: 6
+        plus: 4
       TPP: 4
-      TPW: 6
       VT: 9
       info: Niederwerfen (–8)
       name: Axt
@@ -3102,13 +4165,66 @@ troll:
     wert: 8
   - name: Wachsamkeit
     wert: 12
+waldloewe:
+  attribute:
+    GE: 18
+    KK: 22
+    KO: 18
+    MU: 14
+  beschreibung: Stolzer König der Khômwüste
+  kampf:
+    vorteile:
+    - name: Doppelangriff
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      TPP: 2
+      VT: 2
+      info: Zerbrechlich
+      name: Biss
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 6
+      info: Wendig
+      name: Prankenhieb
+    werte:
+      GS: 8
+      INI: 4
+      MR: 2
+      WS: 5
+      WSE: 6
+  klasse: tier
+  name: Waldlöwe
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Laufen
+    wert: 20
+  - name: Pirschen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 14
+  - name: Zähigkeit
+    wert: 12
+  unterschied: WS 5/6, Attribute -2
+  variantevon: sandloewe
 waldschrat:
   attribute:
     KK: 32
     KO: 34
     MU: 12
   beschreibung: baumartiger Hüter der Wälder; großer Gegner
-  id: waldschrat
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III (Befreiungsschlag)
@@ -3117,9 +4233,11 @@ waldschrat:
     waffen:
     - AT: 15
       RW: 1
-      TP: 5W6
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 0
       TPP: 0
-      TPW: 5
       VT: 6
       info: Niederwerfen (–4)
       name: Asthieb
@@ -3158,7 +4276,6 @@ waldschratnichtmagisch:
     KO: 34
     MU: 12
   beschreibung: baumartiger Hüter der Wälder; großer Gegner
-  id: waldschratnichtmagisch
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III (Befreiungsschlag)
@@ -3167,9 +4284,11 @@ waldschratnichtmagisch:
     waffen:
     - AT: 15
       RW: 1
-      TP: 5W6
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 0
       TPP: 0
-      TPW: 5
       VT: 6
       info: Niederwerfen (–4)
       name: Asthieb
@@ -3201,7 +4320,6 @@ weisserhetzer:
     KK: 8
     KO: 4
   beschreibung: zweiköpfige Chimäre aus Wolf und Dämon
-  id: weisserhetzer
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -3211,9 +4329,11 @@ weisserhetzer:
     waffen:
     - AT: 11
       RW: 1
-      TP: 2W6+2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 9
       name: Biss
     werte:
@@ -3245,7 +4365,6 @@ wildschwein:
     KK: 18
     KO: 22
   beschreibung: gefräßiger Schädling und goblinisches Reittier
-  id: wildschwein
   kampf:
     vorteile:
     - name: Standfest
@@ -3254,9 +4373,11 @@ wildschwein:
     waffen:
     - AT: 10
       RW: 0
-      TP: 2W6+4
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
       TPP: 4
-      TPW: 2
       VT: 3
       info: Niederwerfen
       name: Stoß
@@ -3278,47 +4399,6 @@ wildschwein:
     wert: 10
   - name: Zähigkeit
     wert: 4
-wildschweinkriegswildschwein:
-  attribute:
-    GE: 8
-    KK: 18
-    KO: 22
-  beschreibung: gefräßiger Schädling und goblinisches Reittier
-  id: wildschweinkriegswildschwein
-  kampf:
-    vorteile:
-    - name: Standfest
-    - name: Sturmangriff
-    - name: im Reiterkampf WM +0
-    waffen:
-    - AT: 11
-      RW: 0
-      TP: 2W6+6
-      TPP: 6
-      TPW: 2
-      VT: 4
-      info: Niederwerfen
-      name: Stoß
-    werte:
-      GS: 7
-      INI: 3
-      MR: 3
-      WS: 11
-      WSE: 13
-  klasse: tier
-  name: Kriegswildschwein
-  quelle: ilaris
-  talente:
-  - name: Laufen
-    wert: 12
-  - name: Pirschen
-    wert: 4
-  - name: Wachsamkeit
-    wert: 10
-  - name: Zähigkeit
-    wert: 4
-  unterschied: 'WS: 11/13, TP:  +2, WM +1'
-  variantevon: wildschwein
 wolf:
   attribute:
     GE: 14
@@ -3326,7 +4406,6 @@ wolf:
     KO: 6
     MU: 6
   beschreibung: verbreitetes Rudeltier
-  id: wolf
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -3335,9 +4414,11 @@ wolf:
     waffen:
     - AT: 6
       RW: 0
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
       TPP: 0
-      TPW: 2
       VT: 6
       info: Zerbrechlich
       name: Biss
@@ -3361,138 +4442,6 @@ wolf:
     wert: 4
   vorteile:
   - name: Angepasst II (Dunkelheit)
-wolfgrosserhund:
-  attribute:
-    GE: 14
-    KK: 6
-    KO: 6
-    MU: 6
-  beschreibung: verbreitetes Rudeltier
-  id: wolfgrosserhund
-  kampf:
-    vorteile:
-    - name: Niederwerfen
-    - name: Standfest
-    - name: Sturmangriff
-    waffen:
-    - AT: 6
-      RW: 0
-      TP: 2W6
-      TPP: 0
-      TPW: 2
-      VT: 6
-      info: Zerbrechlich
-      name: Biss
-    werte:
-      GS: 8
-      INI: 2
-      MR: 2
-      WS: 4
-      WSE: 5
-  klasse: tier
-  name: Großer Hund
-  quelle: ilaris
-  talente:
-  - name: Laufen
-    wert: 24
-  - name: Pirschen
-    wert: 12
-  - name: Wachsamkeit
-    wert: 18
-  - name: Zähigkeit
-    wert: 4
-  unterschied: identisch
-  variantevon: wolf
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-wolfkampfhund:
-  attribute:
-    GE: 14
-    KK: 8
-    KO: 8
-    MU: 6
-  beschreibung: verbreitetes Rudeltier
-  id: wolfkampfhund
-  kampf:
-    vorteile:
-    - name: Niederwerfen
-    - name: Standfest
-    - name: Sturmangriff
-    waffen:
-    - AT: 6
-      RW: 0
-      TP: 2W6
-      TPP: 0
-      TPW: 2
-      VT: 6
-      info: Zerbrechlich
-      name: Biss
-    werte:
-      GS: 7
-      INI: 3
-      MR: 3
-      WS: 5
-      WSE: 6
-  klasse: tier
-  name: Kampfhund
-  quelle: ilaris
-  talente:
-  - name: Laufen
-    wert: 20
-  - name: Pirschen
-    wert: 12
-  - name: Wachsamkeit
-    wert: 18
-  - name: Zähigkeit
-    wert: 4
-  unterschied: 'GS: –1, Kampfwerte +1, KK, KO: +2, Laufen –4'
-  variantevon: wolf
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
-wolfkhoramsbestie:
-  attribute:
-    GE: 14
-    KK: 8
-    KO: 8
-    MU: 6
-  beschreibung: verbreitetes Rudeltier
-  id: wolfkhoramsbestie
-  kampf:
-    vorteile:
-    - name: Niederwerfen
-    - name: Standfest
-    - name: Sturmangriff
-    waffen:
-    - AT: 6
-      RW: 0
-      TP: 2W6
-      TPP: 0
-      TPW: 2
-      VT: 6
-      info: Zerbrechlich
-      name: Biss
-    werte:
-      GS: 10
-      INI: 4
-      MR: 4
-      WS: 4
-      WSE: 6
-  klasse: tier
-  name: Khoramsbestie
-  quelle: ilaris
-  talente:
-  - name: Laufen
-    wert: 24
-  - name: Pirschen
-    wert: 12
-  - name: Wachsamkeit
-    wert: 18
-  - name: Zähigkeit
-    wert: 4
-  unterschied: 'Kampfwerte +2, KK, KO: +2'
-  variantevon: wolf
-  vorteile:
-  - name: Angepasst II (Dunkelheit)
 wolfrudelfuehrer:
   attribute:
     GE: 14
@@ -3500,7 +4449,6 @@ wolfrudelfuehrer:
     KO: 6
     MU: 6
   beschreibung: verbreitetes Rudeltier
-  id: wolfrudelfuerer
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -3511,9 +4459,11 @@ wolfrudelfuehrer:
     waffen:
     - AT: 10
       RW: 0
-      TP: 2W6
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
       TPP: 2
-      TPW: 2
       VT: 10
       info: Zerbrechlich
       name: Biss
@@ -3542,3 +4492,70 @@ wolfrudelfuehrer:
   variantevon: wolf
   vorteile:
   - name: Angepasst II (Dunkelheit)
+yeti:
+  attribute:
+    CH: 4
+    FF: 4
+    GE: 8
+    IN: 8
+    KK: 24
+    KL: 2
+    KO: 20
+    MU: 16
+  beschreibung: großer, haariger Schneeschrat
+  kampf:
+    vorteile:
+    - name: Natürliche Rüstung
+    - name: Niederwerfen
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      TPP: 2
+      VT: 6
+      info: Stumpf
+      name: Faust
+    - AT: 14
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      TPP: 4
+      VT: 8
+      info: Stumpf
+      name: Keule
+    werte:
+      GS: 6
+      INI: 4
+      MR: 2
+      WS: 9
+      WSE: 11
+  klasse: humanoid
+  name: Yeti
+  profan:
+    vorteile:
+    - name: Zerstörerisch I, II
+  quelle: allgemeinemacchiato
+  talente:
+  - name: Pirschen
+    wert: 14
+  - name: Laufen
+    wert: 12
+  - name: Hoher Norden
+    wert: 16
+  - name: Klettern
+    wert: 10
+  - name: Sinnenschärfe
+    wert: 10
+  - name: Wachsamkeit
+    wert: 14
+  - name: Zähigkeit
+    wert: 16
+  vorteile:
+  - name: Angepasst I (Dunkelheit)
+  - name: Resistenz gegen Kälte
