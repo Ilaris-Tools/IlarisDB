@@ -13,8 +13,11 @@ def load(table):
     return table_data
 
 
-def validate(table, data=None):
-    schema = yamale.make_schema(f'../schemata/{table}.yml')
+def validate(table, data=None, schemaf=None):
+    if schemaf:
+        schema = yamale.make_schema(f'../schemata/{schemaf}.yml')
+    else:
+        schema = yamale.make_schema(f'../schemata/{table}.yml')
     if data is None:
         data = yamale.make_data(f'../daten/{table}.yml')
     yamale.validate(schema, data, strict=True)

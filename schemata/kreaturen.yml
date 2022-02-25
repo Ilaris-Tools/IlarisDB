@@ -79,7 +79,7 @@ waffe:
   VT: int(required=False)
   FK: int(required=False)
   LZ: int(required=False)
-  TP: str(required=False)
+  TP: include('tp', required=False)
   TPP: int(required=False)
   TPW: int(required=False)
   TPW20: int(required=False)
@@ -100,3 +100,8 @@ kampfwerte:
   INI: int(required=False)
   schips: int(required=False)
   info: str(required=False)
+---
+tp:
+  plus: int(required=False)
+  anzahl: int(required=False)
+  W: int(required=False)
