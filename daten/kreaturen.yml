@@ -1380,10 +1380,11 @@ kriegermumie:
   name: Kriegermumie
   quelle: ilaris
   sonstiges:
-    beispieldienste: Kampf (1 Minute); Wache (1 Woche, mit Totes handle! permanent,
-      –4)
     beschwörung: Skelettarius oder Totes handle! (20) aus einem mumifizierten Leichnam,
       24 AsP
+    dienste:
+    - name: Kampf (1 Minute)
+    - name: ' Wache (1 Woche, mit Totes handle! permanent, –4)'
   talente:
   - name: Laufen
     wert: 8
@@ -2048,8 +2049,11 @@ ogerstatue:
   name: Ogerstatue
   quelle: ilaris
   sonstiges:
-    beispieldienste: Lastentransport (+4, 1 Tag); Wache (1 Tag); Kampf (–4, 1 Minute)
     beschwörung: Stein wandle! (28) aus Bronzeplatten, 32 AsP
+    dienste:
+    - name: Lastentransport (+4, 1 Tag)
+    - name: ' Wache (1 Tag)'
+    - name: ' Kampf (–4, 1 Minute)'
   talente:
   - name: Laufen
     wert: -2
@@ -2431,9 +2435,11 @@ pestrattenschwarm:
   name: Pestrattenschwarm
   quelle: ilaris
   sonstiges:
-    beispieldienste: Stall leerfessen (1 Stunde, +4); andere Lebewesen fressen (1
-      Minute); nur bestimmtes Lebewesen fressen (1 Minute, –4)
     beschwörung: Skelettarius oder Totes handle! (16) aus Rattenkadavern, 16 AsP
+    dienste:
+    - name: Stall leerfessen (1 Stunde, +4)
+    - name: ' andere Lebewesen fressen (1 Minute)'
+    - name: ' nur bestimmtes Lebewesen fressen (1 Minute, –4)'
   talente:
   - name: Laufen
     wert: 4
@@ -2475,9 +2481,11 @@ pestrattenschwarmsehrgrosserschwarm:
   name: Sehr großer Pestrattenschwarm
   quelle: ilaris
   sonstiges:
-    beispieldienste: Stall leerfessen (1 Stunde, +4); andere Lebewesen fressen (1
-      Minute); nur bestimmtes Lebewesen fressen (1 Minute, –4)
     beschwörung: Skelettarius oder Totes handle! (20) aus Rattenkadavern, 24 AsP
+    dienste:
+    - name: Stall leerfessen (1 Stunde, +4)
+    - name: ' andere Lebewesen fressen (1 Minute)'
+    - name: ' nur bestimmtes Lebewesen fressen (1 Minute, –4)'
   talente:
   - name: Laufen
     wert: 4
@@ -3357,10 +3365,12 @@ skelett:
   name: Skelett
   quelle: ilaris
   sonstiges:
-    beispieldienste: Burggraben auffüllen (1 Stunde, +4); Kampf (1 Minute); Wache
-      (1 Tag, mit Totes handle! permanent, –4)
     beschwörung: Skelettarius oder Totes handle! (12) aus einer skelettierten Leiche,
       8 AsP
+    dienste:
+    - name: Burggraben auffüllen (1 Stunde, +4)
+    - name: ' Kampf (1 Minute)'
+    - name: ' Wache (1 Tag, mit Totes handle! permanent, –4)'
   talente:
   - name: Pirschen
     wert: 8
@@ -3415,10 +3425,12 @@ skelettruestung:
   name: Skelett mit Rüstung
   quelle: ilaris
   sonstiges:
-    beispieldienste: Burggraben auffüllen (1 Stunde, +4); Kampf (1 Minute); Wache
-      (1 Tag, mit Totes handle! permanent, –4)
     beschwörung: Skelettarius oder Totes handle! (12) aus einer skelettierten Leiche,
       8 AsP
+    dienste:
+    - name: Burggraben auffüllen (1 Stunde, +4)
+    - name: ' Kampf (1 Minute)'
+    - name: ' Wache (1 Tag, mit Totes handle! permanent, –4)'
   talente:
   - name: Pirschen
     wert: 8
@@ -4348,10 +4360,12 @@ weisserhetzer:
   name: Weisser Hetzer
   quelle: ilaris
   sonstiges:
-    beispieldienste: Spur verfolgen (1 Stunde, +4); Kampf (1 Minute); Hetzen und Töten
-      (1 Stunde, –4)
     beschwörung: Chimaeroform (16) aus einem Wolf und einem Karmanath oder Tuur-Amash,
       16 AsP
+    dienste:
+    - name: Spur verfolgen (1 Stunde, +4)
+    - name: ' Kampf (1 Minute)'
+    - name: ' Hetzen und Töten (1 Stunde, –4)'
   talente:
   - name: Laufen
     wert: 24

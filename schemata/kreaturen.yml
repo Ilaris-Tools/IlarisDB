@@ -50,7 +50,7 @@ pakt:
 ---
 sonstiges:
   beschwörung: str(required=False)
-  beispieldienste: str(required=False)
+  dienste: list(include('dienst'), required=False)
   vorgehen: str(required=False)
   schwachpunkte: str(required=False)
 ---
@@ -110,3 +110,8 @@ eigenschaft:
   name: str(required=False)
   id: str(required=False)
   info: str(required=False)
+---
+dienst:
+  name: str(required=False)
+  dauer: str(required=False)
+  mod: int(required=False)
