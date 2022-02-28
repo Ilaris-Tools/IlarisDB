@@ -4638,3 +4638,4703 @@ yeti:
     wert: 14
   - name: Zähigkeit
     wert: 16
+agribaal:
+  beschreibung: Der Fluch des Eisens; eingehörnter Diener Agrimoths oder Iribaars
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Einfaches Artefakt mit 1 Ladung erschaffen
+    - name: Einfaches Artefakt mit wenigen Ladungen erschaffen
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Unsichtbarkeit
+  - name: Artefakt beseelen
+  info: 'Der Dämon kann einen Gegenstand beseelen und aus diesem ein einfaches, ladungsbasiertes
+    Artefakt erschaffen. Er verliert: WS, GS, Ausweichen Meist kommt es bei solchen
+    Artefakten jedoch zu dämonischen Nebeneffekten nach SL-Entscheid.)
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 4
+      name: Ausweichen
+    werte:
+      GS: 4
+      INI: 8
+      MR: 10
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Arcanovi
+      - name: je einige passende Zauber aus den Bereichen Eigenschaften, Einfluss,
+          Umwelt und den Elementen Feuer, Humus, Erz und Luft)
+      wert: 12
+  name: Agribaal
+  quelle: pandaemonium
+amrifas:
+  beschreibung: Der Erderschütterer; neungehörnter Diener Agrimoths, sehr großer Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Gebäude zum Einsturz bringen
+    - name: Vulkanausbruch verursachen
+    - mod: -4
+      name: Erdbeben verursachen
+    proben:
+    - asp: 80
+      name: Invocatio
+      wert: 36
+  eigenschaften:
+  - name: Magieabweisend
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - AT: 20
+      RW: 8
+      RWM: 1
+      TP:
+        W: 20
+        anzahl: 3
+      VT: 16
+      info: Flächenangriff (1 Schritt um das Hauptziel), Niederwerfen (-4)
+      name: Steinschlag
+    werte:
+      GS: 2
+      INI: 3
+      MR: 20
+      WS: 18
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: alle Zauber des Elements Erz und ähnliche Effekte
+      wert: 24
+  name: Amrifas
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 30
+archorchobai:
+  beschreibung: Der Weiße Wurm, der Große Alchimist; viergehörnter Diener Agrimoths,
+    sehr großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Nach Edelsteinen und - metallen suchen (1 Tag, +4)
+    - dauer: 1 Woche
+      name: Tunnel treiben
+    - dauer: 1 Tag
+      mod: -4
+      name: Metall verhütten
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Regeneration I
+  - name: Schreckgestalt II
+  - name: Verwundbarkeit I (Erz)
+  freiefertigkeiten:
+  - name: Gesteinskunde
+    wert: 3
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
+      VT: 2
+      info: Nachbrennen (Säure), Verschlingen (Bei einem Triumph wird der Gegner verschlungen,
+        4W20 TP)
+      name: Biss
+    - FK: 16
+      LZ: 0
+      RW: 8
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      info: Nachbrennen (Säure)
+      name: Säure spucken
+    werte:
+      GS: 4
+      INI: 4
+      MR: 14
+      WS: 15
+      koloss: 1
+  klasse: daemon
+  name: Achorchobai
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 14
+  - name: Wachsamkeit
+    wert: 16
+arjunioor:
+  beschreibung: Meister der Orkane; achtgehörnter Diener Agrimoths, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: -4
+      name: Kontrolle über einen Vogelschwarm
+    - name: Sturm heraufbeschwören
+    - mod: -4
+      name: Landstrich mit Blitz und Hagel verwüsten
+    proben:
+    - asp: 80
+      name: Invocatio
+      wert: 36
+  eigenschaften:
+  - name: Flugfähig
+  - name: Zusätzliche Attacke I
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 22
+      RW: 8
+      RWM: 1
+      TP:
+        W: 20
+        anzahl: 1
+      VT: 18
+      info: Flächenangriff (180° vor dem Dämon), Zurückstoßen
+      name: Orkanböe
+    werte:
+      GS: 12
+      GSF: 32
+      INI: 22
+      MR: 24
+      WS: 13
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Aeolitus
+      - name: Aerofugo
+      - name: Aerogelo
+      - name: Atemnot
+      - info: beliebige Vogelarten
+        name: Krähenruf
+      - name: Kulminatio
+      - name: Leib des Windes
+      - name: Orcanofaxius
+      - name: Orcanosphaero
+      - name: Orkanwand
+      - name: Silentium
+      - name: Tlalucs Odem
+      - name: Wettermeisterschaft
+      - name: Windhose
+      - name: Windstille
+      wert: 24
+  name: Arjunioor
+  quelle: pandaemonium
+  talente:
+  - name: Fliegen
+    wert: 20
+  - name: Sinnenschärfe
+    wert: 28
+  - name: Wachsamkeit
+    wert: 24
+atuum:
+  beschreibung: Der gefräßige Schlund, der Lebensverschlinger; niederer Diener Asfaloths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Leiche eines Mordopfers restlos verschlingen
+    - dauer: 1 Jahr
+      name: Ort, an dem Tod und Fäulnis herrschen, bewachen
+    - dauer: 1 Wochen
+      mod: -4
+      name: Anderen Ort bewachen
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - info: "Benebelnder Geruch Zähigkeit (16), jede INI: phase, -2 auf Proben für 1\
+      \ Stunde) \n"
+    name: Aura
+  - name: Explosion (4W6)
+  - name: Regeneration I
+  - name: Zusätzliche Attacke II
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    waffen:
+    - AT: 8
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+      VT: 4
+      info: Umklammern (-2, 12)
+      name: Tentakel
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+      VT: 2
+      name: Maul
+    werte:
+      GS: 3
+      INI: 2
+      MR: 12
+      WS: 4
+  klasse: daemon
+  name: Atuum
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 10
+balirhiadh:
+  beschreibung: Die rechte Hand des Schwarzen Mannes; ein mächtiger Diener Blakharaz‘,
+    sehr großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: bis von meisterlichem Seelenheiler geheilt
+      mod: 4
+      name: Opfer mit Alpträumen und Halluzinationen in den Wahnsinn treiben
+    - dauer: 1 Woche
+      name: Opfer mit kontrolliertem Tier suchen und töten
+    - dauer: 1 Woche
+      mod: -4
+      name: Untote erheben und Opfer töten
+    proben:
+    - asp: 80
+      name: Invocatio
+      wert: 36
+  eigenschaften:
+  - name: Besessenheit von Tieren
+  - name: Limbusreisender
+  - name: Regeneration I
+  - name: Schreckgestalt III
+  - name: Zusätzliche Attacke IV
+  info: 'Der Dämon fährt in ein Tier ein. Er verliert: Klauen, Riemen, Koloss, GS,
+    Besessenheit von Tieren, Limbusreisender, Regeneration I, Schreckensgestalt III,
+    Zusätzliche Attacke IV  und erhält die Eigenschaften und Attacken des Tiers. Der
+    Dämon kontrolliert das Tier vollständig, das Tier erhält die Vorteile Regeneration
+    I, Schreckgestalt II, Tarnung und Zusätzliche Attacke II. Das Tier erleidet während
+    der Besessenheit kein Erschöpfung durch körperliche Anstrengung.
+
+    '
+  kampf:
+    waffen:
+    - AT: 20
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 2
+      VT: 12
+      info: Niederwerfen (-8)
+      name: Klauen
+    - AT: 20
+      RW: 8
+      RWM: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      VT: 16
+      info: Betäubung (wie Ertränken) oder Umklammern (-4, 20) (bei jedem Angriff
+        frei wählbar)
+      name: Riemen
+    werte:
+      GS: 12
+      INI: 12
+      MR: 20
+      WS: 14
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Alpgestalt
+      - name: Blick in die Gedanken
+      - name: Dunkelheit
+      - name: Halluzination
+      - name: Skelettarius
+      - name: Totes handle
+      - name: Traumgestalt
+      wert: 24
+  name: BAL'IRHIADH
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 20
+  - name: Untertauchen
+    wert: 20
+  - name: Sinnenschärfe
+    wert: 24
+  - name: Wachsamkeit
+    wert: 24
+balkhabul:
+  beschreibung: Wächter der unermesslichen Schätze; dreigehörnter Diener Tasfarelels,
+    großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Jahr
+      mod: 4
+      name: Schätze bewachen
+    - dauer: 1 Woche
+      name: Andere Gegenstände bewachen
+    - dauer: 1 Tag
+      mod: -4
+      name: Beschwörer bewachen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - info: 'Gestank, Zähigkeit (20) jede INI: phase, -2 auf körperliche Proben (kumulativ)
+      für 1 Tag, -4 auf Proben in Rededuellen für 1W6 Wochen'
+    name: Aura
+  - name: Formlosigkeit
+  - name: Immunität (profan)
+  - name: Resistenz I (geweiht)
+  - name: Unsichtbarkeit
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 15
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
+      VT: 4
+      name: Biss
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
+      VT: 6
+      info: Niederwerfen (-4)
+      name: Klauen
+    - AT: 10
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      VT: 4
+      info: Niederwerfen, Flächenangriff (180° hinter dem Dämon)
+      name: Schwanz
+    werte:
+      GS: 6
+      INI: 8
+      MR: 14
+      WS: 12
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Auris Nasus
+      - name: Leib des Erzes
+      - name: Motoricus
+      - name: Invocatio (Khidma’kha‘bulim)
+      wert: 18
+  name: BALKHA'BUL
+  quelle: pandaemonium
+  talente:
+  - name: Untertauchen
+    wert: 20
+  - name: Sinnenschärfe
+    wert: 24
+  - name: Wachsamkeit
+    wert: 24
+bhalevek:
+  beschreibung: Geißel des Geistes; eingehörnter Diener Amazeroths
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Kopfschmerzen beim Opfer erzeugen
+    - dauer: 1 Woche
+      name: Alpträume erzeugen
+    - dauer: 1 Stunde
+      mod: -4
+      name: Zauberer verwirren
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 4
+      name: Ausweichen
+    werte:
+      GS: 6
+      INI: 8
+      MR: 12
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Traumgestalt
+      wert: 12
+  name: Bha'levek
+  quelle: pandaemonium
+bhurkhesch:
+  beschreibung: Die Augenkröte; niederer Diener Belkelels, sehr kleiner Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: 5 Portionen Sekret zur Verfügung stellen
+    - name: Orgie auslösen
+    - mod: -4
+      name: Opfer in den Wahnsinn treiben
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  - name: Präsenz
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 8
+      info: 'Giftig (Bhurkhesch-Sekret, Stufe 20, Verzögerung 4 Aktionen, Wirkungsdauer
+        8 Stunden, Halluzinationen, Euphorie und aphrodisierende Wirkung, Proben -2
+        kumulativ))
+
+        '
+      name: Zunge
+    werte:
+      GS: 1
+      INI: -1
+      MR: 8
+      WS: 1
+  klasse: daemon
+  name: Bhurkhesch
+  quelle: pandaemonium
+  talente:
+  - name: Untertauchen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 10
+braggu:
+  beschreibung: Grün-violette Dämonenfratze; ein niederer Diener Thargunitoths
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde,
+      mod: 4
+      name: Gegner erschrecken
+    - dauer: 1 Tag
+      name: Alpträume erzeugen
+    - dauer: 1 Woche
+      mod: -4
+      name: Ort bewachen
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Flieger
+  - name: Schreckgestalt II
+  - name: Zusätzliche Attacke I
+  kampf:
+    waffen:
+    - AT: 6
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 12
+      info: Ertränken (Giftgas)
+      name: Stinkender Nebel
+    werte:
+      GSF: 10
+      INI: 8
+      MR: 6
+      WS: 4
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Böser Blick
+      - name: Horriphobus
+      wert: 10
+  name: Braggu
+  quelle: pandaemonium
+brukhaklah:
+  beschreibung: Der Verderber des Eisens, die gepanzerte Made; niederer Diener Belzhorashs
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Metallenen Gegenstand auflösen
+    - name: ca. 30 Stein Metall auflösen
+    - dauer: 1 Minute
+      mod: -4
+      name: Kampf
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - info: Waffen aus Metall gelten gegen den Dämon als zerbrechlich
+    name: Madensäure
+  - name: Regeneration I
+  - name: Zusätzliche Attacke I
+  kampf:
+    waffen:
+    - AT: 10
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 10
+      info: Nachbrennen (Säure)
+      name: Tentakel
+    werte:
+      GS: 2
+      INI: 4
+      MR: 14
+      WS: 10
+  klasse: daemon
+  name: BRUKHA'KLAH
+  quelle: pandaemonium
+canilaaranshakalaraan:
+  beschreibung: Der brünstige Hund; niederer Diener Belkelels
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Hetzjagd
+    - name: Daimoniden-Züchtung;
+    - dauer: 1 Tag
+      mod: -4
+      name: Person suchen und vernichten
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Rudel
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+      VT: 4
+      name: Biss
+    werte:
+      GS: 8
+      INI: 8
+      MR: 20
+      WS: 5
+  klasse: daemon
+  name: Canilaaran, Shakalaraan
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 8
+chamuyan:
+  beschreibung: Vielgestaltige Schleicherin in den Schatten; eine gehörnte Dämonin
+    aus dem Gefolge Aphasmayras
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Beratung als Sphinx
+    - dauer: 1 Minute
+      name: Kampf als Berglöwin
+    - dauer: 1 Tag
+      mod: -4
+      name: Als Panther Person suchen und töten
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - info: erleidet keine Passierschläge, wenn sie sich aus dem Nahkampf zurückzieht
+    name: Blitzschnell
+  - info: magisch, geweiht
+    name: Resistenz I
+  - name: Tarnung
+  - name: Zusätzliche Attacke II
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 12
+      info: Doppelangriff, Niederwerfen (-4)
+      name: Prankenhieb
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 2
+      VT: 2
+      name: Biss
+    werte:
+      GS: 11
+      INI: 10
+      MR: 8
+      WS: 12
+  klasse: daemon
+  name: CHA'MUYAN
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Pirschen
+    wert: 24
+  - name: Wachsamkeit
+    wert: 18
+chuchathabomek:
+  beschreibung: Das fliegende Hebewerk, der Vetter Karakils; dreigehörnter Diener
+    Lolgramoths, sehr großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Beschwörer transportieren
+    - dauer: 1 Tag
+      name: Lasten transportieren
+    - dauer: 1 Stunde
+      mod: -4
+      name: Schwere Sordulsäpfel abwerfen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Flugfähig
+  - name: Regeneration I
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
+      VT: 12
+      name: Klauenhieb
+    - AT: 8
+      RW: 1
+      VT: 2
+      info: 'Festes Umklammern (Das Ziel wird umschlungen. Gelingt ihm oder einem
+        Helfer bis zur nächsten INI: phase keine KK-Probe (32), erleidet es 4W20 SP.)'
+      name: Klammer
+    werte:
+      GS: 2
+      GSF: 12
+      INI: 4
+      MR: 14
+      WS: 10
+      koloss: 2
+  klasse: daemon
+  name: Chuchathabomek
+  quelle: pandaemonium
+  talente:
+  - name: Fliegen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 8
+cthllanogog:
+  beschreibung: Der Alles Gebärende; niederer Diener Asfaloths, sehr großer Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Körperteil des Beschwörers wiederherstellen
+    - name: Körperteil eines „Opfers“ wiederherstellen
+    - mod: -4
+      name: Mehrere Körperteile wachsen lassen
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Lebensraub
+  - name: Präsenz
+  - name: Regeneration II
+  - info: Verwandlung
+    name: Immunität
+  info: Jeder Dienst des Cthllanogog beginnt damit, dass man ihm Blut desjenigen opfert,
+    dessen Körperteil wachsen soll.
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 6
+      info: Mutation, Niederwerfen
+      name: Asthieb
+    werte:
+      GS: 0
+      INI: 2
+      MR: 16
+      WS: 10
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Wand aus Dornen
+      - name: Zorn der Elemente
+      wert: 12
+  name: Cthllanogog
+  quelle: pandaemonium
+  talente:
+  - name: Wachsamkeit
+    wert: 12
+darkha:
+  beschreibung: Der Zerfetzer, Teil der blutigen Horde; ein minderer Diener Belhalhars,
+    kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Entflohenen Gefangenen jagen und töten
+    - dauer: 1 Minute
+      name: Kampf
+    - mod: -4
+      name: Im Rudel über eine Barrikade schwärmen
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Rudel
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 6
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+      VT: 6
+      name: Krallen
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+      VT: 6
+      name: Biss
+    - AT: 8
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
+      VT: 8
+      name: Dolch
+    - AT: 8
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: -1
+      VT: 8
+      info: Wendig
+      name: Speer
+    werte:
+      GS: 8
+      INI: 6
+      MR: 6
+      WS: 3
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Corpofesso
+      wert: 8
+  name: Darkha
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 8
+  - name: Pirschen
+    wert: 6
+  - name: Wachsamkeit
+    wert: 6
+deolgolup:
+  beschreibung: Der stumme Wächter der augenlosen Pforten; ein niederer Diener Agrimoths
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Wache
+    - dauer: 1 Stunde
+      name: Schutz des Beschwörers
+    - dauer: 1 Minute
+      mod: -4
+      name: Kampf
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Rudel
+  - name: Rüstung beseelen
+  - name: Unsichtbarkeit
+  info: 'Der Deolgolup beseelt eine Rüstung und eine dazugehörige Waffe. Er verliert
+    Rüstung besselen, Unsichtbarkeit, Ausweichen. Der Dämon kontrolliert die Rüstung
+    vollständig, seine WS* erhöht sich um den RS der jeweiligen Rüstung. Die Rüstung
+    erhält die Eigenschaft Explosion (4W6).
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 4
+      name: Ausweichen
+    - AT: 14
+      RW: 0
+      VT: 14
+      info: RW und TP je nach Waffe
+      name: Waffe
+    werte:
+      GS: 8
+      INI: 8
+      MR: 12
+      WS: 6
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Illusion
+      talente:
+      - name: Duplicatus
+      wert: 12
+  name: Deolgolup
+  quelle: pandaemonium
+  talente:
+  - name: Wachsamkeit
+    wert: 12
+dhormarhei:
+  beschreibung: Der Nachtmahr; zweigehörnter Diener Thargunitoths, kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Alpträume erzeugen
+    - dauer: 1 Tag
+      name: Opfer suchen und in Alptraumwelt gefangenhalten
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 6
+      name: Ausweichen
+    werte:
+      GS: 6
+      INI: 6
+      MR: 12
+      WS: 6
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Blitz,
+      - name: Horriphobus
+      - name: Traumgestalt
+      wert: 16
+  name: Dhormarhei
+  quelle: pandaemonium
+dreigehoerntergurgulum:
+  beschreibung: Der Dunkelschlund, ein dreigehörnter Diener des Blakharaz, sehr kleiner
+    Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Monat
+      name: Kontrolle über Wirt übernehmen
+    - dauer: 6 Monate
+      mod: 4
+      name: Kontrolle über Wirt übernehmen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Unsichtbarkeit
+  - name: Kritische Konsistenz
+  - name: Opfer übernehmen
+  - info: 'Proben des Wirts auf körperliche Attribute sind um +4, Fertigkeitsproben
+      mit körperlichen Attributen um +2 erleichtert, WS des Wirts +1, jedoch erleidet
+      der Wirt jeden Tag 1W6+2 SP
+
+      '
+    name: Stärkung des Wirts
+  info: 'Der Durgulum legt sich um den Hals des Opfers und verliert alle Angriffe
+    mit *. Er kann kurzfristig die Kontrolle über das Opfer übernehmen oder dieses
+    zur Strafe würgen. Die Einnahme von Rauschmitteln lässt den Durgulum für einige
+    Zeit schlafen.
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 4
+      name: Ausweichen
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+      VT: 2
+      info: Umklammern (-2, 12)
+      name: Würgen
+    werte:
+      GS: 1
+      INI: 4
+      MR: 10
+      WS: 3
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Große Gier
+      - name: Imperavi
+      wert: 10
+  name: Dreigehörnter Gurgulum
+  quelle: pandaemonium
+  unterschied: "dreigehörnter Gurgulum (Würgen \n  TP: +1W6, zusätzliche Fähigkeit\
+    \ „Stärkung des Wirts“\n(Proben des Wirts auf körperliche Attribute sind um +4,\
+    \ Fertigkeitsproben mit körperlichen Attributen um +2 erleichtert, WS des Wirts\
+    \ +1, jedoch erleidet der Wirt jeden Tag 1W6+2 SP), Beschwörung: Invocatio 28,\
+    \ 48 AsP\n"
+  variantevon: gurgulum
+elymelusinias:
+  beschreibung: Der Bote der Tiefe; dreigehörnter Diener Charyptoroths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Preisgeben von Informationen (lohnende Beute für Piraten, gute Fischgründe
+        oder Meeresströmungen)
+    - dauer: 1 Tag
+      name: Gegenstand auf dem Meeresgrund oder einem Schiff suchen und stehlen
+    - mod: -4
+      name: Wasserleichen erheben
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Amphibisches Wesen
+  - name: Regeneration I
+  - info: im Wasser
+    name: Tarnung
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 14
+      name: Stab
+    - FK: 16
+      LZ: 0
+      RW: 8
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      info: Ertränken
+      name: Wasserstrahl
+    werte:
+      GS: 6
+      GSS: 10
+      INI: 8
+      MR: 12
+      WS: 8
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: alle Wasserzauber und ähnliche Effekte
+      - name: Brenne!
+      - name: Kulminatio
+      - name: Skelettarius
+      - info: Wasserleichen
+        name: Totes Handle
+      - name: Weiches Erstarre!
+      wert: 18
+  name: Elymelusinias
+  quelle: pandaemonium
+  talente:
+  - name: Geographie
+    wert: 16
+  - name: Pirschen
+    wert: 16
+  - name: Menschenkenntnis
+    wert: 14
+  - name: Schwimmen
+    wert: 20
+  - name: Überreden
+    wert: 16
+  - name: Überleben (Meer)
+    wert: 20
+  - name: Wachsamkeit
+    wert: 12
+etemasoroph:
+  beschreibung: Jenes-das-nimmermehr-freigibt; ein minderer Diener Tasfarelels, sehr
+    kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Monat
+      mod: 4
+      name: Geld des Beschwörers verwahren und Dieben die Finger abbeißen
+    - dauer: 1 Woche
+      name: Geld eines mit dem Geldbeutel beschenkten Konkurrenten verschlingen
+    - dauer: 1 Tag
+      mod: 4
+      name: Gier in einem Opfer auslösen
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 4
+      name: Biss
+    werte:
+      GS: 0
+      INI: 0
+      MR: 6
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Große Gier
+      - name: Harmlose Gestalt
+      wert: 8
+  name: Etema-Soroph
+  quelle: pandaemonium
+  talente:
+  - name: Untertauchen
+    wert: 14
+  - name: Wachsamkeit
+    wert: 12
+eugalp:
+  beschreibung: Der Plagenbringer; eine viergehörnte Wesenheit, vermutlich einstmals
+    aus dem Gefolge Mishkharas
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Nahes Ziel mit Dämonenfäule infizieren
+    - name: Lebensmittel verseuchen
+    - mod: -4
+      name: Besitzer eines vorhandenen Körperteils suchen und mit Dämonenfäule infizieren
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Regeneration I
+  - name: Schreckgestalt II
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 10
+      info: Infektion (Das Ziel wird mit der Dämonenfäule angesteckt.)
+      name: Krallen
+    werte:
+      GS: 11
+      INI: 10
+      MR: 20
+      WS: 14
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Fluch der Pestilenz
+      wert: 16
+  name: Eugalp
+  quelle: pandaemonium
+fargyraff:
+  beschreibung: Der freudlose Quell der Habgier; ein sechsgehörnter Diener Tasfarelels
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Dem Beschwörer einen seltenen Gegenstand verkaufen
+    - name: Schatzkammer des Beschwörers füllen
+    - mod: -4
+      name: Jemanden zu einem Pakt verführen
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  freiefertigkeiten:
+  - name: Händler
+    wert: 3
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 14
+      name: Faust
+    werte:
+      GS: 6
+      INI: 12
+      MR: 18
+      WS: 10
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Bannbaladin
+      - name: Große Gier
+      - name: Seidenzunge
+      wert: 20
+  name: Fargy'raff
+  quelle: pandaemonium
+  talente:
+  - name: Gebräuche
+    wert: 20
+  - name: Menschenkenntnis
+    wert: 24
+  - name: Überreden
+    wert: 24
+frazzaroth:
+  beschreibung: Der kindliche Herr der Dunklen Pforten; niederer Diener Lolgramoths,
+    kleiner Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Transport des Beschwörers durch den Limbus an einen bereits besuchten
+        Ort
+    - name: Transport des Beschwörers durch den Limbus an einen bekannten, aber noch
+        nicht besuchten Ort
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  - name: Limbusreisender
+  info: 'Sollte der Frazzaroth jemanden durch den Limbus transportieren, so muss der
+    Mitreisende eine Willenskraftprobe (16) bestehen, um keinen Furcht- Effekt der
+    Stufe I erleiden. Zusätzlich kann der Frazzaroth in solch einem Fall seinen Mitreisenden
+    an einen anderen als den gewünschten Ort bringen oder sogar im Limbus stranden
+    lassen.
+
+    '
+  kampf:
+    waffen:
+    - AT: 6
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 12
+      name: Hieb
+    werte:
+      GS: 10
+      INI: 10
+      MR: 10
+      WS: 3
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Axxeleratus
+      - name: Transversalis
+      wert: 10
+  name: Frazzaroth
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 12
+  - name: Pirschen
+    wert: 10
+  - name: Wachsamkeit
+    wert: 12
+glaathoyub:
+  beschreibung: Der Schlangenwanst; ein vielgehörnter unabhängiger Dämon, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Dorf mit Schlangen tyrannisieren
+    - name: Viehherde vernichten
+    - dauer: 1 Monat
+      mod: 4
+      name: Wache
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Präsenz,
+  - name: Regeneration II
+  - name: Schlangenwanst
+  info: 'Der Dämon trägt 10 Schlangenschwärme in seinem Bauch, die er jeden Tag aussendet
+    um Lebewesen zu fressen. Pro Schwarm, der vollgefressen zu ihm zurückkehrt, erhöht
+    sich seine WS um +1, bis zu einem Maximum von 14. Werte für einen Schwarm: WS
+    5, koloss 1, INI 4, GS 2, PA 6, RW 0, AT 12, TP 2W6 (Nachbrennen (Säure), Schmerzimmun
+    II, Resistenz II (Stichwaffen), Verwundbarkeit IV (Flächenschaden)), Schreckgestalt
+    II
+
+    '
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 12
+      info: Doppelangriff, Niederwerfen (-4)
+      name: Prankenhieb
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 2
+      VT: 2
+      info: Nachbrennen (Säure)
+      name: Biss
+    werte:
+      GS: 2
+      INI: 1
+      MR: 16
+      WS: 4
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Exposami
+      - name: Fluch der Wandlung
+      - name: Krähenruf (Schlangen)
+      - name: Krabbelnder Schrecken
+      - name: Reptilea
+      wert: 16
+  name: Glaa-Tho-Yub
+  quelle: pandaemonium
+  talente:
+  - name: Wachsamkeit
+    wert: 16
+  - name: Pirschen
+    wert: 6
+glazmadraa:
+  beschreibung: Der Herzensfrost; siebengehörnter Diener Belshirashs, sehr großer
+    Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Person suchen und töten
+    - dauer: 1 Woche
+      name: Burg einfrieren
+    - mod: -4
+      name: Dorf zerstören
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: 'Aura (Kälte, Zähigkeit (24), alle 4 INI: phasen, 1 Wunde)'
+  - name: Regeneration I
+  - name: Schreckgestalt II
+  - name: Verwundbarkeit I (Feuer)
+  - name: Zusätzliche Attacke I (nur Trampeln)
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 16
+      RW: 2
+      TP:
+        W: 20
+        anzahl: 2
+        plus: 5
+      VT: 12
+      info: Niederwerfen (-12)
+      name: Faust
+    - AT: 18
+      RW: 5
+      RWM: 2
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 10
+      VT: 12
+      info: Flächenangriff (180° vor dem Dämon), Niederwerfen (-16), Zurückstoßen
+      name: Keule
+    - AT: 16
+      RW: 1
+      TP:
+        W: 20
+        anzahl: 4
+      VT: 6
+      info: 'Flächenangriff (1 Schritt Umkreis), Niederwerfen (-16), Überrennen (wird
+        nicht durch erfolgreiche VT: gestoppt)'
+      name: Trampeln
+    werte:
+      GS: 8
+      INI: 6
+      MR: 20
+      WS: 16
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Caldofrigo
+      - name: Frigisphaero
+      - name: Gletscherwand
+      - name: Warmes Gefriere!
+      wert: 24
+  name: GLAZ'MADRAA
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Pirschen
+    wert: 2
+  - name: Sinnenschärfe
+    wert: 24
+  - name: Wachsamkeit
+    wert: 24
+gnarishajtumar:
+  beschreibung: Der Architekt des Ewigen Bauplatzes der Berstenden Zitadelle; ein
+    viergehörnter Diener Agrimoths, sehr großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Kontrolle von Baudämonen
+    - dauer: 1 Tag
+      mod: null
+      name: Gestein formen
+    - dauer: 1 Tag
+      mod: -4
+      name: Transport schwerer Lasten
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Regeneration I
+  freiefertigkeiten:
+  - name: Baumeister
+    wert: 3
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      VT: 6
+      info: Umklammern (-4, 16)
+      name: Prankenhieb
+    werte:
+      GS: 2
+      INI: 4
+      MR: 18
+      WS: 12
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Fesselranken
+      - name: Hartes Schmelze!
+      - name: Leib des Erzes)
+      wert: 16
+  name: Gna-Rishaj-Tumar
+  quelle: pandaemonium
+  talente:
+  - name: Wachsamkeit
+    wert: 20
+  - name: Pirschen
+    wert: 14
+  - name: Untertauchen
+    wert: 14
+grakvaloth:
+  beschreibung: Bote der Niederhöllen, das ungesehene Grauen; ein viergehörnter Diener
+    des Namenlosen, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Wache
+    - dauer: 1 Minute
+      name: Kampf
+    - dauer: 1 Tag
+      mod: -4
+      name: Person suchen und töten
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Flugfähig
+  - info: geweiht
+    name: Resistenz I
+  - name: Schreckgestalt II
+  - info: kann sich nach Wunsch nur bestimmten Personen, meist dem Opfer, zeigen
+    name: Unsichtbarkeit
+  - name: Zusätzliche Attacke I
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 12
+      info: Doppelangriff, Niederwerfen (-4)
+      name: Prankenhieb
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 2
+      VT: 2
+      name: Biss
+    werte:
+      GS: 10
+      GSF: 18
+      INI: 10
+      MR: 18
+      WS: 10
+  klasse: daemon
+  name: Grakvaloth
+  quelle: pandaemonium
+  talente:
+  - name: Wachsamkeit
+    wert: 20
+  - name: Pirschen
+    wert: 24
+  - name: Laufen
+    wert: 16
+gregorroth:
+  beschreibung: Meister der Kakophonie; niederer Diener Amazeroths oder Belkelels
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Besessenheit eines Musikinstruments
+    - dauer: 1 Stunde
+      name: Besessenheit eines Musikers
+    - dauer: 1 Stunde
+      mod: -4
+      name: Verwirrung einer Festgesellschaft
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Besessenheit
+  - name: Unsichtbarkeit
+  info: 'Der Dämon kann von einem Musikinstrument oder ein Wesen Besitz ergreifen.
+    Er verliert Besessenheit, WS, GS, Ausweichen und erhält die Eigenschaften/Attacken
+    des Ziels (bei einem Wesen). Musiker oder Instrumente können keine wohlklingende
+    Musik mehr erzeugen, eventuelle Proben auf entsprechende Freie Fertigkeiten sind
+    um +12 erschwert.), Sphärenklang (alle Personen in einer Zone von 32 Schritt Durchmesser
+    um den Dämon müssen eine Probe auf MR (20) bestehen, um nicht Opfer eines zufälligen
+    Zaubers der Fertigkeit Einfluss zu werden.
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 2
+      name: Ausweichen
+    werte:
+      GS: 6
+      INI: 8
+      MR: 12
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Melodie des Einlullens
+      - name: Melodie der Verwirrung
+      - name: Schriller Klang
+      wert: 12
+  name: Gregorroth
+  quelle: pandaemonium
+grosserorciosil:
+  beschreibung: Die brüllende Seele des Sturms; ein minderer Diener Agrimoths, mittlerer
+    Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Segelboot antreiben
+    - dauer: 1 Minute
+      name: Gegner auf Abstand halten
+    - dauer: 1 Tag
+      mod: -4
+      name: Wachstum zu einem großen Orciosil
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Rudel
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 4
+      name: Zunge
+    werte:
+      GS: 1
+      INI: -1
+      MR: 8
+      WS: 3
+  klasse: daemon
+  magie:
+    asp: 16
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Aeolitus
+      wert: 10
+  name: Großer Orciosil
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 12
+  unterschied: Größenkategorie mittel, Kampfwerte +2, Waffeneigenschaft Umklammern
+    (-4, 12), beherrscht den Aeolitus in einer Variante, die Gegner einsaugen kann.
+  variantevon: orciosil
+gurgulum:
+  beschreibung: Der Dunkelschlund, ein niederer Diener des Blakharaz, sehr kleiner
+    Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Monat
+      name: Kontrolle über Wirt übernehmen
+    - dauer: 6 Monate
+      mod: 4
+      name: Kontrolle über Wirt übernehmen
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Unsichtbarkeit
+  - name: Kritische Konsistenz
+  - name: Opfer übernehmen
+  info: 'Der Durgulum legt sich um den Hals des Opfers und verliert alle Angriffe
+    mit *. Er kann kurzfristig die Kontrolle über das Opfer übernehmen oder dieses
+    zur Strafe würgen. Die Einnahme von Rauschmitteln lässt den Durgulum für einige
+    Zeit schlafen.
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 4
+      name: Ausweichen
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+      VT: 2
+      info: Umklammern (-2, 12)
+      name: Würgen
+    werte:
+      GS: 1
+      INI: 4
+      MR: 10
+      WS: 3
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Große Gier
+      - name: Imperavi
+      wert: 10
+  name: Gurgulum
+  quelle: pandaemonium
+hanaestil:
+  beschreibung: Die Allschöne, der verderbte Traum, die dunkle Verführerin; fünfgehörnte
+    (vermutlich einzigartige) Dienerin der Shaz-man-yat
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Liebesspiel mit dem Beschwörer
+    - dauer: 1 Tag
+      name: Person in der Nähe verführen
+    - dauer: 1 Tag
+      mod: -4
+      name: Person verführen und töten
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Unsichtbarkeit
+  kampf:
+    vorteile:
+    - name: Defensiver Kampfstil
+    waffen:
+    - RW: 0
+      VT: 20
+      name: Ausweichen
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      VT: 20
+      name: Krallen
+    werte:
+      GS: 14
+      INI: 10
+      MR: 14
+      WS: 14
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Bannbaladin
+      - name: Imperavi
+      - name: Levthans Feuer
+      - name: Satuarias Herrlichkeit
+      wert: 16
+  name: Hanaestil
+  quelle: pandaemonium
+  talente:
+  - name: Betören
+    wert: 24
+  - name: Wachsamkeit
+    wert: 20
+haqoum:
+  beschreibung: 'Der Verfluchte Feilscher, der dämonische Steuereintreiber; ein eingehörnter
+    Diener Tasfarelels oder Amazeroths, kleiner Gegner
+
+    '
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Geld von Schuldiger eintreiben
+    - dauer: 1 Tag
+      name: Diebstahl
+    - dauer: 1 Tag
+      mod: -4
+      name: Person aufspüren und meucheln
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Regeneration I
+  - info: in Gebäuden
+    name: Tarnung
+  kampf:
+    vorteile:
+    - name: Reflexschuss
+    - name: Ruhige Hand
+    - name: Schnellziehen
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+      VT: 12
+      info: Wendig
+      name: Kurzschwert
+    - FK: 12
+      LZ: 4
+      RW: 32
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
+      info: Zweihändig
+      name: Leichte Armbrust
+    werte:
+      GS: 4
+      INI: 8
+      MR: 10
+      WS: 8
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Duplicatus
+      - name: Foramen
+      - name: Impersona
+      - name: Motoricus
+      - name: Somnigravis
+      - name: Visibili
+      wert: 12
+  name: Haqoum
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 16
+  - name: Untertauchen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 12
+hektabelus:
+  beschreibung: Fliegender Bote der Pestilenz; gehörnter Diener Belzhorashs, sehr
+    kleiner Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Nahes Ziel mit einer Krankheit bis Stufe 24 infizieren
+    - dauer: 1 Tag
+      name: Besessenheit eines Erkrankten und weitere Verbreitung der Krankheit
+    - mod: -4
+      name: Besitzer eines vorhandenen Körperteils suchen und mit einer Krankheit
+        bis Stufe 24 infizieren
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Flieger
+  - name: Rudel
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 2
+      name: Ausweichen
+    werte:
+      GSF: 8
+      INI: 8
+      MR: 12
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Fluch der Pestilenz
+      wert: 12
+  name: Hektabelus
+  quelle: pandaemonium
+hirrnirat:
+  beschreibung: Der Rattenfürst; niederer Diener Belzhorashs, sehr kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Kontrolle über Rattenschwarm
+    - dauer: 1 Stunde
+      name: Lebensmittel vernichten
+    - mod: -4
+      name: Pestrattenschwarm beschwören und Krankheiten verbreiten
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Rudel
+  info: Krähenruf mit Ratten statt Krähen, Werte wie Pestrattenschwarm
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      VT: 6
+      name: Biss
+    werte:
+      GS: 6
+      INI: 10
+      MR: 8
+      WS: 2
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Krähenruf
+      wert: 10
+  name: HIRR'NIRAT
+  quelle: pandaemonium
+  talente:
+  - name: Untertauchen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 8
+irhiadhzal:
+  beschreibung: Der unbarmherzige Verfolger; ein gehörnter Diener Blakharaz
+  beschwörung:
+    dienste:
+    - dauer: bis von meisterlichem Seelenheiler geheilt
+      mod: 4
+      name: Opfer mit Alpträumen und Halluzinationen in den Wahnsinn treiben
+    - dauer: 1 Tag
+      name: Opfer mit kontrolliertem Tier suchen und töten
+    - dauer: 1 Tag
+      mod: -4
+      name: Untote erheben und Opfer töten
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Besessenheit von Tieren
+  info: 'Der Dämon fährt in ein Tier ein. Er verliert WS, GS, Ausweichen und erhält
+    die Eigenschaften und Attacken des Tiers. Der Dämon kontrolliert das Tier vollständig,
+    das Tier erhält die Vorteile Regeneration I, Schreckgestalt I, Tarnung und Zusätzliche
+    Attacke I. Das Tier erleidet während der Besessenheit kein Erschöpfung durch körperliche
+    Anstrengung.
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 14
+      name: Ausweichen
+    werte:
+      GS: 10
+      INI: 8
+      MR: 16
+      WS: 12
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Alpgestalt
+      - name: Halluzination
+      - name: Skelettarius
+      - name: Totes handle
+      - name: Traumgestalt
+      wert: 16
+  name: Irhiadhzal
+  quelle: pandaemonium
+isphanil:
+  beschreibung: Die unsichtbare Bringerin dunkler Gaben; Nutznießerin finsterer Gelüste;
+    dreigehörnte Dienerin der Shaz-Man-Yat
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Opfer ausspionieren
+    - dauer: 1 Tag
+      name: Körperteil für ein Ritual vom Opfer beschaffen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  - name: Limbusreisender
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 10
+      name: Ausweichen
+    werte:
+      GS: 18
+      INI: 12
+      MR: 10
+      WS: 6
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Eigenschaften
+      talente:
+      - name: Große Verwirrung
+      wert: 18
+  name: Isphanil
+  quelle: pandaemonium
+  talente:
+  - name: Untertauchen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 24
+ivash:
+  beschreibung: Der Feuerteufel; niederer Diener des Namenlosen Gottes
+  beschwörung:
+    dienste:
+    - dauer: 1 Minute
+      mod: 4
+      name: Kampf
+    - dauer: 1 Woche
+      name: Ort bewachen
+    - dauer: 1 Stunde
+      mod: -4
+      name: Schutz des Beschwörers
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - info: Alle Waffen, die Holz beinhalten, gelten gegen den Ivash als zerbrechlich
+    name: Flammenkörper
+  - name: Formlosigkeit,
+  - name: Immunität (Feuer),
+  - name: Resistenz I (geweiht),
+  - name: Verwundbarkeit I (Wasser)
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
+      VT: 12
+      info: Nachbrennen
+      name: Flammenzunge
+    werte:
+      GS: 10
+      INI: 10
+      MR: 13
+      WS: 5
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Brenne!
+      - name: Ignifaxius
+      wert: 12
+  name: Ivash
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 4
+  - name: Wachsamkeit
+    wert: 10
+kahthurakarfai:
+  beschreibung: Der Nachtdämon; dreigehörnter und dennoch überaus mächtiger Diener
+    Agrimoths, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Minute
+      mod: 4
+      name: Kampf
+    - dauer: 1 Woche
+      name: Wache
+    - dauer: 1 Nacht
+      name: Nächtliche Spionage
+    - dauer: 1 Nacht
+      mod: -4
+      name: Suchen und Töten einer Person
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Flugfähig
+  - info: 'Untertags ist der Dämon wesentlich schwächer und versteckt sich üblicherweise
+      in einer Blume: WS 13 koloss: 1, MR 12, INI 8 und er verliert Regeneration I,
+      Schreckgestalt II, Tarnung)
+
+      '
+    name: Nachtdämon
+  - name: Regeneration I
+  - name: Schreckgestalt II
+  - name: Tarnung
+  - name: Zusätzliche Attacke I
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 18
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 3
+      VT: 10
+      info: Wendig
+      name: Prankenhieb
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
+      VT: 4
+      name: Biss
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+      VT: 4
+      info: Niederwerfen
+      name: Schwanz
+    werte:
+      GS: 5
+      GSF: 15
+      INI: 16
+      MR: 24
+      WS: 13
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Verwandlung
+      talente:
+      - name: Visibili
+      wert: 14
+  name: Kah-Thurak-Arfai
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 24
+karmoth:
+  beschreibung: Der Vernichter, der unaufhaltsame Bulle, das blutsaufende Rind; sechsgehörnter
+    Diener Belhalhars, sehr großer Gegner
+  eigenschaften:
+  - info: 'Kampfeslust, Willenskraft (28), jede INI: phase, Opfer wird zum Kampf mit
+      Karmoth gezwungen'
+    name: Aura
+  - name: Regeneration II
+  - name: Schreckgestalt III
+  - name: Unbeugsamkeit
+  - name: Zusätzliche Attacke II
+  kampf:
+    vorteile:
+    - name: Befreiungsschlag
+    - name: Gegenhalten
+    - name: Niederwerfen
+    - name: Offensiver Kampfstil
+    - name: Sturmangriff
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 20
+      RW: 5
+      RWM: 2
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 10
+      VT: 12
+      info: Niederwerfen (-16), Zurückstoßen
+      name: Axt
+    - AT: 16
+      RW: 1
+      TP:
+        W: 20
+        anzahl: 4
+      VT: 6
+      info: 'Flächenangriff (1 Schritt Umkreis), Niederwerfen (-16), Überrennen (wird
+        nicht durch erfolgreiche VT: gestoppt'
+      name: Trampeln
+    werte:
+      GS: 9
+      INI: 6
+      MR: 20
+      WS: 20
+      koloss: 2
+  klasse: daemon
+  name: Karmoth
+  quelle: pandaemonium
+  talente:
+  - name: Einschüchtern
+    wert: 32
+  - name: Wachsamkeit
+    wert: 32
+karunga:
+  beschreibung: Der Grünwisch; ein minderer Diener Amazeroths, kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Minute
+      mod: 4
+      name: Gegner verwirren
+    - name: Nachricht überbringen
+    - dauer: 1 Stunde
+      mod: -4
+      name: Trugbilder erzeugen
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Flieger
+  - name: Immunität (Schadenszauber)
+  - name: Rudel
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 2
+      name: Ausweichen
+    werte:
+      GSF: 15
+      INI: 15
+      MR: 6
+      WS: 2
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Auris Nasus
+      - name: Blitz
+      - name: Menetekel
+      wert: 10
+  name: Karunga
+  quelle: pandaemonium
+kharzoreel:
+  beschreibung: Der Eishauer und niederhöllische Alchimist; eingehörnter Diener Belshirashs
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Eis formen
+    - dauer: 1 Jahr
+      name: Theriak-Nadel formen
+    - mod: 4
+      name: Gegner einfrieren
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Unsichtbarkeit
+  - name: Zusätzliche Attacke I
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 6
+      info: Erfrieren
+      name: Kalter Hauch
+    werte:
+      GS: 6
+      INI: 8
+      MR: 14
+      WS: 12
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Corporfrigo
+      - name: Metamorpho)
+      wert: 12
+  name: Kharz'oreel
+  quelle: pandaemonium
+khelevathan:
+  beschreibung: Der gehörnte Schänder; ein viergehörnter Diener Belkelels
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Jemanden in einen Mannwidder verwandeln
+    - dauer: 1 Woche
+      name: Ziel verführen und Regeneration rauben
+    - dauer: 1 Tag
+      mod: -4
+      name: Ziel verführen und quälen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  - name: Lebensraub, keine Verwundbarkeit I (Rahja)
+  - name: Tarnung
+  - name: Zusätzliche Attacke I
+  kampf:
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      VT: 8
+      info: Niederwerfen
+      name: Hornstoß
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 12
+      name: Krallen
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 6
+      info: Niederwerfen
+      name: Tritt
+    werte:
+      GS: 4
+      INI: 8
+      MR: 20
+      WS: 12
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Böser Blick
+      - name: Levthans Feuer
+      - name: Große Gier
+      - name: Große Verwirrung
+      - name: Halluzination
+      - name: Höllenpein
+      - name: Satuarias Herrlichkeit
+      - name: Zunge lähmen
+      wert: 16
+  name: Khelevathan
+  quelle: pandaemonium
+  talente:
+  - name: Betören
+    wert: 20
+  - name: Pirschen
+    wert: 16
+  - name: Untertauchen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 14
+khuralthu:
+  beschreibung: Der Blutdrescher; ein niederer Diener Belzorashs
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Ritualplatz bewachen
+    - dauer: 1 Tag
+      name: Beschwörer beschützen
+    - dauer: 1 Minute
+      mod: -4
+      name: Kampf
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Regeneration I
+  - name: Zusätzliche Attacke II
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      VT: 10
+      info: Wendig
+      name: Hieb
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
+      VT: 2
+      info: Erfrieren (Übelkeit), Infektion (Das Ziel wird mit einer Krankheit bis
+        Stufe 24 infiziert.)
+      name: Biss
+    werte:
+      GS: 6
+      INI: 10
+      MR: 12
+      WS: 6
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Tlalucs Odem
+      wert: 10
+  name: Khuralthu
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 10
+  - name: Pirschen
+    wert: 4
+  - name: Wachsamkeit
+    wert: 10
+libaal:
+  beschreibung: Die Fleischformerin der inneren Einöden; eine sechsgehörnter Dienerin
+    Asfaloths, großer Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: 6 nützliche Chimären gebären
+    - name: 3 starke Chimären gebären
+    - mod: -4
+      name: 1 mächtige Chimäre gebären
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Schreckgestalt II
+  - name: Regeneration I
+  - name: Zusätzliche Attacke IV
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      VT: 8
+      info: Niederwerfen (-4), Rüstungsbrechend
+      name: Zange
+    - AT: 18
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
+      VT: 4
+      info: Mutation, Rüstungsbrechend
+      name: Biss
+    werte:
+      GS: 4
+      INI: 4
+      MR: 18
+      WS: 10
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Chimaeroform
+      - name: Krabbelnder Schrecken
+      - name: Pandämonium
+      - name: Salander
+      wert: 24
+  name: LI'BAAL
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 14
+  - name: Wachsamkeit
+    wert: 20
+mactans:
+  beschreibung: Die gepanzerte Spinne, das weitreichende Netz; ein fünfgehörnter Dämon,
+    großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Jahr
+      mod: 4
+      name: Wache
+    - dauer: 1 Minute
+      name: Kampf
+    - mod: -4
+      name: Gegner versteinern oder in den Limbus schleudern
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Regeneration II
+  - name: Schreckgestalt II
+  - name: Verwundbarkeit (Seeschlangenzähne)
+  - name: Zusätzliche Attacke IV
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      VT: 8
+      name: Tentakel
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
+      VT: 2
+      name: Schnabel
+    werte:
+      GS: 6
+      INI: 16
+      MR: 18
+      WS: 10
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Arachnea
+      - name: Auge des Limbus
+      - name: Granit und Marmor
+      - name: Große Verwirrung
+      - name: Paralysis)
+      wert: 16
+  name: Mactans
+  quelle: pandaemonium
+marukmethai:
+  beschreibung: 'Der Wille zur Macht, die Kraft des Namenlosen, seine abgeschlagene
+    und immer wachsende rechte Hand; fünfgehörnter Diener des Namenlosen
+
+    '
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      name: Beschwörer stärken
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Ausweichen
+  - name: Unsichtbarkeit
+  - name: Beschwörer stärken
+  info: 'Beschwörer stärken (Der Dämon fährt in den Beschwörer ein und verleiht diesem
+    übermenschliche Kräfte. Der Dämon verliert (WS, GS, Ausweichen, Unsichtbarkeit)
+    und erhält die Eigenschaften/Attacken des Opfers. Der Beschwörer erhält folgende
+    Bonusse: Proben auf körperliche Attribute sind um +8, Fertigkeitsproben mit körperlichen
+    Attributen um +4 erleichtert, MR +8, INI +8, WS +2, Resistenz I (profan), Schmerzimmun
+    II, Kalte Wut, Proben auf die übernatürliche Fertigkeit Einfluss sind um +4 erleichtert.
+    Der Beschwörer erleidet 2W6 SP pro Tag, zudem versucht Maruk- Methai gänzlich
+    von ihm Besitz zu ergreifen. Dies gelingt ihm wenn bei einem täglich anfallenden
+    Wurf mit W20 18-20 gewürfelt wird.)
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 2
+      name: Ausweichen
+    werte:
+      GS: 2
+      INI: 4
+      MR: 6
+      WS: 2
+  klasse: daemon
+  name: Maruk-Methai
+  quelle: pandaemonium
+morcan:
+  beschreibung: Bote der Nacht des Irrsinns, Sklavenmeister der Seelen; minderer Diener
+    Thargunitoths
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Besessenheit
+    - dauer: 1 Woche
+      name: Alpträume erzeugen
+    - dauer: bis von erfahrenem Seelenheiler geheilt
+      mod: -4
+      name: Opfer mit einer Alptraumwelt in den Wahnsinn treiben
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Unsichtbarkeit
+  - name: Besessenheit
+  info: 'Besessenheit (Der Morcan fährt in sein Opfer ein und kontrolliert dieses
+    in der Nacht, sofern diesem keine Probe auf Willenskraft (20) gelingt. Der Morcan
+    verliert WS, GS, Ausweichen, Unsichtbarkeit und erhält die Eigenschaften/Attacken
+    des Opfers.)
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 2
+      name: Ausweichen
+    werte:
+      GS: 4
+      INI: 8
+      MR: 8
+      WS: 5
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Traumgestalt
+      wert: 10
+  name: Morcan
+  quelle: pandaemonium
+muwalaaran:
+  beschreibung: Der schwarze Hengst; zweigehörnter Diener Belkelels, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Beschwörer transportieren
+    - name: Daimoniden-Züchtung
+    - mod: -4
+      name: Transport großer Lasten
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Flugfähig
+  - name: Regeneration I
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: Überrennen
+    waffen:
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      VT: 6
+      info: Niederwerfen
+      name: Tritt
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
+      VT: 2
+      name: Biss
+    werte:
+      GS: 10
+      GSF: 12
+      INI: 10
+      MR: 20
+      WS: 15
+  klasse: daemon
+  name: Muwalaaran
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Fliegen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 10
+nemanar:
+  beschreibung: Der Schattentod, der Vollstrecker im Dunkeln; ein zweigehörnter Diener
+    Blakharaz
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Opfer suchen und meucheln
+    - dauer: 1 Tag
+      mod: -4
+      name: Mehrere Opfer an einem Ort suchen und meucheln
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Lichtscheu
+  - name: Regeneration I
+  - name: Tarnung
+  kampf:
+    vorteile:
+    - name: Reflexschuss
+    - name: Ruhige Hand
+    - name: Schnellschuss
+    - name: Meisterschuss
+    - name: Todesstoß
+    waffen:
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 12
+      name: Dolch
+    - FK: 16
+      LZ: 4
+      RW: 32
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
+      info: Zweihändig
+      name: Leichte Armbrust
+    werte:
+      GS: 8
+      INI: 12
+      MR: 14
+      WS: 8
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Dunkelheit
+      - name: Falkenauge
+      - name: Silentium
+      - name: Spurlos
+      - name: Umbraporta
+      wert: 14
+  name: Nemanar
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 20
+  - name: Sinnenschärfe
+    wert: 14
+  - name: Untertauchen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 14
+nishkakat:
+  beschreibung: Der scheinheilige Diener der dreiköpfigen Echse von Nabuleth; dreigehörnter
+    Diener Amazeroths, kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Berater für Beschwörungen
+    - name: Opfer falsches Wissen einflüstern;
+    - dauer: 1 Woche
+      mod: -4
+      name: Lehrmeister für profane Talente, Schriften oder Sprachen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Flieger
+  freiefertigkeiten:
+  - name: Lehrer
+    wert: 3
+  - name: etliche Sprachen und Schriften
+    wert: 3
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+      VT: 16
+      name: Biss
+    werte:
+      GSF: 8
+      INI: 10
+      MR: 16
+      WS: 2
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Verwandlung
+      talente:
+      - name: Visibili
+      wert: 14
+    - name: Dämonisch
+  name: Nishkakat
+  quelle: pandaemonium
+  talente:
+  - name: Dämonenkunde
+    wert: 20
+  - name: Derekunde
+    wert: 16
+  - name: Handwerk
+    wert: 16
+  - name: Magietheorie
+    wert: 16
+  - name: Mythenkunde
+    wert: 16
+oboraddon:
+  beschreibung: Der Herrscher der Nimmer Ruhenden; sechsgehörnter Diener Thargunitoths,
+    großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Mehrere schwache Untote erschaffen und kontrollieren
+    - dauer: 1 Stunde
+      name: Mehrere nützliche Untote erschaffen und kontrollieren
+    - dauer: 1 Woche oder bis der Untote zerfällt
+      mod: -4
+      name: König der Untoten erschaffen, indem er dem von ihm beseelten Untoten zusätzliche
+        Fähigkeiten im Wert von -20 verleiht
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Unsichtbarkeit
+  - name: Leiche beseelen
+  info: 'Der Dämon erhebt eine Leiche als Untoten. Er verliert Unsichtbarkeit, WS,
+    GS und erhält die Eigenschaften/Attacken des Untoten. Der Dämon kontrolliert den
+    Untoten vollständig. Jeder Dienst des Oboraddon beginnt damit, dass er eine Leiche
+    als Untoten erhebt, wie oben beschrieben.
+
+    '
+  kampf:
+    vorteile:
+    - name: Formiert euch!
+    - name: Keine Gefangenen!
+    waffen:
+    - RW: 0
+      VT: 12
+      name: Ausweichen
+    werte:
+      GS: 8
+      INI: 10
+      MR: 16
+      WS: 8
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Skelettarius
+      - name: Totes Handle!
+      wert: 20
+  name: Oboraddon
+  quelle: pandaemonium
+  talente:
+  - name: Anführen
+    wert: 24
+  - name: Pirschen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 16
+orciosil:
+  beschreibung: Die brüllende Seele des Sturms; ein minderer Diener Agrimoths, kleiner
+    Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Segelboot antreiben
+    - dauer: 1 Minute
+      name: Gegner auf Abstand halten
+    - dauer: 1 Tag
+      mod: -4
+      name: Wachstum zu einem großen Orciosil
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Rudel
+  kampf:
+    waffen:
+    - AT: 10
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 2
+      name: Zunge
+    werte:
+      GS: 1
+      INI: -1
+      MR: 8
+      WS: 3
+  klasse: daemon
+  magie:
+    asp: 16
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Aeolitus
+      wert: 10
+  name: Orciosil
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 12
+pershirash:
+  beschreibung: Der gierige Schlinger; minderer Diener Belshirashs, sehr kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Jagd auf ein Tier
+    - name: Auge ausreißen und Kristall-Ei erschaffen
+    - dauer: 1 Tag
+      mod: -4
+      name: Spionage
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Flieger
+  - name: Lebensraub
+  - info: 'Für ein ausgerissenes Auge legt Pershirash ein kristallenes Ei. Das Ei
+      erleichtert FK-Angriffe des Beschwörers um +4/+6/+8 für 7 Tage/7 Monate/7 Jahre,
+      je nachdem ob es von einem Tier/kulturschaffenden Wesen/dem Beschwörer selbst
+      stammt. Die Effekte mehrere Eier sind nicht kumulativ, es zählt nur der höchste
+      Bonus.)
+
+      '
+    name: Auge des Pershirash legen
+  - name: Verbindung zum Beschwörer
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 5
+      VT: 8
+      info: Erfrieren, Umklammern
+      name: Krallen
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 2
+      name: Schnabel
+    werte:
+      GS: 1
+      GSF: 14
+      INI: 2
+      MR: 10
+      WS: 2
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Axxeleratus
+      - name: Exposami
+      wert: 10
+  name: Pershirash
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 16
+  - name: Fliegen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 16
+  - name: Zähigkeit
+    wert: 2
+qasaar:
+  beschreibung: Der schnurrende Verschlinger; minderer Diener der Aphasmayra, sehr
+    kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Jahr
+      mod: 4
+      name: Opfer terrorisieren
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Immunität (profan)
+  - name: Präsenz
+  - name: Regeneration I
+  - name: Resistenz (magisch, geweiht)
+  kampf:
+    vorteile:
+    - name: Defensiver Kampfstil
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 12
+      name: Biss
+    werte:
+      GS: 8
+      INI: 10
+      MR: 8
+      WS: 2
+  klasse: daemon
+  name: Qasaar
+  quelle: pandaemonium
+scylaphotai:
+  beschreibung: Die Flammenqualle; minderer Diener Charyptoroths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Wasser erhitzen
+    - dauer: 1 Woche
+      name: Hafeneinfahrt oder Meerenge bewachen
+    - dauer: 1 Minute
+      mod: -4
+      name: Kampf
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - info: 'Gestank, Zähigkeit (16) alle 4 INI: phasen, für 1 INI: phase handlungsunfähig'
+    name: Aura
+  - name: wasserwesen
+  - info: 'Kochendes Wasser, Zähigkeit (16), alle 4 INI: phasen, 1 Wunde'
+    name: Aura
+  kampf:
+    waffen:
+    - FK: 12
+      LZ: 0
+      RW: 16
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      name: Nesselbeschuss
+    werte:
+      GSS: 2
+      INI: 4
+      MR: 10
+      WS: 6
+  klasse: daemon
+  name: Scylaphotai
+  quelle: pandaemonium
+sharbazz:
+  beschreibung: Der Weibel der Niederhöllen; zweigehörnter Diener Belhalhars, großer
+    Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Kontrolle von mehreren niederen Dienern Belhalhars
+    - name: Planung einer Schlacht
+    - dauer: 1 Stunde
+      mod: -4
+      name: Kontrolle von mehreren Shruufya
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Flugfähig
+  - name: Regeneration I
+  - name: Zusätzliche Attacke I
+  kampf:
+    vorteile:
+    - name: Formiert euch!
+    - name: Keine Gefangenen!
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 6
+      VT: 12
+      name: Säbel
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 4
+      info: Niederwerfen (-4)
+      name: Tritt
+    werte:
+      GS: 4
+      GSF: 10
+      INI: 4
+      MR: 12
+      WS: 14
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Corpofesso
+      - name: Karnifilo
+      wert: 12
+  name: Sharbazz
+  quelle: pandaemonium
+  talente:
+  - name: Anführen
+    wert: 20
+  - name: Einschüchtern
+    wert: 20
+  - name: Pirschen
+    wert: 0
+  - name: Wachsamkeit
+    wert: 12
+sordul:
+  beschreibung: Der Zersetzer; niederer Diener Belzhorashs
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Gegenstand auflösen
+    - dauer: 1 Woche
+      name: Wache
+    - dauer: 1 Minute
+      mod: -4
+      name: Kampf
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - info: 'Verseuchung, Zähigkeit (16) alle 4 INI: phasen, 1 Erschöpfung'
+    name: Aura
+  - info: Waffen und Rüstungen, die Holz beinhalten, gelten gegen den Dämon als zerbrechlich.
+    name: Dämonische Säure
+  kampf:
+    waffen:
+    - AT: 10
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 10
+      info: Nachbrennen (Säure)
+      name: Krallen
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+      VT: 2
+      name: Biss
+    werte:
+      GS: 8
+      INI: 6
+      MR: 6
+      WS: 7
+  klasse: daemon
+  name: Sordul
+  quelle: pandaemonium
+taifelel:
+  beschreibung: Die Täuschende Flamme; eingehörnter Diener Agrimoths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Feuer formen
+    - name: Gegenstand erhitzen
+    - dauer: 1 Woche
+      mod: -4
+      name: Wache
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - info: 'Hitze, Zähigkeit (16) alle 4 INI: phasen, 1 Wunde'
+    name: Aura
+  - name: Immunität (Feuer)
+  - name: Verwundbarkeit I (Wasser)
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 12
+      info: Nachbrennen
+      name: Prankenhieb
+    werte:
+      GS: 2
+      INI: 4
+      MR: 10
+      WS: 7
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Caldofrigo
+      - name: Ignimorpho
+      wert: 12
+  name: Taifelel
+  quelle: pandaemonium
+  talente:
+  - name: Wachsamkeit
+    wert: 10
+thalon:
+  beschreibung: Das Schwarze Wiesel; niederer Diener Belshirashs
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Wild jagen
+    - dauer: 1 Tag
+      name: Spionage
+    - dauer: 1 Tag
+      mod: -4
+      name: Opfer suchen und töten
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Regeneration I
+  - name: Zusätzliche Attacke I
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 8
+      name: Biss
+    werte:
+      GS: 10
+      INI: 8
+      MR: 10
+      WS: 3
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Axxeleratus
+      - name: Visibili
+      wert: 10
+  name: Thalon
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Pirschen
+    wert: 16
+  - name: Sinnenschärfe
+    wert: 14
+  - name: Wachsamkeit
+    wert: 14
+thazlaraanji:
+  beschreibung: Laraansbrut; niederer Diener Belshirashs
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Beschwörer erotische Träume bereiten
+    - name: Regeneration des Opfers stehlen
+    - dauer: 1 Woche
+      mod: -4
+      name: Alpträume erzeugen
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 2
+      name: Ausweichen
+    werte:
+      GS: 6
+      INI: 8
+      MR: 12
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Levthans Feuer
+      - name: Traumgestalt
+      wert: 10
+  name: Thaz-Laranji
+  quelle: pandaemonium
+  talente:
+  - name: Untertauchen
+    wert: 12
+  - name: Betören
+    wert: 16
+trachrhabaar:
+  beschreibung: Die Näherin der Leiber; eingehörnte Dienerin Asfaloths, großer Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Zusammennähen einer schwachen Chimäre
+    - name: Zusammennähen einer nützlichen Chimäre
+    - mod: -4
+      name: Heilung des Beschwörers mit Milch
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Immunität (profan)
+  - name: Regeneration II
+  - name: Schreckgestalt II
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 6
+      info: Mutation
+      name: Klauen
+    - AT: 10
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 2
+      info: Niederwerfen
+      name: Tritt
+    werte:
+      GS: 6
+      INI: 4
+      MR: 18
+      WS: 13
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Balsam
+      - name: Chimaeroform
+      wert: 14
+  name: Trachrhabaar
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 10
+  - name: Wachsamkeit
+    wert: 14
+tuuramash:
+  beschreibung: Die Schwarze Kröte; siebengehörnter Diener Agrimoth, großer Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Giftige Dornenhecken wuchern lassen
+    - name: Felder pervertieren
+    - mod: -4
+      name: Erschaffung von Daimoniden
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - info: 'Wenn du dem Tuur-Amash mit einem Nahkampfangriff mindestens 2 Kratzer zufügt,
+      musst du eine GE-Probe (20) ablegen. Misslingt die Probe, erleidest du 4W6 SP.
+
+      '
+    name: Krötensekret
+  - name: Regeneration I
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 20
+      RW: 16
+      RWM: 1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
+      VT: 10
+      info: Mutation, Niederwerfen (-8)
+      name: Sprungangriff
+    - AT: 20
+      RW: 8
+      RWM: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      VT: 10
+      info: Fesseln, Mutation, Umklammern (-4, 20)
+      name: Zunge
+    werte:
+      GS: 2
+      INI: 10
+      MR: 18
+      WS: 12
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Chimaeroform
+      - name: Haselbusch
+      - name: Krötensprung
+      - name: Rikais Fluch
+      - name: Tlalucs Odem
+      - name: Sumpfstrudel
+      wert: 16
+  name: Tuur-Amash
+  quelle: pandaemonium
+  talente:
+  - name: Sinnenschärfe
+    wert: 20
+  - name: Wachsamkeit
+    wert: 20
+udapoth:
+  beschreibung: Das Grauen aus dem Wasser, der Tentakelkopf; ein niederer Diener Charyptoroths
+  beschwörung:
+    dienste:
+    - dauer: 1 Woche
+      mod: 4
+      name: Wache
+    - dauer: 1 Tag
+      name: Schutz des Beschwörers
+    - dauer: 1 Tag
+      mod: -4
+      name: Opfer suchen und zum Beschwörer verschleppen
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Amphibisches Wesen
+  - name: Regeneration I
+  - name: Verwundbarkeit I (Feuer)
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    waffen:
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      VT: 10
+      info: Umklammern (-4, 12)
+      name: Hieb
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 1
+      VT: 2
+      name: Biss
+    werte:
+      GS: 4
+      GSS: 8
+      INI: 6
+      MR: 12
+      WS: 6
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Aquafaxius
+      wert: 10
+  name: Udapoth
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 10
+  - name: Wachsamkeit
+    wert: 10
+ugrabaan:
+  beschreibung: Der Chimärenschlund; dreigehörnter Diener Asfaloths, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Einem Opfer auflauern und es verschlingen
+    - name: Zwei Lebewesen fressen und zu einer nützlichen Chimäre verschmelzen
+    - dauer: 1 Stunde
+      mod: -4
+      name: Ein Dorf überfallen und alles auf seinem Weg fressen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Zusätzliche Attacke II
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    waffen:
+    - AT: 12
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 6
+      info: Umklammern (-4, 12)
+      name: Pseudopode
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
+      VT: 2
+      name: Biss
+    werte:
+      GS: 6
+      INI: 6
+      MR: 18
+      WS: 13
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Chimaeroform
+      wert: 14
+  name: Ugrabaan
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 14
+umdoreel:
+  beschreibung: Der Meister der Jagd; dreigehörnter Diener Belshirashs, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: -4
+      name: Ziel suchen und töten
+    - dauer: 1 Tag
+      name: Mit der Wilden Jagd Angst und Schrecken verbreiten
+    - dauer: 1 Minute
+      mod: 4
+      name: Kampf
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - info: 'Kälte, Zähigkeit (20), alle 4 INI: phasen, 1Wunde'
+    name: Aura
+  - name: Regeneration I
+  - name: Schreckgestalt I
+  - name: Zusätzliche Attacke II
+  kampf:
+    vorteile:
+    - name: Befreiungsschlag
+    - name: Formiert euch!
+    - name: Keine Gefangenen!
+    - name: Sturmangriff
+    waffen:
+    - AT: 15
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 1
+      VT: 9
+      info: Niederwerfen (-4)
+      name: Krallen
+    - AT: 14
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 4
+      VT: 8
+      info: Niederwerfen (-8), Stumpf
+      name: Keule
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 5
+        plus: 2
+      VT: 2
+      info: Fesseln, Mutation, Umklammern (-4, 20)
+      name: Biss
+    werte:
+      GS: 7
+      INI: 4
+      MR: 18
+      WS: 10
+      koloss: 1
+  klasse: daemon
+  name: Umdoreel
+  quelle: pandaemonium
+  talente:
+  - name: Anführen
+    wert: 16
+  - name: Pirschen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 18
+uridabash:
+  beschreibung: Die Hand mit dem Stab; ein vielgehörnter Diener Amazeroths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Lehrmeister für Zauber
+    - name: Artefakt entzaubern
+    - mod: -4
+      name: Lehrmeister für magischen Vorteil
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  - name: Tarnung
+  - name: Zusätzliche Attacke I
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
+      VT: 16
+      info: Verwirrung (Wundschmerzeffekt, KL (20, I), alle Proben -2 für 8 INI-Phasen)
+      name: Stab
+    werte:
+      GS: 4
+      INI: 8
+      MR: 24
+      WS: 12
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Antimagie
+      talente:
+      - name: Alle Zauber
+      wert: 24
+    - name: Illusion
+      talente:
+      - name: Alle Zauber
+      wert: 24
+    - name: Kraft
+      talente:
+      - name: Alle Zauber
+      wert: 24
+  name: Uridabash
+  quelle: pandaemonium
+  talente:
+  - name: Magiekunde
+    wert: 22
+  - name: Mythenkunde
+    wert: 22
+  - name: Menschenkenntnis
+    wert: 16
+  - name: Rhetorik
+    wert: 20
+  - name: Überreden
+    wert: 20
+  - name: Untertauchen
+    wert: 10
+  - name: Wachsamkeit
+    wert: 18
+usuzoreel:
+  beschreibung: Der-dich-in-den-Tod-treibt; ein minderer Diener Belshirashs
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Gegner erschrecken
+    - dauer: 1 Tag
+      name: Opfer zu Tode hetzen
+    proben:
+    - asp: 16
+      name: Invocatio
+      wert: 16
+  eigenschaften:
+  - name: Empfindlichkeit I (Feuer)
+  - name: Flieger
+  - name: Lichtscheu
+  - name: Regeneration I
+  - name: Rudel
+  - name: Schreckgestalt II
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 8
+      name: Ausweichen
+    werte:
+      GSF: 12
+      INI: 8
+      MR: 10
+      WS: 4
+  klasse: daemon
+  name: Usuzoreel
+  quelle: pandaemonium
+uttaravha:
+  beschreibung: Die diebische Elster; ein niederer Diener Tasfarelels, sehr kleiner
+    Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Gegenstand suchen und stehlen
+    - dauer: 1 Tag
+      mod: -4
+      name: Spionage
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Flieger
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 6
+      name: Krallen
+    werte:
+      GS: 1
+      GSF: 9
+      INI: 2
+      MR: 6
+      WS: 2
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Axxeleratus
+      - name: Gefunden!
+      wert: 10
+  name: UTTARA'VHA
+  quelle: pandaemonium
+  talente:
+  - name: Untertauchen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 10
+vhatacheor:
+  beschreibung: Meister des brennenden Wassers; achtgehörnter Diener Charyptoroths,
+    großer Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Schiffbrüchige verbrennen
+    - name: Schiff in Brand setzen
+    - dauer: 1 Minute
+      mod: 4
+      name: Kampf
+    proben:
+    - asp: 80
+      name: Invocatio
+      wert: 36
+  eigenschaften:
+  - name: Regeneration I
+  - name: Schreckgestalt II
+  - name: Wasserwesen
+  - name: Zusätzliche Attacke IV
+  kampf:
+    waffen:
+    - AT: 20
+      RW: 8
+      RWM: 1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
+      VT: 16
+      info: Ertränken, Nachbrennen
+      name: Krallen
+    - AT: 14
+      RW: 0
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 10
+      VT: 2
+      name: Biss
+    werte:
+      GS: null
+      GSS: 8
+      INI: 6
+      MR: 20
+      WS: 13
+      koloss: 2
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Brenne
+      - name: Wand aus Flammen
+      - name: Wasserwand
+      wert: 24
+  name: Vhatacheor
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 16
+  - name: Schwimmen
+    wert: 24
+  - name: Wachsamkeit
+    wert: 16
+xamanoth:
+  beschreibung: Das Verbotene Wissen; siebengehörnter Diener Amazeroths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Lehrmeister für einen Zauber in borbaradianischer Tradition
+    - name: Weitergabe von geheimem Wissen
+    - mod: -4
+      name: Lehrmeister für die borbaradianische Tradition
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  - name: Flieger
+  - name: Lebensraub
+  - name: Limbusreisender
+  - name: Zusätzliche Attacke III
+  freiefertigkeiten:
+  - name: Lehrer
+    wert: 3
+  info: 'Xamanoth beherrscht nahezu alle bekannten Zauberformeln mit einem PW von
+    24. Jeder Dienst erfordert die Opferung von Eigenblut des Beschwörers. '
+  kampf:
+    waffen:
+    - AT: 10
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 18
+      name: Tentakel
+    werte:
+      GS: 1
+      GSF: 8
+      INI: 12
+      MR: 24
+      WS: 10
+  klasse: daemon
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Fast Alle
+      wert: 24
+  name: Xamanoth
+  quelle: pandaemonium
+  talente:
+  - name: Magiekunde
+    wert: 24
+  - name: Mythenkunde
+    wert: 24
+  - name: Untertauchen
+    wert: 18
+  - name: Wachsamkeit
+    wert: 16
+xarrmalk:
+  beschreibung: Der Vielleibige Aufhetzer; ein sechsgehörnter Diener Lolgramoths
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Menschenmenge aufwiegeln
+    - dauer: 1 Woche
+      name: Häretische Lehren verbreiten
+    - dauer: 1 Woche
+      mod: -4
+      name: Umsturz einleiten
+    proben:
+    - asp: 64
+      name: Invocatio
+      wert: 32
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 6
+      VT: 12
+      name: Krallen
+    werte:
+      GS: 6
+      INI: 10
+      MR: 20
+      WS: 12
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Bannbaladin
+      - name: Große Gier
+      - name: Imperavi
+      - name: Seidenzunge)
+      wert: 20
+  name: Xarrmalk
+  quelle: pandaemonium
+  talente:
+  - name: Einschüchtern
+    wert: 16
+  - name: Gebräuche
+    wert: 20
+  - name: Menschenkenntnis
+    wert: 18
+  - name: Rhetorik
+    wert: 24
+  - name: Überreden
+    wert: 24
+  - name: Wachsamkeit
+    wert: 16
+yaryuraam:
+  beschreibung: Die rastlose Bewegung, der ewige Läufer; zweigehörnter Diener Lolgramoths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Tier zu Tode hetzen
+    - dauer: 1 Woche
+      name: Objekt beseelen und Beschwörer transportieren
+    - dauer: 1 Tag
+      mod: -4
+      name: Menschliches Opfer suchen und zu Tode hetzen
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Limbusreisender
+  - name: Unsichtbarkeit
+  - name: Besessenheit
+  info: 'Besessenheit: Der Dämon kann von einem Gegenstand wie z.B. eine Hütte oder
+    einem Wesen, meist einem Tier, Besitz ergreifen. Er verliert Limbusreisender,
+    Unsichtbarkeit, Besessenheit, WS, GS und erhält die Eigenschaften/Attacken des
+    Ziels (bei einem Wesen). Einem Objekt wachsen Beine und es erhält eine GS von
+    8. Bei einem Wesen steigt dessen GS um +4 und es beginnt sofort im Dauerlauf in
+    eine beliebige Richtung zu laufen, bis es an Erschöpfung stirbt.
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 4
+      name: Ausweichen
+    werte:
+      GS: 4
+      INI: 8
+      MR: 10
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Axxeleratus
+      wert: 12
+  name: YAR'YURAAM
+  quelle: pandaemonium
+yashnatam:
+  beschreibung: Das gläserne Klirren auf dem Eis, das Ross Nagrachs; eingehörnter
+    Diener Belshirashs, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Beschwörer transportieren
+    - dauer: 1 Stunde
+      name: Beschwörer in den Kampf tragen
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Regeneration I
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: Überrennen
+    waffen:
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      VT: 6
+      info: Niederwerfen
+      name: Tritt
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
+      VT: 2
+      info: Erfrieren
+      name: Biss
+    - AT: 12
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 3
+      VT: 4
+      info: Niederwerfen
+      name: Schwanz
+    werte:
+      GS: 10
+      INI: 10
+      MR: 20
+      WS: 15
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Corpofrigo
+      - name: Kulminatio
+      wert: 12
+  name: YASH'NATAM
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Pirschen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 10
+yashoreel:
+  beschreibung: Der Zermalmer, die Eiskalte Seele, die Kristallene Mordlust; zweigehörnter
+    Diener Belshirashs
+  beschwörung:
+    dienste:
+    - dauer: 1 Jahr
+      mod: -4
+      name: Theriaknadel beseelen und antreiben
+    - name: Magische Eisfalle auslösen
+    - mod: 4
+      name: Lawine auslösen
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Präsenz
+  - name: Regeneration I
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 4
+      name: Ausweichen
+    werte:
+      GS: 12
+      INI: 8
+      MR: 12
+      WS: 8
+      koloss: 1
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Applicatus
+      - name: Frigifaxius
+      - name: Glacioflumen
+      - name: Leib des Eises
+      - name: Metamorpho
+      - name: Motoricus
+      - name: Stillstand
+      wert: 14
+  name: Yash'oreel
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 10
+yelarizel:
+  beschreibung: Der schlechte Ratgeber, Sämann der Zwietracht; niederer Diener Lolgramoths
+  beschwörung:
+    dienste:
+    - dauer: 1 Tag
+      mod: 4
+      name: Beratung von Verbündeten stören
+    - dauer: 1 Woche
+      name: Freunde entzweien
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Unsichtbarkeit
+  - name: Besessenheit
+  info: 'Der Dämon kann von einem Wesen Besitz ergreifen. Er verliert WS, GS, Ausweichen,
+    Unsichtbarkeit und erhält die Eigenschaften/Attacken des Opfers. Er flüstert dem
+    Opfer schlechte Ratschläge ein und sorgt für Zwist und Hader. Alternativ nutzt
+    der Dämon eine Eigenheit des Opfers aus, wenn diesem keine Konterprobe Willenskraft
+    (16) gelingt.
+
+    '
+  kampf:
+    waffen:
+    - RW: 0
+      VT: 2
+      name: Ausweichen
+    werte:
+      GS: 6
+      INI: 8
+      MR: 12
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Ängste mehren
+      - name: Große Gier
+      - name: Seidenzunge
+      wert: 12
+  name: YEL'ARIZEL
+  quelle: pandaemonium
+  talente:
+  - name: Überreden
+    wert: 14
+  - name: Menschenkenntnis
+    wert: 12
+yeolkhardas:
+  beschreibung: Der Meister des Bades; viergehörnter Diener Belkelels
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Verführerische Konversation mit den Badenden
+    - dauer: 1 Stunde
+      name: Erotische Wassermassage für mehrere Badende
+    - mod: -4
+      name: Fluten eines Bades mit warmem Wasser
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Amphibisch
+  - name: Regeneration I
+  - name: Tarnung (im Wasser)
+  - name: Zusätzliche Attacke I
+  freiefertigkeiten:
+  - name: Bader
+    wert: 3
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+      VT: 8
+      info: 'Umklammern (-4, 16), Ersäufen (Ein umklammertes Ziel wird unter Wasser
+        gezogen und erleidet in jeder INI: phase 1 Punkt Erschöpfung. Der Dämon kann
+        bis zu zwei Ziele gleichzeitig unter Wasser halten.
+
+        '
+      name: Tentakel
+    - FK: 16
+      LZ: 0
+      RW: 8
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      info: Zurückstoßen, Ertränken
+      name: Wasserstrahl
+    werte:
+      GS: 8
+      GSS: 12
+      INI: 6
+      MR: 12
+      WS: 11
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Aquafaxius
+      - name: Aquasphaero
+      - name: Caldofrigo
+      - name: Hartes Schmelze
+      - name: Macht über den Regen
+      - name: Mahlstrom
+      - name: Manifesto
+      - name: Nebelwand
+      - name: Nebelleib
+      - name: Sapefacta
+      - name: Wand aus Wasser
+      - name: Wellenlauf
+      wert: 16
+  name: Yeol-Khardas
+  quelle: pandaemonium
+  talente:
+  - name: Gebräuche
+    wert: 16
+  - name: Menschenkenntnis
+    wert: 14
+  - name: Pirschen
+    wert: 14
+  - name: Schwimmen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 12
+yishazrhi:
+  beschreibung: Die niederhöllische Spottdrossel; zweigehörnte Dienerin Lolgramoths,
+    sehr kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Vortrag eines Konkurrenten stören
+    - dauer: 1 Stunde
+      name: Ziel zur Weißglut treiben
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Flieger
+  - name: Kritische Konsistenz
+  - name: Unsichtbarkeit
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+      VT: 16
+      name: Schnabel
+    werte:
+      GS: 1
+      GSF: 12
+      INI: 8
+      MR: 6
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Papperlapapp
+      - name: Schabernack
+      wert: 12
+  name: Yish'Azrhi
+  quelle: pandaemonium
+  talente:
+  - name: Fliegen
+    wert: 12
+  - name: Untertauchen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 14
+  - name: Überreden
+    wert: 18
+ylmadath:
+  beschreibung: Das sternenlose Leuchten in der Finsternis; ein niederer Diener Amazeroths
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Bekannte Person an einem fernen Ort zeigen
+    - dauer: 1 Stunde
+      name: Unterstützung bei einer Prophezeiung
+    - dauer: 1 Tag
+      mod: -4
+      name: Person die Macht der Zauberei verleihen
+    proben:
+    - asp: 24
+      name: Invocatio
+      wert: 20
+  eigenschaften:
+  - name: Flieger
+  - name: Macht der Zauberei
+  - name: Prophezeien
+  info: 'Der Dämon kann von einem Wesen Besitz ergreifen. Er verliert Macht der Zauberei,
+    fliegend, WS, Funke und erhält die Eigenschaften/Attacken des Ziels, hat jedoch
+    keinerlei Kontrolle über das Ziel. Das Ziel erhält den Vorteil Zauberer II, die
+    Tradition der Magiedilettanten sowie drei Zauber mit PW 8.
+
+    '
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 2
+      info: Nachbrennen
+      name: Funke*
+    werte:
+      GSF: 2
+      INI: 6
+      MR: 8
+      WS: 1
+  klasse: daemon
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Flirrender Funkelglanz
+      - name: Madas Spiegel
+      - name: Orbitarium
+      wert: 10
+  name: Ylmadath
+  quelle: pandaemonium
+  talente:
+  - name: Fliegen
+    wert: 6
+  - name: Pirschen
+    wert: 10
+  - name: Wachsamkeit
+    wert: 8
+  - name: Willenskraft
+    wert: 12
+yonahoh:
+  beschreibung: Die Multipode oder der Neunkrake, die Arme aus der Tiefe; zehngehörnter
+    und einzigartiger Diener Charyptoroths, sehr großer Gegner
+  beschwörung:
+    dienste:
+    - mod: 4
+      name: Schiff festhalten
+    - name: Schiff oder großes Meerestier vernichten
+    - dauer: 1 Woche
+      mod: 4
+      name: Ort bewachen
+    proben:
+    - asp: 80
+      name: Invocatio
+      wert: 36
+  eigenschaften:
+  - name: Regeneration II
+  - name: Schreckgestalt III
+  - name: Wasserwesen
+  - name: Zusätzliche Attacke IV (nur Tentakel)
+  kampf:
+    vorteile:
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 16
+      RW: 1
+      TP:
+        W: 20
+        anzahl: 3
+        plus: 10
+      VT: 4
+      info: Rüstungsbrechend
+      name: Biss (Rumpf)
+    - AT: 20
+      RW: 12
+      RWM: 2
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
+      VT: 10
+      info: Flächenangriff (45°), Niederwerfen (-8), Zurückstoßen
+      name: Tentakelhieb
+    - AT: 18
+      RW: 10
+      RWM: 2
+      TP:
+        W: 6
+        anzahl: 4
+      VT: 10
+      info: Umklammern (-4, 32)
+      name: Tentakelklammer
+    werte:
+      GSS: 8
+      INI: 4
+      MR: 24
+      WS: -1
+      WSS: 'Spezielle Wundschwellen: Rumpf: 20, 9 Tentakel: 16'
+      koloss: 2
+  klasse: daemon
+  name: YO'NAHOH
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 16
+  - name: Schwimmen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 16
+yougghatugythot:
+  beschreibung: Der Zerreißer der Sphären; ein dreigehörnter, unabhängiger Dämon
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Beschwörer durch den Limbus transportieren
+    - name: Gegenstand stehlen und in den Limbus befördern
+    - mod: -4
+      name: Limbusportal öffnen
+    proben:
+    - asp: 48
+      name: Invocatio
+      wert: 28
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  - name: Limbusreisender
+  info: Im Limubs GS und INI 12 und Regeneration II.
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 14
+      name: Krallenhieb
+    werte:
+      GS: 6
+      INI: 6
+      MR: 16
+      WS: 6
+  klasse: daemon
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Kraft
+      talente:
+      - name: Auge des Limbus
+      - name: Limbus versiegeln
+      - name: Oculus Astralis
+      - name: Planastrale
+      - name: Transversalis
+      - name: Verschwindibus
+      wert: 14
+  name: Yo'ugghatugythot
+  quelle: pandaemonium
+  talente:
+  - name: Pirschen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 14
+ystphogorthu:
+  beschreibung: Das hohe Ross; ein zweigehörnter, unabhängiger Dämon, großer Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Stunde
+      mod: 4
+      name: Beschwörer transportieren
+    - dauer: 1 Stunde
+      name: Beschwörer im Kampf mit Zaubern schützen
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Ausweichen in den Limbus
+  info: "Mit entsprechenden Donaria kann Yst-Phogorthu Eigenschaften niederhöllischer\
+    \ Domänen erhalten. Blakharaz: Höllisches Streitross (AT, VT, \n  TP: +2)\nLolgramoth:\
+    \ Rasendes Ross (GS 20) Thargunitoth: Nachtmähre (Schreckgestalt II) Agrimoth:\
+    \ Lauffeuerfuchs (Immunität (Feuer), Biss und Hornstoß erhalten die Waffeneigenschaft\
+    \ Nachbrennen)\n"
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: Überrennen
+    waffen:
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 7
+      VT: 4
+      name: Hornstoß
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      VT: 6
+      info: Niederwerfen
+      name: Tritt
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
+      VT: 2
+      name: Biss
+    werte:
+      GS: 10
+      INI: 10
+      MR: 10
+      WS: 15
+  klasse: daemon
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Dämonisch
+      talente:
+      - name: Armatrutz
+      - name: Gardianum
+      - name: Leidensbund
+  name: Yst-Phogorthu
+  quelle: pandaemonium
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Wachsamkeit
+    wert: 10
+zazamotlgnakhyaa:
+  beschreibung: Der gefräßige Söldner der niedersten Höllen; ein zweigehörnter, unabhängiger
+    Dämon, kleiner Gegner
+  beschwörung:
+    dienste:
+    - dauer: 1 Minute
+      mod: 4
+      name: Kampf gegen Dämon
+    - dauer: 1 Tag
+      name: Dämon suchen und vernichten
+    - mod: -4
+      name: 1 Dosis Zazamotoxin zur Verfügung stellen
+    proben:
+    - asp: 32
+      name: Invocatio
+      wert: 24
+  eigenschaften:
+  - name: Resistenz (dämonisch, magisch),
+  - name: Zusätzliche Attacke I
+  kampf:
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+      VT: 12
+      info: Doppelangriff
+      name: Klauen
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 5
+      VT: 4
+      info: 'Gift (Zazamotoxin (W,K), wirkt nur gegen Dämonen, umgeht deren Immunität
+        (Gift), Stufe 20 (MR statt KO für Gegenprobe), Verzögerung 0, Intervall 1
+        Aktion, Schaden 1 Wunde, Proben -8, Dauer 4 Aktionen)
+
+        '
+      name: Stachel
+    werte:
+      GS: 4
+      INI: 8
+      MR: 10
+      WS: 4
+  klasse: daemon
+  name: Zazamotl'gnakhyaa
+  quelle: pandaemonium
