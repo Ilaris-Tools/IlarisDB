@@ -67,7 +67,7 @@ baer:
         plus: 6
       TPP: 6
       VT: 6
-      info: Niederwerfen (–4), Doppelangriff
+      info: Niederwerfen (-4), Doppelangriff
       name: Prankenhieb
     - AT: 14
       RW: 0
@@ -266,7 +266,7 @@ elefant:
         plus: 0
       TPP: 0
       VT: 4
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (-8)
       name: Trampeln
     werte:
       GS: 9
@@ -316,7 +316,7 @@ elefantruestung:
         plus: 0
       TPP: 0
       VT: 4
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (-8)
       name: Trampeln
     werte:
       GS: -1
@@ -335,7 +335,7 @@ elefantruestung:
     wert: 12
   - name: Zähigkeit
     wert: 14
-  unterschied: 'WS: +0/+2, GS: –1'
+  unterschied: 'WS: +0/+2, GS: -1'
   variantevon: elefant
 fernhaendlerpaktierer:
   attribute:
@@ -557,7 +557,7 @@ ghul:
       VT: 6
       info: Zerbrechlich, Ghulgift (Stufe 16, Verzögerung 0 Aktionen, Wirkungs- dauer
         8 Stunden; Proben auf körperliche   attribute und Fertigkeiten sind kumulativ
-        um –4 erschwert. Fällt bei der KO-Probe eine 1-4, verwandelt sich der Vergiftete
+        um -4 erschwert. Fällt bei der KO-Probe eine 1-4, verwandelt sich der Vergiftete
         binnen 1W6 Tagen selbst in einen Ghul, wenn keine Probe auf Gifte und Krankheiten
         (28) gelingt.)
       name: Zähne
@@ -895,7 +895,7 @@ hoehlenspinne:
   - name: Umreißen und ähnliche Effekte)
   info: Das Netz der Spinne ist im Fackelschein mit einer Wachsamkeits-Probe (24)
     zu erkennen. Misslingt die Probe, verfängt sich ein Opfer im Netz, das wie ein
-    Umklammern (–4, 20) wirkt.
+    Umklammern (-4, 20) wirkt.
   kampf:
     waffen:
     - AT: 9
@@ -907,7 +907,7 @@ hoehlenspinne:
       TPP: 2
       VT: 6
       info: Giftig (Spinnengift, Stufe 20, Verzögerung 0, Wirkungsdauer 8 Stunden;
-        körperliche   attribute und Fertigkeiten sind kumulativ um –1 erschwert)
+        körperliche   attribute und Fertigkeiten sind kumulativ um -1 erschwert)
       name: Biss
     werte:
       GS: 3
@@ -947,7 +947,7 @@ hornechse:
         plus: 6
       TPP: 6
       VT: 4
-      info: Niederwerfen (–8)
+      info: Niederwerfen (-8)
       name: Horn
   klasse: tier
   name: Hornechse
@@ -1017,7 +1017,7 @@ hyralkor:
         plus: 0
       TPP: 0
       VT: 6
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (-8)
       name: Trampeln (Beine)
     - AT: 16
       RW: 1
@@ -1027,7 +1027,7 @@ hyralkor:
         plus: 5
       TPP: 5
       VT: 10
-      info: Niederwerfen (–8)
+      info: Niederwerfen (-8)
       name: Pranken (Beine)
     - AT: 16
       RW: 8
@@ -1038,7 +1038,7 @@ hyralkor:
         plus: 2
       TPP: 2
       VT: 8
-      info: Flächenangriff (90° hinter dem Drachen), Niederwerfen (–4)
+      info: Flächenangriff (90° hinter dem Drachen), Niederwerfen (-4)
       name: Schwanzhieb (S.)
     - AT: 20
       RW: 4
@@ -1099,7 +1099,7 @@ hyralkor:
   sonstiges:
     vorgehen: 'Hyralkor bleibt auf Distanz und nutzt seine Flammenangriffe. Nur wenn
       seine Flügel schwer verletzt wurden oder er in beengten Verhältnissen kämpft,
-      geht Hyralkor in den Nahkampf über – bevorzugt mit einem Sturmangriff aus der
+      geht Hyralkor in den Nahkampf über - bevorzugt mit einem Sturmangriff aus der
       Luft. Am Boden verwendet Hyralkor seine Feuerangriffe gegen entfernte Gegner
       und seinen Prankenhieb gegen Angreifer in Schlagreichweite. Kämpfer unter sich
       versucht er zu zertrampeln, während er Angreifer hinter sich mit Schwanzhieben
@@ -1115,7 +1115,7 @@ hyralkor:
       und Targosch einen Drachentöter durch den rechten Hinterlauf. Die Spitze der
       Waffe steckt noch immer in der Wunde. Kennt ein Charakter die zwergische Geschichte,
       kann er mit einer GE- oder Akrobatik-Probe (24) in Position gelangen und die
-      Waffe mit einer AT:  –12 weiter ins Bein treiben. Dadurch wird der Drache für
+      Waffe mit einer AT:  -12 weiter ins Bein treiben. Dadurch wird der Drache für
       eine INI:phase handlungsunfähig und heißes Blut schießt aus der Wunde (Akrobatik
       (24) oder 4W6 Schadenspunkte). Kampfunfähigkeit: Hyralkor flieht, wenn er 6
       Wunden erlitten hat. In seinem Hort kämpft er jedoch bis zum Tod.'
@@ -1219,7 +1219,7 @@ kampfhund:
     wert: 18
   - name: Zähigkeit
     wert: 4
-  unterschied: 'GS: –1, Kampfwerte +1, KK, KO: +2, Laufen –4'
+  unterschied: 'GS: -1, Kampfwerte +1, KK, KO: +2, Laufen -4'
   variantevon: wolf
 khoramsbestie:
   attribute:
@@ -1307,7 +1307,7 @@ krakenmolch:
         plus: 0
       TPP: 0
       VT: 10
-      info: Umklammern (–4, 22)
+      info: Umklammern (-4, 22)
       name: Tentakelklammer
     werte:
       GS: 2
@@ -1379,12 +1379,21 @@ kriegermumie:
   klasse: tier
   name: Kriegermumie
   quelle: ilaris
-  sonstiges:
-    beschwörung: Skelettarius oder Totes handle! (20) aus einem mumifizierten Leichnam,
-      24 AsP
+  beschwörung: 
+    info: aus einem mumifizierten Leichnam
+    proben:
+      - name: Skelettarius
+        wert: 20
+        asp: 24
+      - name: Totes handle!
+        wert: 20
+        asp: 24
     dienste:
-    - name: Kampf (1 Minute)
-    - name: ' Wache (1 Woche, mit Totes handle! permanent, –4)'
+    - name: Kampf 
+      dauer: 1 Minute
+    - name: 'Wache' 
+      dauer: 1 Woche (mit Totes handle! permanent)'
+      mod: -4
   talente:
   - name: Laufen
     wert: 8
@@ -1423,7 +1432,7 @@ kriegselefant:
         plus: 0
       TPP: 0
       VT: 8
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (-8)
       name: Trampeln
     werte:
       GS: 9
@@ -1592,7 +1601,7 @@ kriegspferdmittlereruestung:
     wert: 10
   - name: Zähigkeit
     wert: 10
-  unterschied: 'WS: +0/+2, GS und Kampfwerte –1'
+  unterschied: 'WS: +0/+2, GS und Kampfwerte -1'
   variantevon: kriegspferd
 kriegswildschwein:
   attribute:
@@ -1741,7 +1750,7 @@ loewe:
         plus: 0
       TPP: 0
       VT: 12
-      info: Doppelangriff, Niederwerfen (–4)
+      info: Doppelangriff, Niederwerfen (-4)
       name: Prankenhieb
     - AT: 16
       RW: 0
@@ -1771,7 +1780,7 @@ loewe:
     wert: 18
   - name: Zähigkeit
     wert: 16
-  unterschied: 'WS: –1,   attribute und TP:  –4'
+  unterschied: 'WS: -1,   attribute und TP:  -4'
   variantevon: saebelzahntiger
 mamut:
   attribute:
@@ -1805,7 +1814,7 @@ mamut:
         plus: 5
       TPP: 5
       VT: 4
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–8)
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (-8)
       name: Trampeln
     werte:
       GS: 9
@@ -1907,7 +1916,7 @@ oger:
   attribute:
     GE: 4
     KK: 22
-    KL: –2
+    KL: -2
     KO: 20
     MU: 20
   beschreibung: stinkender Vielfraß und Menschenfresser; großer Gegner
@@ -1935,7 +1944,7 @@ oger:
         plus: 6
       TPP: 6
       VT: 8
-      info: Stumpf, Niederwerfen (–4)
+      info: Stumpf, Niederwerfen (-4)
       name: Keule
     werte:
       GS: 6
@@ -1961,7 +1970,7 @@ ogerkriegsoger:
   attribute:
     GE: 4
     KK: 22
-    KL: –2
+    KL: -2
     KO: 20
     MU: 20
   beschreibung: stinkender Vielfraß und Menschenfresser; großer Gegner
@@ -1989,7 +1998,7 @@ ogerkriegsoger:
         plus: 8
       TPP: 8
       VT: 8
-      info: Stumpf, Niederwerfen (–4)
+      info: Stumpf, Niederwerfen (-4)
       name: Keule
     werte:
       GS: 8
@@ -2036,7 +2045,7 @@ ogerstatue:
         plus: 6
       TPP: 6
       VT: 4
-      info: Niederwerfen (–4)
+      info: Niederwerfen (-4)
       name: Faust
     werte:
       GS: 1
@@ -2048,12 +2057,21 @@ ogerstatue:
   klasse: tier
   name: Ogerstatue
   quelle: ilaris
-  sonstiges:
-    beschwörung: Stein wandle! (28) aus Bronzeplatten, 32 AsP
+  beschwörung: 
+    info: aus Bronzeplatten
+    proben: 
+    - name: Stein wandle! 
+      wert: 28
+      asp: 32
     dienste:
-    - name: Lastentransport (+4, 1 Tag)
-    - name: ' Wache (1 Tag)'
-    - name: ' Kampf (–4, 1 Minute)'
+    - name: Lastentransport
+      mod: +4 
+      dauer: 1 Tag
+    - name: Wache 
+      dauer: 1 Tag
+    - name: Kampf 
+      mod: -4
+      dauer: 1 Minute
   talente:
   - name: Laufen
     wert: -2
@@ -2210,7 +2228,7 @@ panther:
         plus: 4
       TPP: 4
       VT: 12
-      info: Doppelangriff, Niederwerfen (–4)
+      info: Doppelangriff, Niederwerfen (-4)
       name: Prankenhieb
     - AT: 16
       RW: 0
@@ -2434,12 +2452,19 @@ pestrattenschwarm:
   klasse: tier
   name: Pestrattenschwarm
   quelle: ilaris
-  sonstiges:
-    beschwörung: Skelettarius oder Totes handle! (16) aus Rattenkadavern, 16 AsP
+  beschwörung: 
+    info: aus Rattenkadavern
+    proben: 
+    - name: Skelettarius 
+      wert: 16 
+      asp: 16
+    - name: Totes handle!
+      wert: 16 
+      asp: 16
     dienste:
     - name: Stall leerfessen (1 Stunde, +4)
     - name: ' andere Lebewesen fressen (1 Minute)'
-    - name: ' nur bestimmtes Lebewesen fressen (1 Minute, –4)'
+    - name: ' nur bestimmtes Lebewesen fressen (1 Minute, -4)'
   talente:
   - name: Laufen
     wert: 4
@@ -2480,12 +2505,24 @@ pestrattenschwarmsehrgrosserschwarm:
   klasse: tier
   name: Sehr großer Pestrattenschwarm
   quelle: ilaris
-  sonstiges:
-    beschwörung: Skelettarius oder Totes handle! (20) aus Rattenkadavern, 24 AsP
+  beschwörung: 
+    info: aus Rattenkadavern
+    proben:
+    - name: Skelettarius
+      wert: 20
+      asp: 24
+    - name: Totes handle!
+      wert: 20
+      asp: 24
     dienste:
-    - name: Stall leerfessen (1 Stunde, +4)
-    - name: ' andere Lebewesen fressen (1 Minute)'
-    - name: ' nur bestimmtes Lebewesen fressen (1 Minute, –4)'
+    - name: Stall leerfessen
+      dauer: 1 Stunde
+      mod: +4
+    - name: Andere Lebewesen fressen
+      dauer: 1 Minute
+    - name: nur bestimmtes Lebewesen fressen
+      dauer: 1 Minute
+      mod: -4
   talente:
   - name: Laufen
     wert: 4
@@ -2606,7 +2643,7 @@ reitpony:
     wert: 10
   - name: Zähigkeit
     wert: 10
-  unterschied: 'WS: 11, GS: 10, TP:  –2, WM 0'
+  unterschied: 'WS: 11, GS: 10, TP:  -2, WM 0'
   variantevon: kriegspferd
 reittier:
   attribute:
@@ -2656,7 +2693,7 @@ reittier:
     wert: 10
   - name: Zähigkeit
     wert: 10
-  unterschied: 'WS: 13, GS: 12, TP:  –2, WM –1'
+  unterschied: 'WS: 13, GS: 12, TP:  -2, WM -1'
   variantevon: kriegspferd
 riese:
   attribute:
@@ -2686,7 +2723,7 @@ riese:
         plus: 5
       TPP: 5
       VT: 12
-      info: Niederwerfen (–12)
+      info: Niederwerfen (-12)
       name: Faust
     - AT: 18
       RW: 5
@@ -2697,7 +2734,7 @@ riese:
         plus: 10
       TPP: 10
       VT: 12
-      info: 'Flächenangriff (180° vor dem Riesen), Niederwerfen (–16), Zurückstoßen
+      info: 'Flächenangriff (180° vor dem Riesen), Niederwerfen (-16), Zurückstoßen
         (wird nicht durch erfolgreiche VT: gestoppt)'
       name: Baumstamm
     - AT: 16
@@ -2708,7 +2745,7 @@ riese:
         plus: 0
       TPP: 0
       VT: 6
-      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (–16), Überrennen
+      info: Flächenangriff (1 Schritt Umkreis), Niederwerfen (-16), Überrennen
       name: Trampeln
     - AT: 14
       LZ: 1
@@ -2718,7 +2755,7 @@ riese:
         anzahl: 3
         plus: 0
       TPP: 0
-      info: Flächenangriff (1 Schritt Radius um das Hauptziel), Niederwerfen (–12)
+      info: Flächenangriff (1 Schritt Radius um das Hauptziel), Niederwerfen (-12)
       name: Felsbrocken
     werte:
       GS: 9
@@ -2771,7 +2808,7 @@ riesenamoebe:
         plus: 0
       TPP: 0
       VT: 2
-      info: Umklammern (–2, 16), Ätzend (Ein Opfer in der Umklammerung erleidet in
+      info: Umklammern (-2, 16), Ätzend (Ein Opfer in der Umklammerung erleidet in
         jeder INI:phase 2W6 SP. Die Riesenamöbe kann nur ein Opfer Umklammern.)
       name: Scheinarm
     werte:
@@ -2869,7 +2906,7 @@ riesenkraken:
         plus: 2
       TPP: 2
       VT: 8
-      info: Flächenangriff (45°), Niederwerfen (–8), Zurückstoßen
+      info: Flächenangriff (45°), Niederwerfen (-8), Zurückstoßen
       name: Tentakelhieb
     - AT: 15
       RW: 10
@@ -2880,7 +2917,7 @@ riesenkraken:
         plus: 0
       TPP: 0
       VT: 8
-      info: Umklammern (–4, 32)
+      info: Umklammern (-4, 32)
       name: Tentakelklammer
     werte:
       GS: 6
@@ -3083,7 +3120,7 @@ saebelzahntiger:
         plus: 4
       TPP: 4
       VT: 12
-      info: Doppelangriff, Niederwerfen (–4)
+      info: Doppelangriff, Niederwerfen (-4)
       name: Prankenhieb
     - AT: 16
       RW: 0
@@ -3239,7 +3276,7 @@ schroeter:
         plus: 2
       TPP: 2
       VT: 4
-      info: Rüstungsbrechend, Umklammern (–2, 18)
+      info: Rüstungsbrechend, Umklammern (-2, 18)
       name: Zange
     - AT: 12
       RW: 0
@@ -3364,13 +3401,24 @@ skelett:
   klasse: tier
   name: Skelett
   quelle: ilaris
-  sonstiges:
-    beschwörung: Skelettarius oder Totes handle! (12) aus einer skelettierten Leiche,
-      8 AsP
+  beschwörung: 
+    info: "Einer der Zauber, aus einer skelettierten Leiche."
+    proben:
+    - name: Skelettarius
+      wert: 12
+      asp: 8
+    - name: Totes handle!
+      wert: 12 
+      asp: 8
     dienste:
-    - name: Burggraben auffüllen (1 Stunde, +4)
-    - name: ' Kampf (1 Minute)'
-    - name: ' Wache (1 Tag, mit Totes handle! permanent, –4)'
+    - name: Burggraben auffüllen
+      dauer: 1 Stunde
+      mod: +4
+    - name: 'Kampf'
+      dauer: 1 Minute
+    - name: 'Wache' 
+      dauer: '1 Tag (mit Totes handle! permanent)'
+      mod: -4
   talente:
   - name: Pirschen
     wert: 8
@@ -3424,13 +3472,24 @@ skelettruestung:
   klasse: tier
   name: Skelett mit Rüstung
   quelle: ilaris
-  sonstiges:
-    beschwörung: Skelettarius oder Totes handle! (12) aus einer skelettierten Leiche,
-      8 AsP
+  beschwörung: 
+    info: "Einer der Zauber, aus einer skelettierten Leiche."
+    proben:
+    - name: Skelettarius
+      wert: 12
+      asp: 8
+    - name: Totes handle!
+      wert: 12 
+      asp: 8
     dienste:
-    - name: Burggraben auffüllen (1 Stunde, +4)
-    - name: ' Kampf (1 Minute)'
-    - name: ' Wache (1 Tag, mit Totes handle! permanent, –4)'
+    - name: Burggraben auffüllen
+      dauer: 1 Stunde
+      mod: +4
+    - name: 'Kampf'
+      dauer: 1 Minute
+    - name: 'Wache' 
+      dauer: '1 Tag (mit Totes handle! permanent)'
+      mod: -4
   talente:
   - name: Pirschen
     wert: 8
@@ -3438,7 +3497,7 @@ skelettruestung:
     wert: 8
   - name: Wachsamkeit
     wert: 5
-  unterschied: 'WS: +0/+1, Kampfwerte –1'
+  unterschied: 'WS: +0/+1, Kampfwerte -1'
   variantevon: skelett
 soeldner:
   attribute:
@@ -3968,7 +4027,7 @@ tatzelwurm:
   eigenschaften:
   - name: Aura (Gestank)
   - name: Zähigkeit (16) jede INI:phase
-  - name: –2 auf körperliche Proben (kumulativ) für 1 Tag)
+  - name: -2 auf körperliche Proben (kumulativ) für 1 Tag)
   - name: Resistenz I (Feuer)
   - name: Schreckgestalt I
   kampf:
@@ -3994,7 +4053,7 @@ tatzelwurm:
         plus: 1
       TPP: 1
       VT: 6
-      info: Niederwerfen (–4)
+      info: Niederwerfen (-4)
       name: Klauen
     - AT: 10
       RW: 2
@@ -4138,7 +4197,7 @@ troll:
         plus: 1
       TPP: 1
       VT: 9
-      info: Niederwerfen (–4), Stumpf
+      info: Niederwerfen (-4), Stumpf
       name: Faust
     - AT: 14
       RW: 2
@@ -4148,7 +4207,7 @@ troll:
         plus: 4
       TPP: 4
       VT: 8
-      info: Niederwerfen (–8), Stumpf
+      info: Niederwerfen (-8), Stumpf
       name: Keule
     - AT: 15
       RW: 2
@@ -4158,7 +4217,7 @@ troll:
         plus: 4
       TPP: 4
       VT: 9
-      info: Niederwerfen (–8)
+      info: Niederwerfen (-8)
       name: Axt
     werte:
       GS: 7
@@ -4251,7 +4310,7 @@ waldschrat:
         plus: 0
       TPP: 0
       VT: 6
-      info: Niederwerfen (–4)
+      info: Niederwerfen (-4)
       name: Asthieb
     werte:
       GS: 6
@@ -4305,7 +4364,7 @@ waldschratnichtmagisch:
         plus: 0
       TPP: 0
       VT: 6
-      info: Niederwerfen (–4)
+      info: Niederwerfen (-4)
       name: Asthieb
     werte:
       GS: 6
@@ -4359,13 +4418,19 @@ weisserhetzer:
   klasse: tier
   name: Weisser Hetzer
   quelle: ilaris
-  sonstiges:
-    beschwörung: Chimaeroform (16) aus einem Wolf und einem Karmanath oder Tuur-Amash,
-      16 AsP
+  beschwörung: 
+    info: aus einem Wolf und einem Karmanath oder Tuur-Amash
+    proben:
+    - name: Chimaeroform
+      wert: 16
+      asp: 16
     dienste:
-    - name: Spur verfolgen (1 Stunde, +4)
-    - name: ' Kampf (1 Minute)'
-    - name: ' Hetzen und Töten (1 Stunde, –4)'
+    - name: Spur verfolgen 
+      dauer: 1 Stunde
+      mod: +4
+    - name: Kampf
+      dauer: 1 Minute
+    - name: 'Hetzen und Töten (1 Stunde, -4)'
   talente:
   - name: Laufen
     wert: 24

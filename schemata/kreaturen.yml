@@ -22,6 +22,7 @@ kreatur:
   tools: map(required=False)
   variantevon: str(required=False)
   unterschied: str(required=False)
+  beschwörung: include('beschwörung', required=False)
 ---
 kampf:
   vorteile: list(include('vorteil'), required=False)
@@ -49,8 +50,6 @@ pakt:
   gup: int(required=False)
 ---
 sonstiges:
-  beschwörung: str(required=False)
-  dienste: list(include('dienst'), required=False)
   vorgehen: str(required=False)
   schwachpunkte: str(required=False)
 ---
@@ -111,7 +110,18 @@ eigenschaft:
   id: str(required=False)
   info: str(required=False)
 ---
+beschwörung:
+  proben: list(include('probe'), required=False)
+  dienste: list(include('dienst'), required=False)
+  info: str(required=False)
+---
 dienst:
   name: str(required=False)
   dauer: str(required=False)
   mod: int(required=False)
+---
+probe:
+  name: str(required=False)
+  asp: int(required=False)
+  info: str(required=False)
+  wert: int(required=False)
