@@ -70,6 +70,7 @@ talent:
   id: str(required=False)
   name: str(required=False)
   wert: int(required=False)
+  info: str(required=False)
 ---
 waffe:
   name: str()
