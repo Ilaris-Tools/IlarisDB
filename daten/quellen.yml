@@ -16,8 +16,12 @@ allgemeinemacchiato:
   autor: Macchiato
   url: https://dsaforum.de/viewtopic.php?p=1887303#p1887303
 
-
 hilbertsbestarium:
   name: Hilberts Bestarium
   version: 1.1.1
   url: https://www.orkenspalter.de/filebase/index.php?file/2829-hilberts-bestiarium/
+
+bestariumplus:
+  name: Bestarium+
+  autor: Baal Zephon
+  url: https://dsaforum.de/viewtopic.php?f=180&p=1738549#p1738549
