@@ -1,5 +1,7 @@
 # IlarisDB
-Sammelstelle für strukturierte Ilaris Daten, wie Kreaturen, NSCs, Zauber usw..
+Sammelstelle für strukturierte Ilaris Daten, wie Kreaturen, NSCs, Zauber usw.. Eine Webansicht befindet sich in Arbeit, der aktuelle Stand ist hier zu begutachten: [https://ilaris-tools.github.io/IlarisDB](https://ilaris-tools.github.io/IlarisDB/db/kreaturen/)
+
+> Hinweis: Die Datenbank befindet sich noch im Aufbau, die Strukturen und technische Details änddern sich schneller, als die folgenden Beschreibungen.
 
 ## Begriffe und Abkürzungen
 Ich habe ein paar zusätzliche Abkürzungen und Felder verwendet um besimte Dinge feiner aufzusplitten, bzw. eindeutige Datentypen zuweisen zu können (zB. TP `2W6+4` teilt sich auf in TPW: `2` und TPP: `4`). Hier ist eine Liste die ich versuche aktuell zu halten:
@@ -16,13 +18,13 @@ Ich habe ein paar zusätzliche Abkürzungen und Felder verwendet um besimte Ding
 
 ## Die Datenbank
 Wir haben vorerst davon abgesehen eine "echte" Datenbank zu erstellen, da sich strukturierte Textdateien einfacher handhaben lassen und nicht verloren gehen falls das Projekt einschläft. Das Ziel ist hier Daten rund um das Ilaris Regelsystem strukturiert zu sammeln, sodass sie von anderen Tools genutzt werden können. Mit einfachen Scripten können zum Beispiel Tokens für VTTs oder Monsterboxen für das Latex-Template generiert werden. Die einzelnen "tabellen" liegen im Ordner `daten`, die tabellen können durch ids aufeinander verweisen, sind aber ohne Probleme einzeln nutzbar. 
-[Weitere Infos]()
+[Mehr Infos](https://ilaris-tools.github.io/IlarisDB/docs/datenbank/)
 
 ### Struktur
 Der Kern der Informationen sind die einfach zu handhabenden yaml-Dateien im Ordner `Daten` sein. Jede Datei kann dabei als eine Art Tabelle verstanden werden, in denen Inhaltlich ähnlich aufgebaute Objekte gespeichert werden. Zum Beispiel `vorteile.yaml` oder `kreaturen.yaml`. Die Dateien sollen dabei lose verknüpft sein, das heisst, in den Vorteilen einer Kreatur beispielsweise, kann eine `id` (einzigartiges Wort ohne Sonderzeichen) hinterlegt werden über die Details zum jeweiligen voteil aus einer anderen Datei ausgelesen werden. Idee der losen Kopplung ist, dass sich jeder nur das herauspicken kann, was er/sie braucht ohne dabei auf eine aktuelle konsistente und vollständige Datenbank achten zu müssen. 
 
 #### Schema
-TODO: 
+Zu jeder Tabelle bzw. jeder Klasse liegt ein Schema im Ordner `schemata` vor. Diese Dateien definieren die Struktur der jeweiligen Klasse und können benutzt werden um die Daten nach neuen Einträgen oder Änderungen zu überprüfen. [Mehr Infos](https://ilaris-tools.github.io/IlarisDB/docs/datenbank/)
 
 
 ## Daten
