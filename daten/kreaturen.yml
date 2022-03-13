@@ -1,6 +1,6 @@
 agribaal:
   beschreibung: Der Fluch des Eisens; eingehörnter Diener Agrimoths oder Iribaars
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Einfaches Artefakt mit 1 Ladung erschaffen
@@ -90,7 +90,7 @@ altergolem:
   variantevon: gargyl
 amrifas:
   beschreibung: Der Erderschütterer; neungehörnter Diener Agrimoths, sehr großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Gebäude zum Einsturz bringen
@@ -139,7 +139,7 @@ amrifas:
 archorchobai:
   beschreibung: Der Weiße Wurm, der Große Alchimist; viergehörnter Diener Agrimoths,
     sehr großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -197,7 +197,7 @@ archorchobai:
     wert: 16
 arjunioor:
   beschreibung: Meister der Orkane; achtgehörnter Diener Agrimoths, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: -4
@@ -266,7 +266,7 @@ arjunioor:
     wert: 24
 atuum:
   beschreibung: Der gefräßige Schlund, der Lebensverschlinger; niederer Diener Asfaloths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Leiche eines Mordopfers restlos verschlingen
@@ -372,7 +372,7 @@ baer:
 balirhiadh:
   beschreibung: Die rechte Hand des Schwarzen Mannes; ein mächtiger Diener Blakharaz‘,
     sehr großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: bis von meisterlichem Seelenheiler geheilt
       mod: 4
@@ -456,7 +456,7 @@ balirhiadh:
 balkhabul:
   beschreibung: Wächter der unermesslichen Schätze; dreigehörnter Diener Tasfarelels,
     großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Jahr
       mod: 4
@@ -634,7 +634,7 @@ bergloewe:
   variantevon: sandloewe
 bhalevek:
   beschreibung: Geißel des Geistes; eingehörnter Diener Amazeroths
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -672,7 +672,7 @@ bhalevek:
   quelle: pandaemonium
 bhurkhesch:
   beschreibung: Die Augenkröte; niederer Diener Belkelels, sehr kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: 5 Portionen Sekret zur Verfügung stellen
@@ -755,7 +755,7 @@ blutfischschwarm:
     wert: 14
 braggu:
   beschreibung: Grün-violette Dämonenfratze; ein niederer Diener Thargunitoths
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde,
       mod: 4
@@ -802,7 +802,7 @@ braggu:
   quelle: pandaemonium
 brukhaklah:
   beschreibung: Der Verderber des Eisens, die gepanzerte Made; niederer Diener Belzhorashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Metallenen Gegenstand auflösen
@@ -840,7 +840,7 @@ brukhaklah:
   quelle: pandaemonium
 canilaaranshakalaraan:
   beschreibung: Der brünstige Hund; niederer Diener Belkelels
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -883,7 +883,7 @@ canilaaranshakalaraan:
 chamuyan:
   beschreibung: Vielgestaltige Schleicherin in den Schatten; eine gehörnte Dämonin
     aus dem Gefolge Aphasmayras
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Beratung als Sphinx
@@ -942,7 +942,7 @@ chamuyan:
 chuchathabomek:
   beschreibung: Das fliegende Hebewerk, der Vetter Karakils; dreigehörnter Diener
     Lolgramoths, sehr großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -992,7 +992,7 @@ chuchathabomek:
     wert: 8
 cthllanogog:
   beschreibung: Der Alles Gebärende; niederer Diener Asfaloths, sehr großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Körperteil des Beschwörers wiederherstellen
@@ -1045,7 +1045,7 @@ cthllanogog:
 darkha:
   beschreibung: Der Zerfetzer, Teil der blutigen Horde; ein minderer Diener Belhalhars,
     kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -1119,7 +1119,7 @@ darkha:
     wert: 6
 deolgolup:
   beschreibung: Der stumme Wächter der augenlosen Pforten; ein niederer Diener Agrimoths
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -1173,7 +1173,7 @@ deolgolup:
     wert: 12
 dhormarhei:
   beschreibung: Der Nachtmahr; zweigehörnter Diener Thargunitoths, kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -1211,7 +1211,7 @@ dhormarhei:
 dreigehoerntergurgulum:
   beschreibung: Der Dunkelschlund, ein dreigehörnter Diener des Blakharaz, sehr kleiner
     Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Monat
       name: Kontrolle über Wirt übernehmen
@@ -1377,7 +1377,7 @@ elefantruestung:
   variantevon: elefant
 elymelusinias:
   beschreibung: Der Bote der Tiefe; dreigehörnter Diener Charyptoroths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Preisgeben von Informationen (lohnende Beute für Piraten, gute Fischgründe
@@ -1454,7 +1454,7 @@ elymelusinias:
 etemasoroph:
   beschreibung: Jenes-das-nimmermehr-freigibt; ein minderer Diener Tasfarelels, sehr
     kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Monat
       mod: 4
@@ -1501,7 +1501,7 @@ etemasoroph:
 eugalp:
   beschreibung: Der Plagenbringer; eine viergehörnte Wesenheit, vermutlich einstmals
     aus dem Gefolge Mishkharas
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Nahes Ziel mit Dämonenfäule infizieren
@@ -1543,7 +1543,7 @@ eugalp:
   quelle: pandaemonium
 fargyraff:
   beschreibung: Der freudlose Quell der Habgier; ein sechsgehörnter Diener Tasfarelels
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Dem Beschwörer einen seltenen Gegenstand verkaufen
@@ -1775,7 +1775,7 @@ flugechse:
 frazzaroth:
   beschreibung: Der kindliche Herr der Dunklen Pforten; niederer Diener Lolgramoths,
     kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Transport des Beschwörers durch den Limbus an einen bereits besuchten
@@ -1935,7 +1935,7 @@ ghul:
     wert: 6
 glaathoyub:
   beschreibung: Der Schlangenwanst; ein vielgehörnter unabhängiger Dämon, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -2008,7 +2008,7 @@ glaathoyub:
 glazmadraa:
   beschreibung: Der Herzensfrost; siebengehörnter Diener Belshirashs, sehr großer
     Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -2091,7 +2091,7 @@ glazmadraa:
 gnarishajtumar:
   beschreibung: Der Architekt des Ewigen Bauplatzes der Berstenden Zitadelle; ein
     viergehörnter Diener Agrimoths, sehr großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -2212,7 +2212,7 @@ goblin:
 grakvaloth:
   beschreibung: Bote der Niederhöllen, das ungesehene Grauen; ein viergehörnter Diener
     des Namenlosen, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -2273,7 +2273,7 @@ grakvaloth:
     wert: 16
 gregorroth:
   beschreibung: Meister der Kakophonie; niederer Diener Amazeroths oder Belkelels
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -2448,7 +2448,7 @@ grosserhund:
 grosserorciosil:
   beschreibung: Die brüllende Seele des Sturms; ein minderer Diener Agrimoths, mittlerer
     Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -2540,7 +2540,7 @@ gruftassel:
 gurgulum:
   beschreibung: Der Dunkelschlund, ein niederer Diener des Blakharaz, sehr kleiner
     Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Monat
       name: Kontrolle über Wirt übernehmen
@@ -2638,7 +2638,7 @@ hammerhai:
 hanaestil:
   beschreibung: Die Allschöne, der verderbte Traum, die dunkle Verführerin; fünfgehörnte
     (vermutlich einzigartige) Dienerin der Shaz-man-yat
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -2697,7 +2697,7 @@ haqoum:
     Diener Tasfarelels oder Amazeroths, kleiner Gegner
 
     '
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -2805,7 +2805,7 @@ harpyie:
 hektabelus:
   beschreibung: Fliegender Bote der Pestilenz; gehörnter Diener Belzhorashs, sehr
     kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Nahes Ziel mit einer Krankheit bis Stufe 24 infizieren
@@ -2844,7 +2844,7 @@ hektabelus:
   quelle: pandaemonium
 hirrnirat:
   beschreibung: Der Rattenfürst; niederer Diener Belzhorashs, sehr kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -3328,7 +3328,7 @@ ifirnshai:
   variantevon: streifenhai
 irhiadhzal:
   beschreibung: Der unbarmherzige Verfolger; ein gehörnter Diener Blakharaz
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: bis von meisterlichem Seelenheiler geheilt
       mod: 4
@@ -3378,7 +3378,7 @@ irhiadhzal:
 isphanil:
   beschreibung: Die unsichtbare Bringerin dunkler Gaben; Nutznießerin finsterer Gelüste;
     dreigehörnte Dienerin der Shaz-Man-Yat
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -3420,7 +3420,7 @@ isphanil:
     wert: 24
 ivash:
   beschreibung: Der Feuerteufel; niederer Diener des Namenlosen Gottes
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Minute
       mod: 4
@@ -3476,7 +3476,7 @@ ivash:
 kahthurakarfai:
   beschreibung: Der Nachtdämon; dreigehörnter und dennoch überaus mächtiger Diener
     Agrimoths, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Minute
       mod: 4
@@ -3656,7 +3656,7 @@ karmoth:
     wert: 32
 karunga:
   beschreibung: Der Grünwisch; ein minderer Diener Amazeroths, kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Minute
       mod: 4
@@ -3697,7 +3697,7 @@ karunga:
   quelle: pandaemonium
 kharzoreel:
   beschreibung: Der Eishauer und niederhöllische Alchimist; eingehörnter Diener Belshirashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -3742,7 +3742,7 @@ kharzoreel:
   quelle: pandaemonium
 khelevathan:
   beschreibung: Der gehörnte Schänder; ein viergehörnter Diener Belkelels
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Jemanden in einen Mannwidder verwandeln
@@ -3866,7 +3866,7 @@ khoramsbestie:
   variantevon: wolf
 khuralthu:
   beschreibung: Der Blutdrescher; ein niederer Diener Belzorashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -3998,7 +3998,7 @@ kriegermumie:
     GE: 12
     KK: 32
   beschreibung: starker Wächter und letzter Anblick für zahlreiche Grabräuber
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Minute
       name: Kampf
@@ -4392,7 +4392,7 @@ leibwaechter:
 libaal:
   beschreibung: Die Fleischformerin der inneren Einöden; eine sechsgehörnter Dienerin
     Asfaloths, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: 6 nützliche Chimären gebären
@@ -4509,7 +4509,7 @@ loewe:
 mactans:
   beschreibung: Die gepanzerte Spinne, das weitreichende Netz; ein fünfgehörnter Dämon,
     großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Jahr
       mod: 4
@@ -4703,7 +4703,7 @@ marukmethai:
     und immer wachsende rechte Hand; fünfgehörnter Diener des Namenlosen
 
     '
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       name: Beschwörer stärken
@@ -4742,7 +4742,7 @@ marukmethai:
 morcan:
   beschreibung: Bote der Nacht des Irrsinns, Sklavenmeister der Seelen; minderer Diener
     Thargunitoths
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -4824,7 +4824,7 @@ morfu:
     wert: 8
 muwalaaran:
   beschreibung: Der schwarze Hengst; zweigehörnter Diener Belkelels, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -4920,7 +4920,7 @@ nachtwind:
 nemanar:
   beschreibung: Der Schattentod, der Vollstrecker im Dunkeln; ein zweigehörnter Diener
     Blakharaz
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -4992,7 +4992,7 @@ nemanar:
 nishkakat:
   beschreibung: Der scheinheilige Diener der dreiköpfigen Echse von Nabuleth; dreigehörnter
     Diener Amazeroths, kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -5053,7 +5053,7 @@ nishkakat:
 oboraddon:
   beschreibung: Der Herrscher der Nimmer Ruhenden; sechsgehörnter Diener Thargunitoths,
     großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -5223,7 +5223,7 @@ ogerstatue:
     KK: 44
     KO: 48
   beschreibung: behäbige Bronzestatue eines Ogers; großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -5276,7 +5276,7 @@ ogerstatue:
 orciosil:
   beschreibung: Die brüllende Seele des Sturms; ein minderer Diener Agrimoths, kleiner
     Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -5665,7 +5665,7 @@ perldrachewestwinddrache:
   variantevon: perldrache
 pershirash:
   beschreibung: Der gierige Schlinger; minderer Diener Belshirashs, sehr kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -5739,7 +5739,7 @@ pershirash:
     wert: 2
 pestrattenschwarm:
   beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - name: Stall leerfessen (1 Stunde, +4)
     - name: ' andere Lebewesen fressen (1 Minute)'
@@ -5792,7 +5792,7 @@ pestrattenschwarm:
     wert: 16
 pestrattenschwarmsehrgrosserschwarm:
   beschreibung: ansteckender Schwarm aus Rattenkadavern; großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -5854,7 +5854,7 @@ pestrattenschwarmsehrgrosserschwarm:
 qasaar:
   beschreibung: Der schnurrende Verschlinger; minderer Diener der Aphasmayra, sehr
     kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Jahr
       mod: 4
@@ -6804,7 +6804,7 @@ schwerthai:
   variantevon: streifenhai
 scylaphotai:
   beschreibung: Die Flammenqualle; minderer Diener Charyptoroths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Wasser erhitzen
@@ -6844,7 +6844,7 @@ scylaphotai:
 sharbazz:
   beschreibung: Der Weibel der Niederhöllen; zweigehörnter Diener Belhalhars, großer
     Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -6916,7 +6916,7 @@ skelett:
     GE: 4
     KK: 8
   beschreibung: schwaches untotes Kanonenfutter
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -6987,7 +6987,7 @@ skelettruestung:
     GE: 4
     KK: 8
   beschreibung: schwaches untotes Kanonenfutter
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -7322,7 +7322,7 @@ soeldnerveteran:
   variantevon: soeldner
 sordul:
   beschreibung: Der Zersetzer; niederer Diener Belzhorashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Gegenstand auflösen
@@ -7665,7 +7665,7 @@ sumupriester:
     wert: 8
 taifelel:
   beschreibung: Die Täuschende Flamme; eingehörnter Diener Agrimoths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Feuer formen
@@ -7775,7 +7775,7 @@ tatzelwurm:
     wert: 8
 thalon:
   beschreibung: Das Schwarze Wiesel; niederer Diener Belshirashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -7829,7 +7829,7 @@ thalon:
     wert: 14
 thazlaraanji:
   beschreibung: Laraansbrut; niederer Diener Belshirashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Beschwörer erotische Träume bereiten
@@ -7916,7 +7916,7 @@ tigerhai:
   variantevon: streifenhai
 trachrhabaar:
   beschreibung: Die Näherin der Leiber; eingehörnte Dienerin Asfaloths, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Zusammennähen einer schwachen Chimäre
@@ -8085,7 +8085,7 @@ troll:
     wert: 12
 tuuramash:
   beschreibung: Die Schwarze Kröte; siebengehörnter Diener Agrimoth, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Giftige Dornenhecken wuchern lassen
@@ -8155,7 +8155,7 @@ tuuramash:
     wert: 20
 udapoth:
   beschreibung: Das Grauen aus dem Wasser, der Tentakelkopf; ein niederer Diener Charyptoroths
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Woche
       mod: 4
@@ -8217,7 +8217,7 @@ udapoth:
     wert: 10
 ugrabaan:
   beschreibung: Der Chimärenschlund; dreigehörnter Diener Asfaloths, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -8276,7 +8276,7 @@ ugrabaan:
     wert: 14
 umdoreel:
   beschreibung: Der Meister der Jagd; dreigehörnter Diener Belshirashs, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: -4
@@ -8348,7 +8348,7 @@ umdoreel:
     wert: 18
 uridabash:
   beschreibung: Die Hand mit dem Stab; ein vielgehörnter Diener Amazeroths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Lehrmeister für Zauber
@@ -8415,7 +8415,7 @@ uridabash:
     wert: 18
 usuzoreel:
   beschreibung: Der-dich-in-den-Tod-treibt; ein minderer Diener Belshirashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -8449,7 +8449,7 @@ usuzoreel:
 uttaravha:
   beschreibung: Die diebische Elster; ein niederer Diener Tasfarelels, sehr kleiner
     Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -8498,7 +8498,7 @@ uttaravha:
 vhatacheor:
   beschreibung: Meister des brennenden Wassers; achtgehörnter Diener Charyptoroths,
     großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Schiffbrüchige verbrennen
@@ -8761,7 +8761,7 @@ weisserhetzer:
     KK: 8
     KO: 4
   beschreibung: zweiköpfige Chimäre aus Wolf und Dämon
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -8943,7 +8943,7 @@ wolfrudelfuehrer:
   variantevon: wolf
 xamanoth:
   beschreibung: Das Verbotene Wissen; siebengehörnter Diener Amazeroths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Lehrmeister für einen Zauber in borbaradianischer Tradition
@@ -9000,7 +9000,7 @@ xamanoth:
     wert: 16
 xarrmalk:
   beschreibung: Der Vielleibige Aufhetzer; ein sechsgehörnter Diener Lolgramoths
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -9059,7 +9059,7 @@ xarrmalk:
     wert: 16
 yaryuraam:
   beschreibung: Die rastlose Bewegung, der ewige Läufer; zweigehörnter Diener Lolgramoths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Tier zu Tode hetzen
@@ -9107,7 +9107,7 @@ yaryuraam:
 yashnatam:
   beschreibung: Das gläserne Klirren auf dem Eis, das Ross Nagrachs; eingehörnter
     Diener Belshirashs, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -9177,7 +9177,7 @@ yashnatam:
 yashoreel:
   beschreibung: Der Zermalmer, die Eiskalte Seele, die Kristallene Mordlust; zweigehörnter
     Diener Belshirashs
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Jahr
       mod: -4
@@ -9227,7 +9227,7 @@ yashoreel:
     wert: 10
 yelarizel:
   beschreibung: Der schlechte Ratgeber, Sämann der Zwietracht; niederer Diener Lolgramoths
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Tag
       mod: 4
@@ -9277,7 +9277,7 @@ yelarizel:
     wert: 12
 yeolkhardas:
   beschreibung: Der Meister des Bades; viergehörnter Diener Belkelels
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -9429,7 +9429,7 @@ yeti:
 yishazrhi:
   beschreibung: Die niederhöllische Spottdrossel; zweigehörnte Dienerin Lolgramoths,
     sehr kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -9481,7 +9481,7 @@ yishazrhi:
     wert: 18
 ylmadath:
   beschreibung: Das sternenlose Leuchten in der Finsternis; ein niederer Diener Amazeroths
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Bekannte Person an einem fernen Ort zeigen
@@ -9544,7 +9544,7 @@ ylmadath:
 yonahoh:
   beschreibung: Die Multipode oder der Neunkrake, die Arme aus der Tiefe; zehngehörnter
     und einzigartiger Diener Charyptoroths, sehr großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - mod: 4
       name: Schiff festhalten
@@ -9612,7 +9612,7 @@ yonahoh:
     wert: 16
 yougghatugythot:
   beschreibung: Der Zerreißer der Sphären; ein dreigehörnter, unabhängiger Dämon
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -9665,7 +9665,7 @@ yougghatugythot:
     wert: 14
 ystphogorthu:
   beschreibung: Das hohe Ross; ein zweigehörnter, unabhängiger Dämon, großer Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Stunde
       mod: 4
@@ -9737,7 +9737,7 @@ ystphogorthu:
 zazamotlgnakhyaa:
   beschreibung: Der gefräßige Söldner der niedersten Höllen; ein zweigehörnter, unabhängiger
     Dämon, kleiner Gegner
-  beschwörung:
+  beschwoerung:
     dienste:
     - dauer: 1 Minute
       mod: 4
