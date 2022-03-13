@@ -1,7 +1,8 @@
 ---
 permalink: /db/kreaturen/
+layout: default
 ---
-
+<!-- 
 <!doctype html>
 
 <head>
@@ -11,139 +12,208 @@ permalink: /db/kreaturen/
     <meta name="author" content="Lukas Ruhe">
     <title>Ilaris Datenbank</title>
 
-    <link rel="canonical" href="https://ilaris-dev.github.id/IalarisDB/">
+    <link rel="canonical" href="https://ilaris-tools.github.id/IalarisDB/">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/sidebars.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mystyle.css">
+</head> -->
 
-<body>
-    <main>
-        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
-            <nav aria-label="breadcrumb"
-                class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">DB</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Kreaturen</li>
-                </ol>
-            </nav>
 
-            <div class="list-group list-group-flush border-bottom scrollarea">
-                {% for k in site.data.kreaturen %}
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" id="dbitem-{{ k[0] }}"
-                    data-bs-toggle="tab" data-bs-target="#{{ k[0]}}" aria-controls="{{ k[0] }}" aria-selected="false">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">{{ k[1].name }}</strong>
-                        <small>{{ k[1].klasse }}</small>
-                    </div>
-                    <div class="col-10 mb-1 small">
-                        {{ k[1].beschreibung }}
-                    </div>
-                </a>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+<button class="btn px-1" type="button" data-bs-toggle="collapse" data-bs-target=".show" aria-expanded="false"
+    aria-controls="hideme">
+    Einklappen
+</button>
+<input class="form-control" id="kreaturenfilter" type="text" placeholder="Search..">
+<hr />
+
+
+
+<div style="margin-bottom: 10px;"></div>
+<div id="kreaturenliste">
+    {% for k in site.data.kreaturen %}
+    <div class="card" style="margin-top: 30px;">
+        <a class="text-decoration-none" href="#{{ k[0] }}" data-bs-toggle="collapse" aria-expanded="false"
+            aria-controls="hideme">
+            <div class="kreaturkopf">
+                <h5 class="kreaturtitel">{{ k[1].name }}</h5>
+                <span class="mb-2 text-muted"><i>{{ k[1].beschreibung }}</i></span>
+            </div>
+        </a>
+        <div class="block collapse" id="{{ k[0] }}">
+            {% if k[1].kampf.werte %}
+            <div class="textblock">
+                {% if k[1].kampf.werte.INI %}<b>Initiative: </b>{{ k[1].kampf.werte.INI }}<br />{% endif %}
+                {% if k[1].kampf.werte.GS %}
+                <b>Geschwindigkeit: </b>{{ k[1].kampf.werte.GS }}
+                {% if k[1].kampf.werte.GSS %}, schwimmend: {{ k[1].kampf.werte.GSS }}{% endif %}
+                {% if k[1].kampf.werte.GSF %}, fliegend: {{ k[1].kampf.werte.GSF }}{% endif %}
+                {% if k[1].kampf.werte.GSR %}, reitend: {{ k[1].kampf.werte.GSR }}{% endif %}
+                <br />{% endif %}
+                {% if k[1].kampf.werte.MR %}<b>Magieresistenz: </b>{{ k[1].kampf.werte.MR }}<br />{% endif %}
+                {% if k[1].kampf.werte.WS %}<b>Wundschwelle: </b>{{ k[1].kampf.werte.WS }}{% if k[1].kampf.werte.WSE
+                %}/{{
+                k[1].kampf.werte.WSE }}{% endif %}<br />{% endif %}
+                {% if k[1].kampf.werte.koloss %}<b>Koloss: </b>{{ k[1].kampf.werte.koloss }}<br />{% endif %}
+            </div>
+            {% endif %}
+
+
+            {% if k[1].eigenschaften %}
+            <div class="textblock">
+                {% for v in k[1].eigenschaften %}
+                {{ v.name }}{% if v.info %}({{ v.info }}){% endif %},
                 {% endfor %}
             </div>
-        </div>
+            {% endif %}
 
 
-        <div class="container-fluid scrollarea" style="flex-grow:1;">
-            <div style="padding-top: 50px;">
-                {% for k in site.data.kreaturen %}
-                <div class="card togglecard flat" id="{{ k[0] }}" aria-labelledby="dbitem-{{ k[0] }}"
-                    style="margin-bottom: 20px; margin-top: 20px; border: 0; max-width: 400px;" id="{{ k[0] }}">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            {{ k[1].name }}
-                        </h5>
-                        <div class="card-subtitle mb-2 text-muted">{{ k[1].beschreibung }}
-                        </div>
-                        <hr style="margin-bottom:0; margin-top: 0;" />
-                        <div style="background: #d8bcbd44;">
 
-                            {% if k[1].kampf.werte %}
-                            <div class="textblock">
-                                {% if k[1].kampf.werte.INI %}Initiative: {{ k[1].kampf.werte.INI }}<br />{% endif %}
-                                {% if k[1].kampf.werte.GS %}
-                                Geschwindigkeit: {{ k[1].kampf.werte.GS }}
-                                {% if k[1].kampf.werte.GSS %}, schwimmend: {{ k[1].kampf.werte.GSS }}{% endif %}
-                                {% if k[1].kampf.werte.GSF %}, fliegend: {{ k[1].kampf.werte.GSF }}{% endif %}
-                                {% if k[1].kampf.werte.GSR %}, reitend: {{ k[1].kampf.werte.GSR }}{% endif %}
-                                <br />{% endif %}
-                                {% if k[1].kampf.werte.MR %}Magieresistenz: {{ k[1].kampf.werte.MR }}<br />{% endif %}
-                                {% if k[1].kampf.werte.WS %}Wundschwelle: {{ k[1].kampf.werte.WS }}/{{
-                                k[1].kampf.werte.WSE }}<br />{% endif %}
-                                {% if k[1].kampf.werte.koloss %}Koloss: {{ k[1].kampf.werte.koloss }}<br />{% endif %}
-                            </div>
-                            <hr style="margin: 0;" />
-                            {% endif %}
-
-                            {% if k[1].attribute %}
-                            <div class="textblock">
-                                <div class="tagbox">
-                                    {% for att in k[1].attribute %}
-                                    <div class="tag">{{ att[0] }}: {{ att[1]}} </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            <hr style="margin: 0;" />
-                            {% endif %}
-
-                            {% if k[1].vorteile %}
-                            <div class="textblock">
-                                {% for v in k[1].vorteile %}
-                                {{ v.name }},
-                                {% endfor %}
-                            </div>
-                            <hr style="margin: 0;" />
-                            {% endif %}
-
-                            {% if k[1].kampf.waffen %}
-                            <div class="textblock">
-                                {% for w in k[1].kampf.waffen %}
-                                <div class="tagbox">
-                                    <div class="tag">{{ w.name }}</div>
-                                    <div class="tag">{% if w.RW %}RW: {{ w.RW }}{% endif %}</div>
-                                    <div class="tag">{% if w.AT %}AT: {{ w.AT }}{% endif %}</div>
-                                    <div class="tag">{% if w.AT %}VT: {{ w.VT }}{% endif %}</div>
-                                    <div class="tag">{% if w.AT %}TP: {{ w.TP }}{% endif %}</div>
-                                </div>
-                                {% if w.info %}<div style="padding-left:1rem;"><i>{{ w.info }}</i></div>{% endif %}
-                                {% endfor %}
-                            </div>
-                            <hr />
-                            {% endif %}
-
-                            {% if k[1].kampf.vorteile %}
-                            <div class="textblock">
-                                {% for v in k[1].kampf.vorteile %}
-                                {{v.name}},{{' '}}
-                                {% endfor %}
-                            </div>
-                            <hr />
-                            {% endif %}
-
-
-                            {% if k[1].talente %}
-                            <div class="textblock">
-                                {% for t in k[1].talente %}
-                                {{t.name}} {{t.wert}}, {{" "}}
-                                {% endfor %}
-                            </div>
-                            <hr />
-                            {% endif %}
-                        </div>
-                        <hr style="margin-top:0;" />
-
-                    </div>
+            <div class="textblock">
+                {% if k[1].kampf.waffen %}
+                {% for w in k[1].kampf.waffen %}
+                <div class="tagbox">
+                    <div class="tag"><b>{{ w.name }}</b></div>
+                    <div class="tag">{% if w.RW %}RW: {{ w.RW }}{% endif %}</div>
+                    <div class="tag">{% if w.AT %}AT: {{ w.AT }}{% endif %}</div>
+                    <div class="tag">{% if w.AT %}VT: {{ w.VT }}{% endif %}</div>
+                    <div class="tag">{% if w.AT %}TP: {{ w.TP.anzahl }}W{{ w.TP.W }}+{{ w.TP.plus }}{% endif %}</div>
                 </div>
+                {% if w.info %}<div style="padding-left:1rem;"><i>{{ w.info }}</i></div>{% endif %}
                 {% endfor %}
+                {% endif %}
+
+                {% if k[1].kampf.vorteile %}
+                <div>
+                    {% for v in k[1].kampf.vorteile %}
+                    {{v.name}},{{' '}}
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
+
+
+            {% if k[1].attribute or k[1].talente or k[1].profan.vorteile %}
+            <div class="textblock">
+                {% if k[1].attribute %}
+                <div class="tagbox">
+                    <div class="tag"><b>Attribute: </b></div>
+                    {% for att in k[1].attribute %}
+                    <div class="tag">{{ att[0] }}: {{ att[1]}} </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if k[1].talente %}
+                <div>
+                    <b>Fertigkeiten: </b>
+                    {% for t in k[1].talente %}
+                    {{ t.name }} {{ t.wert }},
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if k[1].profan.vorteile %}
+                <div>
+                    <b>Profane Vorteile: </b>
+                    {% for v in k[1].profan.vorteile %}
+                    {{ v.name }}
+                    {% if v.info %}({{ v.info }}){% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+
+            {% if k[1].magie %}
+            <div class="textblock">
+                <div><b>AsP: </b>{{ k[1].magie.asp }}</div>
+                {% for f in k[1].magie.fertigkeiten %}
+                <div><b>{{ f.name }}: </b>{{ f.wert }} ({% for t in f.talente %}{{ t.name }}, {% endfor %})</div>
+                {% endfor %}
+                {% if k[1].magie.vorteile %}
+                <div><b>Magische Vorteile: </b>
+                    {% for v in k[1].magie.vorteile %}
+                    {{ v.name }}
+                    {% if v.info %}({{ v.info }}){% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if k[1].karma %}
+            <div class="textblock">
+                <div><b>KaP: </b>{{ k[1].karma.kap }}</div>
+                {% for f in k[1].karma.fertigkeiten %}
+                <div><b>{{ f.name }}: </b>{{ f.wert }} ({% for t in f.talente %}{{ t.name }}, {% endfor %})</div>
+                {% endfor %}
+                {% if k[1].karma.vorteile %}
+                <div><b>Karmale Vorteile: </b>
+                    {% for v in k[1].karma.vorteile %}
+                    {{ v.name }}
+                    {% if v.info %}({{ v.info }}){% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if k[1].pakt %}
+            <div class="textblock">
+                <div><b>GuP: </b>{{ k[1].pakt.gup }}</div>
+                {% for f in k[1].pakt.fertigkeiten %}
+                <div><b>{{ f.name }}: </b>{{ f.wert }} ({% for t in f.talente %}{{ t.name }}, {% endfor %})</div>
+                {% endfor %}
+                {% if k[1].pakt.vorteile %}
+                <div><b>Paktvorteile: </b>
+                    {% for v in k[1].pakt.vorteile %}
+                    {{ v.name }}
+                    {% if v.info %}({{ v.info }}){% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if k[1].beschwoerung %}
+            <div class="textblock">
+                <div><b>Beschwörung: </b>
+                    {% for p in k[1].beschwoerung.proben %}
+                    {{ p.name }}
+                    {% if p.wert %}{{ p.wert }}{% endif %}
+                    {% if p.asp %} ({{ p.asp }} AsP){% endif %}
+                    {% if p.info %}({{ p.info }}){% endif %},
+                    {% endfor %}
+                </div>
+                <div><b>Dienste: </b>
+                    {% for d in k[1].beschwoerung.dienste %}
+                    {{ d.name }}
+                    {% if d.mod %}(Mod: {{ d.mod }}) {% endif %}
+                    {% if d.dauer %}(Dauer: {{ d.dauer }}) {% endif %},
+                    {% endfor %}
+                </div>
+
+            </div>
+            {% endif %}
+
+
+            {% if k[1].info %}
+            <div class="textblock"><b>Info: </b>{{ k[1].info }}</div>
+            {% endif %}
+
+
         </div>
+    </div>
+    {% endfor %}
+</div>
 
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+<script>
+    $(document).ready(function () {
+        $("#kreaturenfilter").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#kreaturenliste > div").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

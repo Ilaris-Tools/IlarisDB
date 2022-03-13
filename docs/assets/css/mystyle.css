@@ -70,9 +70,6 @@ h5.card-title {
     align-items: center; 
 } 
 
-.textblock {
-    padding: 1rem;
-}
 
 hr {
     color: #450c15;
@@ -92,4 +89,26 @@ hr {
 .tagbox {
     display: flex;
     justify-content: space-between;
+}
+
+.block {
+    background-color: #ffecdb;
+}
+.card {
+    border: 0px;
+    border-radius: 0px!important;
+    border-bottom:1.5px solid #450c15;
+}
+.textblock {
+    border-top:1.5px solid #450c15;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.kreaturtitel {
+    margin-bottom: -2px;
+    font-family: Cinzel;
+    color: #450c15;
+    font-weight: bold;
 }

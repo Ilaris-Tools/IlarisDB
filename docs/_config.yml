@@ -3,7 +3,7 @@ email: mail@sarbot.de
 description: >-
   Eine Datenbank und Webansicht für Kreaturen und andere Dinge in Ilaris.
 baseurl: "/IlarisDB"
-url: "https://ilaris-dev.github.io"
+url: "https://ilaris-tools.github.io"
 github_username:  lukruh
 
 # Build settings
