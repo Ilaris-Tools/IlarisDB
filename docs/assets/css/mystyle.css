@@ -91,6 +91,10 @@ hr {
     justify-content: space-between;
 }
 
+.kreaturkopf {
+
+    justify-content: space-between;
+}
 .block {
     background-color: #ffecdb;
 }
@@ -111,4 +115,12 @@ hr {
     font-family: Cinzel;
     color: #450c15;
     font-weight: bold;
+}
+
+.avatar {
+    background: black;
+}
+
+.container {
+    max-width: 700px;
 }
