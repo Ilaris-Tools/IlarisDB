@@ -16,6 +16,8 @@ Kreaturen unterliegen nicht den selben Regeln der Generierung und weichen daher 
 * Besonderheiten nach Kreaturenklassen: Daimonid, Dämon, Elementar, Feenwesen, Humanoid, Mythenwesen, Tier, Untoter
 *  Eigenschaften statt Vorteilen: Kreaturen können neben alg. Vorteilen auch bestimmte Nachteile und Anfälligkeiten (zB gegen Feuer) oder besondere Fähigkeiten (zB Fliegen) haben.
 * Varianten: Viele Kreaturen unterscheiden sich nur in Kleinigkeiten oder lassen sich in einer allgemeineren Gruppe zusammenfassen, oft sind 'kleinere' verträter als `variantevon` gekennzeichnet.
+* Info: Kreaturen haben ein info feld in das zusätzlicher text kann oder Spezialregeln. Wenn Varianten keine extra Kreatur "wert" sind, können die einfachen Hinweise auch hier mit rein
+
 
 
 ### Abweichungen von den Quellen

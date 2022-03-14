@@ -1270,7 +1270,7 @@ dreigehoerntergurgulum:
   unterschied: "dreigehörnter Gurgulum (Würgen \n  TP: +1W6, zusätzliche Fähigkeit\
     \ „Stärkung des Wirts“\n(Proben des Wirts auf körperliche Attribute sind um +4,\
     \ Fertigkeitsproben mit körperlichen Attributen um +2 erleichtert, WS des Wirts\
-    \ +1, jedoch erleidet der Wirt jeden Tag 1W6+2 SP), beschwoerung: Invocatio 28,\
+    \ +1, jedoch erleidet der Wirt jeden Tag 1W6+2 SP), Beschwörung: Invocatio 28,\
     \ 48 AsP\n"
   variantevon: gurgulum
 elefant:
@@ -4054,7 +4054,7 @@ kriegermumie:
       MR: 12
       WS: 10
       WSE: 12
-  klasse: untod
+  klasse: untot
   name: Kriegermumie
   quelle: ilaris
   talente:
@@ -5780,7 +5780,7 @@ pestrattenschwarm:
       WS: 4
       info: MR für einzelnes Tier
       koloss: 2
-  klasse: untod
+  klasse: untot
   name: Pestrattenschwarm
   quelle: ilaris
   talente:
@@ -6972,7 +6972,7 @@ skelett:
       INI: 2
       MR: 5
       WS: 4
-  klasse: untod
+  klasse: untot
   name: Skelett
   quelle: ilaris
   talente:
@@ -7043,7 +7043,7 @@ skelettruestung:
       INI: 1
       MR: 5
       WS: 5
-  klasse: untod
+  klasse: untot
   name: Skelett mit Rüstung
   quelle: ilaris
   talente:
@@ -9828,5 +9828,2178 @@ zilit:
     wert: 8
   - name: Schwimmen
     wert: 10
+  - name: Wachsamkeit
+    wert: 6
+aaswolf:
+  attribute:
+    GE: 14
+    KK: 6
+    KO: 6
+    MU: 6
+  beschreibung: pervertierter Wolf
+  eigenschaften:
+  - info: Dunkelheit
+    name: Angepasst II
+  - info: Einfluss
+    name: Immunität
+  - name: Lichtscheu
+  info: 'Varianten:  Alphaaaswolf (WS 5/6; TP, MR und Kampfwerte +4 IN:I +2, wird
+    der Alphaaaswolf besiegt, nehmen auch die restlichen Wölfe die Pfoten in die Hand)'
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 9
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      VT: 6
+      info: Zerbrechlich, Aasgift (Stufe 20, Verzögerung 4 Aktionen, Wirkungsdauer
+        sofort; das Ziel erleidet eine Wunde; Wölfe und Hunde verwandeln sich binnen
+        1W3 Tagen auch in Aaswölfe)
+      name: Biss
+    werte:
+      GS: 8
+      INI: 2
+      MR: 2
+      WS: 4
+      WSE: 5
+  klasse: tier
+  name: Aaswolf
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 24
+  - name: Pirschen
+    wert: 12
+  - name: Wachsamkeit
+    wert: 18
+  - name: Zähigkeit
+    wert: 4
+aljallahir:
+  attribute:
+    CH: 20
+    FF: 6
+    GE: 10
+    IN: 12
+    KK: 13
+    KL: 8
+    KO: 13
+    MU: 12
+  beschreibung: der flammende Redner und Herr der Menetekel
+  eigenschaften:
+  - name: Schreckgestalt I
+  infos:
+  - info: Al'Jallahir kann das Kommando Flammende Rede (Furcht Effekte eine Stufe
+      gesenkt, +2 VT, +2 AT)
+    name: Flammende Rede
+  - info: Mit der Flammenpeitsche kann das Manöver Umklammern durchgeführt werden.
+      Die Peitsche ist heiß wie Glut (400-800 °C, Inervall 1, 1 Wunde, Berührung 3W6SP/Akt.).
+      Gelingt eine Attacke die mit dem Manöver Entwaffnen verstärkt wurde, erhält
+      die entwaffnete Waffe eine Beschädigung.
+    name: Flammenpeitsche
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Zusätzliche Attacke I
+    - name: Befreiungsschlag
+    waffen:
+    - AT: 18
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 5
+      info: Nachbrennen, Rüstungsbrecher, Unberechenbar, Wendig
+      name: Flammenpeitsche
+    werte:
+      GS: 6
+      INI: 6
+      MR: 13
+      WS: 10
+      WSE: 12
+  klasse: elementar
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Feuer
+      talente:
+      - name: Caldofrigo
+      - name: Custosigil
+      - name: Ignifaxius
+      - name: Ignifugo
+      - name: Ignisphaero
+      - name: Leib des Feuers
+      - name: Manifesto
+      - name: Pfeil des Feuers
+      - name: Wand aus Feuer
+      - name: Warmes Blut
+      wert: 16
+  name: Al'Jallahir
+  quelle: hilberts
+  talente:
+  - name: Anführen 20
+  - name: Betören 12
+  - name: Rhetorik 20
+  - name: Überreden 18
+  - name: Tulamidenlande 12
+  - name: Sinnesschärfe 10
+  - name: Wachsamkeit 12
+azuzar:
+  attribute:
+    CH: 8
+    FF: 6
+    GE: 8
+    IN: 20
+    KK: 6
+    KL: 24
+    KO: 6
+    MU: 12
+  beschreibung: mächtiger freier Geistergrolm in den Katakomben Vinsalts
+  eigenschaften:
+  - name: Schreckgestalt IV (wenn er möchte)
+  kampf:
+    werte:
+      GS: 5
+      INI: 4
+      MR: 16
+      WS: 4
+      WSE: 5
+  klasse: geist
+  magie:
+    asp: 80
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Alle
+      wert: 22
+    - name: Hellsicht
+      talente:
+      - name: Alle
+      wert: 22
+    vorteile:
+    - name: Effizientes Zaubern
+    - name: Flinke Magie
+    - name: Kontrolliertes Zaubern
+    - name: Mühelose Magie
+    - name: Vorbereitendes Zaubern
+  name: Azuzar
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 6
+  - name: Menschenkenntnis
+    wert: 18
+  - name: Sinnesschärfe
+    wert: 16
+  - name: Wachsamkeit
+    wert: 16
+  - name: Überreden
+    wert: 22
+  - name: Willenskraft
+    wert: 10
+  - name: Magiekunde
+    wert: 18
+drachenfliege:
+  attribute:
+    CH: 2
+    FF: 2
+    GE: 6
+    IN: 2
+    KK: 1
+    KL: 0
+    KO: 1
+    MU: 10
+  beschreibung: klein, Musca draconigena flagranta
+  info: 'Elementübergang: Die Flügel der Drachenfliege verwandeln sich in Feuer, wenn
+    sie bedroht wird. Dies lockt oft Mindergeister an.'
+  kampf:
+    waffen:
+    - AT: 13
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 3
+      VT: 5
+      info: Nachbrennen
+      name: Biss
+    werte:
+      GS: 9
+      INI: 4
+      MR: 17
+      WS: 2
+      WSE: 7
+  klasse: elementar
+  name: Drachenfliege
+  quelle: hilberts
+  talente:
+  - name: Akrobatik
+    wert: 16
+  - name: Willenskraft
+    wert: 5
+  - info: wenn verwandelt
+    name: Einschüchtern
+    wert: 10
+  - name: Sinnesschärfe
+    wert: 6
+eisfee:
+  attribute:
+    CH: 20
+    FF: 2
+    GE: 8
+    IN: 8
+    KK: 6
+    KL: 4
+    KO: 2
+    MU: 18
+  beschreibung: nützlicher kalter Geist des hohen Nordens
+  eigenschaften:
+  - info: Eisfeen können gefesselte Seelen an sich binden
+    name: Herrin der gefesselten Seelen
+  - info: Intervall 1 INI-Ph. 1 Wunde, freiwilliges Opfer; siehe Bannbaladin; Vergleichende
+      Probe Willenksraft gegen Betören
+    name: Kuss der Eisfee
+  info: 'Varianten:  Starke Eisfee (6/6 WS, Zusätzliche Zauber: Erinnerung verlass
+    dich!, Herzschlag Ruhe!)
+
+    Mächtige Eisfee (6/6 WS, Eigenschaften +2, Fertigkeiten +4, 64 AsP, Einfluss 18.
+    Zusätzliche Zauber: Erinnerung verlass dich!, Herzschlag Ruhe!, Alpgestalt)
+
+    '
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 0
+      VT: 2
+      info: Rüstungsbrechend
+      name: Waffenlos
+    werte:
+      GS: 4
+      INI: 4
+      MR: 10
+      WS: 3
+      WSE: 3
+  klasse: geist
+  magie:
+    asp: 32
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Bannbaladin
+      - name: Horriphobus
+      wert: 14
+  name: Eisfee
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 5
+  - name: Wachsamkeit
+    wert: 10
+  - name: Betören
+    wert: 14
+  - name: Überreden
+    wert: 14
+  - name: Willenskraft
+    wert: 13
+enzomaincoon:
+  attribute:
+    KK: -8
+    KL: -6
+    MU: 0
+  beschreibung: spionierender Stubentieger
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
+  kampf:
+    waffen:
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 14
+      info: null
+      name: Krallen
+    werte:
+      GS: 6
+      INI: 6
+      MR: 6
+      WS: 3
+  klasse: tier
+  name: Enzo (Main Coon)
+  quelle: hilberts
+  talente:
+  - name: Klettern
+    wert: 8
+  - name: Pirschen
+    wert: 20
+  - name: Wachsamkeit
+    wert: 12
+  - name: Zähigkeit
+    wert: -2
+feuerdschinn:
+  attribute:
+    CH: 10
+    FF: 6
+    GE: 14
+    IN: 12
+    KK: 13
+    KL: 8
+    KO: 13
+    MU: 14
+  beschreibung: Gebieter elementarer Kraft
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Sturmangriff
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 15
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 6
+      VT: 7
+      info: Nachbrennen
+      name: Flammenhand
+    werte:
+      GS: 8
+      INI: 6
+      MR: 8
+      WS: 10
+      WSE: 12
+  klasse: elementar
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Feuer
+      talente:
+      - name: alle
+      wert: 12
+  name: Feuerdschinn
+  quelle: hilberts
+  talente:
+  - name: Akrobatik
+    wert: 14
+  - name: Willenskraft
+    wert: 7
+  - name: Zähigkeit
+    wert: 14
+  - name: Pirschen
+    wert: 14
+  - name: Einschüchtern
+    wert: 11
+  - name: Sinnesschärfe
+    wert: 14
+feuergeist:
+  attribute:
+    CH: 2
+    FF: 2
+    GE: 6
+    IN: 2
+    KK: 1
+    KL: 0
+    KO: 1
+    MU: 10
+  beschreibung: klein, neugierig und reizbar
+  eigenschaften:
+  - name: Regeneration I
+  kampf:
+    waffen:
+    - AT: 13
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 5
+      info: Nachbrennen
+      name: Flammenhand
+    werte:
+      GS: 5
+      INI: 1
+      MR: 4
+      WS: 2
+      WSE: 2
+  klasse: elementar
+  name: Feuergeist
+  quelle: hilberts
+  talente:
+  - name: Akrobatik
+    wert: 4
+  - name: Willenskraft
+    wert: 5
+  - name: Zähigkeit
+    wert: 5
+  - name: Einschüchtern
+    wert: 5
+  - name: Sinnesschärfe
+    wert: 5
+feuermaehre:
+  attribute:
+    CH: 4
+    FF: 2
+    GE: 8
+    IN: 2
+    KK: 8
+    KL: 2
+    KO: 8
+    MU: 6
+  beschreibung: großes Feuerross
+  eigenschaften:
+  - info: Willkürlich greift die Feuermähre an. IN(20 ,I) sonst -8 auf die erste Parade. Ebenso willkürlich endet der Angriff
+    name: Jähzorn
+  infos:
+  - info: Der Reiter ist immun gegen Feuerschaden, nicht aber gegen den Jähzorn der
+      Feuermähre.
+    name: Behütend
+  kampf:
+    waffen:
+    - AT: 16
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 4
+      VT: 7
+      info: Nachbrennen, Niederwerfen
+      name: Tritt
+    werte:
+      GS: 10
+      INI: 4
+      MR: 17
+      WS: 5
+      WSE: 5
+  klasse: elementar
+  name: Feuermähre
+  quelle: hilberts
+  talente:
+  - name: Willenskraft
+    wert: 4
+  - name: Einschüchtern
+    wert: 6
+  - name: Wachsamkeit
+    wert: 4
+gefesselteseele:
+  beschreibung: der schwache Geist eines Menschen
+  eigenschaften:
+  - name: Vorteile bis 80 EP
+  info: "Attribute:  2x4, 4x6, 2x8,  Talente:  4x6, 1x10\nVarianten:  \nNützliche\
+    \ Seele (Vorteile bis 160 EP, ein Attribut auf 12 statt auf 4, eine zusätzliche\
+    \ Fertigkeit auf 10 und 14) \nStarker Nekromentor (nach Wissen strebender Lehrgeist,\
+    \ der durchaus erfahren in seinem Wissensgebiet ist. Von 17:00 bis 5:00 morgens\
+    \ ist er bereit sein Wissen weiterzugeben: 2x14 Wissensfertigkeiten. KL 20 IN:\
+    \ 18)\nMächtige Seele (auch andere Wesen als Mensch möglich, Werte abweichend)\n\
+    Mächtige Entfesselte Seele (Eigenschaften, Fertigkeiten wie Erhobener, Zauber\
+    \ wie Erhobener, persönliche Waffe/Pferd/Gegenstände des Erhobenenen erscheinen\
+    \ geisterhaft, grobe Erinnerungen ans Leben)\n"
+  kampf:
+    vorteile:
+    - name: Nach Verstorbenem
+    waffen:
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
+      VT: 6
+      info: Rüstungsbrechend
+      name: Waffenlos
+    werte:
+      GS: 8
+      INI: 6
+      MR: 10
+      WS: 2
+      WSE: 2
+  klasse: geist
+  magie:
+    asp: 30
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Horriphobus
+      wert: 12
+  name: Gefesselte Seele
+  quelle: hilberts
+geisterdrache:
+  attribute:
+    CH: 6
+    FF: 1
+    GE: 12
+    IN: 8
+    KK: 24
+    KL: 8
+    KO: 16
+    MU: 18
+  beschreibung: uralter mächtiger sehr großer untoter Ratgeber
+  eigenschaften:
+  - info: Wahnsinn, Willenskraft (28) jede Initiativephase, 1 Erschöpfung
+    name: Aura
+  - info: Disruptivo, Alle Zauber anderer Wesen sind in einer Reichweite von 32 Schritt
+      um 8 erschwert
+    name: Aura
+  - info: magisch
+    name: Immunität
+  - name: Schreckgestalt III
+  kampf:
+    vorteile:
+    - name: Hammerschlag
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Standfest
+    - name: Sturmangriff
+    - name: Unaufhaltsam
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 6
+      VT: 8
+      info: Rüstungsbrechend
+      name: Biss
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 2
+      VT: 8
+      info: Rüstungsbrechend, Niederwerfen (-4) (Willenskraft als Gegenprobe statt
+        KK)
+      name: Pranke
+    - AT: 14
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 0
+      VT: 8
+      info: Rüstungsbrechend, Flächenangriff (90° hinter dem Drachen), Niederwerfen
+        (-8) (Willenskraft als Gegenprobe statt KK)
+      name: Schwanzhieb
+    werte:
+      GS: 8
+      INI: 4
+      MR: 16
+      WS: 9
+      WSE: 11
+      koloss: 1
+  klasse: geist
+  magie:
+    asp: 150
+    fertigkeiten:
+    - name: Kraft
+      talente:
+      - name: Alle
+      wert: 18
+    - name: Illusion
+      talente:
+      - name: Alle
+      wert: 16
+    vorteile:
+    - info: Reichweite und Wirkungsdauer jedes Zaubers ist vervielfacht
+      name: Drachenmagie
+  name: Geisterdrache
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 14
+  - name: Menschenkenntnis
+    wert: 8
+  - name: Sinnesschärfe
+    wert: 6
+  - name: Wachsamkeit
+    wert: 6
+  - name: Überreden
+    wert: 4
+  - name: Willenskraft
+    wert: 10
+  - name: Magiekunde
+    wert: 18
+  - name: Derekunde
+    wert: 18
+  - name: Mythenkunde
+    wert: 18
+geisterschwarm:
+  attribute:
+    CH: 4
+    FF: 0
+    GE: 14
+    IN: 20
+    KK: 2
+    KL: 2
+    KO: 4
+    MU: 10
+  beschreibung: der schwache Geist
+  eigenschaften:
+  - info: Richtet der Geisterschwarm Wunden bei einem Wesen an, das über AsP verfügt,
+      so verliert dieses Wesen WS Anzahl der Wunden AsP.
+    name: Astralsauger
+  - name: Schmerzimmun II
+  - info: Stichwaffen
+    name: Resistenz
+  - info: Flächenschaden
+    name: Verwundbarkeit IV
+  info: 'Varianten:  Starker Geisterschwarm (Koloss II, TP +2, Fertigkeiten +2, Zusätzliche
+    Attacke II)'
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
+      VT: 6
+      info: Rüstungsbrechend
+      name: Waffenlos
+    werte:
+      GS: 5
+      INI: 10
+      MR: 6
+      WS: 2
+      koloss: 1
+  klasse: geist
+  name: Geisterschwarm
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 5
+  - name: Pirschen
+    wert: 7
+  - name: Sinnesschärfe
+    wert: 8
+  - name: Willenskraft
+    wert: 1
+ghul:
+  attribute:
+    GE: 8
+    KK: 8
+    KL: 2
+    KO: 8
+    MU: 8
+  beschreibung: ansteckender und gieriger Leichenfresser
+  eigenschaften:
+  - info: Sonnenlicht
+    name: Empfindlichkeit II
+  - info: Einfluss
+    name: Immunität
+  - name: Lichtscheu
+  - name: Schreckgestalt I
+  - info: Dunkelheit
+    name: Angepasst II
+  info: "Varianten:  \nFresser (WS 4/6)\nSammler (WS 3/5 KO:  10, KL: 4, AT 4, VT\
+    \ 4 (Leichenteilträger (Säcke), Menschenähnlicher, buckelig))\nSpäher (WS 2/4,\
+    \ Klettern 7, Wachsamkeit 10, Sinnesschärfe 10, AT 9, VT 9, BHKI, BHKII (spinnenartig,\
+    \ schnell))\nWühler (WS 4/6, AT 4, VT 4, Klauen 1W6+4, Graben II (blind, milchige\
+    \ Augen, sehr leicht zu übersehen: Tarnung(Unter der Erde))\n"
+  kampf:
+    waffen:
+    - AT: 6
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
+      VT: 6
+      info: Stumpf, Zerbrechlich, Hochansteckend
+      name: Unbewaffnet
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      VT: 6
+      info: Zerbrechlich, Ghulgift
+      name: Zähne
+    werte:
+      GS: 6
+      INI: 6
+      MR: 9
+      WS: 4
+      WSE: 5
+  klasse: tier
+  name: Ghul
+  quelle: hilberts
+  talente:
+  - name: Pirschen
+    wert: 8
+  - name: Wachsamkeit
+    wert: 6
+ghulkoenig:
+  attribute:
+    GE: 6
+    KK: 18
+    KL: 4
+    KO: 16
+    MU: 8
+  beschreibung: verschmolzener großer Haufen Leichenfresser
+  eigenschaften:
+  - info: Sonnenlicht
+    name: Empfindlichkeit II
+  - info: Einfluss
+    name: Immunität
+  - name: Lichtscheu
+  - name: Schreckgestalt II
+  - info: Verschmelzen mit Ghulen heilt 1 Wunde, bei großen Ghulen sogar 2 Wunden
+    name: Regemutation
+  - name: Zusätzliche Attacke III
+  - name: Zusätzliche Verteidigung I
+  - info: Dunkelheit
+    name: Angepasst II
+  kampf:
+    vorteile:
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Niederwerfen, Sturmangriff
+    waffen:
+    - AT: 10
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 6
+      VT: 6
+      info: Stumpf, Hochansteckend
+      name: Faust
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 8
+      info: Ghulgift
+      name: Zähne
+    - FK: 12
+      LZ: 1
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      info: Säure (KO(I,20) sonst 1 Wunde), Flächenangriff (180 Grad)
+      name: Würgen
+    werte:
+      GS: 6
+      INI: 8
+      MR: 12
+      WS: 8
+      WSE: 10
+  klasse: tier
+  name: Ghulkönig
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 10
+  - name: Wachsamkeit
+    wert: 6
+  - name: Pirschen
+    wert: 8
+  - name: Zähigkeit
+    wert: 16
+hetzer:
+  attribute:
+    CH: 4
+    FF: 10
+    GE: 6
+    IN: 10
+    KK: 4
+    KL: 2
+    KO: 2
+    MU: 10
+  beschreibung: Seele eines Mörders oder Attentäters
+  eigenschaften:
+  - name: Tarnung
+  - name: Rudel
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 4
+      info: Rüstungsbrechend
+      name: Krallen
+    werte:
+      GS: 8
+      INI: 5
+      MR: 5
+      WS: 2
+      WSE: 3
+  klasse: geist
+  magie:
+    asp: 16
+    fertigkeiten:
+    - name: Hellsicht
+      talente:
+      - name: Exposami Lebenskraft
+      - name: Sensattaco Meisterstreich
+      wert: 8
+    - name: Einfluss
+      talente:
+      - name: Harmlose Gestalt
+      - name: Blitz dich Find
+      wert: 8
+  name: Hetzer
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 6
+  - name: Laufen
+    wert: 6
+  - name: Menschenkenntnis
+    wert: 6
+  - name: Pirschen
+    wert: 8
+hundeblume:
+  attribute:
+    CH: 10
+    FF: 2
+    GE: 2
+    IN: 10
+    KK: 10
+    KL: -4
+    KO: 10
+    MU: 14
+  beschreibung: Pflanze und Tier
+  kampf:
+    waffen:
+    - AT: 11
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 2
+      name: Biss
+    werte:
+      GS: 0
+      INI: 4
+      MR: 15
+      WS: 2
+      WSE: 2
+  klasse: daimonid
+  name: Hundeblume
+  quelle: hilberts
+  talente:
+  - name: Wachsamkeit 12
+  - name: Pirschen 10
+  - name: Willenskraft 7
+irrlicht:
+  attribute:
+    GE: 12
+    IN: 8
+  beschreibung: ein Licht im Nebel
+  eigenschaften:
+  - name: Magieabweisend
+  - name: keine Schreckgestalt
+  info: 'Varianten:  Nützliches Hasserfülltes Irrlicht (Einfluss 14 (Bannbaladin,
+    Horriphobus), Aura (Folge mir!, Willenskraft (20) jede Initiativephase, 1 Erschöpfung))'
+  kampf:
+    werte:
+      GS: 8
+      INI: 8
+      MR: 10
+      WS: 1
+      WSE: 1
+  klasse: geist
+  magie:
+    asp: 30
+    fertigkeiten:
+    - name: Einfluss
+      talente:
+      - name: Bannbaladin
+      wert: 12
+  name: Irrlicht
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 16
+  - name: Überreden
+    wert: 10
+jegvilbaresidde:
+  attribute:
+    CH: 4
+    FF: 4
+    GE: 4
+    IN: 14
+    KK: 10
+    KL: 10
+    KO: 10
+    MU: 20
+  beschreibung: die ewige Flamme
+  eigenschaften:
+  - name: Regeneration IV
+  infos:
+  - info: In der dritten Sphäre kann sich die ewige Flamme fast nicht bewegen. Sie
+      verbleibt am liebsten an einem Ort. Dienste die Bewegung enthalten, erschweren
+      die Beherrschungsprobe um 8.
+    name: Unbeweglich
+  - info: Alle 4 INI-Ph. kann Jegvilbar Esidde mittels einer Aktion Konzentration
+      eine neue Flammenwand (and aus Flammen, 2xMM) erschaffen. Jegvilbar Esidde kann
+      in einer Aktion Konzentration eine gewirkte Flammenwand in eine beliebige Richtung
+      abfeuern. Die Wand bewegt 32 Schritt in die angesagte Richtung und löst sich
+      dann auf. Ziele in ihrem Pfad müssen eine Gegenprobe GE (30,I) ablegen, die
+      um ihre GS erleichtert ist. Getroffene Ziele erhalten 8W6 SP und erleiden Nachbrennen.
+    name: Flammenwand
+  kampf:
+    werte:
+      GS: 1
+      INI: 8
+      MR: 16
+      WS: 8
+      WSE: 10
+  klasse: elementar
+  name: Jegvilbar Esidde
+  quelle: hilberts
+  talente:
+  - name: Willenskraft 20
+  - name: Einschüchtern 2
+  - name: Wahrnehmung 8
+lederschwinge:
+  attribute:
+    CH: 4
+    FF: 6
+    GE: 8
+    IN: 8
+    KK: 8
+    KL: -12
+    KO: 8
+    MU: 10
+  beschreibung: Mensch und Fledermaus
+  eigenschaften:
+  - name: Flieger
+  info: 'In die Luft: Gelingt der Lederschwinge eine Umklammerung. kann sie ihr Opfer
+    jetzt und in jeder folgenden INI-Ph. 1W3 Schritt nach oben reißen. Löst sich das
+    Opfer aus der Umklammerung, erhält es unter Umständen Fallschaden.'
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 7
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      VT: 7
+      info: Wendig
+      name: Krallen
+    werte:
+      GS: 8
+      INI: 4
+      MR: 5
+      WS: 6
+      WSE: 7
+  klasse: daimonid
+  name: Lederschwinge
+  quelle: hilberts
+  talente:
+  - name: Klettern
+    wert: 2
+  - name: Akrobatik
+    wert: 4
+  - name: Pirschen
+    wert: 4
+  - name: Fliegen
+    wert: 7
+  - name: Willenskraft
+    wert: 4
+  - name: Zähigkeit
+    wert: 4
+  - name: Einschüchtern
+    wert: 7
+  - name: Wachsamkeit
+    wert: 6
+lynx:
+  attribute:
+    CH: 4
+    FF: 4
+    GE: 16
+    IN: 6
+    KK: 12
+    KL: 10
+    KO: 10
+    MU: 10
+  beschreibung: Grüßer der Todgeweihten
+  eigenschaften:
+  - info: 'Ausnahme: Ziel der Jagd'
+    name: Unsichtbarkeit
+  - name: Schreckgestalt II
+  kampf:
+    vorteile:
+    - name: Ausfall
+    - name: Offensiver Kampfstil
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    - name: Todesstoß
+    - name: Zusätzliche Aktion I
+    waffen:
+    - AT: 16
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 6
+      VT: 8
+      info: Rüstungsbrechend
+      name: Pranken
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 3
+      VT: 8
+      info: Rüstungsbrechend
+      name: Biss
+    werte:
+      GS: 8
+      INI: 8
+      MR: 10
+      WS: 6
+      WSE: 8
+  klasse: geist
+  name: Lynx
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 10
+  - name: Laufen
+    wert: 12
+  - name: Sinnesschärfe
+    wert: 8
+  - name: Pirschen
+    wert: 10
+  - name: Willenskraft
+    wert: 8
+mantikor:
+  attribute:
+    CH: 8
+    FF: 4
+    GE: 10
+    IN: 8
+    KK: 54
+    KL: 10
+    KO: 58
+    MU: 10
+  beschreibung: Mensch, Löwe und Skorpion
+  eigenschaften:
+  - info: Dunkelheit
+    name: Angepasst I
+  - info: keine Passierschläge durch Bewegung
+    name: Sprunghaft
+  - info: +4 PA gegen Gegner, die in dieser INI-Ph. nicht Ziel deiner Angriffe waren
+    name: Katzenhaft
+  info: Klugheit 6 bis 14
+  kampf:
+    vorteile:
+    - name: Standfest
+    - name: Sturmangriff
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 17
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 6
+      VT: 6
+      name: Biss
+    - AT: 17
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 8
+      VT: 6
+      info: Doppelangriff, Niederwerfen (-4), Wendig
+      name: Prankenhieb
+    - AT: 17
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 8
+      VT: 6
+      info: Rüstungsbrechend, Mantikorgift (Stufe 24, Intervall 1, 1 Erschöpfung,
+        Wirkungsdauer 9; 3-9x pro Tag)
+      name: Stachel
+    werte:
+      GS: 10
+      INI: 8
+      MR: 15
+      WS: 7
+      WSE: 9
+      koloss: 1
+  klasse: daimonid
+  name: Mantikor
+  quelle: hilberts
+  talente:
+  - name: Klettern
+    wert: 4
+  - name: Laufen
+    wert: 9
+  - name: Zähigkeit
+    wert: 7
+  - name: Wachsamkeit
+    wert: 6
+  - name: Pirschen
+    wert: 8
+  - name: Willenskraft
+    wert: 7
+  - name: Einschüchtern
+    wert: 10
+maraske:
+  attribute:
+    CH: 4
+    FF: 4
+    GE: 10
+    IN: 10
+    KK: 2
+    KL: -22
+    KO: 2
+    MU: 2
+  beschreibung: Spinne und Skorpion
+  eigenschaften:
+  - info: Niederwerfen, Umreißen und ähnliche Effekte
+    name: Immunität
+  info: Varianten Jungtier (AT, VT -4, 1W6 TP)
+  kampf:
+    vorteile:
+    - name: Standfest
+    waffen:
+    - AT: 9
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 6
+      VT: 11
+      info: Rüstungsbrecher, Giftig (Maraskengift; ILARIS:35)
+      name: Waffe
+    werte:
+      GS: 11
+      INI: 5
+      MR: 10
+      WS: 2
+      WSE: 6
+  klasse: tier
+  name: Maraske
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 6
+  - name: Klettern
+    wert: 10
+  - name: Schwimmen
+    wert: 2
+  - name: Akrobatik
+    wert: 16
+  - name: Willenskraft
+    wert: 7
+  - name: Zähigkeit
+    wert: 12
+  - name: Pirschen
+    wert: 10
+  - name: Einschüchtern
+    wert: 8
+  - name: Menschenkenntnis
+    wert: 7
+  - name: Sinnesschärfe
+    wert: 13
+  - name: Wachsamkeit
+    wert: 13
+meisterdesfeuers:
+  beschreibung: großer, rachsüchtiger Meister
+  kampf:
+    vorteile:
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 26
+      RW: 2
+      TP:
+        W: 20
+        anzahl: 4
+        plus: 3
+      VT: 16
+      info: Befreiungsschlag, Nachbrennen, Niederwerfen (-16)
+      name: Flammenhand
+    werte:
+      GS: 9
+      INI: 10
+      MR: 24
+      WS: 20
+      WSE: 24
+      koloss: 2
+  klasse: elementar
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Feuer
+      talente:
+      - name: alle und ähnliche Effekte
+      wert: 24
+  name: Meister des Feuers
+  quelle: hilberts
+  talente:
+  - name: Willenskraft
+    wert: 30
+  - name: Einschüchtern
+    wert: 30
+  - name: Menschenkenntnis
+    wert: 7
+  - name: Sinnesschärfe
+    wert: 14
+  - name: Wachsamkeit
+    wert: 14
+mepharasch:
+  attribute:
+    CH: 8
+    FF: 6
+    GE: 16
+    IN: 16
+    KK: 5
+    KL: 8
+    KO: 5
+    MU: 12
+  beschreibung: der Feuerwirsch
+  infos:
+  - info: Die Modifikation Mehrere Ziele ist nicht erschwert. Für jedes weitere Ziel
+      werden nur die halben Kosten bezahlt.
+    name: Feuerteufel
+  - info: Der Modifikator geht bis -16 je nach Dienst. Mepharasch hasst es, Dinge
+      nicht in Brand setzen zu dürfen oder wenn ihm mehr als ein Dienst abverlangt
+      wird, ohne dies vorher anzukündigen.
+    name: Schwer zu kontrollieren
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: Zusätzliche Attacke I
+    waffen:
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 10
+      info: Nachbrennen
+      name: Feuerbiss
+    werte:
+      GS: 9
+      INI: 8
+      MR: 13
+      WS: 4
+      WSE: 6
+  klasse: elementar
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Feuer
+      talente:
+      - name: alle bis 60 EP
+      wert: 12
+  name: Mepharasch
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 10
+  - name: Willenskraft
+    wert: 7
+  - name: Einschüchtern
+    wert: 12
+  - name: Wachsamkeit
+    wert: 14
+nachtalp:
+  attribute:
+    CH: 10
+    FF: 2
+    GE: 6
+    IN: 4
+    KK: 2
+    KL: 10
+    KO: 4
+    MU: 10
+  beschreibung: auf der Suche nach Auferstehung
+  eigenschaften:
+  - info: Dunkelheit
+    name: Tarnung
+  - info: Albträume, Willenskraft (28) jede Nacht, Schlafende in 4 Schritt Reichweite
+      erleiden eine Wunde
+    name: Aura
+  info: 'Sonderregeln:
+
+    Wiedergeburt: Nachtalpe erhalten +1 WS pro Wunde die sie mit Bissen oder Albträumen
+    angerichtet haben. Wann immer der Nachtalp eine Wunde erleidet oder 24h lang keine
+    neue WS hinzugewinnt, verliert er eine WS (bis zu seinem Ursprungswert). Erreicht
+    ein Nachtalp Koloss II WS 16, so erhält er einen sterblichen Körper. Er ist dann
+    wieder ein Lebewesen und kein Geist mehr. Werte und Aussehen entsprechen dann
+    denen seines ursprünglichen Körpers vor dem Tod.
+
+    Triumph: Triumphe bei einer Biss-Attacke richten zusätzlich doppelten Waffenschaden
+    an (siehe Hammerschlag).
+
+    Dienst: Gegen Blut sind freie Nachtalpe in der Regel bereit Dienste zu verrichten,
+    die keinen Kampf enthalten.
+
+    '
+  kampf:
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      VT: 6
+      info: Umklammern (-4), Rüstungsbrechend
+      name: Waffenlos
+    - AT: 6
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 0
+      VT: 6
+      info: Zerbrechlich
+      name: Biss
+    werte:
+      GS: 5
+      INI: 3
+      MR: 5
+      WS: 2
+      WSE: 2
+  klasse: geist
+  name: Nachtalp
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 6
+  - name: Menschenkenntnis
+    wert: 6
+  - name: Sinnesschärfe
+    wert: 8
+  - name: Pirschen
+    wert: 10
+  - name: Willenskraft
+    wert: 12
+necrophagion:
+  attribute:
+    KK: 26
+    KO: 32
+  beschreibung: skelettierter großer Tatzelwurm
+  eigenschaften:
+  - name: Astralsinn
+  - info: Gestank, Zähigkeit (16) jede Initiativephase, –2 auf körperliche Proben
+      (kumulativ) für 1 Tag
+    name: Aura
+  - info: Feuer, Stich
+    name: Resistenz II
+  kampf:
+    vorteile:
+    - name: Zusätzliche Attacke I
+    - name: Standfest
+    - name: Unaufhaltsam
+    waffen:
+    - AT: 15
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 5
+      VT: 4
+      info: Zerbrechlich
+      name: Biss
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 6
+      info: Niederwerfen (-4)
+      name: Klauen
+    - AT: 10
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 4
+      VT: 4
+      info: Niederwerfen, Flächenangriff (180° hinter dem Wurm)
+      name: Schwanz
+    werte:
+      GS: 3
+      INI: 2
+      MR: 8
+      WS: 8
+      WSE: 10
+      koloss: 1
+  klasse: untot
+  name: Necrophagion
+  quelle: hilberts
+  talente:
+  - name: Pirschen
+    wert: 0
+  - name: Wachsamkeit
+    wert: 8
+oghul:
+  attribute:
+    GE: 4
+    KK: 22
+    KL: -2
+    KO: 20
+    MU: 20
+  beschreibung: ansteckender und gieriger großer Leichenfresser
+  eigenschaften:
+  - info: Sonnenlicht
+    name: Empfindlichkeit II
+  - info: Einfluss
+    name: Immunität
+  - name: Lichtscheu
+  - name: Schreckgestalt I
+  - info: Dunkelheit
+    name: Angepasst II
+  info: 'Varianten:  Mächtiger Oghul (WS 10/12, TP +4, Kampfwerte +2)'
+  kampf:
+    vorteile:
+    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Niederwerfen
+    - name: Sturmangriff
+    waffen:
+    - AT: 14
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 8
+      info: Niederwerfen (–4), Stumpf, Hochansteckend
+      name: Faust
+    - AT: 14
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 2
+      VT: 8
+      info: Ghulgift
+      name: Zähne
+    - FK: 12
+      LZ: 1
+      RW: 32
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 4
+      info: Niederwerfen (-8)
+      name: Felsbrocken
+    werte:
+      GS: 6
+      INI: 4
+      MR: 8
+      WS: 8
+      WSE: 10
+  klasse: tier
+  name: Oghul
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 14
+  - name: Wachsamkeit
+    wert: 6
+  - name: Pirschen
+    wert: 8
+  - name: Zähigkeit
+    wert: 16
+poltergeist:
+  attribute:
+    CH: 10
+    FF: 12
+    GE: 4
+    IN: 6
+    KK: 20
+    KL: 10
+    KO: 4
+    MU: 10
+  beschreibung: nächtlicher Unruhestifter
+  eigenschaften:
+  - name: Tarnung
+  - info: In einer Reichweite von 8 Schritt kann der Poltergeist Gegenstände telekinetisch
+      bewegen und werfen
+    name: Telekinese-Feld
+  info: 'Vorahnung: Gegen Fernkampfangriffe des Poltergeists kann mit IN (24, I) verteidigt
+    werden.
+
+    Varianten:  Starker Poltergeist (32 AsP, Die Reichweite aller Fernkampfangriffe
+    und des Telekinese-Felds ist verdoppelt. Schreckgestalt II. Verwandlung 8, Pirschen
+    14)
+
+    Mächtiger Poltergeist (40 AsP. Unsichtbarkeit, Schreckgestalt III. Die Reichweite
+    aller Fernkampfangriffe und des Telekinese-Felds ist vervierfacht. Verwandlung
+    18 (Alle), Pirschen 16)
+
+    '
+  kampf:
+    waffen:
+    - AT: 8
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
+      VT: 4
+      info: Rüstungsbrechend
+      name: Waffenlos
+    - FK: 8
+      LZ: 0
+      RW: 4
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      info: Meist Stumpf
+      name: Kleines W.g.
+    - FK: 8
+      LZ: 0
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
+      info: Meist Stumpf, Niederwerfen (-4)
+      name: Mittleres W.g.
+    - FK: 8
+      LZ: 1
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 4
+        plus: 6
+      info: Meist Stumpf, Niederwerfen (-8)
+      name: Schweres W.g.
+    werte:
+      GS: 4
+      INI: 4
+      MR: 8
+      WS: 4
+      WSE: 4
+  klasse: geist
+  magie:
+    asp: 20
+    fertigkeiten:
+    - name: Verwandlung
+      talente:
+      - name: Desintegratus Pulverstaub
+      - name: Claudibus Clavistibor
+      wert: 4
+  name: Poltergeist
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 12
+  - name: Sinnesschärfe
+    wert: 6
+  - name: Pirschen
+    wert: 10
+  - name: Willenskraft
+    wert: 10
+riesenfeuerkaefer:
+  attribute:
+    CH: 4
+    FF: 2
+    GE: 8
+    IN: 2
+    KK: 2
+    KL: 2
+    KO: 2
+    MU: 4
+  beschreibung: flammendes Insekt
+  eigenschaften:
+  - info: fallen bei der Bestimmung der Trefferpunkte mindestens zwei Sechsen, stirbt
+      der Käfer
+    name: Überhitzung
+  infos:
+  - info: 'Zerberstender (-X, Explosion(XW6); maximal 4), Kochendes Blut (-4, Werden
+      dem Riesenfeuerkäfer X Wunden zugefügt, muss jedes Wesen in Reichweite eine
+      GE (16,I) ablegen, um nicht je 2XW6 SP zu erleiden)
+
+      '
+    name: Spezialfähigkeiten
+  kampf:
+    waffen:
+    - AT: 11
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 0
+      VT: 6
+      info: Nachbrennen, Niederwerfen
+      name: Biss
+    werte:
+      GS: 4
+      INI: 4
+      MR: 13
+      WS: 3
+      WSE: 4
+  klasse: elementar
+  name: Riesenfeuerkäfer
+  quelle: hilberts
+  talente:
+  - name: Willenskraft
+    wert: 4
+  - name: Einschüchtern
+    wert: 6
+  - name: Wachsamkeit
+    wert: 4
+schlangenmensch:
+  attribute:
+    CH: 6
+    FF: 4
+    GE: 6
+    IN: 10
+    KK: 20
+    KL: 0
+    KO: 20
+    MU: 10
+  beschreibung: Mensch und Schlange
+  info: 'Varianten: Giftschlange (Gift wie Schlange)'
+  kampf:
+    waffen:
+    - AT: 9
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      VT: 9
+      name: Biss
+    - AT: 9
+      VT: 9
+      name: Waffe
+    - FK: 10
+      LZ: 0
+      RW: 16
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      info: Zweihändig
+      name: Kurzbogen
+    werte:
+      GS: 5
+      INI: 5
+      MR: 13
+      WS: 10
+  klasse: daimonid
+  name: Schlangenmensch
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 10
+  - name: Klettern
+    wert: 4
+  - name: Athletik
+    wert: 7
+  - name: Schwimmen
+    wert: 4
+  - name: Wachsamkeit
+    wert: 8
+  - name: Pirschen
+    wert: 6
+  - name: Willenskraft
+    wert: 6
+sholtgothar:
+  attribute:
+    CH: 2
+    FF: 2
+    GE: 8
+    IN: 8
+    KK: 15
+    KL: 8
+    KO: 16
+    MU: 16
+  beschreibung: die zähe Glut
+  eigenschaften:
+  - info: Hitze, Zähigkeit (28) alle 4 Initiativephasen, 1 Wunde
+    name: Aura
+  - name: Schreckgestalt I
+  - info: Gestein
+    name: Tarnung
+  infos:
+  - info: Sholtgothar ist heiß wie Glut (400-800 °C, Inervall 1, 1 Wunde, Berührung
+      3W6SP/Akt.).
+    name: Feuriges Umklammern
+  - info: Waffen, die Sholtgothar treffen, erhalten eine Beschädigung. Sholtgothars
+      Paraden reichen dafür nicht aus.
+    name: Waffen schmelzend
+  - info: Zerberstender (-X, Explosion(XW6))
+    name: Spezialfähigkeiten
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    waffen:
+    - AT: 19
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 0
+      VT: 3
+      info: Nachbrennen, Umklammern (-4), Rüstungsbrecher
+      name: Gluthand
+    - FK: 12
+      LZ: 0
+      RW: 16
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
+      info: Nachbrennen (GE, 20)
+      name: Flammenaugen
+    werte:
+      GS: 5
+      INI: 4
+      MR: 13
+      WS: 12
+      WSE: 2
+  klasse: elementar
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Feuer
+      talente:
+      - name: alle
+      wert: 12
+  name: Sholtgothar
+  quelle: hilberts
+  talente:
+  - name: Willenskraft
+    wert: 14
+  - name: Einschüchtern
+    wert: 16
+  - name: Wachsamkeit
+    wert: 8
+spektral:
+  attribute:
+    CH: 4
+    FF: 4
+    GE: 20
+    IN: 20
+    KK: 30
+    KL: 12
+    KO: 4
+    MU: 20
+  beschreibung: mächtiger, eiskalter Kriegsgeist
+  eigenschaften:
+  - info: Kann nicht über größere Mengen an Eisen laufen - bspw. Nägel. Dadurch lässt
+      sich auch eine Art Schutzkreis/Bannkreis bilden
+    name: Eingeschränkt
+  - info: alles Schadensarten außer Feuer
+    name: Immunität
+  - name: Unsichtbarkeit
+  - info: Feuer, dass mindestens so heiß brennt wie ein Ignifaxius
+    name: Verwundbarkeit IV
+  info: 'Der Spektral entsteht nur bei der Erzeugung eines Meharus-Ogo-Distillat und
+    kann nicht beschworen werden. Dabei wird ein lebendes Kulturschaffendes Wesen
+    zum Spektral. Die kognitiven Fertigkeiten und Talente bleiben erhalten, jedoch
+    ist der Spektral stets davon erfüllt, sein Revier mit allen Mitteln gegen Alle
+    zu verteidigen.
+
+    '
+  kampf:
+    waffen:
+    - AT: 18
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 3
+        plus: 0
+      VT: 8
+      info: Erfrierend, Rüstungsbrechend, Stumpf, Todesstoß
+      name: Berührung
+    werte:
+      GS: 16
+      INI: 10
+      MR: 16
+      WS: 4
+      WSE: 4
+  klasse: geist
+  name: Spektral
+  quelle: hilberts
+  talente:
+  - name: Aktrobatik
+    wert: 18
+  - name: Einschüchtern
+    wert: 10
+  - name: Klettern
+    wert: 18
+  - name: Wachsamkeit
+    wert: 22
+  - name: Willenskraft
+    wert: 10
+tuzaker:
+  attribute:
+    CH: 8
+    FF: 0
+    GE: 10
+    IN: 8
+    KK: 4
+    KL: -10
+    KO: 4
+    MU: 12
+  beschreibung: loyale Hundgefährten
+  eigenschaften:
+  - info: Maraskantarantel
+    name: Tierempathie
+  - info: Maraskantarantel-Gift
+    name: Immunität
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      VT: 4
+      name: Biss
+    werte:
+      GS: 8
+      INI: 4
+      MR: 5
+      WS: 4
+      WSE: 4
+  klasse: tier
+  name: Tuzaker
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 24
+  - name: Akrobatik
+    wert: 16
+  - name: Zähigkeit
+    wert: 4
+  - name: Pirschen
+    wert: 12
+  - name: Einschüchtern
+    wert: 6
+  - name: Menschenkenntnis
+    wert: 7
+  - name: Sinnesschärfe
+    wert: 16
+  - name: Wachsamkeit
+    wert: 16
+untoterdrachenbandwurm:
+  beschreibung: Cestoda Dracophagus
+  eigenschaften:
+  - info: Feuer, Stich
+    name: Resistenz I
+  - info: Zauberern wird 4 AsP pro Initiativephase entzogen. Die entzogenen AsP sind
+      um 1 je volle 8 Schritt Entfernung zum Absorber reduziert
+    name: Magieabsorption
+  - info: regeneriert 1 Wunde pro 2 zugenommene AsP
+    name: Magienahrung
+  kampf:
+    waffen:
+    - AT: 11
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 2
+      VT: 4
+      info: Entzieht dem Ziel 3W6 AsP pro angerichtete Wunde
+      name: Biss
+    werte:
+      GS: 1
+      INI: 1
+      MR: 12
+      WS: 2
+      WSE: 3
+  klasse: untot
+  name: Untoter Drachenbandwurm
+  quelle: hilberts
+walkuer:
+  attribute:
+    CH: 4
+    FF: 3
+    GE: 14
+    IN: 3
+    KK: 8
+    KL: 2
+    KO: 6
+    MU: 10
+  beschreibung: pflichtbewusster halb-materieller Schutzgeist
+  eigenschaften:
+  - name: Keine Immunität (profan)
+  - name: Resistenz (profan)
+  info: "Beseelte Waffe: Der Walkür kann für eine Stunde in eine Waffe einfahren (WM\
+    \ +1, TP +1, 1x kostenlos Wurf wiederholen, magisch)\nVarianten:  \nGroßer starker\
+    \ Geisterkrieger (WS 7/8, +4 TP, +2 AT/VT IN: 16 MU: 16, Gegenhalten, Aufmerksamkeit,\
+    \ Groß)\n"
+  kampf:
+    vorteile:
+    - name: Ausfall
+    - name: Niederwerfen
+    - name: Schildkampf III (Schildwall)
+    waffen:
+    - AT: 10
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 10
+      info: Wendig
+      name: Schwert
+    - AT: 15
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 1
+        plus: -1
+      VT: 12
+      info: Schild, Stumpf
+      name: Schild
+    werte:
+      GS: 5
+      INI: 10
+      MR: 6
+      WS: 5
+      WSE: 6
+  klasse: geist
+  name: Walkür
+  quelle: hilberts
+  talente:
+  - name: Einschüchtern
+    wert: 10
+  - name: Pirschen
+    wert: 6
+  - name: Willenskraft
+    wert: 8
+widderhyaene:
+  attribute:
+    CH: 6
+    FF: 4
+    GE: 10
+    IN: 12
+    KK: 8
+    KL: -12
+    KO: 9
+    MU: 10
+  beschreibung: Widder und Hyäne
+  eigenschaften:
+  - name: Meute I
+  info: Fortpflanzungsfähige Widderhyänen können mit einer Erschwernis von -16 erzeugt
+    werden.
+  kampf:
+    vorteile:
+    - name: Sturmangriff
+    - name: Niederwerfen
+    waffen:
+    - AT: 10
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 4
+      VT: 5
+      info: null
+      name: Biss
+    - AT: 10
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 2
+      VT: 5
+      info: Rüstungsbrechend
+      name: Hörner
+    werte:
+      GS: 11
+      INI: 10
+      MR: 8
+      WS: 7
+      WSE: 7
+  klasse: daimonid
+  name: Widderhyäne
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 7
+  - name: Klettern
+    wert: 12
+  - name: Akrobatik
+    wert: 12
+  - name: Pirschen
+    wert: 8
+  - name: Willenskraft
+    wert: 5
+  - name: Zähigkeit
+    wert: 5
+  - name: Einschüchtern
+    wert: 6
+  - name: Sinnesschärfe
+    wert: 9
+  - name: Wachsamkeit
+    wert: 8
+wolfsechse:
+  attribute:
+    CH: 6
+    FF: 4
+    GE: 10
+    IN: 6
+    KK: 8
+    KL: -12
+    KO: 8
+    MU: 4
+  beschreibung: Sandwolf und Panzerechse
+  eigenschaften:
+  - name: Angepasst II (Dunkelheit)
+  - name: Empfindlichkeit I (Kälte)
+  - name: Meute I
+  - name: Tarnung (Dschungel, Sumpf)
+  - name: Verwundbarkeit I (Eis)
+  kampf:
+    vorteile:
+    - name: Niederwerfen
+    - name: Standfest
+    - name: Sturmangriff
+    waffen:
+    - AT: 12
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 3
+      VT: 4
+      name: Biss
+    - AT: 12
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 1
+      VT: 4
+      name: Pranke
+    werte:
+      GS: 8
+      INI: 3
+      MR: 13
+      WS: 6
+      WSE: 8
+  klasse: daimonid
+  name: Wolfsechse
+  quelle: hilberts
+  talente:
+  - name: Laufen
+    wert: 10
+  - name: Klettern
+    wert: 2
+  - name: Schwimmen
+    wert: 4
+  - name: Akrobatik
+    wert: 10
+  - name: Pirschen
+    wert: 11
+  - name: Willenskraft
+    wert: 7
+  - name: Zähigkeit
+    wert: 8
+  - name: Einschüchtern
+    wert: 10
+  - name: Sinnesschärfe
+    wert: 8
+  - name: Wachsamkeit
+    wert: 8
+wuerger:
+  attribute:
+    GE: 8
+    KK: 8
+    KL: 2
+    KO: 10
+    MU: 8
+  beschreibung: ansteckender und gieriger spuckender Leichenfresser
+  eigenschaften:
+  - info: Sonnenlicht
+    name: Empfindlichkeit II
+  - info: Einfluss
+    name: Immunität
+  - name: Lichtscheu
+  - name: Schreckgestalt I
+  - info: Dunkelheit
+    name: Angepasst II
+  kampf:
+    waffen:
+    - AT: 5
+      RW: 1
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 0
+      VT: 5
+      info: Stumpf, Zerbrechlich, Hochansteckend
+      name: Unbewaffnet
+    - AT: 5
+      RW: 0
+      TP:
+        W: 6
+        anzahl: 2
+        plus: 0
+      VT: 5
+      info: Zerbrechlich, Ghulgift
+      name: Zähne
+    - FK: 8
+      LZ: 0
+      RW: 2
+      TP:
+        W: 6
+        anzahl: 1
+        plus: 1
+      info: Säure (KO(I,20) sonst 1 Wunde), einmalig
+      name: Würgen
+    werte:
+      GS: 6
+      INI: 6
+      MR: 9
+      WS: 5
+      WSE: 7
+  klasse: tier
+  name: Würger
+  quelle: hilberts
+  talente:
+  - name: Pirschen
+    wert: 8
   - name: Wachsamkeit
     wert: 6

@@ -176,6 +176,15 @@ def b_info(k):
     return [C("kreaturinfo", A('Info', k['info'])).dumps()]
 
 
+def b_infos(k):
+    if not "infos" in k:
+        return []
+    zeilen = []
+    for i in k["infos"]:
+        zeilen.append(kinfo(i.get("name", ""), i.get("info", "")))
+    return mehrzeiler(zeilen)
+
+
 def b_sonstiges(k):
     sonst = k.get("sonstiges")
     if not sonst:
@@ -199,6 +208,7 @@ def kreaturkasten(k):
                    energy="GuP", key="pakt"))
     bloecke.extend(b_beschwoerung(k))
     bloecke.extend(b_info(k))
+    bloecke.extend(b_infos(k))
     bloecke.extend(b_sonstiges(k))
     return "\\trennlinie ".join(bloecke)
 

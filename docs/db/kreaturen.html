@@ -209,6 +209,14 @@ layout: default
                 <div class="textblock"><b>Info: </b>{{ k[1].info }}</div>
                 {% endif %}
 
+                {% if k[1].infos %}
+                <div class="textblock">
+                    {% for i in k[1].infos %}
+                    <div><b>{{ i.name }}: </b> {{ i.info }}</div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
 
             </div>
         </div>

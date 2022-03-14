@@ -4054,7 +4054,7 @@ kriegermumie:
       MR: 12
       WS: 10
       WSE: 12
-  klasse: untod
+  klasse: untot
   name: Kriegermumie
   quelle: ilaris
   talente:
@@ -5780,7 +5780,7 @@ pestrattenschwarm:
       WS: 4
       info: MR für einzelnes Tier
       koloss: 2
-  klasse: untod
+  klasse: untot
   name: Pestrattenschwarm
   quelle: ilaris
   talente:
@@ -6972,7 +6972,7 @@ skelett:
       INI: 2
       MR: 5
       WS: 4
-  klasse: untod
+  klasse: untot
   name: Skelett
   quelle: ilaris
   talente:
@@ -7043,7 +7043,7 @@ skelettruestung:
       INI: 1
       MR: 5
       WS: 5
-  klasse: untod
+  klasse: untot
   name: Skelett mit Rüstung
   quelle: ilaris
   talente:
@@ -10246,7 +10246,7 @@ feuergeist:
     wert: 5
   - name: Sinnesschärfe
     wert: 5
-feuermähre:
+feuermaehre:
   attribute:
     CH: 4
     FF: 2
@@ -10258,8 +10258,7 @@ feuermähre:
     MU: 6
   beschreibung: großes Feuerross
   eigenschaften:
-  - info: Willkürlich greift die Feuermähre an. IN(20 ,I) sonst -8 auf die erste Parade.
-      Ebenso willkürlich endet der Angriff
+  - info: Willkürlich greift die Feuermähre an. IN(20 ,I) sonst -8 auf die erste Parade. Ebenso willkürlich endet der Angriff
     name: Jähzorn
   infos:
   - info: Der Reiter ist immun gegen Feuerschaden, nicht aber gegen den Jähzorn der
@@ -11809,7 +11808,7 @@ walkuer:
     wert: 6
   - name: Willenskraft
     wert: 8
-widderhyäne:
+widderhyaene:
   attribute:
     CH: 6
     FF: 4

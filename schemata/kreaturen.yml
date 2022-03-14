@@ -23,6 +23,7 @@ kreatur:
   variantevon: str(required=False)
   unterschied: str(required=False)
   beschwoerung: include('beschwörung', required=False)
+  infos: list(include('info'), required=False)
 ---
 kampf:
   vorteile: list(include('vorteil'), required=False)
@@ -126,3 +127,7 @@ probe:
   asp: int(required=False)
   info: str(required=False)
   wert: int(required=False)
+---
+info:
+  name: str(required=False)
+  info: str(required=False)
