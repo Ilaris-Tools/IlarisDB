@@ -22,7 +22,7 @@ kreatur:
   tools: map(required=False)
   variantevon: str(required=False)
   unterschied: str(required=False)
-  beschwoerung: include('beschwörung', required=False)
+  beschwoerung: include('beschwoerung', required=False)
   infos: list(include('info'), required=False)
 ---
 kampf:
