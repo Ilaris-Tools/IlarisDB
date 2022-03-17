@@ -2591,7 +2591,7 @@ ghul:
     wert: 8
   - name: Wachsamkeit
     wert: 6
-ghul2:
+ghulzwei:
   attribute:
     GE: 8
     KK: 8

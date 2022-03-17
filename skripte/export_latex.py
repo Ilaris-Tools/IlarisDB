@@ -7,15 +7,18 @@ import interface as db
 
 def kreaturcommand(id, name, bes, klasse, kasten):
     cmd = f"\kreatur{id}"
-    args = A(name, bes, f"gfx/kreaturen/{klasse}", NE(kasten))
+    args = A(name, NE(bes), f"gfx/kreaturen/{klasse}", NE(kasten))
     runs = C("kreatur", arguments=args).dumps()
     return C('newcommand', NE(cmd), extra_arguments=[NE(runs)]).dumps()
 
 
 def quellenangabe(k, quellen):
     q = quellen.get(k.get("quelle"), {}).get("name")
+    u = quellen.get(k.get("quelle"), {}).get("url")
+    if u:
+        u = u.replace("#", "\#")
     if q:
-        k["beschreibung"] += f" (Quelle: {q})"
+        k["beschreibung"] += f" (\\href{{{ u }}}{{{q}}})"
 
 
 def mehrzeiler(zeilen):
@@ -213,7 +216,7 @@ def kreaturkasten(k):
     return "\\trennlinie ".join(bloecke)
 
 
-def main():
+def export_latex():
     kreaturen = db.load("kreaturen")
     quellen = db.load("quellen")
     commands = []
@@ -230,19 +233,26 @@ def main():
         klassen[k["klasse"]].append(f"\kreatur{id}")
     with open("../export/latex/kreaturen.tex", "w") as wf:
         wf.write("\n".join(commands))
+    with open("kreaturarium/template.tex", "r") as rfile:
+        kreaturarium = rfile.read()
+    tex = ""
+    kapitel = {
+        "tier": "Tiere",
+        "daimonid": "Daimonide",
+        "daemon": "Dämonen",
+        "mythen": "Mythenwesen",
+        "geist": "Geister",
+        "elementar": "Elementare",
+        "humanoid": "Humanoide",
+        "untot": "Untote"
+    }
+    for k, v in klassen.items():
+        tex += f"\skapitel{{{ kapitel[k] }}}\n"
+        tex += "\n".join(v)
+    kreaturarium = kreaturarium.replace("% INHALT %", tex)
     with open("../export/latex/kreaturarium.tex", "w") as bfile:
-        tex = """
-\documentclass{Ilaris}
-\input{kreaturen.tex}
-\\begin{document}
-\spaltenanfang
-"""
-        for k, v in klassen.items():
-            tex += f"\skapitel{{{k}}}\n"
-            tex += "\n".join(v)
-        tex += "\n\spaltenende\n\end{document}"
-        bfile.write(tex)
+        bfile.write(kreaturarium)
 
 
 if __name__ == "__main__":
-    main()
+    export_latex()
