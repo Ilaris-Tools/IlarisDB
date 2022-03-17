@@ -1,0 +1,60 @@
+---
+permalink: /db/charaktere/
+layout: default
+---
+<!-- 
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Lukas Ruhe">
+    <title>Ilaris Datenbank</title>
+
+    <link rel="canonical" href="https://ilaris-tools.github.id/IalarisDB/">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mystyle.css">
+</head> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+<div class="container limited">
+    <button class="btn px-1" type="button" data-bs-toggle="collapse" data-bs-target=".show" aria-expanded="false"
+        aria-controls="hideme">
+        Alle Einklappen
+    </button>
+    <input class="form-control" id="kreaturenfilter" type="text" placeholder="Filter..">
+    <hr />
+
+
+
+    <div style="margin-bottom: 10px;"></div>
+    <div id="kreaturenliste">
+        {% for k in site.data.charaktere %}
+        <div class="card" style="margin-top: 30px;">
+            <a class="text-decoration-none" href="#{{ k[0] }}" data-bs-toggle="collapse" aria-expanded="false"
+                aria-controls="hideme">
+                <div class="kreaturkopf d-flex">
+                    <div class="kreaturkopftext">
+                        <h5 class="kreaturtitel">{{ k[1].name }}</h5>
+                        <span class="mb-2 text-muted"><i>{{ k[1].beschreibung }}</i></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#kreaturenfilter").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#kreaturenliste > div").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

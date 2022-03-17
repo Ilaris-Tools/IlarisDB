@@ -1,0 +1,16 @@
+ pirimderpaktierer:
+  name: Pirim der Paktierer
+  beschreibung: Ein Zwerg Geode, der einen Pakt mit dem Namenlosen einging damit er hier als Beispiel dienen kann.
+  publikationen:
+    - titel: Philleasson
+  sephrasto:
+    generiert: True
+  attribute:
+    MU: 10
+    KO: 8
+    KK: 4
+  magie:
+    AsP: 0
+    fertigkeiten:
+      - name: Humus
+  autor: Lukas

@@ -1,0 +1,26 @@
+navbar:
+  - name: Daten
+    menu:
+      - name: Kreaturen
+        url: /db/kreaturen/
+      - name: Charaktere
+        url: /db/charaktere/
+      - name: Items
+        url: /db/items/
+        class: disabled
+  - name: Doku
+    menu: 
+      - name: Mitmachen
+        url: /mitmachen/
+      - name: Datenbank
+        url: /docs/datenbank.md
+      - name: Tabellen
+        menu:
+          - name: Kreaturen
+            url: /docs/db/kreaturen/
+          - name: Charaktere
+            url: /docs/db/charaktere/
+  - name: Kontakt
+    url:  /kontakt/
+
+  
