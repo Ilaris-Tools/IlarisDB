@@ -5371,7 +5371,7 @@ leibwaechter:
       MR: 5
       WS: 4
       WSE: 5
-  klasse: tier
+  klasse: humanoid
   name: Leibwächter
   profan:
     vorteile:
@@ -6588,7 +6588,7 @@ oger:
       WSE: 14
       info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt
         eine MR von 0)
-  klasse: tier
+  klasse: humanoid
   name: Oger
   quelle: ilaris
   talente:
@@ -7345,7 +7345,7 @@ pestrattenschwarmsehrgrosserschwarm:
       WS: 5
       info: MR für einzelnes Tier
       koloss: 2
-  klasse: tier
+  klasse: untot
   name: Sehr großer Pestrattenschwarm
   quelle: ilaris
   talente:
@@ -7719,7 +7719,7 @@ riese:
       WSE: 19
       koloss: 2
       schips: 4
-  klasse: tier
+  klasse: mythen
   name: Riese
   quelle: ilaris
   sonstiges:
@@ -8909,7 +8909,7 @@ soeldner:
       MR: 5
       WS: 5
       WSE: 6
-  klasse: tier
+  klasse: humanoid
   name: Söldner
   quelle: ilaris
   talente:
@@ -9908,7 +9908,7 @@ troll:
       WS: 12
       WSE: 13
       koloss: 1
-  klasse: tier
+  klasse: humanoid
   name: Troll
   quelle: ilaris
   talente:
@@ -10565,7 +10565,7 @@ waldschrat:
       WS: 10
       WSE: 14
       koloss: 1
-  klasse: tier
+  klasse: humanoid
   magie:
     asp: 16
     fertigkeiten:
@@ -10777,8 +10777,8 @@ weisserhetzer:
       MR: 7
       WS: 4
       WSE: 5
-  klasse: tier
-  name: Weisser Hetzer
+  klasse: daimonid
+  name: Weißer Hetzer
   quelle: ilaris
   talente:
   - name: Laufen
@@ -11107,7 +11107,7 @@ wuerger:
       MR: 9
       WS: 5
       WSE: 7
-  klasse: tier
+  klasse: untot
   name: Würger
   quelle: hilberts
   talente:
