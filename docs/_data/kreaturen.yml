@@ -12004,3 +12004,1107 @@ zilit:
     wert: 10
   - name: Wachsamkeit
     wert: 6
+abualazilat:
+  name: Abu al‘Azilat
+  beschreibung: verführerischer, von Rosen bewachsener Humusdschinn
+  klasse: elementar
+  eigenschaften: 
+  - name: Regeneration I
+  kampf:
+    werte:
+      WS: 13
+      MR: 12
+      GS: 8
+      INI: 6
+    waffen:
+    - name: Giftranke
+      RW: 1
+      VT: 12
+      AT: 16
+      TP: {anzahl: 2, W: 6, plus: -2}
+      info: Fesseln, Giftig (Goldleim, Stufe 24, siehe S. 34)
+  magie: 
+    asp: 64
+    fertigkeiten:
+    - name: Humus 
+      wert: 16 
+      talente: 
+      - name: Fesselranken
+      - name: Haselbusch
+      - name: Kraft des Humus
+      - name: Lach dich Gesund
+      - name: Leib der Erde
+      - name: Leidensbund
+      - name: Manifesto
+      - name: Ruhe Körper
+      - name: Satuarias Herrlichkeit
+      - name: Wand aus Dornen
+  talente:
+  - name: Betören 
+    wert: 16
+  - name: Tulamidenlande (Gebräuche) 
+    wert: 14
+  - name: Menschen­kenntnis 
+    wert: 14
+  - name: Überreden 
+    wert: 12
+  - name: Wachsamkeit 
+    wert: 10
+  - name: Willenskraft 
+    wert: 12
+  beschwoerung:
+    proben: 
+    - name: Herbeirufung des Humus 
+      wert: 24
+      asp: 32
+    dienste: 
+    - name: Wächterinnen ablenken (4 Minuten, +4)
+    - name: prächtiger Blumenschmuck für ein Fest
+    - name: einer Frau den Kopf verdrehen (1 Woche, -4)
+  info: |
+    Varianten: Selbstverständlich gibt es mit Saba al‘AzilAT: auch eine Tochter der Rosen, die schon manch eitlem Magus den Kopf verdreht hat...
+
+aljallahir:
+  name: Al‘Jallahir
+  beschreibung: leidenschaftlicher Anführer und Dschinn des Feuers
+  klasse: elementar
+  eigenschaften:
+  - name: Resistenz I (Stichwaffen)
+  - name: Schreckgestalt I
+  kampf:
+    werte:
+      WS: 8
+      MR: 12
+      GS: 10
+      INI: 14
+    waffen:
+    - name: Flammensäbel
+      RW: 2
+      VT: 12
+      AT: 16
+      TP: {anzahl: 4, W: 6, plus: 0}
+      info: Nachbrennen
+    vorteile:
+    - name: Formiert euch!
+    - name: Haltet stand!
+    - name: Keine Gefangenen!
+    - name: Kennt keinen Schmerz!
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Feuer 
+      wert: 16
+      talente:
+      - name: Caldofrigo
+      - name: Custosigil
+      - name: Ignifaxius
+      - name: Ignifugo
+      - name: Ignisphaero
+      - name: Leib des Feuers
+      - name: Manifesto
+      - name: Pfeil des Feuers
+      - name: Wand aus Feuer
+      - name: Warmes Blut
+  talente:
+  - name: Anführen 
+    wert: 16
+  - name: Betören 
+    wert: 12
+  - name: Einschüchtern 
+    wert: 16
+  - name: Tulamidenlande (Gebräuche) 
+    wert: 12
+  - name: Rhetorik 
+    wert: 12
+  - name: Sinnenschärfe 
+    wert: 12
+  - name: Wachsamkeit 
+    wert: 14
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Feuers 
+      wert: 24
+      asp: 32
+    dienste:
+    - name: Kommandos im Kampf (1 Stunde, +4);
+    - name: Soldaten in die Schlacht führen
+    - name: Kampfeslust entfachen (-1 Furchtstufe für alle Verbündeten in Rufweite, 1 Stunde, -4)
+
+baromna:
+  name: Baromna
+  beschreibung: in Bierkrügen lebende Dienerin des Wassers; sehr kleiner Gegner
+  klasse: elementar
+  eigenschaften:
+  - name: Wasserwesen
+  kampf:
+    werte:
+      WS: 3
+      MR: 8
+      GSS: 4
+      INI: 2
+    waffen:
+    - name: Wasserschwall
+      RW: 2
+      VT: 4
+      AT: 8
+      TP: {anzahl: 1, W: 6, plus: 0}
+      info: Ertränken
+  magie: 
+    asp: 24
+    fertigkeiten:
+    - name: Wasser 
+      wert: 8
+      talente:
+      - name: Abvenenum
+      - name: Macht über den Regen
+      - name: Manifesto
+      - name: Sapefacta
+      - name: Wasserbann
+      - name: Wellenlauf
+  talente:
+  - name: Zwerge (Gebräuche) 
+    wert: 10
+  - name: Menschenkenntnis 
+    wert: 10
+  - name: Schwimmen 
+    wert: 14
+  - name: Wachsamkeit 
+    wert: 6
+  - name: Wahrnehmung 
+    wert: 8
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Wassers 
+      wert: 16
+      asp: 16
+    dienste: 
+    - name: Zecher zur Besinnung bringen 
+      mod: +4
+    - name: zahlreiche Getränke von unangenehmen Inhalten und Giften bis Stufe 24  reinigen
+    - name: ein Fass mit Bier füllen 
+      mod: -4
+
+baradarasch:
+  name: Baradarasch
+  beschreibung: plappernder Bader und Dschinn des Wassers
+  klasse: elementar
+  eigenschaften:
+  - name: Amphibisch
+  - name: Paraphysikalität
+  kampf:
+    werte:
+      WS: 11
+      MR: 12
+      GS: 8
+      GSS: 12
+      INI: 6
+    waffen:
+    - name: Sog
+      RW: 2
+      VT: 12
+      AT: 16
+      TP: {anzahl: 2, W: 6, plus: 2}
+      info: Ertränken
+    - name: Wasserstrahl
+      RW: 8
+      LZ: 0
+      FK: 16
+      TP: {anzahl: 2, W: 6, plus: 4}
+      info: Zurückstoßen, Ertränken
+  magie:
+    asp: 64
+    fertigkeiten: 
+    - name: Wasser 
+      wert: 16
+      talente:
+      - name: Aquafaxius
+      - name: Aquasphaero
+      - name: Hartes Schmelze
+      - name: Macht über den Regen
+      - name: Mahlstrom
+      - name: Manifesto
+      - name: Nebelwand
+      - name: Nebelleib
+      - name: Sapefacta
+      - name: Wand aus Wasser
+      - name: Wellenlauf
+  talente:
+  - name:
+  - name: Elementarismus 
+    wert: 16
+  - name: Tulamidenlande (Gebräuche) 
+    wert: 14
+  - name: Geschichten und Legenden 
+    wert: 16
+  - name: Menschenkenntnis 
+    wert: 14
+  - name: Schwimmen
+    wert: 20
+  - name: Sinnenschärfe 
+    wert: 12
+  - name: Wachsamkeit 
+    wert: 12
+  - name: Willenskraft 
+    wert: 14
+  freiefertigkeiten:
+  - name: Bader (meisterlich)
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Wassers
+      wert: 24 
+      asp: 32
+    dienste: 
+    - name: Konversation oder Beratung (1 Stunde, +4)
+    - name: Fluten eines Bades mit duftendem Wasser
+    - name: Badende ausspionieren (-4)
+
+bashaidor:
+  name: Brashaidor
+  beschreibung: gemächlicher und gutmütiger Meister der Luft; sehr großer Gegner
+  klasse: elementar
+  eigenschaften:
+  - name: Flugfähig
+  - name: Paraphysikalität
+  - name: Unsichtbar
+  kampf:
+    werte:
+      WS: 15
+      koloss: 2
+      MR: 24
+      GS: 24 
+      GSF: 32
+      INI: 22
+    waffen:
+    - name: Orkanbö
+      RW: 8
+      RWM: 1
+      VT: 18
+      AT: 22
+      TP: {anzahl: 1, W: 20, plus: 0}
+      info: Flächenangriff (180° vor dem Elementar), Zurückstoßen
+  magie:
+    asp: 128
+    fertigkeiten: 
+    - name: Luft 
+      wert: 24 
+      talente:
+      - name: alle Zauber des Elements Luft und ähnliche Effekte
+  talente:
+  - name: Fliegen 20
+  - name: Geographie 20
+  - name: Meer (Überleben) 18
+  - name: Pirschen 20
+  - name: Sinnenschärfe 20
+  - name: Tulamidenlande (Gebräuche) 14
+  - name: Untertauchen 20
+  - name: Wachsamkeit 20
+  freiefertigkeiten:
+  - name: Seefahrer
+    wert: 3
+  - name: Navigator
+    wert: 3
+  beschwoerung:
+    proben:
+    - name: Herbeirufung der Luft 
+      wert: 32
+      asp: 64
+    dienste:
+    - name: Schiff antreiben 
+      dauer: 1 Tag
+      mod: +4
+    - name: Sturm abschwächen 
+      dauer: 1 Tag
+    - name: Schiff über Riff heben 
+      dauer: 1 Tag
+      mod: -4
+
+chakharim:
+  name: Chakharîm
+  beschreibung: Meister des Erzes und Wächter von Schätzen; sehr großer Gegner
+  klasse: elementar
+  eigenschaften:
+  - name: Magieabweisend
+  - name: Schreckgestalt II
+  - name: Tarnung (unterirdisch)
+  kampf:
+    werte:
+      WS: 18
+      koloss: 2
+      MR: 20
+      GS: 2
+      INI: 3
+    waffen:
+    - name: Steinschlag
+      RW: 8
+      RWM: 1
+      VT: 16
+      AT: 20
+      TP: {anzahl: 2, W: 20, plus: 0}
+      info: Flächenangriff (1 Schritt Radius um das Hauptziel), Niederwerfen (-4)
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Erz
+      wert: 24
+      talente:
+      - name: alle Zauber des Elements Erz und ähnliche Effekte
+  talente:
+  - name: Menschenkenntnis 
+    wert: 30
+  - name: Sinnenschärfe 
+    wert: 30
+  - name: Tulamidenlande (Gebräuche) 
+    wert: 8
+  - name: Wachsamkeit 
+    wert: 30
+  - name: Zauberpraxis 
+    wert: 18
+  beschwoerung:
+    proben: 
+    - name: Herbeirufung des Erzes
+      wert: 32
+      asp: 64
+    dienste:
+    - name: einen gefährlichen Gegenstand unter Tonnen von Stein oder Koschbasalt einschließen 
+      mod: 4
+    - name: Wache halten 
+      dauer: für Generationen
+    - name: elementar gesicherte Schatzkammer anlegen 
+      mod: -4
+
+eichbart:
+  name: Eichbart
+  beschreibung: Meister des Humus und Hüter der Weisheit; sehr großer Gegner
+  klasse: elementar
+  eigenschaften:
+  - name: Regeneration I
+  - name: Tarnung (im Wald)
+  kampf:
+    werte:
+      WS: 16
+      koloss: 2
+      MR: 20
+      GS: 3
+      INI: 6
+    waffen:
+    - name: Rankengriff
+      RW: 8
+      RWM: 1
+      VT: 16
+      AT: 24
+      TP: {anzahl: 2, W: 6, plus: 2}
+      info: Fesseln, Umklammern (-4, 24)
+    - name: Asthieb
+      RW: 2
+      VT: 16
+      AT: 24
+      TP: {anzahl: 3, W: 6, plus: 4}
+      info: Niederwerfen (-8) , Stumpf
+    vorteile: 
+    - name: Zusätzliche Attacke IV
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Humus
+      wert: 24
+      talente:
+      - name: alle Zauber des Elements Humus und ähnliche Effekte
+  talente:
+  - name: Holzbearbeitung 
+    wert: 22
+  - name: Mittelaventurien (Überleben) 
+    wert: 20
+  - name: Pflanzenkunde 
+    wert: 26
+  - name: Pirschen 
+    wert: 20
+  - name: Sinnenschärfe 
+    wert: 20
+  - name: Tierkunde 2
+    wert: 4
+  - name: Tobrien (Gebräuche) 
+    wert: 16
+  - name: Wachsamkeit 
+    wert: 20
+  - name: Zähigkeit 
+    wert: 20
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Humus 
+      wert: 32
+      asp: 64
+    dienste:
+    - name: Beratung zu Heilkunde
+    - name: Pflanzen oder Humusmagie
+      dauer: 1 Tag
+      mod: -4
+    - name: Augen des Waldes (Eichbart hält durch die Augen aller Waldbewohner Ausschau nach allem, was die Helden interessiert)
+      dauer: 1 Tag
+    - name: Gedächtnis des Waldes (Eichbart berichtet detailliert von einem Ereignis, das zu Lebzeiten der Waldbewohner stattgefunden hat)
+
+emling:
+  name: Emling
+  beschreibung: belesener Diener der Luft in Gestalt einer Feder; kleiner Gegner
+  klasse: elementar
+  eigenschaften:
+  - name: Flugfähig
+  kampf:
+    werte:
+      WS: 1
+      MR: 8
+      GS: 1 
+      GSF: 6
+      INI: 4
+    waffen:
+    - name: Luftstoß
+      RW: 1
+      VT: 4
+      AT: 8
+      info: Zurückstoßen (KK 16, um zu widerstehen)
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Luft 
+      wert: 8 
+      talente: 
+      - name: Aeolitus
+      - name: Aeropulvis
+      - name: Aufgeblasen
+      - name: Manifesto
+      - name: Sapefacta
+      - name: Windgeflüster
+      - name: Windstille
+  talente:
+  - name:  Fliegen 
+    wert: 12
+  - name: Geographie 
+    wert: 6
+  - name: Pirschen 
+    wert: 8
+  - name: Sinnenschärfe 
+    wert: 10
+  - name: Thorwal (Gebräuche) 
+    wert: 8
+  - name: Untertauchen 
+    wert: 12
+  - name: Wachsamkeit 
+    wert: 10
+  - name: Willenskraft 
+    wert: 4
+  freiefertigkeiten:
+  - name: Hjaldingsche Schriftzeichen (erfahren)
+  beschwoerung:
+    proben:
+    - name: Herbeirufung der Luft 
+      wert: 16
+      asp: 16
+    dienste:
+    - name: Kitzeln
+      mod: +4
+    - name: kurze Nachricht in Runen verfassen
+    - name: Runeninschrift entziffern
+      mod: -4
+
+farlin:
+  name: Farlin
+  beschreibung: geschickter und ordnungsliebender Dschinn des Erzes
+  klasse: elementar
+  kampf:
+    werte:
+      WS: 16
+      MR: 12
+      GS: 3
+      INI: 5
+    waffen:
+    - name: Hammer
+      RW: 1
+      VT: 12
+      AT: 16
+      TP: {anzahl: 2, W: 6, plus: 4}
+      info: Stumpf, Niederschmettern
+    vorteile: 
+    - name: Hammerschlag
+  magie:
+    asp: 64
+    fertigkeiten:
+    - name: Erz 
+      wert: 16
+      talente:
+      - name: Adamantium
+      - name: Archofaxius
+      - name: Archosphaero
+      - name: Armatrutz
+      - name: Kraft des Erzes
+      - name: Manifesto
+      - name: Metamorpho
+      - name: Pfeil des Erzes
+      - name: Wand aus Erz
+  talente:
+  - name: Mechanik 
+    wert: 16
+  - name: Untertauchen 
+    wert: 12
+  - name: Schmieden 
+    wert: 18
+  - name: Sinnenschärfe 
+    wert: 16
+  - name: Tulamidenlande (Gebräuche) 
+    wert: 8
+  - name: Wachsamkeit 
+    wert: 16
+  - name: Zähigkeit 
+    wert: 16
+  profan:
+    vorteile: 
+    - name: Meisterwerk
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Erzes 
+      wert: 24
+      asp: 32
+    dienste: 
+    - name: Werkstatt aufräumen und warten 
+      mod: +4
+    - name: Gebrauchsgegenstand schmieden
+    - name: Waffe oder Rüstung schmieden (2x Hohe Qualität, kein Meisterwerk, -4)
+
+flammina:
+  name: Flammina
+  beschreibung: aufgeweckte Dienerin des Feuers; sehr kleiner Gegner
+  klasse: elementar
+  eigenschaften: 
+  - name: Regeneration I
+  kampf:
+    werte:
+      WS: 1
+      MR: 8
+      GS: 4
+      INI: 6
+    waffen:
+    - name: Funke
+      RW: 2
+      VT: 2
+      AT: 8
+      TP: {anzahl: 2, W: 6, plus: -2}
+      info: Nachbrennen
+  magie:
+    asp: 24
+    fertigkeiten: 
+    - name: Feuer 
+      wert: 8
+      talente:
+      - name: Brenne
+      - name: Caldofrigo
+      - name: Custodosigil
+      - name: Ignifugo
+      - name: Ignimorpho
+      - name: Manifesto
+  talente:
+  - name: Magische Elixiere 
+    wert: 12
+  - name: Mittelreich (Gebräuche)
+    wert:  4
+  - name: Sinnenschärfe 
+    wert: 12
+  - name: Wachsamkeit 
+    wert: 12
+  - name: Zähigkeit
+    wert:  6
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Feuers 
+      wert: 16
+      asp: 16
+    dienste:
+    - name: Entzünden von nassem Brennholz
+      mod: +4
+    - name: Lagerfeuer ohne Brennmaterial über Nacht brennen lassen
+    - name: Lagerfeuer erhitzen sodass es Erz schmilzt oder alchemistische Synthesen erlaubt 
+      mod: -4
+
+firndorn:
+  name: Firndorn
+  beschreibung: menschenhassender und mörderischer Dschinn des Eises
+  klasse: elementar
+  eigenschaften:
+  - name: Aura 
+    info: Kälte, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde
+  - name: Tarnung 
+    info: in Schnee und Eis
+  kampf:
+    werte:
+      WS: 9
+      MR: 12
+      GS: 8
+      INI: 14
+    waffen:
+    - name: Eisdorn
+      RW: 0
+      VT: 12
+      AT: 16
+      TP: {anzahl: 2, W: 6, plus: 0}
+      info: Erfrieren, Todesstoß
+    - name: Hagelsturm
+      RW: 8
+      LZ: 0
+      FK: 16
+      TP: {anzahl: 2, W: 6, plus: 4}
+      info: Stumpf
+  magie:
+    asp: 64
+    fertigkeiten: 
+    - name: Eis 
+      wert: 16
+      talente: 
+      - name: Corpofrigo
+      - name: Frigifaxius
+      - name: Frigisphaero
+      - name: Glacioflumen
+      - name: Gletscherwand
+      - name: Manifesto
+      - name: Metamorpho
+      - name: Pfeil des Eises
+      - name: Stillstand
+  talente:
+  - name: Geographie 
+    wert: 8
+  - name: Hoher Norden (Überleben) 
+    wert: 12
+  - name: Nordaventurien (Gebräuche) 
+    wert: 8
+  - name: Pirschen 
+    wert: 20
+  - name: Sinnenschärfe 
+    wert: 16
+  - name: Tierkunde 
+    wert: 16
+  - name: Wachsamkeit 
+    wert: 16
+  - name: Zähigkeit 
+    wert: 12
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Eises 
+      wert: 24
+      asp: 32
+    dienste:
+    - name: Beratung bei einem Attentat
+      mod: +4
+    - name: Bau von Fallen im Eis (z.B. verdeckte Gletscherspalten)
+    - name: Lebewesen in der Nähe suchen und töten 
+      mod: -4
+
+glacius:
+  name: Glacius
+  beschreibung: Meister des Eises und vollendeter Baumeister; sehr großer Gegner
+  klasse: elementar
+  eigenschaften:
+  - name: Amphibisch
+  - name: Aura 
+    info: Kälte, Zähigkeit (28) alle 4 Initiativephasen, 1 Wunde
+  - name: Schreckgestalt I
+  kampf:
+    werte:
+      WS: 15
+      koloss: 2
+      MR: 20
+      GS: 8
+      INI: 18
+    waffen:
+    - name: Lawine
+      RW: 8
+      RWM: 1
+      VT: 14
+      AT: 16
+      TP: {anzahl: 2, W: 20, plus: 0}
+      info: Erfrieren, Flächenangriff (90° vor dem Elementar), Zurückstoßen
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Eis
+      wert: 24
+      talente:
+      - name: alle Zauber des Elements Eis und ähnliche Effekte
+  talente:
+  - name: Gebirge (Überleben) 
+    wert: 32
+  - name: Nordaventurien (Gebräuche) 
+    wert: 12
+  - name: Sinnenschärfe 
+    wert: 30
+  - name: Tierkunde 
+    wert: 24
+  freiefertigkeiten:
+  - name: Rechenkünstler
+    wert: 3
+  - name: Architekt
+    wert: 3
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Eises 
+      wert: 32
+      asp: 64
+    dienste:
+    - name: Bau eines Iglus für die Helden und etwa 20 Begleiter
+      mod: +4
+    - name: Bau einer 50 Schritt langen Brücke aus Eis
+    - name: Verschließen eines Tales mit einer Mauer aus Eis 
+      mod: -4
+
+grommur:
+  name: Grommur
+  beschreibung: zerstörerischer Diener des Erzes; kleiner Gegner
+  klasse: elementar
+  eigenschaften: 
+  - name: Zerstörerisch I
+  kampf:
+    werte:
+      WS: 4
+      MR: 8
+      GS: 1
+      INI: 3
+    waffen:
+    - name: Steinfaust
+      RW: 0
+      VT: 2
+      AT: 0
+      TP: {anzahl: 2, W: 6, plus: 2}
+      info: Niederschmettern
+    - name: Steinwurf
+      RW: 4
+      LZ: 1
+      FK: 6
+      TP: {anzahl: 2, W: 6, plus: 2}
+      info: Niederschmettern
+  magie:
+    asp: 24
+    fertigkeiten: 
+    - name: Erz 
+      wert: 8 
+      talente:
+      - name: Eisenrost
+      - name: Kraft des Erzes
+      - name: Manifesto
+      - name: Weiches Erstarre
+      - name: Zagibu Ubigaz
+  talente:
+  - name: Gebirge (Überleben) 
+    wert: 12
+  - name: Sinnenschärfe 
+    wert: 10
+  - name: Untertauchen 
+    wert: 10
+  - name: Wachsamkeit 
+    wert: 10
+  - name: Zwerge (Gebräuche)
+    wert:  4
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Erzes 
+      wert: 16
+      asp: 16
+    dienste:
+    - name: Schätze vernichten 
+      mod: +4
+    - name: Mechanismus sabotieren
+    - name: Gefängnistür aufbrechen 
+      mod: -4
+
+hefashar:
+  name: Hefashar
+  beschreibung: Meister des Wassers und gischtgekrönte Woge; sehr großer Gegner
+  klasse: elementar
+  eigenschaften:
+  - name: Paraphysikalität
+  - name: Resistenz I (Stichwaffen)
+  - name: Schreckgestalt I
+  - name: Wasserwesen
+  kampf:
+    werte:
+      WS: 13
+      koloss: 2
+      MR: 24
+      GSS: 14
+      INI: 12
+    waffen:
+    - name: Flutwelle
+      RW: 8
+      RWM: 1
+      VT: 15
+      AT: 24
+      TP: {anzahl: 2, W: 20, plus: 0}
+      info: Ertränken, Flächenangriff (90° vor dem Elementar), Zurückstoßen
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Wasser
+      wert: 24
+      talente:
+      - name: alle Wasserzauber und ähnliche Effekte
+  talente:
+  - name: Tulamidenlande (Gebräuche) 
+    wert: 4
+  - name: Geographie 
+    wert: 16
+  - name: Meer (Überleben) 
+    wert: 24
+  - name: Pirschen 
+    wert: 20
+  - name: Schwimmen 
+    wert: 32
+  - name: Sinnenschärfe 
+    wert: 28
+  - name: Wachsamkeit 
+    wert: 24
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Wassers 
+      wert: 32
+      asp: 64
+    dienste:
+    - name: Schiff festhalten 
+      mod: +4
+    - name: Schiff versenken
+    - name: Küste verwüsten 
+      mod: -4
+
+kaeuterkopf:
+  name: Kräuterkopf
+  beschreibung: pflanzenaffiner Diener des Humus; kleiner Gegner
+  klasse: elementar
+  eigenschaften: 
+  - name: Regeneration I
+  kampf:
+    werte:
+      WS: 4
+      MR: 8
+      GS: 3
+      INI: 1
+    waffen:
+    - name: Rankengriff
+      RW: 1
+      VT: 5
+      AT: 9
+      TP: {anzahl: 2, W: 6, plus: 2}
+      info: Fesseln
+  magie:
+    asp: 24
+    fertigkeiten:
+    - name: Humus 
+      wert: 14 
+      talente: 
+      - name: Balsam
+      - name: Haselbusch
+      - name: Manifesto
+      - name: Sumus Elixiere
+      - name: Klarum Purum
+  talente:
+  - name: Gifte und Krankheiten (Heilkunde) 
+    wert: 10
+  - name: Mittelaventurien (Überleben) 
+    wert: 14
+  - name: Mittelreich (Gebräuche) 
+    wert: 4
+  - name: Pflanzenkunde 
+    wert: 12
+  - name: Wachsamkeit 
+    wert: 4
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Humus 
+      wert: 16
+      asp: 16
+    dienste:
+    - name: Wachstum einer Heilpflanze außerhalb der Saison
+      mod: +4
+    - name: Stärkung eines Heilkrauts (+2 Stufen Hohe Qualität für daraus   angefertigte Heilmittel)
+    - name: Gegenmittel für ein starkes Gift 
+      mod: -4
+
+lagramagmangr:
+  name: Lagramagmangr
+  beschreibung: hitzköpfige Lavawalze und Meister des Feuers; sehr großer Gegner
+  klasse: elementar
+  eigenschaften: 
+  - name: Aura
+    info: Hitze, Zähigkeit (28) jede Initiativephase, 1 Wunde
+  - name: Explosion (8W6)
+  - name: Schreckgestalt II
+  kampf:
+    werte:
+      WS: 11
+      koloss: 2
+      MR: 20
+      GS: 12
+      INI: 20
+    waffen:
+    - name: Inferno
+      RW: 8
+      RWM: 1
+      VT: 16
+      AT: 24
+      TP: {anzahl: 3, W: 20, plus: 0}
+      info: Flächenangriff (180° vor dem Elementar), Nachbrennen, Niederwerfen
+  magie:
+    asp: 128
+    fertigkeiten:
+    - name: Feuer
+      wert: 24
+      talente:
+      - name: alle Zauber des Elements Feuer und ähnliche Effekte
+  talente:
+  - name: Einschüchtern 
+    wert: 30
+  - name: Sinnenschärfe 
+    wert: 12
+  - name: Schmieden 
+    wert: 18
+  - name: Wachsamkeit 
+    wert: 12
+  - name: Willenskraft 
+    wert: 40
+  - name: Zwerge (Gebräuche) 
+    wert: 12
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Feuers 
+      wert: 32
+      asp: 64
+    dienste:
+    - name: mehrere Quader Gestein schmelzen 
+      mod: +4
+    - name: Lavaströme umlenken
+    - name: Vulkanausbruch verursachen
+    - name: Vulkanausbruch verhindern 
+      mod: -4
+
+sausewind:
+  name: Sausewind
+  beschreibung: gesprächiger Luftdschinn und verlässlicher Bote
+  klasse: elementar
+  eigenschaften: 
+  - name: Flugfähig
+  kampf:
+    werte:
+      WS: 7
+      MR: 12
+      GS: 10
+      GSF: 15
+      INI: 11
+    waffen:
+    - name: Luftstoß
+      RW: 1
+      VT: 15
+      AT: 15
+      TP: {anzahl: 2, W: 6, plus: 0}
+      info: Zurückstoßen
+    - name: Luftwirbel
+      RW: 8
+      LZ: 0
+      FK: 16
+      TP: {anzahl: 2, W: 6, plus: 4}
+    vorteile:
+    - name: Scharfschuss
+    - name: Sturmangriff
+  magie:
+    asp: 64
+    fertigkeiten: 
+    - name: Luft 
+      wert: 16
+      talente:
+      - name: Aeolitus
+      - name: Aeropulvis
+      - name: Leib des Windes
+      - name: Manifesto
+      - name: Nebelleib
+      - name: Orcanofaxius
+      - name: Sapefacta
+      - name: Wettermeisterschaft
+      - name: Windgeflüster
+      - name: Windhose
+  talente:
+  - name: Gebräuche 
+    wert: 12
+  - name: Geographie 
+    wert: 14
+  - name: Fliegen 
+    wert: 18
+  - name: Pirschen 
+    wert: 10
+  - name: Untertauchen 
+    wert: 10
+  - name: Rhetorik 
+    wert: 14
+  - name: Überreden 
+    wert: 14
+  - name: Wachsamkeit 
+    wert: 16
+  freiefertigkeiten:
+  - name: Philosophie (erfahren)
+  beschwoerung:
+    proben:
+    - name: Herbeirufung der Luft 
+      wert: 24
+      asp: 32
+    dienste:
+    - name: Nachrichtenübermittlung Puni-Gareth 
+      mod: +4
+    - name: Nachrichtenübermittlung Khunchom-Gareth
+    - name: mehrere Städte nach einem Adressaten absuchen 
+      dauer: 1 Tag
+      mod: -4
+
+snefnug:
+  name: Snefnug
+  beschreibung: hilfsbereite Schneeflocke und Diener des Eises; kleiner Gegner
+  klasse: elementar
+  kampf:
+    werte:
+      WS: 2
+      MR: 8
+      GS: 3
+      INI: 5
+    waffen:
+    - name: Eisgriff
+      RW: 0
+      VT: 4
+      AT: 4
+      TP: {anzahl: 1, W: 6, plus: 0}
+      info: Erfrieren
+    - name: Schneeball
+      RW: 4
+      LZ: 1
+      FK: 8
+      TP: {anzahl: 2, W: 6, plus: 0}
+      info: Erfrieren
+  magie: 
+    asp: 24
+    fertigkeiten:
+    - name: Eis
+      wert: 8
+      talente:
+      - name: Caldofrigo, Glacioflumen, Manifesto, Metamorpho, Warmes gefriere!
+  talente:
+  - name: Geographie 
+    wert: 8
+  - name: Nordaventurien (Überleben) 
+    wert: 8
+  - name: Pirschen
+    wert:  8
+  - name: Thorwal (Gebräuche)
+    wert:  6
+  - name: Tierkunde
+    wert:  6
+  - name: Wachsamkeit 
+    wert: 6
+  - name: Wahrnehmung
+    wert:  8
+  beschwoerung:
+    proben:
+    - name: Herbeirufung des Eises 
+      wert: 16
+      asp: 16
+    dienste:
+    - name: Kühlen von einigen Maß Getränk +4
+    - name: Einfrieren von Nahrungsmittelvorräten
+    - name: Erschaffen von einigen Stein Eis -4
