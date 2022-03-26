@@ -14040,3 +14040,238 @@ zant:
     - name: Reittier
       dauer: 1 Stunde
       mod: -4
+eule:
+  beschreibung: "Häufiges Vertrautentier"
+  klasse: tier
+  quelle: ilaris
+  name: Eule
+  eigenschaften:
+  - name: Flieger
+  - name: Angepasst II (Dunkelheit)
+  kampf:
+    werte:
+      WS: 2
+      MR: 4
+      GS: 1
+      GSF: 10
+      INI: 1
+    waffen:
+    - name: Krallen
+      RW: 0
+      VT: 6
+      AT: 13
+      TP: 
+        anzahl: 1
+        W: 6
+  attribute:
+    KK: -8
+    KL: -4
+    MU: 4
+  talente:
+  - name: Pirschen 
+    wert: 16
+  - name: Wachsamkeit 
+    wert: 16
+  - name: Zähigkeit 
+    wert: -4
+
+katze:
+  beschreibung: "Häufiges Vertrautentier"
+  klasse: tier
+  quelle: ilaris
+  name: Katze
+  eigenschaften: 
+  - name: Angepasst II (Dunkelheit)
+  kampf:
+    werte:
+      WS: 2
+      MR: 4
+      GS: 6
+      INI: 6
+    waffen:
+    - name: Biss
+      RW: 0
+      VT: 12
+      AT: 12
+      TP: 
+        anzahl: 1
+        W: 6
+  attribute:
+    KK: -8
+    KL: -6
+    MU: 0
+  talente:
+  - name: Pirschen 
+    wert: 20
+  - name: Wachsamkeit 
+    wert: 12
+  - name: Zähigkeit 
+    wert: -4
+
+kleinaffe:
+  beschreibung: "Häufiges Vertrautentier"
+  klasse: tier
+  quelle: ilaris
+  name: Kleinaffe
+  kampf:
+    werte:
+      WS: 2
+      MR: 1
+      GS: 5
+      INI: 3
+    waffen:
+    - name: Biss
+      RW: 0
+      VT: 12
+      AT: 9
+      TP: 
+        anzahl: 1
+        W: 6
+        plus: -1
+  attribute:
+    FF: 6
+    KK: -6
+    KL: -6
+    MU: -2
+  talente:
+  - name: Pirschen 
+    wert: 16
+  - name: Wachsamkeit 
+    wert: 12
+  - name: Zähigkeit 
+    wert: -4
+
+kroete:
+  beschreibung: "Häufiges Vertrautentier"
+  klasse: tier
+  quelle: ilaris
+  name: Kröte
+  eigenschaften:
+  - name: Magiegespür
+  kampf:
+    werte:
+      WS: 1
+      MR: 8
+      GS: 1
+      INI: -1
+    waffen:
+    - name: Ausweichen
+      RW: 0
+      VT: 6
+  attribute:
+    KK: -16
+    KL: -4
+    MU: 0
+  talente:
+  - name: Pirschen
+    wert:  28
+  - name: Sinnenschärfe
+    wert:  12
+  - name: Wachsamkeit 
+    wert: 12
+  - name: Zähigkeit
+    wert:  -8
+
+rabe:
+  beschreibung: "Häufiges Vertrautentier"
+  klasse: tier
+  quelle: ilaris
+  name: Rabe
+  eigenschaften:
+  - name: Flieger
+  kampf:
+    werte:
+      WS: 2
+      MR: 2
+      GS: 1
+      GSF: 9
+      INI: 0
+    waffen: 
+    - name: Krallen
+      RW: 0
+      VT: 8
+      AT: 12
+      TP: 
+        anzahl: 1
+        W: 6
+        plus: +1
+  attribute:
+    KK: -8
+    KL: -2
+    MU: -2
+  talente:
+  - name: Pirschen 
+    wert: 12
+  - name: Wachsamkeit 
+    wert: 18
+  - name: Zähigkeit 
+    wert: -4
+
+schlange:
+  beschreibung: "Häufiges Vertrautentier"
+  klasse: tier
+  quelle: ilaris
+  name: Schlange
+  eigenschaften: 
+  - name: Magiegespür
+  kampf:
+    werte:
+      WS: 2
+      MR: 6
+      GS: 2
+      INI: 0
+    waffen:
+    - name: Biss
+      RW: 0
+      VT: 8
+      AT: 13
+      TP: 
+        anzahl: 1
+        W: 6
+        plus: +1
+      info: Gifte je nach Schlange
+  attribute:
+    KK: -8
+    KL: -6
+    MU: -4
+  talente:
+  - name: Pirschen 
+    wert: 24
+  - name: Sinnenschärfe 
+    wert: 10
+  - name: Wachsamkeit 
+    wert: 16
+  - name: Zähigkeit 
+    wert: -4
+spinne:
+  beschreibung: "Häufiges Vertrautentier"
+  klasse: tier
+  quelle: ilaris
+  name: Spinne
+  kampf:
+    werte:
+      WS: 1
+      MR: 8
+      GS: 1
+      INI: 0
+    waffen:
+    - name: Biss
+      RW: 0
+      VT: 8
+      AT: 11
+      TP: 
+        anzahl: 1
+        W: 6
+        plus: -2
+      info: Gifte je nach Spinne
+  attribute:
+    KK: -16
+    KL: -6
+    MU: -6
+  talente:
+  - name: Pirschen 
+    wert: 28
+  - name: Wachsamkeit 
+    wert: 12
+  - name: Zähigkeit 
+    wert: -8

@@ -143,72 +143,60 @@
     "quelle": "pandaemonium"
   },
   "aljallahir": {
-    "attribute": {
-      "CH": 20,
-      "FF": 6,
-      "GE": 10,
-      "IN": 12,
-      "KK": 26,
-      "KL": 8,
-      "KO": 26,
-      "MU": 12
-    },
-    "beschreibung": "der flammende Redner und Herr der Menetekel",
+    "quelle": "ilaris",
+    "name": "Al‘Jallahir",
+    "beschreibung": "leidenschaftlicher Anführer und Dschinn des Feuers",
+    "klasse": "elementar",
     "eigenschaften": [
+      {
+        "name": "Resistenz I (Stichwaffen)"
+      },
       {
         "name": "Schreckgestalt I"
       }
     ],
-    "infos": [
-      {
-        "info": "Al'Jallahir kann das Kommando Flammende Rede (Furcht Effekte eine Stufe gesenkt, +2 VT, +2 AT)",
-        "name": "Flammende Rede"
-      },
-      {
-        "info": "Mit der Flammenpeitsche kann das Manöver Umklammern durchgeführt werden. Die Peitsche ist heiß wie Glut (400-800 °C, Inervall 1, 1 Wunde, Berührung 3W6SP/Akt.). Gelingt eine Attacke die mit dem Manöver Entwaffnen verstärkt wurde, erhält die entwaffnete Waffe eine Beschädigung.",
-        "name": "Flammenpeitsche"
-      }
-    ],
     "kampf": {
-      "vorteile": [
-        {
-          "name": "Niederwerfen"
-        },
-        {
-          "name": "Zusätzliche Attacke I"
-        },
-        {
-          "name": "Befreiungsschlag"
-        }
-      ],
+      "werte": {
+        "WS": 8,
+        "MR": 12,
+        "GS": 10,
+        "INI": 14
+      },
       "waffen": [
         {
-          "AT": 18,
+          "name": "Flammensäbel",
           "RW": 2,
+          "VT": 12,
+          "AT": 16,
           "TP": {
+            "anzahl": 4,
             "W": 6,
-            "anzahl": 2,
-            "plus": 4
+            "plus": 0
           },
-          "VT": 5,
-          "info": "Nachbrennen, Rüstungsbrecher, Unberechenbar, Wendig",
-          "name": "Flammenpeitsche"
+          "info": "Nachbrennen"
         }
       ],
-      "werte": {
-        "GS": 6,
-        "INI": 6,
-        "MR": 13,
-        "WS": 10,
-        "WSE": 12
-      }
+      "vorteile": [
+        {
+          "name": "Formiert euch!"
+        },
+        {
+          "name": "Haltet stand!"
+        },
+        {
+          "name": "Keine Gefangenen!"
+        },
+        {
+          "name": "Kennt keinen Schmerz!"
+        }
+      ]
     },
-    "klasse": "elementar",
     "magie": {
       "asp": 64,
       "fertigkeiten": [
         {
           "name": "Feuer",
+          "wert": 16,
           "talente": [
             {
               "name": "Caldofrigo"
@@ -240,36 +228,60 @@
             {
               "name": "Warmes Blut"
             }
-          ],
-          "wert": 16
+          ]
         }
       ]
     },
-    "name": "Al'Jallahir",
-    "quelle": "hilberts",
     "talente": [
       {
-        "name": "Anführen 20"
+        "name": "Anführen",
+        "wert": 16
       },
       {
-        "name": "Betören 12"
+        "name": "Betören",
+        "wert": 12
       },
       {
-        "name": "Rhetorik 20"
+        "name": "Einschüchtern",
+        "wert": 16
       },
       {
-        "name": "Überreden 18"
+        "name": "Tulamidenlande (Gebräuche)",
+        "wert": 12
       },
       {
-        "name": "Tulamidenlande 12"
+        "name": "Rhetorik",
+        "wert": 12
       },
       {
-        "name": "Sinnesschärfe 10"
+        "name": "Sinnenschärfe",
+        "wert": 12
       },
       {
-        "name": "Wachsamkeit 12"
+        "name": "Wachsamkeit",
+        "wert": 14
       }
-    ]
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Feuers",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Kommandos im Kampf (1 Stunde, +4);"
+        },
+        {
+          "name": "Soldaten in die Schlacht führen"
+        },
+        {
+          "name": "Kampfeslust entfachen (-1 Furchtstufe für alle Verbündeten in Rufweite, 1 Stunde, -4)"
+        }
+      ]
+    }
   },
   "altergolem": {
     "attribute": {
@@ -8700,7 +8712,7 @@
         "WSE": 5
       }
     },
-    "klasse": "tier",
+    "klasse": "humanoid",
     "name": "Leibwächter",
     "profan": {
       "vorteile": [
@@ -10642,7 +10654,7 @@
         "info": "Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt eine MR von 0)"
       }
     },
-    "klasse": "tier",
+    "klasse": "humanoid",
     "name": "Oger",
     "quelle": "ilaris",
     "talente": [
@@ -11866,7 +11878,7 @@
         "koloss": 2
       }
     },
-    "klasse": "tier",
+    "klasse": "untot",
     "name": "Sehr großer Pestrattenschwarm",
     "quelle": "ilaris",
     "talente": [
@@ -12400,7 +12412,7 @@
         "schips": 4
       }
     },
-    "klasse": "tier",
+    "klasse": "mythen",
     "name": "Riese",
     "quelle": "ilaris",
     "sonstiges": {
@@ -14210,7 +14222,7 @@
         "WSE": 6
       }
     },
-    "klasse": "tier",
+    "klasse": "humanoid",
     "name": "Söldner",
     "quelle": "ilaris",
     "talente": [
@@ -15816,7 +15828,7 @@
         "koloss": 1
       }
     },
-    "klasse": "tier",
+    "klasse": "humanoid",
     "name": "Troll",
     "quelle": "ilaris",
     "talente": [
@@ -16917,7 +16929,7 @@
         "koloss": 1
       }
     },
-    "klasse": "tier",
+    "klasse": "humanoid",
     "magie": {
       "asp": 16,
       "fertigkeiten": [
@@ -17265,8 +17277,8 @@
         "WSE": 5
       }
     },
-    "klasse": "tier",
-    "name": "Weisser Hetzer",
+    "klasse": "daimonid",
+    "name": "Weißer Hetzer",
     "quelle": "ilaris",
     "talente": [
       {
@@ -17797,7 +17809,7 @@
         "WSE": 7
       }
     },
-    "klasse": "tier",
+    "klasse": "untot",
     "name": "Würger",
     "quelle": "hilberts",
     "talente": [
@@ -19300,6 +19312,4005 @@
       {
         "name": "Wachsamkeit",
         "wert": 6
+      }
+    ]
+  },
+  "abualazilat": {
+    "quelle": "ilaris",
+    "name": "Abu al‘Azilat",
+    "beschreibung": "verführerischer, von Rosen bewachsener Humusdschinn",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 13,
+        "MR": 12,
+        "GS": 8,
+        "INI": 6
+      },
+      "waffen": [
+        {
+          "name": "Giftranke",
+          "RW": 1,
+          "VT": 12,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": -2
+          },
+          "info": "Fesseln, Giftig (Goldleim, Stufe 24, siehe S. 34)"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Humus",
+          "wert": 16,
+          "talente": [
+            {
+              "name": "Fesselranken"
+            },
+            {
+              "name": "Haselbusch"
+            },
+            {
+              "name": "Kraft des Humus"
+            },
+            {
+              "name": "Lach dich Gesund"
+            },
+            {
+              "name": "Leib der Erde"
+            },
+            {
+              "name": "Leidensbund"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Ruhe Körper"
+            },
+            {
+              "name": "Satuarias Herrlichkeit"
+            },
+            {
+              "name": "Wand aus Dornen"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Betören",
+        "wert": 16
+      },
+      {
+        "name": "Tulamidenlande (Gebräuche)",
+        "wert": 14
+      },
+      {
+        "name": "Menschen­kenntnis",
+        "wert": 14
+      },
+      {
+        "name": "Überreden",
+        "wert": 12
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 10
+      },
+      {
+        "name": "Willenskraft",
+        "wert": 12
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Humus",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Wächterinnen ablenken (4 Minuten, +4)"
+        },
+        {
+          "name": "prächtiger Blumenschmuck für ein Fest"
+        },
+        {
+          "name": "einer Frau den Kopf verdrehen (1 Woche, -4)"
+        }
+      ]
+    },
+    "info": "Varianten: Selbstverständlich gibt es mit Saba al‘AzilAT: auch eine Tochter der Rosen, die schon manch eitlem Magus den Kopf verdreht hat...\n"
+  },
+  "baromna": {
+    "quelle": "ilaris",
+    "name": "Baromna",
+    "beschreibung": "in Bierkrügen lebende Dienerin des Wassers; sehr kleiner Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Wasserwesen"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 3,
+        "MR": 8,
+        "GSS": 4,
+        "INI": 2
+      },
+      "waffen": [
+        {
+          "name": "Wasserschwall",
+          "RW": 2,
+          "VT": 4,
+          "AT": 8,
+          "TP": {
+            "anzahl": 1,
+            "W": 6,
+            "plus": 0
+          },
+          "info": "Ertränken"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 24,
+      "fertigkeiten": [
+        {
+          "name": "Wasser",
+          "wert": 8,
+          "talente": [
+            {
+              "name": "Abvenenum"
+            },
+            {
+              "name": "Macht über den Regen"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Sapefacta"
+            },
+            {
+              "name": "Wasserbann"
+            },
+            {
+              "name": "Wellenlauf"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Zwerge (Gebräuche)",
+        "wert": 10
+      },
+      {
+        "name": "Menschenkenntnis",
+        "wert": 10
+      },
+      {
+        "name": "Schwimmen",
+        "wert": 14
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 6
+      },
+      {
+        "name": "Wahrnehmung",
+        "wert": 8
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Wassers",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Zecher zur Besinnung bringen",
+          "mod": 4
+        },
+        {
+          "name": "zahlreiche Getränke von unangenehmen Inhalten und Giften bis Stufe 24  reinigen"
+        },
+        {
+          "name": "ein Fass mit Bier füllen",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "baradarasch": {
+    "quelle": "ilaris",
+    "name": "Baradarasch",
+    "beschreibung": "plappernder Bader und Dschinn des Wassers",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Amphibisch"
+      },
+      {
+        "name": "Paraphysikalität"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 11,
+        "MR": 12,
+        "GS": 8,
+        "GSS": 12,
+        "INI": 6
+      },
+      "waffen": [
+        {
+          "name": "Sog",
+          "RW": 2,
+          "VT": 12,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Ertränken"
+        },
+        {
+          "name": "Wasserstrahl",
+          "RW": 8,
+          "LZ": 0,
+          "FK": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 4
+          },
+          "info": "Zurückstoßen, Ertränken"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Wasser",
+          "wert": 16,
+          "talente": [
+            {
+              "name": "Aquafaxius"
+            },
+            {
+              "name": "Aquasphaero"
+            },
+            {
+              "name": "Hartes Schmelze"
+            },
+            {
+              "name": "Macht über den Regen"
+            },
+            {
+              "name": "Mahlstrom"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Nebelwand"
+            },
+            {
+              "name": "Nebelleib"
+            },
+            {
+              "name": "Sapefacta"
+            },
+            {
+              "name": "Wand aus Wasser"
+            },
+            {
+              "name": "Wellenlauf"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": null
+      },
+      {
+        "name": "Elementarismus",
+        "wert": 16
+      },
+      {
+        "name": "Tulamidenlande (Gebräuche)",
+        "wert": 14
+      },
+      {
+        "name": "Geschichten und Legenden",
+        "wert": 16
+      },
+      {
+        "name": "Menschenkenntnis",
+        "wert": 14
+      },
+      {
+        "name": "Schwimmen",
+        "wert": 20
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 12
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Willenskraft",
+        "wert": 14
+      }
+    ],
+    "freiefertigkeiten": [
+      {
+        "name": "Bader (meisterlich)"
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Wassers",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Konversation oder Beratung (1 Stunde, +4)"
+        },
+        {
+          "name": "Fluten eines Bades mit duftendem Wasser"
+        },
+        {
+          "name": "Badende ausspionieren (-4)"
+        }
+      ]
+    }
+  },
+  "bashaidor": {
+    "quelle": "ilaris",
+    "name": "Brashaidor",
+    "beschreibung": "gemächlicher und gutmütiger Meister der Luft; sehr großer Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Flugfähig"
+      },
+      {
+        "name": "Paraphysikalität"
+      },
+      {
+        "name": "Unsichtbar"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 15,
+        "koloss": 2,
+        "MR": 24,
+        "GS": 24,
+        "GSF": 32,
+        "INI": 22
+      },
+      "waffen": [
+        {
+          "name": "Orkanbö",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 18,
+          "AT": 22,
+          "TP": {
+            "anzahl": 1,
+            "W": 20,
+            "plus": 0
+          },
+          "info": "Flächenangriff (180° vor dem Elementar), Zurückstoßen"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 128,
+      "fertigkeiten": [
+        {
+          "name": "Luft",
+          "wert": 24,
+          "talente": [
+            {
+              "name": "alle Zauber des Elements Luft und ähnliche Effekte"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Fliegen 20"
+      },
+      {
+        "name": "Geographie 20"
+      },
+      {
+        "name": "Meer (Überleben) 18"
+      },
+      {
+        "name": "Pirschen 20"
+      },
+      {
+        "name": "Sinnenschärfe 20"
+      },
+      {
+        "name": "Tulamidenlande (Gebräuche) 14"
+      },
+      {
+        "name": "Untertauchen 20"
+      },
+      {
+        "name": "Wachsamkeit 20"
+      }
+    ],
+    "freiefertigkeiten": [
+      {
+        "name": "Seefahrer",
+        "wert": 3
+      },
+      {
+        "name": "Navigator",
+        "wert": 3
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung der Luft",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Schiff antreiben",
+          "dauer": "1 Tag",
+          "mod": 4
+        },
+        {
+          "name": "Sturm abschwächen",
+          "dauer": "1 Tag"
+        },
+        {
+          "name": "Schiff über Riff heben",
+          "dauer": "1 Tag",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "chakharim": {
+    "quelle": "ilaris",
+    "name": "Chakharîm",
+    "beschreibung": "Meister des Erzes und Wächter von Schätzen; sehr großer Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Magieabweisend"
+      },
+      {
+        "name": "Schreckgestalt II"
+      },
+      {
+        "name": "Tarnung (unterirdisch)"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 18,
+        "koloss": 2,
+        "MR": 20,
+        "GS": 2,
+        "INI": 3
+      },
+      "waffen": [
+        {
+          "name": "Steinschlag",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 16,
+          "AT": 20,
+          "TP": {
+            "anzahl": 2,
+            "W": 20,
+            "plus": 0
+          },
+          "info": "Flächenangriff (1 Schritt Radius um das Hauptziel), Niederwerfen (-4)"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 128,
+      "fertigkeiten": [
+        {
+          "name": "Erz",
+          "wert": 24,
+          "talente": [
+            {
+              "name": "alle Zauber des Elements Erz und ähnliche Effekte"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Menschenkenntnis",
+        "wert": 30
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 30
+      },
+      {
+        "name": "Tulamidenlande (Gebräuche)",
+        "wert": 8
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 30
+      },
+      {
+        "name": "Zauberpraxis",
+        "wert": 18
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Erzes",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "einen gefährlichen Gegenstand unter Tonnen von Stein oder Koschbasalt einschließen",
+          "mod": 4
+        },
+        {
+          "name": "Wache halten",
+          "dauer": "für Generationen"
+        },
+        {
+          "name": "elementar gesicherte Schatzkammer anlegen",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "eichbart": {
+    "quelle": "ilaris",
+    "name": "Eichbart",
+    "beschreibung": "Meister des Humus und Hüter der Weisheit; sehr großer Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Tarnung (im Wald)"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 16,
+        "koloss": 2,
+        "MR": 20,
+        "GS": 3,
+        "INI": 6
+      },
+      "waffen": [
+        {
+          "name": "Rankengriff",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 16,
+          "AT": 24,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Fesseln, Umklammern (-4, 24)"
+        },
+        {
+          "name": "Asthieb",
+          "RW": 2,
+          "VT": 16,
+          "AT": 24,
+          "TP": {
+            "anzahl": 3,
+            "W": 6,
+            "plus": 4
+          },
+          "info": "Niederwerfen (-8) , Stumpf"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke IV"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 128,
+      "fertigkeiten": [
+        {
+          "name": "Humus",
+          "wert": 24,
+          "talente": [
+            {
+              "name": "alle Zauber des Elements Humus und ähnliche Effekte"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Holzbearbeitung",
+        "wert": 22
+      },
+      {
+        "name": "Mittelaventurien (Überleben)",
+        "wert": 20
+      },
+      {
+        "name": "Pflanzenkunde",
+        "wert": 26
+      },
+      {
+        "name": "Pirschen",
+        "wert": 20
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 20
+      },
+      {
+        "name": "Tierkunde 2",
+        "wert": 4
+      },
+      {
+        "name": "Tobrien (Gebräuche)",
+        "wert": 16
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 20
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": 20
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Humus",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Beratung zu Heilkunde"
+        },
+        {
+          "name": "Pflanzen oder Humusmagie",
+          "dauer": "1 Tag",
+          "mod": -4
+        },
+        {
+          "name": "Augen des Waldes (Eichbart hält durch die Augen aller Waldbewohner Ausschau nach allem, was die Helden interessiert)",
+          "dauer": "1 Tag"
+        },
+        {
+          "name": "Gedächtnis des Waldes (Eichbart berichtet detailliert von einem Ereignis, das zu Lebzeiten der Waldbewohner stattgefunden hat)"
+        }
+      ]
+    }
+  },
+  "emling": {
+    "quelle": "ilaris",
+    "name": "Emling",
+    "beschreibung": "belesener Diener der Luft in Gestalt einer Feder; kleiner Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Flugfähig"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 1,
+        "MR": 8,
+        "GS": 1,
+        "GSF": 6,
+        "INI": 4
+      },
+      "waffen": [
+        {
+          "name": "Luftstoß",
+          "RW": 1,
+          "VT": 4,
+          "AT": 8,
+          "info": "Zurückstoßen (KK 16, um zu widerstehen)"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 24,
+      "fertigkeiten": [
+        {
+          "name": "Luft",
+          "wert": 8,
+          "talente": [
+            {
+              "name": "Aeolitus"
+            },
+            {
+              "name": "Aeropulvis"
+            },
+            {
+              "name": "Aufgeblasen"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Sapefacta"
+            },
+            {
+              "name": "Windgeflüster"
+            },
+            {
+              "name": "Windstille"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Fliegen",
+        "wert": 12
+      },
+      {
+        "name": "Geographie",
+        "wert": 6
+      },
+      {
+        "name": "Pirschen",
+        "wert": 8
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 10
+      },
+      {
+        "name": "Thorwal (Gebräuche)",
+        "wert": 8
+      },
+      {
+        "name": "Untertauchen",
+        "wert": 12
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 10
+      },
+      {
+        "name": "Willenskraft",
+        "wert": 4
+      }
+    ],
+    "freiefertigkeiten": [
+      {
+        "name": "Hjaldingsche Schriftzeichen (erfahren)"
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung der Luft",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Kitzeln",
+          "mod": 4
+        },
+        {
+          "name": "kurze Nachricht in Runen verfassen"
+        },
+        {
+          "name": "Runeninschrift entziffern",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "farlin": {
+    "name": "Farlin",
+    "quelle": "ilaris",
+    "beschreibung": "geschickter und ordnungsliebender Dschinn des Erzes",
+    "klasse": "elementar",
+    "kampf": {
+      "werte": {
+        "WS": 16,
+        "MR": 12,
+        "GS": 3,
+        "INI": 5
+      },
+      "waffen": [
+        {
+          "name": "Hammer",
+          "RW": 1,
+          "VT": 12,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 4
+          },
+          "info": "Stumpf, Niederschmettern"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Hammerschlag"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Erz",
+          "wert": 16,
+          "talente": [
+            {
+              "name": "Adamantium"
+            },
+            {
+              "name": "Archofaxius"
+            },
+            {
+              "name": "Archosphaero"
+            },
+            {
+              "name": "Armatrutz"
+            },
+            {
+              "name": "Kraft des Erzes"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Metamorpho"
+            },
+            {
+              "name": "Pfeil des Erzes"
+            },
+            {
+              "name": "Wand aus Erz"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Mechanik",
+        "wert": 16
+      },
+      {
+        "name": "Untertauchen",
+        "wert": 12
+      },
+      {
+        "name": "Schmieden",
+        "wert": 18
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 16
+      },
+      {
+        "name": "Tulamidenlande (Gebräuche)",
+        "wert": 8
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 16
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": 16
+      }
+    ],
+    "profan": {
+      "vorteile": [
+        {
+          "name": "Meisterwerk"
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Erzes",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Werkstatt aufräumen und warten",
+          "mod": 4
+        },
+        {
+          "name": "Gebrauchsgegenstand schmieden"
+        },
+        {
+          "name": "Waffe oder Rüstung schmieden (2x Hohe Qualität, kein Meisterwerk, -4)"
+        }
+      ]
+    }
+  },
+  "flammina": {
+    "quelle": "ilaris",
+    "name": "Flammina",
+    "beschreibung": "aufgeweckte Dienerin des Feuers; sehr kleiner Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 1,
+        "MR": 8,
+        "GS": 4,
+        "INI": 6
+      },
+      "waffen": [
+        {
+          "name": "Funke",
+          "RW": 2,
+          "VT": 2,
+          "AT": 8,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": -2
+          },
+          "info": "Nachbrennen"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 24,
+      "fertigkeiten": [
+        {
+          "name": "Feuer",
+          "wert": 8,
+          "talente": [
+            {
+              "name": "Brenne"
+            },
+            {
+              "name": "Caldofrigo"
+            },
+            {
+              "name": "Custodosigil"
+            },
+            {
+              "name": "Ignifugo"
+            },
+            {
+              "name": "Ignimorpho"
+            },
+            {
+              "name": "Manifesto"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Magische Elixiere",
+        "wert": 12
+      },
+      {
+        "name": "Mittelreich (Gebräuche)",
+        "wert": 4
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 12
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": 6
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Feuers",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Entzünden von nassem Brennholz",
+          "mod": 4
+        },
+        {
+          "name": "Lagerfeuer ohne Brennmaterial über Nacht brennen lassen"
+        },
+        {
+          "name": "Lagerfeuer erhitzen sodass es Erz schmilzt oder alchemistische Synthesen erlaubt",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "firndorn": {
+    "quelle": "ilaris",
+    "name": "Firndorn",
+    "beschreibung": "menschenhassender und mörderischer Dschinn des Eises",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Aura",
+        "info": "Kälte, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde"
+      },
+      {
+        "name": "Tarnung",
+        "info": "in Schnee und Eis"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 9,
+        "MR": 12,
+        "GS": 8,
+        "INI": 14
+      },
+      "waffen": [
+        {
+          "name": "Eisdorn",
+          "RW": 0,
+          "VT": 12,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 0
+          },
+          "info": "Erfrieren, Todesstoß"
+        },
+        {
+          "name": "Hagelsturm",
+          "RW": 8,
+          "LZ": 0,
+          "FK": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 4
+          },
+          "info": "Stumpf"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Eis",
+          "wert": 16,
+          "talente": [
+            {
+              "name": "Corpofrigo"
+            },
+            {
+              "name": "Frigifaxius"
+            },
+            {
+              "name": "Frigisphaero"
+            },
+            {
+              "name": "Glacioflumen"
+            },
+            {
+              "name": "Gletscherwand"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Metamorpho"
+            },
+            {
+              "name": "Pfeil des Eises"
+            },
+            {
+              "name": "Stillstand"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Geographie",
+        "wert": 8
+      },
+      {
+        "name": "Hoher Norden (Überleben)",
+        "wert": 12
+      },
+      {
+        "name": "Nordaventurien (Gebräuche)",
+        "wert": 8
+      },
+      {
+        "name": "Pirschen",
+        "wert": 20
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 16
+      },
+      {
+        "name": "Tierkunde",
+        "wert": 16
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 16
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": 12
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Eises",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Beratung bei einem Attentat",
+          "mod": 4
+        },
+        {
+          "name": "Bau von Fallen im Eis (z.B. verdeckte Gletscherspalten)"
+        },
+        {
+          "name": "Lebewesen in der Nähe suchen und töten",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "glacius": {
+    "quelle": "ilaris",
+    "name": "Glacius",
+    "beschreibung": "Meister des Eises und vollendeter Baumeister; sehr großer Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Amphibisch"
+      },
+      {
+        "name": "Aura",
+        "info": "Kälte, Zähigkeit (28) alle 4 Initiativephasen, 1 Wunde"
+      },
+      {
+        "name": "Schreckgestalt I"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 15,
+        "koloss": 2,
+        "MR": 20,
+        "GS": 8,
+        "INI": 18
+      },
+      "waffen": [
+        {
+          "name": "Lawine",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 14,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 20,
+            "plus": 0
+          },
+          "info": "Erfrieren, Flächenangriff (90° vor dem Elementar), Zurückstoßen"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 128,
+      "fertigkeiten": [
+        {
+          "name": "Eis",
+          "wert": 24,
+          "talente": [
+            {
+              "name": "alle Zauber des Elements Eis und ähnliche Effekte"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Gebirge (Überleben)",
+        "wert": 32
+      },
+      {
+        "name": "Nordaventurien (Gebräuche)",
+        "wert": 12
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 30
+      },
+      {
+        "name": "Tierkunde",
+        "wert": 24
+      }
+    ],
+    "freiefertigkeiten": [
+      {
+        "name": "Rechenkünstler",
+        "wert": 3
+      },
+      {
+        "name": "Architekt",
+        "wert": 3
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Eises",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Bau eines Iglus für die Helden und etwa 20 Begleiter",
+          "mod": 4
+        },
+        {
+          "name": "Bau einer 50 Schritt langen Brücke aus Eis"
+        },
+        {
+          "name": "Verschließen eines Tales mit einer Mauer aus Eis",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "grommur": {
+    "quelle": "ilaris",
+    "name": "Grommur",
+    "beschreibung": "zerstörerischer Diener des Erzes; kleiner Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Zerstörerisch I"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 4,
+        "MR": 8,
+        "GS": 1,
+        "INI": 3
+      },
+      "waffen": [
+        {
+          "name": "Steinfaust",
+          "RW": 0,
+          "VT": 2,
+          "AT": 0,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Niederschmettern"
+        },
+        {
+          "name": "Steinwurf",
+          "RW": 4,
+          "LZ": 1,
+          "FK": 6,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Niederschmettern"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 24,
+      "fertigkeiten": [
+        {
+          "name": "Erz",
+          "wert": 8,
+          "talente": [
+            {
+              "name": "Eisenrost"
+            },
+            {
+              "name": "Kraft des Erzes"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Weiches Erstarre"
+            },
+            {
+              "name": "Zagibu Ubigaz"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Gebirge (Überleben)",
+        "wert": 12
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 10
+      },
+      {
+        "name": "Untertauchen",
+        "wert": 10
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 10
+      },
+      {
+        "name": "Zwerge (Gebräuche)",
+        "wert": 4
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Erzes",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Schätze vernichten",
+          "mod": 4
+        },
+        {
+          "name": "Mechanismus sabotieren"
+        },
+        {
+          "name": "Gefängnistür aufbrechen",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "hefashar": {
+    "name": "Hefashar",
+    "quelle": "ilaris",
+    "beschreibung": "Meister des Wassers und gischtgekrönte Woge; sehr großer Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Paraphysikalität"
+      },
+      {
+        "name": "Resistenz I (Stichwaffen)"
+      },
+      {
+        "name": "Schreckgestalt I"
+      },
+      {
+        "name": "Wasserwesen"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 13,
+        "koloss": 2,
+        "MR": 24,
+        "GSS": 14,
+        "INI": 12
+      },
+      "waffen": [
+        {
+          "name": "Flutwelle",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 15,
+          "AT": 24,
+          "TP": {
+            "anzahl": 2,
+            "W": 20,
+            "plus": 0
+          },
+          "info": "Ertränken, Flächenangriff (90° vor dem Elementar), Zurückstoßen"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 128,
+      "fertigkeiten": [
+        {
+          "name": "Wasser",
+          "wert": 24,
+          "talente": [
+            {
+              "name": "alle Wasserzauber und ähnliche Effekte"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Tulamidenlande (Gebräuche)",
+        "wert": 4
+      },
+      {
+        "name": "Geographie",
+        "wert": 16
+      },
+      {
+        "name": "Meer (Überleben)",
+        "wert": 24
+      },
+      {
+        "name": "Pirschen",
+        "wert": 20
+      },
+      {
+        "name": "Schwimmen",
+        "wert": 32
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 28
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 24
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Wassers",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Schiff festhalten",
+          "mod": 4
+        },
+        {
+          "name": "Schiff versenken"
+        },
+        {
+          "name": "Küste verwüsten",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "kaeuterkopf": {
+    "quelle": "ilaris",
+    "name": "Kräuterkopf",
+    "beschreibung": "pflanzenaffiner Diener des Humus; kleiner Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 4,
+        "MR": 8,
+        "GS": 3,
+        "INI": 1
+      },
+      "waffen": [
+        {
+          "name": "Rankengriff",
+          "RW": 1,
+          "VT": 5,
+          "AT": 9,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Fesseln"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 24,
+      "fertigkeiten": [
+        {
+          "name": "Humus",
+          "wert": 14,
+          "talente": [
+            {
+              "name": "Balsam"
+            },
+            {
+              "name": "Haselbusch"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Sumus Elixiere"
+            },
+            {
+              "name": "Klarum Purum"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Gifte und Krankheiten (Heilkunde)",
+        "wert": 10
+      },
+      {
+        "name": "Mittelaventurien (Überleben)",
+        "wert": 14
+      },
+      {
+        "name": "Mittelreich (Gebräuche)",
+        "wert": 4
+      },
+      {
+        "name": "Pflanzenkunde",
+        "wert": 12
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 4
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Humus",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Wachstum einer Heilpflanze außerhalb der Saison",
+          "mod": 4
+        },
+        {
+          "name": "Stärkung eines Heilkrauts (+2 Stufen Hohe Qualität für daraus   angefertigte Heilmittel)"
+        },
+        {
+          "name": "Gegenmittel für ein starkes Gift",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "lagramagmangr": {
+    "quelle": "ilaris",
+    "name": "Lagramagmangr",
+    "beschreibung": "hitzköpfige Lavawalze und Meister des Feuers; sehr großer Gegner",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Aura",
+        "info": "Hitze, Zähigkeit (28) jede Initiativephase, 1 Wunde"
+      },
+      {
+        "name": "Explosion (8W6)"
+      },
+      {
+        "name": "Schreckgestalt II"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 11,
+        "koloss": 2,
+        "MR": 20,
+        "GS": 12,
+        "INI": 20
+      },
+      "waffen": [
+        {
+          "name": "Inferno",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 16,
+          "AT": 24,
+          "TP": {
+            "anzahl": 3,
+            "W": 20,
+            "plus": 0
+          },
+          "info": "Flächenangriff (180° vor dem Elementar), Nachbrennen, Niederwerfen"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 128,
+      "fertigkeiten": [
+        {
+          "name": "Feuer",
+          "wert": 24,
+          "talente": [
+            {
+              "name": "alle Zauber des Elements Feuer und ähnliche Effekte"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Einschüchtern",
+        "wert": 30
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 12
+      },
+      {
+        "name": "Schmieden",
+        "wert": 18
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Willenskraft",
+        "wert": 40
+      },
+      {
+        "name": "Zwerge (Gebräuche)",
+        "wert": 12
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Feuers",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "mehrere Quader Gestein schmelzen",
+          "mod": 4
+        },
+        {
+          "name": "Lavaströme umlenken"
+        },
+        {
+          "name": "Vulkanausbruch verursachen"
+        },
+        {
+          "name": "Vulkanausbruch verhindern",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "sausewind": {
+    "quelle": "ilaris",
+    "name": "Sausewind",
+    "beschreibung": "gesprächiger Luftdschinn und verlässlicher Bote",
+    "klasse": "elementar",
+    "eigenschaften": [
+      {
+        "name": "Flugfähig"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 7,
+        "MR": 12,
+        "GS": 10,
+        "GSF": 15,
+        "INI": 11
+      },
+      "waffen": [
+        {
+          "name": "Luftstoß",
+          "RW": 1,
+          "VT": 15,
+          "AT": 15,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 0
+          },
+          "info": "Zurückstoßen"
+        },
+        {
+          "name": "Luftwirbel",
+          "RW": 8,
+          "LZ": 0,
+          "FK": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 4
+          }
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Scharfschuss"
+        },
+        {
+          "name": "Sturmangriff"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Luft",
+          "wert": 16,
+          "talente": [
+            {
+              "name": "Aeolitus"
+            },
+            {
+              "name": "Aeropulvis"
+            },
+            {
+              "name": "Leib des Windes"
+            },
+            {
+              "name": "Manifesto"
+            },
+            {
+              "name": "Nebelleib"
+            },
+            {
+              "name": "Orcanofaxius"
+            },
+            {
+              "name": "Sapefacta"
+            },
+            {
+              "name": "Wettermeisterschaft"
+            },
+            {
+              "name": "Windgeflüster"
+            },
+            {
+              "name": "Windhose"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Gebräuche",
+        "wert": 12
+      },
+      {
+        "name": "Geographie",
+        "wert": 14
+      },
+      {
+        "name": "Fliegen",
+        "wert": 18
+      },
+      {
+        "name": "Pirschen",
+        "wert": 10
+      },
+      {
+        "name": "Untertauchen",
+        "wert": 10
+      },
+      {
+        "name": "Rhetorik",
+        "wert": 14
+      },
+      {
+        "name": "Überreden",
+        "wert": 14
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 16
+      }
+    ],
+    "freiefertigkeiten": [
+      {
+        "name": "Philosophie (erfahren)"
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung der Luft",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Nachrichtenübermittlung Puni-Gareth",
+          "mod": 4
+        },
+        {
+          "name": "Nachrichtenübermittlung Khunchom-Gareth"
+        },
+        {
+          "name": "mehrere Städte nach einem Adressaten absuchen",
+          "dauer": "1 Tag",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "snefnug": {
+    "name": "Snefnug",
+    "beschreibung": "hilfsbereite Schneeflocke und Diener des Eises; kleiner Gegner",
+    "klasse": "elementar",
+    "quelle": "ilaris",
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 8,
+        "GS": 3,
+        "INI": 5
+      },
+      "waffen": [
+        {
+          "name": "Eisgriff",
+          "RW": 0,
+          "VT": 4,
+          "AT": 4,
+          "TP": {
+            "anzahl": 1,
+            "W": 6,
+            "plus": 0
+          },
+          "info": "Erfrieren"
+        },
+        {
+          "name": "Schneeball",
+          "RW": 4,
+          "LZ": 1,
+          "FK": 8,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 0
+          },
+          "info": "Erfrieren"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 24,
+      "fertigkeiten": [
+        {
+          "name": "Eis",
+          "wert": 8,
+          "talente": [
+            {
+              "name": "Caldofrigo, Glacioflumen, Manifesto, Metamorpho, Warmes gefriere!"
+            }
+          ]
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Geographie",
+        "wert": 8
+      },
+      {
+        "name": "Nordaventurien (Überleben)",
+        "wert": 8
+      },
+      {
+        "name": "Pirschen",
+        "wert": 8
+      },
+      {
+        "name": "Thorwal (Gebräuche)",
+        "wert": 6
+      },
+      {
+        "name": "Tierkunde",
+        "wert": 6
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 6
+      },
+      {
+        "name": "Wahrnehmung",
+        "wert": 8
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Herbeirufung des Eises",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Kühlen von einigen Maß Getränk +4"
+        },
+        {
+          "name": "Einfrieren von Nahrungsmittelvorräten"
+        },
+        {
+          "name": "Erschaffen von einigen Stein Eis -4"
+        }
+      ]
+    }
+  },
+  "amrychoth": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Amrychoth",
+    "beschreibung": "fünfgehörnter Rochen und Verderben der Seefahrer; großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Schreckgestalt II"
+      },
+      {
+        "name": "Wasserwesen"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 16,
+        "koloss": 1,
+        "MR": 20,
+        "GSS": 10,
+        "INI": 8
+      },
+      "waffen": [
+        {
+          "name": "Flutwelle",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 14,
+          "AT": 18,
+          "TP": {
+            "anzahl": 1,
+            "W": 20,
+            "plus": 5
+          },
+          "info": "Ertränken, Flächenangriff (90° vor dem Dämon), Zurückstoßen"
+        },
+        {
+          "name": "Hornstoß",
+          "RW": 1,
+          "VT": 2,
+          "AT": 4,
+          "TP": {
+            "anzahl": 3,
+            "W": 20
+          }
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Schwimmen",
+        "wert": 24
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 14
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 28,
+          "asp": 48
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Schiffbrüchige ertränken",
+          "mod": 4
+        },
+        {
+          "name": "Schiff manövrierunfähig schlagen"
+        },
+        {
+          "name": "Schiff versenken",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "akrhobal": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Arkhobal",
+    "beschreibung": "siebengehörnter Verderber der Wälder; sehr großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Tarnung (im Wald)"
+      },
+      {
+        "name": "Dämonenharz",
+        "info": "Wer dem Arkhobal\nmit einem Nahkampfangriff mindestens 2 Kratzer zufügt, muss eine\nGE-Probe (20) ablegen. Misslingt die Probe, erleidest du einen Malus von -2 auf alle körperlichen Proben (kumulativ) und musst eine KO-Probe\n(20) ablegen. Misslingt sie, verwandelst du dich innerhalb von 2W6\nTagen in einen Menschenbaum; die Alveranie gilt als Gegenmittel.)\n"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 14,
+        "koloss": 2,
+        "MR": 20,
+        "GS": 0,
+        "INI": 4
+      },
+      "waffen": [
+        {
+          "name": "Rankenangriff",
+          "RW": 8,
+          "RWM": 1,
+          "VT": 16,
+          "AT": 20,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Fesseln, Umklammern (-4, 20)"
+        },
+        {
+          "name": "Asthieb",
+          "RW": 2,
+          "VT": 16,
+          "AT": 20,
+          "TP": {
+            "anzahl": 3,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Niederwerfen (-8)"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke IV"
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 16
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 20
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 20
+      }
+    ],
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Dämonisch",
+          "wert": 16,
+          "talente": [
+            {
+              "name": "Fesselranken, Pandämonium, Wand aus Dornen"
+            }
+          ]
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Dämonisches Holz erschaffen",
+          "mod": 8
+        },
+        {
+          "name": "mittelgroßen Wald verderben",
+          "dauer": "permanent"
+        }
+      ]
+    },
+    "info": "Varianten: Alter Arkhobal (für je 50 Jahre: Wundschwelle, AT,  TP: +1)\n"
+  },
+  "azzitai": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Azzitai",
+    "beschreibung": "dreigehörnter Flammendämon, der sogar Gestein in Brand setzt",
+    "eigenschaften": [
+      {
+        "name": "Aura",
+        "info": "Hitze, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde"
+      },
+      {
+        "name": "Immunität (Feuer)"
+      },
+      {
+        "name": "Resistenz I (Stichwaffen)"
+      },
+      {
+        "name": "Verwundbarkeit I (Wasser)"
+      },
+      {
+        "name": "Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Azzitai als Zerbrechlich (S. 47)."
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 10,
+        "koloss": 1,
+        "MR": 10,
+        "GS": 5,
+        "INI": 4
+      },
+      "waffen": [
+        {
+          "name": "Hörner",
+          "RW": 0,
+          "VT": 2,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 7
+          },
+          "info": "Nachbrennen"
+        },
+        {
+          "name": "Feuerpranken",
+          "RW": 1,
+          "VT": 14,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Nachbrennen"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke I"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Dämonisch",
+          "wert": 20,
+          "talente": [
+            {
+              "name": "Brenne!"
+            },
+            {
+              "name": "Hartes schmelze!"
+            },
+            {
+              "name": "Wand aus Flammen"
+            }
+          ]
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 28,
+          "asp": 48
+        }
+      ],
+      "dienste": [
+        {
+          "name": "große Mengen Gestein schmelzen",
+          "mod": 4
+        },
+        {
+          "name": "Dorf oder Stadtviertel in Brand stecken"
+        },
+        {
+          "name": "Ziel suchen und einäschern",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "dharai": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Dharai",
+    "beschreibung": "zweigehörnter Baudämon mit immensen Kräften; großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Formlosigkeit",
+        "info": "kann seinen Körper so verändern, dass er durch handbreite Spalte passt"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 13,
+        "koloss": 2,
+        "MR": 18,
+        "GS": 3,
+        "INI": 2
+      },
+      "waffen": [
+        {
+          "name": "Gallertarm",
+          "RW": 2,
+          "VT": 2,
+          "AT": 8,
+          "info": "Festes Umklammern (Das Ziel wird umschlungen. Gelingt ihm oder einem Helfer bis zur nächsten Initiativephase keine KK-Probe (32), erleidet es 4W20 SP.)"
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio (24), 32 AsP"
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Transport riesiger Massen",
+          "dauer": "1 Stunde",
+          "mod": 4
+        },
+        {
+          "name": "Transport riesiger Massen",
+          "dauer": "1 Tag"
+        },
+        {
+          "name": "Hilfe bei Bauarbeiten",
+          "dauer": "1 Tag",
+          "mod": -4
+        }
+      ]
+    },
+    "infos": [
+      {
+        "name": "Varianten",
+        "info": "Je-Chrizlayk-Ura (Verfügt über noch höhere Kräfte, ist dafür aber noch langsamer: GS: und INI: -2.)"
+      },
+      {
+        "name": "Anmerkung",
+        "info": "Dharai und Je-Chrizlayk-Ura kämpfen nur, wenn sie angegriffen werden."
+      }
+    ]
+  },
+  "difar": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Difar",
+    "beschreibung": "extrem flinker Botendämon; sehr kleiner Gegner",
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 12,
+        "GS": 15,
+        "INI": 12
+      },
+      "waffen": [
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 16,
+          "AT": 6,
+          "TP": {
+            "anzahl": 1,
+            "W": 6
+          }
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio (16), 16 AsP"
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Botschaft über wenige Meilen überbringen",
+          "mod": 4
+        },
+        {
+          "name": "Botschaft über große Entfernungen überbringen"
+        },
+        {
+          "name": "Gegenstand suchen",
+          "dauer": "1 Tag",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "duglum": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Duglum",
+    "beschreibung": "siebengehörnter Überbringer von Krankheiten; großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Schreckgestalt III"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 16,
+        "koloss": 2,
+        "MR": 20,
+        "GS": 5,
+        "INI": 12
+      },
+      "waffen": [
+        {
+          "name": "Zangen",
+          "RW": 1,
+          "VT": 12,
+          "AT": 16,
+          "TP": {
+            "anzahl": 4,
+            "W": 6,
+            "plus": 5
+          },
+          "info": "Rüstungsbrechend"
+        },
+        {
+          "name": "Schleimsekret",
+          "RW": 8,
+          "LZ": 0,
+          "FK": 14,
+          "TP": {
+            "anzahl": 1,
+            "W": 6
+          },
+          "info": "Infektion (Das Ziel wird mit einer Krankheit bis Stufe 24 infiziert.)"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke I"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Dämonisch",
+          "wert": 18,
+          "talente": [
+            {
+              "name": "Fluch der Pestilenz, Schwarz und Rot, Tlalucs Odem)"
+            }
+          ]
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 32,
+          "asp": 64
+        }
+      ],
+      "dienste": [
+        {
+          "name": "nahes Ziel mit einer Krankheit bis Stufe 32 infizieren",
+          "mod": 4
+        },
+        {
+          "name": "Seuche bis Stufe 24 in einer Stadt verbreiten"
+        },
+        {
+          "name": "Besitzer eines vorhandenen Körperteils suchen und mit einer Krankheit bis Stufe 32 infizieren",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "gotongi": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Gotongi",
+    "beschreibung": "Spionagedämon aus der Domäne Blakharaz‘; sehr kleiner Gegner",
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 12,
+        "GSF": 12,
+        "INI": 12,
+        "info": "Flieger, Unsichtbarkeit, Verwundbarkeit II (Schadenszauber)"
+      },
+      "waffen": [
+        {
+          "name": "Ausweichen",
+          "RW": 0,
+          "VT": 18
+        }
+      ]
+    },
+    "magie": {
+      "asp": 16,
+      "fertigkeiten": [
+        {
+          "name": "Hellsicht",
+          "wert": 14,
+          "talente": [
+            {
+              "name": "Exposami"
+            },
+            {
+              "name": "Penetrizzel"
+            }
+          ]
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Haus durchsuchen",
+          "mod": 4
+        },
+        {
+          "name": "Meldung von Eindringlingen",
+          "dauer": "1 Tag"
+        },
+        {
+          "name": "Ausspionieren von Personen",
+          "dauer": "1 Tag",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "heshtot": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Heshthot",
+    "beschreibung": "niederer Rachedämon aus der Domäne Blakharaz‘",
+    "kampf": {
+      "werte": {
+        "WS": 4,
+        "MR": 5,
+        "GS": 5,
+        "INI": 4
+      },
+      "waffen": [
+        {
+          "name": "Peitsche",
+          "RW": 2,
+          "VT": 2,
+          "AT": 11,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": -1
+          },
+          "info": "Lähmend (Übersteigt der Schaden deinen RS, sind bis zum nächsten\nMorgen alle Proben auf KK und Fertigkeiten mit KK kumulativ um -1 erschwert)\n"
+        },
+        {
+          "name": "Schwert",
+          "RW": 1,
+          "VT": 6,
+          "AT": 10,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 3
+          },
+          "info": "Zerstörerisch (Deine Waffe erleidet bei jeder gelungenen Verteidigung\naußer Ausweichen den vollen Waffenschaden des Schwertes.)\n"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke I"
+        }
+      ]
+    },
+    "magie": {
+      "asp": 16,
+      "fertigkeiten": [
+        {
+          "name": "Umwelt",
+          "wert": 16,
+          "talente": [
+            {
+              "name": "Dunkelheit"
+            }
+          ]
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 20,
+          "asp": 24
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Waffe aushändigen",
+          "mod": 4,
+          "dauer": "1 Woche"
+        },
+        {
+          "name": "Kampf",
+          "dauer": "1 Minute"
+        },
+        {
+          "name": "Ziel in der Nähe suchen und töten",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "irrhalk": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Irrhalk",
+    "beschreibung": "viergehörnte Verhöhnung eines Greifen; großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Flugfähig"
+      },
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Resistenz II (Feuer)"
+      },
+      {
+        "name": "Schreckgestalt II"
+      },
+      {
+        "name": "Verwundbarkeit I (Wasser)"
+      },
+      {
+        "name": "Explosion (5W6)"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 12,
+        "MR": 18,
+        "GS": 6,
+        "GSF": 13,
+        "INI": 5
+      },
+      "waffen": [
+        {
+          "name": "Schnabelhieb",
+          "RW": 0,
+          "VT": 2,
+          "AT": 14,
+          "TP": {
+            "anzahl": 4,
+            "W": 6,
+            "plus": 4
+          }
+        },
+        {
+          "name": "Prankenhieb",
+          "RW": 1,
+          "VT": 12,
+          "AT": 12,
+          "TP": {
+            "anzahl": 3,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Nachbrennen"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke I"
+        },
+        {
+          "name": "Sturmangriff"
+        },
+        {
+          "name": "Niederwerfen"
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 28,
+          "asp": 48
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Kampf",
+          "dauer": "1 Minute",
+          "mod": 4
+        },
+        {
+          "name": "Wache",
+          "dauer": "1 Tag"
+        },
+        {
+          "name": "Suchen und Töten einer Person",
+          "dauer": "1 Tag",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "karakil": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Karakil",
+    "beschreibung": "Flugdämon in Gestalt einer geflügelten Schlange; großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Flugfähig"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 12,
+        "MR": 10,
+        "GS": 1,
+        "GSF": 18,
+        "INI": 4
+      },
+      "waffen": [
+        {
+          "name": "Klauenhieb",
+          "RW": 1,
+          "VT": 8,
+          "AT": 8,
+          "TP": {
+            "anzahl": 4,
+            "W": 6,
+            "plus": 2
+          }
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Sturmangriff"
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Fliegen",
+        "wert": 14
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio (24), 32 AsP"
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Beschwörer transportieren",
+          "dauer": "1 Stunde",
+          "mod": 4
+        },
+        {
+          "name": "Beschwörer in den Kampf tragen",
+          "dauer": "1 Stunde"
+        },
+        {
+          "name": "Transport großer Lasten",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "karmanath": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Karmanath",
+    "beschreibung": "eiskalter Höllenhund und unbarmherziger Hetzer",
+    "eigenschaften": [
+      {
+        "name": "Rudel"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 5,
+        "MR": 8,
+        "GS": 10,
+        "INI": 7
+      },
+      "waffen": [
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 6,
+          "AT": 8,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          },
+          "info": "Erfrieren"
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Laufen",
+        "wert": 16
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 14
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 14
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Spur verfolgen",
+          "dauer": "1 Stunde",
+          "mod": 4
+        },
+        {
+          "name": "Hetzen und Töten",
+          "dauer": "1 Stunde"
+        },
+        {
+          "name": "Kampf",
+          "dauer": "1 Minute",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "khidmakhabul": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Khidma‘kha‘bul",
+    "beschreibung": "kleine Rostratte und niederer Diener Tasfarelels",
+    "eigenschaften": [
+      {
+        "name": "Rudel"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 3,
+        "MR": 6,
+        "GS": 7,
+        "INI": 8
+      },
+      "waffen": [
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 10,
+          "AT": 10,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 2
+          }
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Untertauchen",
+        "wert": 16
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 14
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 16,
+          "asp": 16
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Wache über Schätze",
+          "dauer": "1 Jahr"
+        },
+        {
+          "name": "Wache über andere Gegenstände",
+          "dauer": "1 Woche",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "laraan": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Laraan",
+    "beschreibung": "fünfgehörnter Verführer, der seine Opfer in den Wahnsinn treibt",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Schreckgestalt II*"
+      },
+      {
+        "name": "Tarnung"
+      },
+      {
+        "name": "Unsichtbarkeit*"
+      },
+      {
+        "name": "Verführerische Gestalt",
+        "info": "Der Dämon nimmt die Gestalt eines\nwunderschönen Wesens mit übergroßen Geschlechtsteilen an. In dieser\nGestalt verliert der Dämon alle Eigenschaften/Attacken mit * und\nerhält die Eigenschaften/Attacken der angenommenen Gestalt.\n"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 11,
+        "MR": 20,
+        "GS": 5,
+        "INI": 10
+      },
+      "waffen": [
+        {
+          "name": "Krallen*",
+          "RW": 1,
+          "VT": 12,
+          "AT": 16,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 6
+          },
+          "info": "Mutation"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Niederwerfen, Zusätzliche Attacke I"
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Betören",
+        "wert": 24
+      },
+      {
+        "name": "Gebräuche",
+        "wert": 20
+      },
+      {
+        "name": "Menschenkenntnis",
+        "wert": 18
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 16
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 20
+      }
+    ],
+    "infos": [
+      {
+        "name": "Dienstopfer",
+        "info": "Jeder Dienst des Laraans beginnt damit, dass der Beschwörer ihm ein Körperteil (z.B. Haar) des Zieles opfert."
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 28,
+          "asp": 48
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Ziel verführen und ablenken",
+          "mod": 4,
+          "dauer": "1 Tag"
+        },
+        {
+          "name": "Ziel verführen und dem Beschwörer hörig machen",
+          "dauer": "1 Woche"
+        },
+        {
+          "name": "Ziel verführen und in den Wahnsinn treiben",
+          "mod": -4,
+          "dauer": "bis von meisterlichem Seelenheiler geheilt"
+        }
+      ]
+    }
+  },
+  "nephazz": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Nephazz",
+    "beschreibung": "niederer Diener Thargunitoths, der Leichen erheben kann",
+    "eigenschaften": [
+      {
+        "name": "Rudel"
+      },
+      {
+        "name": "Unsichtbarkeit"
+      },
+      {
+        "name": "Untoten beseelen",
+        "info": "Der Dämon kann eine Leiche als Untoten erheben oder fährt in einen bestehenden Untoten ein. Er verliert einige Eigenschaften/Attacken und erhält die Eigenschaften/Attacken des Untoten. Der Dämon kontrolliert den Untoten vollständig.)\n"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 1,
+        "MR": 10,
+        "GS": 4,
+        "INI": 8
+      },
+      "waffen": [
+        {
+          "name": "Ausweichen",
+          "RW": 0,
+          "VT": 2
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio (16), 16 AsP"
+        }
+      ],
+      "dienste": [
+        {
+          "name": "bestehenden Untoten verstärken, indem der Untote zusätzliche Fähigkeiten (S. 81) im Wert von -6 erhält",
+          "dauer": "1 Woche oder bis der Untote zerfällt",
+          "mod": 4
+        },
+        {
+          "name": "eine Leiche als schwachen oder nützlichen Untoten (S. 81) erheben und anschließend im Körper des Untoten einen weiteren Dienst erfüllen",
+          "dauer": "1 Stunde"
+        },
+        {
+          "name": "einen schwachen oder nützlichen Untoten (S. 81) übernehmen und anschließend im Körper des Untoten einen weiteren Dienst erfüllen",
+          "dauer": "1 Stunde",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "nurumbaal": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Nurumbaal",
+    "beschreibung": "verfluchter zweigehörnter Goldesel",
+    "kampf": {
+      "werte": {
+        "WS": 8,
+        "MR": 6,
+        "GS": 8,
+        "INI": 6
+      },
+      "waffen": [
+        {
+          "name": "Tritt",
+          "RW": 1,
+          "VT": 8,
+          "AT": 10,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 4
+          }
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Gold vernichten",
+          "mod": 4
+        },
+        {
+          "name": "Herz eines Humanoiden verspeisen, um 1 Stein Gold zu erschaffen"
+        },
+        {
+          "name": "Herz eines magiebegabten Humanoiden verspeisen, um 1 Stein Mindorium zu erschaffen",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "quitslinga": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Quitslinga",
+    "beschreibung": "viergehörnter und hochintelligenter Gestaltwandler",
+    "eigenschaften": [
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Schreckgestalt II"
+      },
+      {
+        "name": "Tarnung"
+      },
+      {
+        "name": "Gestaltwandeln (Der",
+        "info": "Dämon nimmt die Gestalt einer Person an, von der er einen Körperteil besitzt. Jeder Gestaltwechsel senkt seine WS um 1. In einer fremden Gestalt verliert der Dämon Eigenschaften/Attacken und erhält die Eigenschaften/Attacken der angenommenen Gestalt.)"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 11,
+        "MR": 12,
+        "GS": 5,
+        "INI": 10
+      },
+      "waffen": [
+        {
+          "name": "Tentakel",
+          "RW": 2,
+          "VT": 8,
+          "AT": 12,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 5
+          },
+          "info": "Stumpf"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Niederwerfen,"
+        },
+        {
+          "name": "Zusätzliche Attacke IV"
+        }
+      ]
+    },
+    "talente": [
+      {
+        "name": "Gebräuche",
+        "wert": 16
+      },
+      {
+        "name": "Menschenkenntnis",
+        "wert": 14
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 18
+      },
+      {
+        "name": "Überreden",
+        "wert": 16
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 14
+      }
+    ],
+    "magie": {
+      "asp": 64,
+      "fertigkeiten": [
+        {
+          "name": "Illusion",
+          "wert": 20,
+          "talente": [
+            {
+              "name": "alle Illusionszauber"
+            }
+          ]
+        },
+        {
+          "name": "Dämonisch",
+          "wert": 12,
+          "talente": [
+            {
+              "name": "einige passende Zauber"
+            }
+          ]
+        },
+        {
+          "name": "Einfluss",
+          "wert": 12,
+          "talente": [
+            {
+              "name": "einige passende Zauber"
+            }
+          ]
+        }
+      ]
+    },
+    "infos": [
+      {
+        "name": "Dienstbeginn",
+        "info": "Jeder Dienst des Quitslingas beginnt damit, dass er in einen Wirtskörper einfährt und ihn umformt."
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 28,
+          "asp": 48
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Diebstahl",
+          "mod": 4
+        },
+        {
+          "name": "Ausspionieren von Spielercharakteren",
+          "dauer": "1 Woche"
+        },
+        {
+          "name": "Person verkörpern",
+          "dauer": "1 Monat",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "shruuf": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Shruuf",
+    "beschreibung": "viergehörnter Kampfdämon; großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Schreckgestalt II"
+      },
+      {
+        "name": "Regeneration I"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 13,
+        "MR": 10,
+        "GS": 4,
+        "INI": 3
+      },
+      "waffen": [
+        {
+          "name": "Schnabel",
+          "RW": 0,
+          "VT": 2,
+          "AT": 16,
+          "TP": {
+            "anzahl": 4,
+            "W": 6,
+            "plus": 4
+          }
+        },
+        {
+          "name": "Tentakel",
+          "RW": 2,
+          "VT": 8,
+          "AT": 14,
+          "TP": {
+            "anzahl": 3,
+            "W": 6,
+            "plus": 2
+          }
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke IV, Niederwerfen"
+        }
+      ]
+    },
+    "attribute": {
+      "GE": 18,
+      "KK": 30
+    },
+    "talente": [
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Pirschen",
+        "wert": 0
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 28,
+          "asp": 48
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Kampf",
+          "dauer": "1 Minute",
+          "mod": 4
+        },
+        {
+          "name": "Wache",
+          "dauer": "1 Woche"
+        },
+        {
+          "name": "Kampf",
+          "dauer": "1 Stunde",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "tlaluc": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Tlaluc",
+    "beschreibung": "zweighörnter, miasmatischer Schneckendämon",
+    "eigenschaften": [
+      {
+        "name": "Aura",
+        "info": "Gestank, Zähigkeit (28) jede Intitiavephase, kampfunfähigkeit für 1W6 Minuten"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 8,
+        "WSE": 12,
+        "MR": 20,
+        "GS": 1,
+        "INI": 3
+      },
+      "waffen": [
+        {
+          "name": "Verdauen",
+          "RW": 0,
+          "VT": 2,
+          "AT": 4,
+          "TP": {
+            "anzahl": 3,
+            "W": 6
+          }
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio (24), 32 AsP"
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Fest des Nachbars ruinieren",
+          "mod": 4
+        },
+        {
+          "name": "Wache",
+          "dauer": "1 Woche"
+        },
+        {
+          "name": "bewaffnete Gegner angreifen",
+          "dauer": "1 Stunde",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "ulchuchu": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Ulchuchu",
+    "beschreibung": "eingehörnter, ständig wachsender Algendämon",
+    "eigenschaften": [
+      {
+        "name": "Regeneration II"
+      },
+      {
+        "name": "Verwundbarkeit I (Feuer)"
+      },
+      {
+        "name": "Wasserwesen"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 9,
+        "MR": 14,
+        "GS": 1,
+        "INI": 3
+      },
+      "waffen": [
+        {
+          "name": "Tangschlingen",
+          "RW": 2,
+          "VT": 4,
+          "AT": 12,
+          "TP": {
+            "anzahl": 2,
+            "W": 6
+          },
+          "info": "Umklammern (-4, 12), Ersäufen (Ein umklammertes Ziel wird unter Wasser gezogen und erleidet in jeder Initiativephase 1 Punkt Erschöpfung. Der Dämon kann bis zu 2 Ziele unter Wasser halten.)"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Zusätzliche Attacke I"
+        }
+      ]
+    },
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio",
+          "wert": 24,
+          "asp": 32
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Ort bewachen",
+          "dauer": "1 Jahr"
+        },
+        {
+          "name": "Kampf",
+          "dauer": "1 Minute",
+          "mod": -4
+        }
+      ]
+    },
+    "infos": [
+      {
+        "name": "Varianten",
+        "info": "Ein Ulchuchu kann über die Jahre immer weiter wachsen: Großer Ulchuchu (Koloss I, Zusätzliche Attacke II,  AT: +2, Umklammern (-6, 16), kann 4 Ziele unter Wasser halten)   Riesiger Ulchuchu (Koloss II, Zusätzliche Attacke IV,  AT: +2, Umklammern (-8, 20), kann 8 Ziele unter Wasser halten)\n"
+      }
+    ]
+  },
+  "zant": {
+    "klasse": "daemon",
+    "quelle": "ilaris",
+    "name": "Zant",
+    "beschreibung": "wendiger Kampfdämon; großer Gegner",
+    "eigenschaften": [
+      {
+        "name": "Schreckgestalt II"
+      },
+      {
+        "name": "Regeneration I"
+      },
+      {
+        "name": "Rudel"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 7,
+        "MR": 12,
+        "GS": 8,
+        "INI": 12
+      },
+      "waffen": [
+        {
+          "name": "Prankenhieb",
+          "RW": 1,
+          "VT": 8,
+          "AT": 15,
+          "TP": {
+            "anzahl": 2,
+            "W": 6,
+            "plus": 3
+          },
+          "info": "Wendig"
+        },
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 2,
+          "AT": 13,
+          "TP": {
+            "anzahl": 3,
+            "W": 6,
+            "plus": 2
+          }
+        },
+        {
+          "name": "Schwanz",
+          "RW": 1,
+          "VT": 2,
+          "AT": 13,
+          "TP": {
+            "anzahl": 2,
+            "W": 6
+          },
+          "info": "Niederwerfen"
+        }
+      ],
+      "vorteile": [
+        {
+          "name": "Niederwerfen"
+        },
+        {
+          "name": "Sturmangriff"
+        },
+        {
+          "name": "im Reiterkampf WM +1"
+        }
+      ]
+    },
+    "attribute": {
+      "GE": 28,
+      "KK": 24
+    },
+    "talente": [
+      {
+        "name": "Laufen",
+        "wert": 16
+      },
+      {
+        "name": "Pirschen",
+        "wert": 10
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 10
+      }
+    ],
+    "beschwoerung": {
+      "proben": [
+        {
+          "name": "Invocatio (20), 24 AsP"
+        }
+      ],
+      "dienste": [
+        {
+          "name": "Barrikade zerstören",
+          "mod": 4
+        },
+        {
+          "name": "Kampf",
+          "dauer": "1 Minute"
+        },
+        {
+          "name": "Reittier",
+          "dauer": "1 Stunde",
+          "mod": -4
+        }
+      ]
+    }
+  },
+  "eule": {
+    "beschreibung": "Häufiges Vertrautentier",
+    "klasse": "tier",
+    "quelle": "ilaris",
+    "name": "Eule",
+    "eigenschaften": [
+      {
+        "name": "Flieger"
+      },
+      {
+        "name": "Angepasst II (Dunkelheit)"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 4,
+        "GS": 1,
+        "GSF": 10,
+        "INI": 1
+      },
+      "waffen": [
+        {
+          "name": "Krallen",
+          "RW": 0,
+          "VT": 6,
+          "AT": 13,
+          "TP": {
+            "anzahl": 1,
+            "W": 6
+          }
+        }
+      ]
+    },
+    "attribute": {
+      "KK": -8,
+      "KL": -4,
+      "MU": 4
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 16
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 16
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": -4
+      }
+    ]
+  },
+  "katze": {
+    "beschreibung": "Häufiges Vertrautentier",
+    "klasse": "tier",
+    "quelle": "ilaris",
+    "name": "Katze",
+    "eigenschaften": [
+      {
+        "name": "Angepasst II (Dunkelheit)"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 4,
+        "GS": 6,
+        "INI": 6
+      },
+      "waffen": [
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 12,
+          "AT": 12,
+          "TP": {
+            "anzahl": 1,
+            "W": 6
+          }
+        }
+      ]
+    },
+    "attribute": {
+      "KK": -8,
+      "KL": -6,
+      "MU": 0
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 20
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": -4
+      }
+    ]
+  },
+  "kleinaffe": {
+    "beschreibung": "Häufiges Vertrautentier",
+    "klasse": "tier",
+    "quelle": "ilaris",
+    "name": "Kleinaffe",
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 1,
+        "GS": 5,
+        "INI": 3
+      },
+      "waffen": [
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 12,
+          "AT": 9,
+          "TP": {
+            "anzahl": 1,
+            "W": 6,
+            "plus": -1
+          }
+        }
+      ]
+    },
+    "attribute": {
+      "FF": 6,
+      "KK": -6,
+      "KL": -6,
+      "MU": -2
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 16
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": -4
+      }
+    ]
+  },
+  "kroete": {
+    "beschreibung": "Häufiges Vertrautentier",
+    "klasse": "tier",
+    "quelle": "ilaris",
+    "name": "Kröte",
+    "eigenschaften": [
+      {
+        "name": "Magiegespür"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 1,
+        "MR": 8,
+        "GS": 1,
+        "INI": -1
+      },
+      "waffen": [
+        {
+          "name": "Ausweichen",
+          "RW": 0,
+          "VT": 6
+        }
+      ]
+    },
+    "attribute": {
+      "KK": -16,
+      "KL": -4,
+      "MU": 0
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 28
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 12
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": -8
+      }
+    ]
+  },
+  "rabe": {
+    "beschreibung": "Häufiges Vertrautentier",
+    "klasse": "tier",
+    "quelle": "ilaris",
+    "name": "Rabe",
+    "eigenschaften": [
+      {
+        "name": "Flieger"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 2,
+        "GS": 1,
+        "GSF": 9,
+        "INI": 0
+      },
+      "waffen": [
+        {
+          "name": "Krallen",
+          "RW": 0,
+          "VT": 8,
+          "AT": 12,
+          "TP": {
+            "anzahl": 1,
+            "W": 6,
+            "plus": 1
+          }
+        }
+      ]
+    },
+    "attribute": {
+      "KK": -8,
+      "KL": -2,
+      "MU": -2
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 12
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 18
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": -4
+      }
+    ]
+  },
+  "schlange": {
+    "beschreibung": "Häufiges Vertrautentier",
+    "klasse": "tier",
+    "quelle": "ilaris",
+    "name": "Schlange",
+    "eigenschaften": [
+      {
+        "name": "Magiegespür"
+      }
+    ],
+    "kampf": {
+      "werte": {
+        "WS": 2,
+        "MR": 6,
+        "GS": 2,
+        "INI": 0
+      },
+      "waffen": [
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 8,
+          "AT": 13,
+          "TP": {
+            "anzahl": 1,
+            "W": 6,
+            "plus": 1
+          },
+          "info": "Gifte je nach Schlange"
+        }
+      ]
+    },
+    "attribute": {
+      "KK": -8,
+      "KL": -6,
+      "MU": -4
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 24
+      },
+      {
+        "name": "Sinnenschärfe",
+        "wert": 10
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 16
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": -4
+      }
+    ]
+  },
+  "spinne": {
+    "beschreibung": "Häufiges Vertrautentier",
+    "klasse": "tier",
+    "quelle": "ilaris",
+    "name": "Spinne",
+    "kampf": {
+      "werte": {
+        "WS": 1,
+        "MR": 8,
+        "GS": 1,
+        "INI": 0
+      },
+      "waffen": [
+        {
+          "name": "Biss",
+          "RW": 0,
+          "VT": 8,
+          "AT": 11,
+          "TP": {
+            "anzahl": 1,
+            "W": 6,
+            "plus": -2
+          },
+          "info": "Gifte je nach Spinne"
+        }
+      ]
+    },
+    "attribute": {
+      "KK": -16,
+      "KL": -6,
+      "MU": -6
+    },
+    "talente": [
+      {
+        "name": "Pirschen",
+        "wert": 28
+      },
+      {
+        "name": "Wachsamkeit",
+        "wert": 12
+      },
+      {
+        "name": "Zähigkeit",
+        "wert": -8
       }
     ]
   }
