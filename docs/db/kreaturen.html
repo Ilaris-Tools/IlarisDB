@@ -115,9 +115,9 @@ layout: default
                 <div class="tagbox">
                     <div class="tag"><b>{{ w.name }}</b></div>
                     <div class="tag">{% if w.RW %}RW: {{ w.RW }}{% endif %}</div>
-                    <div class="tag">{% if w.FK %}FK: {{ w.AT }}{% endif %}</div>
-                    <div class="tag">{% if w.LZ %}LZ: {{ w.VT }}{% endif %}</div>
-                    <div class="tag">{% if w.FK %}TP: {{ w.TP.anzahl }}W{{ w.TP.W }}+{{ w.TP.plus }}{% endif %}
+                    <div class="tag">{% if w.FK %}FK: {{ w.FK }}{% endif %}</div>
+                    <div class="tag">{% if w.LZ %}LZ: {{ w.LZ }}{% endif %}</div>
+                    <div class="tag">{% if w.TP %}TP: {{ w.TP.anzahl }}W{{ w.TP.W }}+{{ w.TP.plus }}{% endif %}
                     </div>
                 </div>
                 {% else %}
@@ -125,8 +125,8 @@ layout: default
                     <div class="tag"><b>{{ w.name }}</b></div>
                     <div class="tag">{% if w.RW %}RW: {{ w.RW }}{% endif %}</div>
                     <div class="tag">{% if w.AT %}AT: {{ w.AT }}{% endif %}</div>
-                    <div class="tag">{% if w.AT %}VT: {{ w.VT }}{% endif %}</div>
-                    <div class="tag">{% if w.AT %}TP: {{ w.TP.anzahl }}W{{ w.TP.W }}+{{ w.TP.plus }}{% endif %}
+                    <div class="tag">{% if w.VT %}VT: {{ w.VT }}{% endif %}</div>
+                    <div class="tag">{% if w.TP %}TP: {{ w.TP.anzahl }}W{{ w.TP.W }}+{{ w.TP.plus }}{% endif %}
                     </div>
                 </div>
                 {% endif %}
