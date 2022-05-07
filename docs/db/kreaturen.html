@@ -111,6 +111,16 @@ layout: default
             <div class="textblock">
                 {% if k[1].kampf.waffen %}
                 {% for w in k[1].kampf.waffen %}
+                {% if w.FK %}
+                <div class="tagbox">
+                    <div class="tag"><b>{{ w.name }}</b></div>
+                    <div class="tag">{% if w.RW %}RW: {{ w.RW }}{% endif %}</div>
+                    <div class="tag">{% if w.FK %}FK: {{ w.AT }}{% endif %}</div>
+                    <div class="tag">{% if w.LZ %}LZ: {{ w.VT }}{% endif %}</div>
+                    <div class="tag">{% if w.FK %}TP: {{ w.TP.anzahl }}W{{ w.TP.W }}+{{ w.TP.plus }}{% endif %}
+                    </div>
+                </div>
+                {% else %}
                 <div class="tagbox">
                     <div class="tag"><b>{{ w.name }}</b></div>
                     <div class="tag">{% if w.RW %}RW: {{ w.RW }}{% endif %}</div>
@@ -119,6 +129,7 @@ layout: default
                     <div class="tag">{% if w.AT %}TP: {{ w.TP.anzahl }}W{{ w.TP.W }}+{{ w.TP.plus }}{% endif %}
                     </div>
                 </div>
+                {% endif %}
                 {% if w.info %}<div style="padding-left:1rem;"><i>{{ w.info }}</i></div>{% endif %}
                 {% endfor %}
                 {% endif %}
