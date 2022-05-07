@@ -916,8 +916,8 @@ blutfischschwarm:
       MR: 2
       WS: 3
       WSE: 3
-      info: MR pro einzelnes Tier, Fortbewegung nur schwimmend
       koloss: 2
+  info: MR pro einzelnes Tier, Fortbewegung nur schwimmend
   klasse: tier
   name: Blutfischschwarm
   quelle: ilaris
@@ -2113,8 +2113,7 @@ feuermaehre:
       Ebenso willkürlich endet der Angriff
     name: Jähzorn
   infos:
-  - info: Der Reiter ist immun gegen Feuerschaden, nicht aber gegen den Jähzorn der
-      Feuermähre.
+  - info: Der Reiter ist immun gegen Feuerschaden, nicht aber gegen den Jähzorn der Feuermähre.
     name: Behütend
   kampf:
     waffen:
@@ -12234,7 +12233,6 @@ baradarasch:
       - name: Wand aus Wasser
       - name: Wellenlauf
   talente:
-  - name:
   - name: Elementarismus 
     wert: 16
   - name: Tulamidenlande (Gebräuche) 
@@ -14275,3 +14273,242 @@ spinne:
     wert: 12
   - name: Zähigkeit 
     wert: -8
+zombie:
+  beschreibung: leicht zu erhebender schwacher Untoter
+  attribute:
+    GE: 0
+    KO: 24
+    KK: 8
+    MU: 24
+  klasse: untot
+  name: Zombie
+  quelle: heiner
+  eigenschaften:
+    - name: Astralsinn
+    - name: Resistenz II (Stichwaffen)
+    - name: Rudel
+  kampf:
+    werte:
+      WS: 5
+      MR: 5
+      GS: 2
+      INI: 1
+    waffen:
+      - name: Hände 
+        RW: 1 
+        VT: 4 
+        AT: 10 
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: 2
+        info: Umklammern(-4) nur ab 2 Zombies pro Opfer
+      - name: Biss 
+        RW: 0 
+        VT: 4 
+        AT: 8 
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: -1
+        info: Hochansteckend
+  beschwoerung:
+    dienste:
+    - name: Kampf (1 Minute)
+    - name: Wache (1 Tag, mit Totes handle! permanent, 4)
+    proben:
+    - asp: 8
+      name: Skelettarius
+      wert: 12
+    - asp: 8
+      name: Totes Handle!
+      wert: 12
+  infos: 
+    - name: Varianten 
+      info: Mit Nephazz’ besetzt zus. Eig. S. 81, Mutation (nekrotische Veränderung)
+    - name: Hochansteckend
+      info: "Jede erlittene Wunde erhöht die Chance einer Ansteckung mit Wundbrand oder einer anderen Krankheit um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert das Risiko"
+fetterzombie:
+  beschreibung: nützlicher Untoter
+  attribute:
+    GE: -4
+    KO: 24
+    KK: 12
+    MU: 24
+  klasse: untot
+  name: Fetter Zombie
+  quelle: heiner
+  eigenschaften:
+    - name: Astralsinn
+    - name: Explosion (3W6, Säure)
+  kampf:
+    werte:
+      WS: 5
+      MR: 5
+      GS: 1
+      INI: 1
+    waffen:
+      - name: Hände 
+        RW: 1 
+        VT: 4 
+        AT: 12
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: 4
+        info: Niederwerfen(AT-4)
+      - name: Biss 
+        RW: 0 
+        VT: 4 
+        AT: 10
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: -1
+        info: Hochansteckend
+  beschwoerung:
+    dienste:
+    - name: Kampf (1 Minute)
+    - name: Wache (1 Tag, mit Totes handle! permanent, 4)
+    proben:
+    - asp: 16
+      name: Skelettarius
+      wert: 16
+    - asp: 16
+      name: Totes Handle!
+      wert: 16
+  infos: 
+    - name: Varianten 
+      info: Mächtige Magie Explosion(4W6, Säure)
+    - name: Beschwörung
+      info: Aus fettleibiger oder aufgedunsener Leiche
+    - name: Hochansteckend
+      info: "Jede erlittene Wunde erhöht die Chance einer Ansteckung mit Wundbrand oder einer anderen Krankheit um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert das Risiko"
+tlaluczombie:
+  name: Tlaluczombie
+  beschreibung: nützlicher Untoter
+  attribute:
+    GE: 0
+    KO: 20
+    KK: 8
+    MU: 24
+  klasse: untot
+  quelle: heiner
+  eigenschaften:
+    - name: Astralsinn
+    - name: Aura 
+      info: Gestank, Zähigkeit (12) alle 4 Intitiavephasen, Kampfunfähigkeit für 2 Initiativphase
+  kampf:
+    werte:
+      WS: 4
+      MR: 5
+      GS: 2
+      INI: 1
+    waffen:
+      - name: Tlalucs Odem
+        RW: 8
+        info: gelingt autom., nur erste AT
+      - name: Hände 
+        RW: 1 
+        VT: 4 
+        AT: 12
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: 2
+      - name: Biss 
+        RW: 0 
+        VT: 4 
+        AT: 10
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: -1
+        info: Hochansteckend
+  beschwoerung:
+    dienste:
+    - name: Kampf (1 Minute)
+    - name: Wache (1 Tag, mit Totes handle! permanent, 4)
+    proben:
+    - asp: 16
+      name: Skelettarius
+      wert: 16
+    - asp: 16
+      name: Totes Handle!
+      wert: 16
+  infos: 
+    - name: Varianten 
+      info: Mächtige Magie (Gestank, Zähigkeit (16) alle 4 Intitiavephasen, Kampfunfähigkeit für 4 Initiativphase)
+    - name: Hochansteckend
+      info: "Jede erlittene Wunde erhöht die Chance einer Ansteckung mit Wundbrand oder einer anderen Krankheit um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert das Risiko"
+zombiehauptmann:
+  name: Zombiehauptmann
+  beschreibung: starker Untoter
+  attribute:
+    GE: 2
+    KO: 24
+    KK: 12
+    MU: 24
+  klasse: untot
+  quelle: heiner
+  eigenschaften:
+    - name: Astralsinn
+    - name: Untotenanführer
+  kampf:
+    vorteile:
+      - name: Entfernung verändern
+      - name: Entwaffnen
+      - name: Umreißen
+      - name: Wuchtschlag
+    werte:
+      WS: 4
+      MR: 5
+      GS: 2
+      INI: 1
+    waffen:
+      - name: Tlalucs Odem
+        RW: 8
+        info: gelingt autom., nur erste AT
+      - name: Hände 
+        RW: 1 
+        VT: 6
+        AT: 14
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: 2
+        info: Umklammern(-4) falls Gefolgsleute vorhanden
+      - name: Biss 
+        RW: 0 
+        VT: 6
+        AT: 12
+        TP: 
+          anzahl: 1
+          W: 6
+          plus: -1
+        info: Hochansteckend
+  beschwoerung:
+    dienste:
+    - name: Kampf (1 Minute)
+    - name: Wache (1 Tag, mit Totes handle! permanent, 4)
+    proben:
+    - asp: 24
+      name: Skelettarius
+      wert: 20
+    - asp: 24
+      name: Totes Handle!
+      wert: 20
+  infos: 
+    - name: Varianten 
+      info: Mächtige Magie 1 zus. Fähigkeit von S. 81
+    - name: Hochansteckend
+      info: "Jede erlittene Wunde erhöht die Chance einer Ansteckung mit Wundbrand oder einer anderen Krankheit um 50%. Eine Probe auf Gifte und Krankheiten (24) eliminiert das Risiko"
+    - name: Untotenanführer
+      info: |
+        Ein Untotenanführer wird automatisch mit W6 Gefolgsleuten ohne weitere Kosten für
+        den Beschwörer gerufen, wenn entsprechendes „Material” verfügbar ist. Die Gefolgsleute erheben sich gemäß ihrem Verwesungsgrad als gewöhnliche Skelette, Zombies, Mumien oder Leichname und können
+        nicht weiter mit Eigenschaften versehen werden. Sie
+        unterstützen alle Dienste, die dem Anführer aufgetragen werden. Zudem verfügen sie über das Manöver
+        Umklammern(AT-4). Der Anführer verfügt über einen
+        eventuellen Kriegskunst-TaW, der halb so groß ist wie
+        der TaW zu Lebzeiten des erhobenen Wesens (1W6, wenn nicht bekannt). 

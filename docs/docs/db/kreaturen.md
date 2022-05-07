@@ -1,5 +1,5 @@
 ---
-permalink: /docs/db/kreaturen
+permalink: /docs/db/kreaturen/
 layout: default
 ---
 
