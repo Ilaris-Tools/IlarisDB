@@ -14466,9 +14466,6 @@ zombiehauptmann:
       GS: 2
       INI: 1
     waffen:
-      - name: Tlalucs Odem
-        RW: 8
-        info: gelingt autom., nur erste AT
       - name: Hände 
         RW: 1 
         VT: 6
