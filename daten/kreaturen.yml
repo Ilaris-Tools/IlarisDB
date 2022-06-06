@@ -167,9 +167,12 @@ altergolem:
     MU: 12
   beschreibung: hinterhältiger Jäger aus Stein
   eigenschaften:
-  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
-  - name: Angepasst II (Dunkelheit)
-  - name: Tarnung (in der Stadt)
+  - name: Immunität
+    info: Eigenschaften, Hellsicht, Verwandlung
+  - name: Angepasst II
+    info: Dunkelheit
+  - name: Tarnung 
+    info: in der Stadt
   - name: Geisterpanzer
   info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt eine
     MR von 0)
@@ -404,7 +407,8 @@ atuum:
   - info: "Benebelnder Geruch Zähigkeit (16), jede INI: phase, -2 auf Proben für 1\
       \ Stunde) \n"
     name: Aura
-  - name: Explosion (4W6)
+  - name: Explosion
+    info: 4W6
   - name: Regeneration I
   - name: Zusätzliche Attacke II
   kampf:
@@ -451,7 +455,8 @@ azuzar:
     MU: 12
   beschreibung: mächtiger freier Geistergrolm in den Katakomben Vinsalts
   eigenschaften:
-  - name: Schreckgestalt IV (wenn er möchte)
+  - name: Schreckgestalt IV
+    info: wenn er möchte
   kampf:
     werte:
       GS: 5
@@ -719,7 +724,8 @@ baumdrache:
   beschreibung: tierhafter Drache ohne magische Fähigkeiten
   eigenschaften:
   - name: Flugfähig
-  - name: Resistenz I (Feuer)
+  - name: Resistenz I
+    info: Feuer
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -896,8 +902,10 @@ blutfischschwarm:
   eigenschaften:
   - name: Wasserwesen
   - name: Schmerzimmun II
-  - name: Resistenz II (Stichwaffen)
-  - name: Verwundbarkeit IV (Flächenschaden)
+  - name: Resistenz II
+    info: Stichwaffen
+  - name: Verwundbarkeit IV
+    info: Flächenschaden
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
@@ -2305,9 +2313,12 @@ gargyl:
   beschreibung: hinterhältiger Jäger aus Stein
   eigenschaften:
   - name: Flugfähig
-  - name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
-  - name: Angepasst II (Dunkelheit)
-  - name: Tarnung (in der Stadt)
+  - name: Immunität
+    info: Eigenschaften, Hellsicht, Verwandlung
+  - name: Angepasst II
+    info: Dunkelheit
+  - name: Tarnung
+    info: in der Stadt
   - name: Geisterpanzer
   info: Anfällig gegen Einflusszauber (gegen Zauber der Fertigkeit Einfluss gilt eine
     MR von 0)
@@ -2552,8 +2563,10 @@ ghul:
     MU: 8
   beschreibung: ansteckender und gieriger Leichenfresser
   eigenschaften:
-  - name: Empfindlichkeit II (Sonnenlicht)
-  - name: Immunität (Einfluss)
+  - name: Empfindlichkeit II
+    info: Sonnenlicht
+  - name: Immunität
+    info: Einfluss
   - name: Lichtscheu
   - name: Schreckgestalt I
   kampf:
@@ -2816,11 +2829,14 @@ glazmadraa:
       name: Invocatio
       wert: 32
   eigenschaften:
-  - name: 'Aura (Kälte, Zähigkeit (24), alle 4 INI: phasen, 1 Wunde)'
+  - name: Aura 
+    info: "Kälte, Zähigkeit (24), alle 4 INI: phasen, 1 Wunde"
   - name: Regeneration I
   - name: Schreckgestalt II
-  - name: Verwundbarkeit I (Feuer)
-  - name: Zusätzliche Attacke I (nur Trampeln)
+  - name: Verwundbarkeit I
+    info: Feuer
+  - name: Zusätzliche Attacke I
+    info: nur Trampeln
   kampf:
     vorteile:
     - name: Sturmangriff
@@ -4003,13 +4019,14 @@ hyralkor:
     MU: 30
   beschreibung: Herrscher seines Landstrichs; sehr großer Endgegner
   eigenschaften:
-  - name: Aura (Hitze
-  - name: Zähigkeit (28) jede INI:phase
-  - name: 1 Wunde)
+  - name: Aura 
+    info: Hitze Zähigkeit (28) jede INI:phase 1 Wunde
   - name: Flugfähig
-  - name: Immunität (Feuer)
+  - name: Immunität
+    info: Feuer
   - name: Schreckgestalt II
-  - name: Verwundbarkeit I (Eis)
+  - name: Verwundbarkeit I
+    info: Eis
   kampf:
     vorteile:
     - name: Hammerschlag
@@ -4716,9 +4733,12 @@ khelevathan:
       wert: 28
   eigenschaften:
   - name: Ausweichen in den Limbus
-  - name: Lebensraub, keine Verwundbarkeit I (Rahja)
+  - name: Lebensraub
   - name: Tarnung
   - name: Zusätzliche Attacke I
+  infos:
+  - name: Keine
+    text: Verwundbarkeit I (Rahja)
   kampf:
     waffen:
     - AT: 10
@@ -5483,9 +5503,10 @@ loewe:
     MU: 14
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
   eigenschaften:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
+  - name: Angepasst II 
+    info: Dunkelheit
+  - name: Blitzschnell
+    info: erleidet keine Passierschläge wenn er sich aus dem Nahkampf zurückzieht
   kampf:
     vorteile:
     - name: Standfest
@@ -5612,7 +5633,8 @@ mactans:
   eigenschaften:
   - name: Regeneration II
   - name: Schreckgestalt II
-  - name: Verwundbarkeit (Seeschlangenzähne)
+  - name: Verwundbarkeit
+    info: Seeschlangenzähne
   - name: Zusätzliche Attacke IV
   kampf:
     waffen:
@@ -5855,7 +5877,8 @@ maru:
     MU: 14
   beschreibung: Große, wütende Kriegerechse
   eigenschaften:
-  - name: Angepasst I (Wasser)
+  - name: Angepasst I 
+    info: Wasser
   - name: Kältestarre
   - name: Natürliche Rüstung
   kampf:
@@ -6524,8 +6547,7 @@ oboraddon:
       name: Mehrere nützliche Untote erschaffen und kontrollieren
     - dauer: 1 Woche oder bis der Untote zerfällt
       mod: -4
-      name: König der Untoten erschaffen, indem er dem von ihm beseelten Untoten zusätzliche
-        Fähigkeiten im Wert von -20 verleiht
+      name: König der Untoten erschaffen
     proben:
     - asp: 64
       name: Invocatio
@@ -6536,7 +6558,8 @@ oboraddon:
   info: 'Der Dämon erhebt eine Leiche als Untoten. Er verliert Unsichtbarkeit, WS,
     GS und erhält die Eigenschaften/Attacken des Untoten. Der Dämon kontrolliert den
     Untoten vollständig. Jeder Dienst des Oboraddon beginnt damit, dass er eine Leiche
-    als Untoten erhebt, wie oben beschrieben.
+    als Untoten erhebt, wie oben beschrieben. König der Untoten: indem er dem von ihm beseelten Untoten zusätzliche
+        Fähigkeiten im Wert von -20 verleiht
 
     '
   kampf:
@@ -6991,9 +7014,10 @@ panther:
     MU: 18
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
   eigenschaften:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge)
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
+  - name: Angepasst II
+    info: Dunkelheit
+  - name: Blitzschnell
+    info: erleidet keine Passierschläge wenn er sich aus dem Nahkampf zurückzieht
   kampf:
     vorteile:
     - name: Standfest
@@ -7046,10 +7070,13 @@ perldrache:
     MU: 20
   beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
   eigenschaften:
-  - name: Angepasst I (Wasser)
-  - name: Aura (Hitze Zähigkeit (20) alle 4 INI:phasen 1 Wunde)
+  - name: Angepasst I
+    info: Wasser
+  - name: Aura 
+    info: "Hitze Zähigkeit (20) alle 4 INI:phasen 1 Wunde"
   - name: Flugfähig
-  - name: Resistenz II (Feuer)
+  - name: Resistenz II
+    info: Feuer
   - name: Schreckgestalt I
   kampf:
     vorteile:
@@ -7129,12 +7156,15 @@ perldrachewestwinddrache:
     MU: 20
   beschreibung: intelligenter Drache und geschickter Fischer; großer Gegner
   eigenschaften:
-  - name: Angepasst I (Wasser)
-  - name: Aura (Hitze
-  - name: Zähigkeit (20) alle 4 INI:phasen
-  - name: 1 Wunde)
+  - name: Angepasst I
+    info: Wasser
+  - name: Aura
+    info: Hitze
+  - name: Zähigkeit
+    info: (20) alle 4 INI:phasen 1 Wunde
   - name: Flugfähig
-  - name: Resistenz II (Feuer)
+  - name: Resistenz II
+    info: Feuer
   - name: Schreckgestalt I
   kampf:
     vorteile:
@@ -7288,9 +7318,11 @@ pestrattenschwarm:
       wert: 16
   eigenschaften:
   - name: Astralsinn
-  - name: Resistenz II (Stichwaffen)
+  - name: Resistenz II
+    info: Stichwaffen
   - name: Schmerzimmun II
-  - name: Verwundbarkeit IV (Flächenschaden)
+  - name: Verwundbarkeit IV
+    info: Flächenschaden
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -7346,9 +7378,11 @@ pestrattenschwarmsehrgrosserschwarm:
       wert: 20
   eigenschaften:
   - name: Astralsinn
-  - name: Resistenz II (Stichwaffen)
+  - name: Resistenz II
+    info: Stichwaffen
   - name: Schmerzimmun II
-  - name: Verwundbarkeit IV (Flächenschaden)
+  - name: Verwundbarkeit IV
+    info: Flächenschaden
   kampf:
     vorteile:
     - name: Zusätzliche Attacke II
@@ -7490,10 +7524,12 @@ qasaar:
       name: Invocatio
       wert: 16
   eigenschaften:
-  - name: Immunität (profan)
+  - name: Immunität
+    info: profan
   - name: Präsenz
   - name: Regeneration I
-  - name: Resistenz (magisch, geweiht)
+  - name: Resistenz
+    info: magisch, geweiht
   kampf:
     vorteile:
     - name: Defensiver Kampfstil
@@ -7827,11 +7863,11 @@ riesenaffe:
 riesenamoebe:
   beschreibung: allesfressender Schleimhaufen; großer Gegner
   eigenschaften:
-  - name: Immunität (Niederwerfen
-  - name: Umreißen und ähnliche Effekte)
+  - name: Immunität 
+    info: Niederwerfen Umreißen und ähnliche Effekte
   - name: Körperlosigkeit
-  - name: Resistenz I (Stichwaffen
-  - name: stumpfe Waffen)
+  - name: Resistenz I
+    info: Stichwaffen, stumpfe Waffen
   - name: Schmerzimmun II
   kampf:
     waffen:
@@ -7913,9 +7949,10 @@ riesenkaiman:
   beschreibung: gefährlicher Jäger der südlichen Gewässer
   eigenschaften:
   - name: Amphibisch
-  - name: Immunität (Niederwerfen
-  - name: Umreißen und ähnliche Effekte)
-  - name: Verwundbarkeit (Eis)
+  - name: Immunität
+    info: Niederwerfen Umreißen und ähnliche Effekte
+  - name: Verwundbarkeit
+    info: Eis
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -8045,9 +8082,11 @@ riesenspringelschwarm:
   beschreibung: sehr kleines, scheußliches Sumpfgezücht
   eigenschaften:
   - name: Wasserwesen
-  - name: Resistenz I (Stichwaffen)
+  - name: Resistenz I
+    info: Stichwaffen
   - name: Schmerzimmun II
-  - name: Verwundbarkeit IV (Flächenschaden)
+  - name: Verwundbarkeit IV
+    info: Flächenschaden
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -8194,9 +8233,10 @@ saebelzahntiger:
     MU: 18
   beschreibung: König der Dschungel und nördlichen Steppen; großer Gegner
   eigenschaften:
-  - name: Angepasst II (Dunkelheit)
-  - name: Blitzschnell (erleidet keine Passierschläge
-  - name: wenn er sich aus dem Nahkampf zurückzieht)
+  - name: Angepasst II
+    info: Dunkelheit
+  - name: Blitzschnell
+    info: erleidet keine Passierschläge wenn er sich aus dem Nahkampf zurückzieht
   kampf:
     vorteile:
     - name: Standfest
@@ -8750,7 +8790,8 @@ skelett:
       wert: 12
   eigenschaften:
   - name: Astralsinn
-  - name: Resistenz II (Stichwaffen)
+  - name: Resistenz II
+    info: Stichwaffen
   - name: Rudel
   kampf:
     waffen:
@@ -8821,7 +8862,8 @@ skelettruestung:
       wert: 12
   eigenschaften:
   - name: Astralsinn
-  - name: Resistenz II (Stichwaffen)
+  - name: Resistenz II
+    info: Stichwaffen
   - name: Rudel
   kampf:
     waffen:
@@ -9601,10 +9643,10 @@ tatzelwurm:
     KO: 32
   beschreibung: stinkender Vertreter der niederen Drachen; großer Gegner
   eigenschaften:
-  - name: Aura (Gestank)
-  - name: Zähigkeit (16) jede INI:phase
-  - name: -2 auf körperliche Proben (kumulativ) für 1 Tag)
-  - name: Resistenz I (Feuer)
+  - name: Aura 
+    info: Gestank -2 auf körperliche Proben (kumulativ) für 1 Tag Zähigkeit (16) jede INI:phase"
+  - name: Resistenz I
+    info: Feuer
   - name: Schreckgestalt I
   kampf:
     vorteile:
@@ -9811,7 +9853,8 @@ trachrhabaar:
       name: Invocatio
       wert: 24
   eigenschaften:
-  - name: Immunität (profan)
+  - name: Immunität
+    info: profan
   - name: Regeneration II
   - name: Schreckgestalt II
   kampf:
@@ -10113,7 +10156,8 @@ udapoth:
   eigenschaften:
   - name: Amphibisches Wesen
   - name: Regeneration I
-  - name: Verwundbarkeit I (Feuer)
+  - name: Verwundbarkeit I
+    info: Feuer
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -10398,7 +10442,8 @@ usuzoreel:
       name: Invocatio
       wert: 16
   eigenschaften:
-  - name: Empfindlichkeit I (Feuer)
+  - name: Empfindlichkeit I
+    info: Feuer
   - name: Flieger
   - name: Lichtscheu
   - name: Regeneration I
@@ -10644,8 +10689,10 @@ waldschratnichtmagisch:
     MU: 12
   beschreibung: baumartiger Hüter der Wälder; großer Gegner
   eigenschaften:
-  - name: Tarnung (im Wald)
-  - name: Verwundbarkeit I (Feuer)
+  - name: Tarnung
+    info: im Wald
+  - name: Verwundbarkeit I
+    info: Feuer
   kampf:
     vorteile:
     - name: Kraftvoller Kampf III 
@@ -10739,12 +10786,12 @@ walkuer:
     MU: 10
   beschreibung: pflichtbewusster halb-materieller Schutzgeist
   eigenschaften:
-  - name: Keine Immunität (profan)
-  - name: Resistenz (profan)
+  - name: Resistenz
+    info: profan
   info: "Beseelte Waffe: Der Walkür kann für eine Stunde in eine Waffe einfahren (WM\
     \ +1, TP +1, 1x kostenlos Wurf wiederholen, magisch)\nVarianten:  \nGroßer starker\
     \ Geisterkrieger (WS 7/8, +4 TP, +2 AT/VT IN: 16 MU: 16, Gegenhalten, Aufmerksamkeit,\
-    \ Groß)\n"
+    \ Groß)\nKeine Immunität (profan)"
   kampf:
     vorteile:
     - name: Ausfall
@@ -10806,7 +10853,8 @@ weisserhetzer:
       name: Chimaeroform
       wert: 16
   eigenschaften:
-  - name: Angepasst II (Dunkelheit)
+  - name: Angepasst II 
+    info: Dunkelheit
   kampf:
     vorteile:
     - name: Zusätzliche Attacke I
@@ -10952,7 +11000,8 @@ wolf:
     MU: 6
   beschreibung: verbreitetes Rudeltier
   eigenschaften:
-  - name: Angepasst II (Dunkelheit)
+  - name: Angepasst II
+    info: Dunkelheit
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -10995,7 +11044,8 @@ wolfrudelfuehrer:
     MU: 6
   beschreibung: verbreitetes Rudeltier
   eigenschaften:
-  - name: Angepasst II (Dunkelheit)
+  - name: Angepasst II
+    info: Dunkelheit
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -11049,11 +11099,15 @@ wolfsechse:
     MU: 4
   beschreibung: Sandwolf und Panzerechse
   eigenschaften:
-  - name: Angepasst II (Dunkelheit)
-  - name: Empfindlichkeit I (Kälte)
+  - name: Angepasst II
+    info: Dunkelheit
+  - name: Empfindlichkeit I
+    info: Kälte
   - name: Meute I
-  - name: Tarnung (Dschungel, Sumpf)
-  - name: Verwundbarkeit I (Eis)
+  - name: Tarnung 
+    info: Dschungel, Sumpf
+  - name: Verwundbarkeit I
+    info: Eis
   kampf:
     vorteile:
     - name: Niederwerfen
@@ -11518,7 +11572,8 @@ yeolkhardas:
   eigenschaften:
   - name: Amphibisch
   - name: Regeneration I
-  - name: Tarnung (im Wasser)
+  - name: Tarnung 
+    info: im Wasser
   - name: Zusätzliche Attacke I
   freiefertigkeiten:
   - name: Bader
@@ -11596,8 +11651,10 @@ yeti:
     MU: 16
   beschreibung: großer, haariger Schneeschrat
   eigenschaften:
-  - name: Angepasst I (Dunkelheit)
-  - name: Resistenz gegen Kälte
+  - name: Angepasst I
+    info: Dunkelheit
+  - name: Resistenz 
+    info: gegen Kälte
   kampf:
     vorteile:
     - name: Natürliche Rüstung
@@ -11786,7 +11843,8 @@ yonahoh:
   - name: Regeneration II
   - name: Schreckgestalt III
   - name: Wasserwesen
-  - name: Zusätzliche Attacke IV (nur Tentakel)
+  - name: Zusätzliche Attacke IV
+    info: nur Tentakel
   kampf:
     vorteile:
     - name: Unaufhaltsam
@@ -11977,7 +12035,8 @@ zazamotlgnakhyaa:
       name: Invocatio
       wert: 24
   eigenschaften:
-  - name: Resistenz (dämonisch, magisch),
+  - name: Resistenz
+    info: dämonisch, magisch
   - name: Zusätzliche Attacke I
   kampf:
     waffen:
@@ -12022,7 +12081,8 @@ zilit:
     MU: 8
   beschreibung: Kleiner amphibischer Humanoide
   eigenschaften:
-  - name: Angepasst  II (Wasser, Dunkelheit)
+  - name: Angepasst  II
+    info: Wasser, Dunkelheit
   - name: Natürliche Rüstung I
   - name: Amphibisch
   kampf:
@@ -12124,7 +12184,8 @@ aljallahir:
   beschreibung: leidenschaftlicher Anführer und Dschinn des Feuers
   klasse: elementar
   eigenschaften:
-  - name: Resistenz I (Stichwaffen)
+  - name: Resistenz I
+    info: Stichwaffen
   - name: Schreckgestalt I
   kampf:
     werte:
@@ -12383,7 +12444,8 @@ chakharim:
   eigenschaften:
   - name: Magieabweisend
   - name: Schreckgestalt II
-  - name: Tarnung (unterirdisch)
+  - name: Tarnung
+    info: unterirdisch
   kampf:
     werte:
       WS: 18
@@ -12437,7 +12499,8 @@ eichbart:
   klasse: elementar
   eigenschaften:
   - name: Regeneration I
-  - name: Tarnung (im Wald)
+  - name: Tarnung
+    info: im Wald
   kampf:
     werte:
       WS: 16
@@ -12497,9 +12560,9 @@ eichbart:
     - name: Pflanzen oder Humusmagie
       dauer: 1 Tag
       mod: -4
-    - name: Augen des Waldes (Eichbart hält durch die Augen aller Waldbewohner Ausschau nach allem, was die Helden interessiert)
+    - name: Augen des Waldes (Eichbart hält durch die Augen aller Waldbewohner Ausschau)
       dauer: 1 Tag
-    - name: Gedächtnis des Waldes (Eichbart berichtet detailliert von einem Ereignis, das zu Lebzeiten der Waldbewohner stattgefunden hat)
+    - name: Gedächtnis des Waldes (Eichbart berichtet detailliert von einem Ereignis zu Lebzeiten der Waldbewohner)
 
 emling:
   quelle: ilaris
@@ -12882,7 +12945,8 @@ hefashar:
   klasse: elementar
   eigenschaften:
   - name: Paraphysikalität
-  - name: Resistenz I (Stichwaffen)
+  - name: Resistenz I
+    info: Stichwaffen
   - name: Schreckgestalt I
   - name: Wasserwesen
   kampf:
@@ -13231,7 +13295,8 @@ akrhobal:
   beschreibung: siebengehörnter Verderber der Wälder; sehr großer Gegner
   eigenschaften:
   - name: Regeneration I
-  - name: Tarnung (im Wald)
+  - name: Tarnung
+    info: im Wald
   - name: Dämonenharz 
     info: | 
       Wer dem Arkhobal
@@ -13297,10 +13362,14 @@ azzitai:
   eigenschaften:
   - name: Aura 
     info: Hitze, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde
-  - name: Immunität (Feuer)
-  - name: Resistenz I (Stichwaffen)
-  - name: Verwundbarkeit I (Wasser)
-  - name: Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Azzitai als Zerbrechlich (S. 47).
+  - name: Immunität
+    info: Feuer
+  - name: Resistenz I 
+    info: Stichwaffen
+  - name: Verwundbarkeit I
+    info: Wasser
+  - name: Flammenkörper
+    info: Alle Waffen, die Holz beinhalten, gelten gegen den Azzitai als Zerbrechlich (S. 47).
   kampf:
     werte:
       WS: 10
@@ -13558,10 +13627,13 @@ irrhalk:
   eigenschaften:
   - name: Flugfähig
   - name: Regeneration I
-  - name: Resistenz II (Feuer)
+  - name: Resistenz II
+    info: Feuer
   - name: Schreckgestalt II
-  - name: Verwundbarkeit I (Wasser)
-  - name: Explosion (5W6)
+  - name: Verwundbarkeit I
+    info: Wasser
+  - name: Explosion
+    info: 5W6
   kampf:
     werte:
       WS: 12
@@ -13848,8 +13920,8 @@ quitslinga:
   - name: Regeneration I
   - name: Schreckgestalt II
   - name: Tarnung
-  - name: Gestaltwandeln (Der
-    info: Dämon nimmt die Gestalt einer Person an, von der er einen Körperteil besitzt. Jeder Gestaltwechsel senkt seine WS um 1. In einer fremden Gestalt verliert der Dämon Eigenschaften/Attacken und erhält die Eigenschaften/Attacken der angenommenen Gestalt.)
+  - name: Gestaltwandeln
+    info: Der Dämon nimmt die Gestalt einer Person an, von der er einen Körperteil besitzt. Jeder Gestaltwechsel senkt seine WS um 1. In einer fremden Gestalt verliert der Dämon Eigenschaften/Attacken und erhält die Eigenschaften/Attacken der angenommenen Gestalt.
   kampf:
     werte:
       WS: 11
@@ -14000,7 +14072,8 @@ ulchuchu:
   beschreibung: eingehörnter, ständig wachsender Algendämon
   eigenschaften: 
   - name: Regeneration II
-  - name: Verwundbarkeit I (Feuer)
+  - name: Verwundbarkeit I
+    info: Feuer
   - name: Wasserwesen
   kampf:
     werte:
@@ -14101,7 +14174,8 @@ eule:
   name: Eule
   eigenschaften:
   - name: Flieger
-  - name: Angepasst II (Dunkelheit)
+  - name: Angepasst II
+    info: Dunkelheit
   kampf:
     werte:
       WS: 2
@@ -14135,7 +14209,8 @@ katze:
   quelle: ilaris
   name: Katze
   eigenschaften: 
-  - name: Angepasst II (Dunkelheit)
+  - name: Angepasst II
+    info: Dunkelheit
   kampf:
     werte:
       WS: 2
@@ -14341,7 +14416,8 @@ zombie:
   quelle: heiner
   eigenschaften:
     - name: Astralsinn
-    - name: Resistenz II (Stichwaffen)
+    - name: Resistenz II
+      info: Stichwaffen
     - name: Rudel
   kampf:
     werte:
@@ -14396,7 +14472,8 @@ fetterzombie:
   quelle: heiner
   eigenschaften:
     - name: Astralsinn
-    - name: Explosion (3W6, Säure)
+    - name: Explosion 
+      info: 3W6, Säure
   kampf:
     werte:
       WS: 5
