@@ -178,7 +178,8 @@ altergolem:
     - name: Doppelangriff
     - name: Niederwerfen
     - name: Standfest
-    - name: Sturmangriff (max. +6 TP)
+    - name: Sturmangriff 
+      info: max. +6 TP
     waffen:
     - AT: 8
       RW: 1
@@ -722,7 +723,8 @@ baumdrache:
   kampf:
     vorteile:
     - name: Niederwerfen
-    - name: Sturmangriff (max. +6)
+    - name: Sturmangriff 
+      info: max. +6
     waffen:
     - AT: 10
       RW: 0
@@ -1565,7 +1567,8 @@ elefant:
     - name: Standfest
     - name: Überrennen
     - name: Unaufhaltsam
-    - name: Zerstörerisch I und II
+    - name: Zerstörerisch I
+    - name: Zerstörerisch II
     waffen:
     - AT: 8
       RW: 1
@@ -1615,7 +1618,8 @@ elefantruestung:
     - name: Standfest
     - name: Überrennen
     - name: Unaufhaltsam
-    - name: Zerstörerisch I und II
+    - name: Zerstörerisch I
+    - name: Zerstörerisch II
     waffen:
     - AT: 8
       RW: 1
@@ -1976,8 +1980,10 @@ fernhaendlerpaktierer:
     - name: Erzdämonische Tradition I
   profan:
     vorteile:
-    - name: Eindrucksvoll I und II
-    - name: Vorausschauend I und II
+    - name: Eindrucksvoll I
+    - name: Eindrucksvoll II
+    - name: Vorausschauend I
+    - name: Vorausschauend II
   quelle: ilaris
   talente:
   - name: Andergast & Nostria (Gebräuche)
@@ -2310,7 +2316,8 @@ gargyl:
     - name: Doppelangriff
     - name: Niederwerfen
     - name: Standfest
-    - name: Sturmangriff (max. +6 TP)
+    - name: Sturmangriff
+      info: max. +6 TP
     waffen:
     - AT: 12
       RW: 1
@@ -2404,7 +2411,8 @@ geisterdrache:
   kampf:
     vorteile:
     - name: Hammerschlag
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
     - name: Standfest
     - name: Sturmangriff
     - name: Unaufhaltsam
@@ -2669,8 +2677,10 @@ ghulkoenig:
     name: Angepasst II
   kampf:
     vorteile:
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
-    - name: Niederwerfen, Sturmangriff
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
+    - name: Niederwerfen
+    - name: Sturmangriff
     waffen:
     - AT: 10
       RW: 1
@@ -3117,11 +3127,11 @@ greif:
   - name: Willensstark II
   - name: Geisterpanzer (WS 20)
   - name: Unbeugsamkeit
-  info: '*gegen unheilige Kreaturen: TP:  +1W6, WS +2, AT/VT:  +2, Liturgien +4'
+  info: 'Gesegnete Waffe, Stärke des Glaubens, gegen unheilige Kreaturen: TP:  +1W6, WS +2, AT/VT:  +2, Liturgien +4'
   kampf:
     vorteile:
     - name: Zusätzlicher Attacke I
-    - name: Haltet stand!
+    - name: "Kommando: Haltet Stand!"
     - name: Hammerschlag
     - name: Niederwerfen
     - name: Standfest
@@ -3161,12 +3171,12 @@ greif:
     kap: 64
     vorteile:
     - name: Aura der Heiligkeit
-    - name: Gesegnete Waffe*
+    - name: Gesegnete Waffe
     - name: Liebling Praios
     - name: Liturgische Disziplin
     - name: Liturgische Routine
-    - name: Stärke des Glaubens*
-    - name: Streiter der Schöpfung*
+    - name: Stärke des Glaubens
+    - name: Streiter der Schöpfung
     - name: Unterstützung der Gläubigen
     - name: Verseuchung erspüren
     - name: Licht
@@ -3859,7 +3869,8 @@ hummerier:
   name: Hummerier
   profan:
     vorteile:
-    - name: Abgehärtet I&II
+    - name: Abgehärtet I
+    - name: Abgehärtet II
     - name: Schnelle Heilung
     - name: Muskelprotz
     - name: Zerstörerisch II
@@ -3935,11 +3946,12 @@ hummerierpriester:
     - name: Paktierer II
   profan:
     vorteile:
-    - name: Abgehärtet I&II
+    - name: Abgehärtet I
+    - name: Abgehärtet II
     - name: Schnelle Heilung
     - name: Muskelprotz
     - name: Zerstörerisch II
-    - name: Haltet Stand!
+    - name: "Kommando: Haltet Stand!"
   quelle: bestariumplus
   talente:
   - name: Einschüchtern
@@ -4969,7 +4981,8 @@ kriegermumie:
   - name: Schreckgestalt II
   kampf:
     vorteile:
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
     - name: Hammerschlag
     - name: Niederwerfen
     waffen:
@@ -5022,7 +5035,8 @@ kriegselefant:
     - name: Standfest
     - name: Überrennen
     - name: Unaufhaltsam
-    - name: Zerstörerisch I und II
+    - name: Zerstörerisch I
+    - name: Zerstörerisch II
     waffen:
     - AT: 12
       RW: 1
@@ -5076,7 +5090,8 @@ kriegspferd:
     vorteile:
     - name: Rüstungsgewöhnung
     - name: Standfest
-    - name: im Reiterkampf WM +1
+    - name: im Reiterkampf 
+      info: WM +1
     waffen:
     - AT: 12
       RW: 1
@@ -5124,7 +5139,8 @@ kriegspferdleichteruestung:
     vorteile:
     - name: Rüstungsgewöhnung
     - name: Standfest
-    - name: im Reiterkampf WM +1
+    - name: im Reiterkampf 
+      info: WM +1
     waffen:
     - AT: 12
       RW: 1
@@ -5175,7 +5191,8 @@ kriegspferdmittlereruestung:
     vorteile:
     - name: Rüstungsgewöhnung
     - name: Standfest
-    - name: im Reiterkampf WM +1
+    - name: im Reiterkampf 
+      info: WM +1
     waffen:
     - AT: 11
       RW: 1
@@ -5223,7 +5240,8 @@ kriegswildschwein:
     vorteile:
     - name: Standfest
     - name: Sturmangriff
-    - name: im Reiterkampf WM +0
+    - name: im Reiterkampf 
+      info: WM +0
     waffen:
     - AT: 11
       RW: 0
@@ -5324,7 +5342,8 @@ leibwaechter:
   beschreibung: persönlicher Wächter eines Würdenträgers
   kampf:
     vorteile:
-    - name: Schildkampf III (Schildwall)
+    - name: Schildkampf III
+      info: Schildwall
     - name: Aufmerksamkeit
     - name: Ausfall
     - name: Defensiver Kampfstil
@@ -5374,8 +5393,10 @@ leibwaechter:
   name: Leibwächter
   profan:
     vorteile:
-    - name: Flink I und II
-    - name: Vorausschauend I und II
+    - name: Flink I
+    - name: Flink II
+    - name: Vorausschauend I
+    - name: Vorausschauend II
   quelle: ilaris
   talente:
   - name: Einhandklingenwaffen
@@ -5532,7 +5553,7 @@ lynx:
     - name: Standfest
     - name: Sturmangriff
     - name: Todesstoß
-    - name: Zusätzliche Aktion I
+    - name: Zusätzliche Attacke I
     waffen:
     - AT: 16
       RW: 0
@@ -5642,7 +5663,8 @@ mamut:
     - name: Standfest
     - name: Überrennen
     - name: Unaufhaltsam
-    - name: Zerstörerisch I und II
+    - name: Zerstörerisch I
+    - name: Zerstörerisch II
     - name: Resistenz gegen Kälte
     waffen:
     - AT: 8
@@ -5838,13 +5860,14 @@ maru:
   - name: Natürliche Rüstung
   kampf:
     vorteile:
-    - name: Beidhändiger Kampfstil II*
-    - name: Kraftvoller Kampf III*
+    - name: Beidhändiger Kampfstil II
+    - name: Kraftvoller Kampf III
     - name: Ausfall, Offensiver Kampfstil
     - name: Niederwerfen
     - name: Hammerschlag
     - name: Eisern
-    - name: Zäher Hund, Rüstungsgewöhnung I
+    - name: Zäher Hund
+      info: Rüstungsgewöhnung I
     - name: Kampfreflexe
     waffen:
     - AT: 12
@@ -5889,7 +5912,8 @@ maru:
   name: Maru
   profan:
     vorteile:
-    - name: Abgehärtet I&II
+    - name: Abgehärtet I
+    - name: Abgehärtet II
     - name: Schnelle Heilung
     - name: Muskelprotz
     - name: Zerstörerisch II
@@ -6267,7 +6291,8 @@ nachtwind:
   - name: Angepasst II (Dunkelheit)
   kampf:
     vorteile:
-    - name: Sturmangriff (max. +2 TP)
+    - name: Sturmangriff
+      info: max. +2 TP
     waffen:
     - AT: 13
       RW: 0
@@ -6516,8 +6541,8 @@ oboraddon:
     '
   kampf:
     vorteile:
-    - name: Formiert euch!
-    - name: Keine Gefangenen!
+    - name: "Kommando: Formiert Euch!"
+    - name: "Kommando: Keine Gefangenen!"
     waffen:
     - RW: 0
       VT: 12
@@ -6555,7 +6580,8 @@ oger:
   beschreibung: stinkender Vielfraß und Menschenfresser; großer Gegner
   kampf:
     vorteile:
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
     - name: Niederwerfen
     - name: Sturmangriff
     waffen:
@@ -6609,7 +6635,8 @@ ogerkriegsoger:
   beschreibung: stinkender Vielfraß und Menschenfresser; großer Gegner
   kampf:
     vorteile:
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
     - name: Niederwerfen
     - name: Sturmangriff
     waffen:
@@ -6730,7 +6757,8 @@ oghul:
   info: 'Varianten:  Mächtiger Oghul (WS 10/12, TP +4, Kampfwerte +2)'
   kampf:
     vorteile:
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
     - name: Niederwerfen
     - name: Sturmangriff
     waffen:
@@ -7561,7 +7589,8 @@ reitpony:
     vorteile:
     - name: Rüstungsgewöhnung
     - name: Standfest
-    - name: im Reiterkampf WM +1
+    - name: im Reiterkampf
+      info: WM +1
     waffen:
     - AT: 12
       RW: 1
@@ -7611,7 +7640,8 @@ reittier:
     vorteile:
     - name: Rüstungsgewöhnung
     - name: Standfest
-    - name: im Reiterkampf WM +1
+    - name: im Reiterkampf
+      info: WM +1
     waffen:
     - AT: 12
       RW: 1
@@ -7662,11 +7692,13 @@ riese:
   info: 'kampfunfähigkeit: Der Riese flieht, wenn er 6 Wunden erlitten hat.'
   kampf:
     vorteile:
-    - name: Zusätzliche Attacke I (nur Trampeln)
+    - name: Zusätzliche Attacke I
+      info: nur Trampeln
     - name: Standfest
     - name: Sturmangriff
     - name: Unaufhaltsam
-    - name: Zerstörerisch I und II
+    - name: Zerstörerisch I
+    - name: Zerstörerisch II
     waffen:
     - AT: 16
       RW: 2
@@ -7936,7 +7968,8 @@ riesenkraken:
   - name: Willensstark II
   kampf:
     vorteile:
-    - name: Zusätzliche Attacke IV (nur Tentakel)
+    - name: Zusätzliche Attacke IV
+      info: nur Tentakel
     - name: Unaufhaltsam
     waffen:
     - AT: 14
@@ -8057,13 +8090,17 @@ ritter:
     KO: 12
     MU: 14
   beschreibung: erfahrener Veteran vieler Gefechte gegen den Ork
-  info: Mit einem * markierte Kampfstile sind nicht in die Kampfwerte eingerechnet.
+  info: Kampfstile sind nicht in die Kampfwerte eingerechnet.
   kampf:
     vorteile:
-    - name: 'Reiterkampf III* (VT, AT, TP:  +3)'
-    - name: 'abgesessen Schildkampf III* (VT:  +3) oder Kraftvoller Kampf III* (TP:  +3)'
+    - name: Reiterkampf III
+      info: "VT, AT, TP: +3"
+    - name: Schildkampf III 
+      info: "VT: +3"
+    - name: Kraftvoller Kampf III
+      info: "TP: +3"
     - name: Ausfall
-    - name: Haltet stand!
+    - name: "Kommando: Haltet Stand!"
     - name: Hammerschlag
     - name: Kampfreflexe
     - name: Muskelprotz
@@ -8132,7 +8169,8 @@ ritter:
   name: Ritter
   profan:
     vorteile:
-    - name: Abgehärtet I und II
+    - name: Abgehärtet I
+    - name: Abgehärtet II
     - name: Eindrucksvoll I
   quelle: ilaris
   talente:
@@ -8567,8 +8605,8 @@ sharbazz:
   - name: Zusätzliche Attacke I
   kampf:
     vorteile:
-    - name: Formiert euch!
-    - name: Keine Gefangenen!
+    - name: "Kommando: Formiert Euch!"
+    - name: "Kommando: Keine Gefangenen!"
     - name: Niederwerfen
     - name: Sturmangriff
     waffen:
@@ -8844,13 +8882,16 @@ soeldner:
   beschreibung: verlässlicher Mietling oder undisziplinierter Halsabschneider
   info: Der Söldner steht beispielhaft für alle humanoiden Gegner mit gewisser Kampferfahrung.
     Er stellt für unerfahrene Kämpfercharak- tere eine gewisse Herausforderung dar
-    und ist Nichtkämpfern überlegen. Kampfstile mit * sind nicht in die Kampfwerte
+    und ist Nichtkämpfern überlegen. Kampfstile sind nicht in die Kampfwerte
     eingerechnet.
   kampf:
     vorteile:
-    - name: 'Schildkampf I* (VT:  +1)'
-    - name: 'Kraftvoller Kampf I* (TP:  +1)'
-    - name: 'Schneller Kampf I* (AT:  +1)'
+    - name: 'Schildkampf I'
+      info: 'VT: +1'
+    - name: Kraftvoller Kampf I
+      info: "TP:  +1"
+    - name: Schneller Kampf I
+      info: "AT:  +1"
     - name: Niederwerfen
     - name: Rüstungsgewöhnung
     waffen:
@@ -8930,15 +8971,16 @@ soeldnerkommandant:
     MU: 14
   beschreibung: charismatischer Befehlshaber einer größeren Einheit
   eigenschaften:
-  - name: Willensstark I und II
+  - name: Willensstark I
+  - name: Willensstark II
   kampf:
     vorteile:
     - name: Schneller Kampf II
     - name: Defensiver Kampfstil
-    - name: Formiert euch!
-    - name: Haltet stand!
+    - name: "Kommando: Formiert Euch!"
+    - name: "Kommando: Haltet Stand!"
     - name: Kampfreflexe
-    - name: Keine Gefangenen!
+    - name: "Kommando: Keine Gefangenen!"
     - name: Niederwerfen
     - name: Rüstungsgewöhnung
     - name: Standfest
@@ -8987,8 +9029,10 @@ soeldnerkommandant:
     vorteile:
     - name: Abgehärtet I
     - name: Soziale Anpassungsfähigkeit
-    - name: Eindrucksvoll I und II
-    - name: Vorausschauend I und II
+    - name: Eindrucksvoll I
+    - name: Eindrucksvoll II
+    - name: Vorausschauend I
+    - name: Vorausschauend II
   talente:
   - name: Anführen
     wert: 15
@@ -9013,13 +9057,16 @@ soeldnerveteran:
   beschreibung: verlässlicher Mietling oder undisziplinierter Halsabschneider
   info: Der Söldner steht beispielhaft für alle humanoiden Gegner mit gewisser Kampferfahrung.
     Er stellt für unerfahrene Kämpfercharak- tere eine gewisse Herausforderung dar
-    und ist Nichtkämpfern überlegen. Kampfstile mit * sind nicht in die Kampfwerte
+    und ist Nichtkämpfern überlegen. Kampfstile sind nicht in die Kampfwerte
     eingerechnet.
   kampf:
     vorteile:
-    - name: 'Schildkampf I* (VT:  +1)'
-    - name: 'Kraftvoller Kampf II* (TP:  +1)'
-    - name: 'Schneller Kampf II* (AT:  +1)'
+    - name: Schildkampf
+      info: "VT:  +1"
+    - name: Kraftvoller Kampf II
+      info: "TP:  +1"
+    - name: Schneller Kampf II
+      info: "AT:  +1"
     - name: Niederwerfen
     - name: Rüstungsgewöhnung
     - name: Kampfreflexe
@@ -9299,7 +9346,8 @@ stadtwache:
   name: Stadtwache
   profan:
     vorteile:
-    - name: Vorausschauend I und II
+    - name: Vorausschauend I
+    - name: Vorausschauend II
     - name: Scharfsinnig I
   quelle: ilaris
   talente:
@@ -9474,7 +9522,8 @@ sumupriester:
   name: Sumupriester
   profan:
     vorteile:
-    - name: Scharfsinnig I und II
+    - name: Scharfsinnig I
+    - name: Scharfsinnig II
   quelle: ilaris
   talente:
   - name: Andergast & Nostria
@@ -9819,7 +9868,8 @@ tralloper:
     vorteile:
     - name: Rüstungsgewöhnung
     - name: Standfest
-    - name: im Reiterkampf WM +1
+    - name: im Reiterkampf
+      info: WM +1
     waffen:
     - AT: 12
       RW: 1
@@ -9866,7 +9916,8 @@ troll:
   kampf:
     vorteile:
     - name: Ausfall
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
     - name: Atemtechnik
     - name: Sturmangriff
     waffen:
@@ -10189,8 +10240,8 @@ umdoreel:
   kampf:
     vorteile:
     - name: Befreiungsschlag
-    - name: Formiert euch!
-    - name: Keine Gefangenen!
+    - name: "Kommando: Formiert Euch!"
+    - name: "Kommando: Keine Gefangenen!"
     - name: Sturmangriff
     waffen:
     - AT: 15
@@ -10456,7 +10507,6 @@ vhatacheor:
       VT: 2
       name: Biss
     werte:
-      GS: null
       GSS: 8
       INI: 6
       MR: 20
@@ -10543,7 +10593,8 @@ waldschrat:
   beschreibung: baumartiger Hüter der Wälder; großer Gegner
   kampf:
     vorteile:
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III 
+      info: Befreiungsschlag
     - name: Atemtechnik
     - name: Standfest
     waffen:
@@ -10597,7 +10648,8 @@ waldschratnichtmagisch:
   - name: Verwundbarkeit I (Feuer)
   kampf:
     vorteile:
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III 
+      info: Befreiungsschlag
     - name: Atemtechnik
     - name: Standfest
     waffen:
@@ -10697,7 +10749,8 @@ walkuer:
     vorteile:
     - name: Ausfall
     - name: Niederwerfen
-    - name: Schildkampf III (Schildwall)
+    - name: Schildkampf III
+      info: Schildwall
     waffen:
     - AT: 10
       RW: 1
@@ -10862,7 +10915,6 @@ wildschwein:
     vorteile:
     - name: Standfest
     - name: Sturmangriff
-    - name: im Reiterkampf WM +0
     waffen:
     - AT: 10
       RW: 0
@@ -10949,8 +11001,8 @@ wolfrudelfuehrer:
     - name: Niederwerfen
     - name: Standfest
     - name: Sturmangriff
-    - name: Haltet stand!
-    - name: Keine Gefangenen!
+    - name: "Kommando: Haltet Stand!"
+    - name: "Kommando: Keine Gefangenen!"
     waffen:
     - AT: 10
       RW: 0
@@ -11550,7 +11602,8 @@ yeti:
     vorteile:
     - name: Natürliche Rüstung
     - name: Niederwerfen
-    - name: Kraftvoller Kampf III (Befreiungsschlag)
+    - name: Kraftvoller Kampf III
+      info: Befreiungsschlag
     waffen:
     - AT: 12
       RW: 1
@@ -12087,10 +12140,10 @@ aljallahir:
       TP: {anzahl: 4, W: 6, plus: 0}
       info: Nachbrennen
     vorteile:
-    - name: Formiert euch!
-    - name: Haltet stand!
-    - name: Keine Gefangenen!
-    - name: Kennt keinen Schmerz!
+    - name: "Kommando: Formiert Euch!"
+    - name: "Kommando: Haltet Stand!"
+    - name: "Kommando: Keine Gefangenen!"
+    - name: "Kommando: Kennt Keinen Schmerz!!"
   magie:
     asp: 64
     fertigkeiten:
@@ -13669,14 +13722,14 @@ laraan:
   beschreibung: fünfgehörnter Verführer, der seine Opfer in den Wahnsinn treibt
   eigenschaften:
   - name: Regeneration I
-  - name: Schreckgestalt II*
+  - name: Schreckgestalt II
   - name: Tarnung
-  - name: Unsichtbarkeit*
+  - name: Unsichtbarkeit
   - name: Verführerische Gestalt 
     info: |
       Der Dämon nimmt die Gestalt eines
       wunderschönen Wesens mit übergroßen Geschlechtsteilen an. In dieser
-      Gestalt verliert der Dämon alle Eigenschaften/Attacken mit * und
+      Gestalt verliert der Dämon Schreckensgestalt und Unsichtbarkeit und
       erhält die Eigenschaften/Attacken der angenommenen Gestalt.
   kampf:
     werte:
@@ -13692,7 +13745,8 @@ laraan:
       TP: {anzahl: 2, W: 6, plus: 6}
       info: Mutation
     vorteile:
-    - name: Niederwerfen, Zusätzliche Attacke I
+    - name: Niederwerfen
+    - name: Zusätzliche Attacke I
   talente:
   - name: Betören 
     wert: 24
@@ -13810,7 +13864,7 @@ quitslinga:
       TP: {anzahl: 2, W: 6, plus: 5}
       info: Stumpf
     vorteile:
-    - name: Niederwerfen, 
+    - name: Niederwerfen
     - name: Zusätzliche Attacke IV
   talente: 
   - name: Gebräuche 
@@ -13881,7 +13935,8 @@ shruuf:
       AT: 14
       TP: {anzahl: 3, W: 6, plus: 2}
     vorteile:
-    - name: Zusätzliche Attacke IV, Niederwerfen
+    - name: Zusätzliche Attacke IV
+    - name: Niederwerfen
   attribute: 
     GE: 18
     KK: 30
@@ -14016,7 +14071,8 @@ zant:
     vorteile:
     - name: Niederwerfen
     - name: Sturmangriff
-    - name: im Reiterkampf WM +1
+    - name: im Reiterkampf
+      info: WM +1
   attribute: 
     GE: 28
     KK: 24
