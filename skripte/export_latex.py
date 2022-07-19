@@ -5,8 +5,10 @@ from pylatex.utils import NoEscape as NE
 import interface as db
 
 
-def kreaturcommand(id, name, bes, klasse, kasten):
+def kreaturcommand(id, name, bes, klasse, kasten, verbose=False):
     cmd = f"\kreatur{id}"
+    if verbose:
+        cmd = f"\kreaturdetail{id}"
     args = A(name, NE(bes), f"gfx/kreaturen/{klasse}", NE(kasten))
     runs = C("kreatur", arguments=args).dumps()
     return C('newcommand', NE(cmd), extra_arguments=[NE(runs)]).dumps()
@@ -17,8 +19,9 @@ def quellenangabe(k, quellen):
     u = quellen.get(k.get("quelle"), {}).get("url")
     if u:
         u = u.replace("#", "\#")
-    if q:
-        k["beschreibung"] += f" (\\href{{{ u }}}{{{q}}})"
+    # if q:
+    #     k["beschreibung"] += f" (\\href{{{ u }}}{{{q}}})"
+    return kinfo("Quelle", NE(f"\\href{{{ u }}}{{{q}}}"))
 
 
 def mehrzeiler(zeilen):
@@ -63,11 +66,26 @@ def b_werte(k):
     return [C("kreaturkampfwerte", args).dumps()]
 
 
-def b_eigenschaften(k):
+def b_eigenschaften(k, eigenschaften, verbose=False):
     if not "eigenschaften" in k:
         return []
-    eigenschaften = ', '.join([v.get('name') for v in k["eigenschaften"]])
-    return [f"\\kreaturvorteile{{{eigenschaften}}}"]
+    nurnamen = []
+    zeilen = []
+    for keig in k["eigenschaften"]:
+        if "id" in keig:
+            # use eigenschaft table as default, but explicit to overwrite
+            eig = eigenschaften[keig["id"]]
+            eig.update(keig)
+            keig = eig
+        if verbose and "info" in keig:
+            kin = kinfo(keig["name"], keig["info"])
+            zeilen.append(kin)
+        else:
+            nurnamen.append(keig["name"])
+    namenzeile = ", ".join(nurnamen)
+    vorteile = f"\\kreaturvorteile{{{namenzeile}}}"
+    zeilen.append(vorteile)
+    return mehrzeiler(zeilen)
 
 
 def b_kampf(k):
@@ -198,10 +216,11 @@ def b_sonstiges(k):
     return [block]
 
 
-def kreaturkasten(k):
+def kreaturkasten(k, data, verbose=False):
     bloecke = []
     bloecke.extend(b_werte(k))
-    bloecke.extend(b_eigenschaften(k))
+    bloecke.extend(b_eigenschaften(
+        k, data['eigenschaften'], verbose=verbose))
     bloecke.extend(b_kampf(k))
     bloecke.extend(b_profan(k))
     bloecke.extend(b_uebernat(k))  # default magie
@@ -218,21 +237,34 @@ def kreaturkasten(k):
 
 def export_latex():
     kreaturen = db.load("kreaturen")
-    quellen = db.load("quellen")
+    data = {
+        "eigenschaften": db.load("eigenschaften"),
+        "quellen": db.load("quellen"),
+    }
     commands = []
+    commands_verbose = []
     klassen = {}
     # krearium = pylatex.Document(documentclass="Ilaris")
     for id, k in kreaturen.items():
-        quellenangabe(k, quellen)
-        kasten = kreaturkasten(k)
+        # quellenangabe(k, quellen)
+        kasten = kreaturkasten(k, data)
+        kasten += "\\trennlinie " + quellenangabe(k, data['quellen'])
         commands.append(kreaturcommand(
             id, k['name'], k['beschreibung'], k['klasse'], kasten))
+        kasten_verbose = kreaturkasten(
+            k, data, verbose=True)
+        kasten_verbose += "\\trennlinie " + quellenangabe(k, data['quellen'])
+        commands_verbose.append(kreaturcommand(
+            id, k['name'], k['beschreibung'], k['klasse'], kasten_verbose, verbose=True))
         # kreaturarium
         if not k["klasse"] in klassen:
             klassen[k["klasse"]] = []
         klassen[k["klasse"]].append(f"\kreatur{id}")
     with open("../export/latex/kreaturen.tex", "w") as wf:
         wf.write("\n".join(commands))
+    with open("../export/latex/kreaturendetail.tex", "w") as wf:
+        wf.write("\n".join(commands_verbose))
+
     with open("kreaturarium/template.tex", "r") as rfile:
         kreaturarium = rfile.read()
     tex = ""
