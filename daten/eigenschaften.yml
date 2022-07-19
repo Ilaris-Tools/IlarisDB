@@ -1,28 +1,214 @@
 ausweichenindenlimbus:
-  - name: Ausweichen in den Limbus
-  - info: >
-      Die Kreatur kann mit einer Reaktion in den Limbus ausweichen. Sie
-      regeneriert dort eine Wunde und taucht zu Beginn ihrer nächsten Initiativephase maximal 7 Schritt
-      vom Ort ihres Verschwindens wieder auf. Diese Fähigkeit ist danach erst in 1W6 Initiativephasen
-      wieder einsetzbar.
+  name: Ausweichen in den Limbus
+  info: >
+    Die Kreatur kann mit einer Reaktion in den Limbus ausweichen. Sie
+    regeneriert dort eine Wunde und taucht zu Beginn ihrer nächsten Initiativephase maximal 7 Schritt
+    vom Ort ihres Verschwindens wieder auf. Diese Fähigkeit ist danach erst in 1W6 Initiativephasen
+    wieder einsetzbar.
 kritischekonsistenz:
-  - name: Kritische Konsistenz
-  - info: >
-      Wenn die Kreatur mit einem Treffer 3 oder mehr Wunden erleidet, wird sie
-      sofort vernichtet.
+  name: Kritische Konsistenz
+  info: >
+    Wenn die Kreatur mit einem Treffer 3 oder mehr Wunden erleidet, wird sie
+    sofort vernichtet.
 lebensraub:
-  - name: Lebensraub
-  - info: >
-      Wenn die Kreatur ihrem Ziel mit einem Angriff mindestens eine Wunde zufügt,
-      regeneriert sie dafür eine eigene Wunde.
+  name: Lebensraub
+  info: >
+    Wenn die Kreatur ihrem Ziel mit einem Angriff mindestens eine Wunde zufügt,
+    regeneriert sie dafür eine eigene Wunde.
 limbusreisender:
-  - name: Limbusreisender
-    info: >
-      Die Kreatur kann sich nach Belieben in den näheren Limbus begeben. Für den
-      Übergang in oder aus dem Limbus benötigt die Kreatur eine Vorbereitungszeit von 1 Minute und darf
-      sich nicht im Kampf befinden. Die Kreatur kann den Beschwörer mit auf ihre Limbusreise nehmen.
+  name: Limbusreisender
+  info: >
+    Die Kreatur kann sich nach Belieben in den näheren Limbus begeben. Für den
+    Übergang in oder aus dem Limbus benötigt die Kreatur eine Vorbereitungszeit von 1 Minute und darf
+    sich nicht im Kampf befinden. Die Kreatur kann den Beschwörer mit auf ihre Limbusreise nehmen.
 verbindungzumbeschwoerer:
-  - name: Verbindung zum Beschwörer
-    info: >
-      Der Beschwörer kann in Trance die Sinneseindrücke des Dämons
-      wahrnehmen. Dies erfordert Konzentration.
+  name: Verbindung zum Beschwörer
+  info: >
+    Der Beschwörer kann in Trance die Sinneseindrücke des Dämons
+    wahrnehmen. Dies erfordert Konzentration.
+untotenanfuehrer:
+  name: Untotenanführer
+  quelle: heiner
+  info: >
+    Ein Untotenanführer wird automatisch mit W6 Gefolgsleuten ohne weitere Kosten für
+    den Beschwörer gerufen, wenn entsprechendes „Material” verfügbar ist. Die Gefolgsleute erheben sich gemäß ihrem Verwesungsgrad als gewöhnliche Skelette, Zombies, Mumien oder Leichname und können
+    nicht weiter mit Eigenschaften versehen werden. Sie
+    unterstützen alle Dienste, die dem Anführer aufgetragen werden. Zudem verfügen sie über das Manöver
+    Umklammern(AT-4). Der Anführer verfügt über einen
+    eventuellen Kriegskunst-TaW, der halb so groß ist wie
+    der TaW zu Lebzeiten des erhobenen Wesens (1W6, wenn nicht bekannt).
+astralsinn:
+  name: Astralsinn
+  quelle: ilaris
+  info: >
+    Astralsinn erlaubt es der Kreatur, ihre Umgebung magisch
+    wahrzunehmen. Sie erleidet keine Abzüge durch schlechte
+    Sicht. Der Astralsinn kann durch Antimagie, zum Beispiel
+    Hellsicht trüben in der Modifikation Magie unterdrücken,
+    gestört werden. Die Schwierigkeit dafür liegt mindestens bei
+    20, bei mächtigen Wesen deutlich höher.
+aura:
+  name: Aura
+  quelle: ilaris
+  info: >
+    Aura (Art, Probe, Intervall, Auswirkung) stellt einen
+    schädlichen Flächeneffekt dar, der rund um die Kreatur wirkt.
+    Die Stichworte in der Klammer geben die Art der Aura an
+    und welche Probe wie oft abgelegt werden muss, um ihrer
+    Auswirkung zu widerstehen. Diese Probe ist für jeden Schritt
+    Entfernung von der Kreatur um +1 erleichtert.
+empfindlichkeit:
+  name: Empfindlichkeit
+  quelle: ilaris
+  info: >
+    Empfindlichkeit I/II (Umstand) bedeutet, dass die Kreatur
+    unter diesem Umstand pro Initiativephase 1/2 Wunden erleidet
+explosion:
+  name: Explosion
+  quelle: ilaris
+  info: >
+    Explosion (Schaden): Wird die Kreatur im Kampf
+    vernichtet, explodiert sie und richtet den in der Klammer
+    angegebenen Schaden an, der Nachbrennen (S. 98)
+    verursacht. Pro Schritt Entfernung fällt der niedrigste
+    Schadenswürfel weg.
+flieger:
+  name: Flieger
+  quelle: ilaris
+  info: >
+    Flieger bewegen sich üblicherweise fliegend, die
+    angegebenen Werte gelten für Angriffe und Bewegung in der
+    Luft. Am Boden stellen solche Kreaturen meist keine Gefahr
+    dar. Im Gegensatz dazu kämpfen flugfähige Kreaturen in der
+    Luft und am Boden gleichermaßen gewandt.
+immunitaetfertigkeit:
+  name: Immunität
+  quelle: ilaris
+  info: >
+    Immunität (Fertigkeit): Die Kreatur ist immun gegen
+    alle Zauber, die (auch) der entsprechenden Fertigkeit
+    zugeordnet sind. Davon ausgenommen sind Effekte, die
+    das Wesen nur indirekt betreffen – zum Beispiel erfasst ein
+    Odem auch einen Dämon mit Immunität (Hellsicht) und eine
+    Immunität (Umwelt) schützt nicht vor dem Regen, der mittels
+    Wettermeisterschaft gerufen wurde.
+immunitaetschaden:
+  name: Immunität (Schaden)
+  quelle: ilaris
+  info: >
+    Immunität (Schadensquelle): Das Wesen erleidet keinen
+    Schaden aus der angegebenen Quelle. Beispiele: 
+    Profan (Waffen, Stürze, Tierangriffe), 
+    Magisch (magische Waffen, Schadenszauber), 
+    Dämonisch (Angriffe von Dämonen, Paktierer-Fähigkeiten), 
+    Elementar (Lagerfeuer (Feuer), Aquafaxius (Wasser), Angriffe von Luftelementaren (Luft), Fausthieb (Humus), Kälte (Eis), Schwert (Erz)),
+koerperlosigkeit:
+  name: Körperlosigkeit
+  quelle: ilaris
+  info: >
+    Körperlosigkeit bedeutet, dass der Körper der Kreatur
+    keine lebenserhaltende Funktion hat. Selbst schwerste
+    Verwundungen schränken sie nicht ein. Das Wesen erleidet
+    keine Abzüge durch Wunden und wird nicht kampfunfähig.
+    Die neunte Wunde vernichtet aber auch eine körperlose
+    Kreatur.
+lichtscheu:
+  name: Lichtscheu
+  quelle: ilaris
+  info: >
+    Lichtscheue Kreaturen sind an ein Leben in der
+    Dunkelheit gewöhnt. Allerdings erleiden sie im Licht einer
+    Fackel/eines Lagerfeuers/der Sonne einen Malus von –2/–4/–8
+    auf alle Proben.
+paraphysikalitaet:
+  name: Paraphysikalität
+  quelle: ilaris
+  info: >
+    Paraphysikalität setzt die Naturgesetze für das Wesen
+    außer Kraft. Es kann an Wänden oder an der Decke gehen,
+    aus dem Stand auf Höchstgeschwindigkeit beschleunigen und
+    gewaltige Sprünge vollführen. Es ist immun gegen Umreißen-,
+    Niederwerfen-, Zurückstoßen- und Niederschmettern-Effekte.
+regeneration:
+  name: Regeneration
+  quelle: ilaris
+  info: >
+    Regeneration I/II/III/IV erlaubt der Kreatur, in jeder
+    Initiativephase 1/2/3/4 Wunden zu schließen.
+resistenz:
+  name: Resistenz
+  quelle: ilaris
+  info: >
+    Eine Resistenz I/II/III/IV (Schadensquelle) verringert
+    den Schaden durch diese Schadensquelle (s.o.). Wann immer
+    die Kreatur Wunden erleiden würde, erleidet sie 1/2/3/4
+    Wunden weniger.
+rudel:
+  name: Rudel
+  quelle: ilaris
+  info: >
+    Wesen mit dieser Eigenschaft werden oft in
+    Gruppen gerufen; die spontane Modifikation Mehrere Ziele
+    ist bei ihrer Beschwörung nicht erschwert. Außerdem musst
+    du nur eine Kontrollprobe für alle auf einmal beschworenen
+    Wesen ablegen.
+schmerzimmun:
+  name: Schmerzimmun
+  quelle: ilaris
+  info: >
+    I/II: Die erste Stufe verleiht Immunität
+    gegen Blutungen und die Wundschmerzeffekte Betäubt und
+    Organtreffer. Die zweite Stufe verleiht Immunität gegen alle
+    Wundschmerzeffekte.
+schreckgestalt:
+  name: Schreckgestalt
+  quelle: ilaris
+  info: >
+    Schreckgestalt I/II/III/IV: Bei der Begegnung mit der
+    Kreatur erleidet dein Charakter einen Furcht-Effekt Stufe I/II/
+    III/IV (S. 46). Der Furcht-Effekt dauert an, bis der Gegner
+    besiegt wurde oder dein Charakter sich in sicherer Entfernung
+    befindet.
+tarnung:
+  name: Tarnung
+  quelle: ilaris
+  info: >
+    Das Wesen kann sich seiner Umgebung
+    anpassen, zum Beispiel durch eine Farbänderung der Haut.
+    Bei Heimlichkeits-Proben erhält es keinen Malus durch ein
+    fehlendes Versteck.
+unheilig:
+  name: Unheilig
+  quelle: ilaris
+  info: >
+    Unheilige Kreaturen sind besonders anfällig gegen
+    bestimmte karmale Wirkungen, siehe S. 91.
+unsichtbarkeit:
+  name: Unsichtbarkeit
+  quelle: ilaris
+  info: >
+    Unsichtbarkeit erlaubt es der Kreatur, sich beliebig oft und
+    lange unsichtbar zu machen.
+verwundbarkeit:
+  name: Verwundbarkeit
+  quelle: ilaris
+  info: >
+    I/II/III/IV (Schadensquelle): Wann
+    immer die Kreatur Wunden durch diese Schadensquelle
+    erleidet, bekommt sie 1/2/3/4 zusätzliche Wunden.
+wasserwesen:
+  name: Wasserwesen
+  quelle: ilaris
+  info: >
+    Wasserwesen sind an das Leben unter Wasser gewöhnt
+    und erleiden dort keinerlei Abzüge. An Land können sie sich
+    jedoch kaum oder gar nicht bewegen. Amphibische Wesen
+    können an Land und im Wasser ungehindert agieren.
+zusaetzlicheattacke:
+  name: Zusätzliche Attacke
+  quelle: ilaris
+  info: >
+    I/II/III/IV: Die Kreatur kann in
+    ihrer Initiativephase 1/2/3/4 zusätzliche Aktionen Konflikt
+    für Attacken nutzen. Üblicherweise erfolgen die Angriffe mit
+    unterschiedlichen Gliedmaßen.
