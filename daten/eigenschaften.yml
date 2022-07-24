@@ -37,6 +37,52 @@ untotenanfuehrer:
     Umklammern(AT-4). Der Anführer verfügt über einen
     eventuellen Kriegskunst-TaW, der halb so groß ist wie
     der TaW zu Lebzeiten des erhobenen Wesens (1W6, wenn nicht bekannt).
+angepasst:
+  name: Angepasst
+  quelle: ilaris
+  info: >
+    Angepasst I/II (Umgebung)
+    Durch deine Spezies oder langjährige Erfahrung hast du dich an
+    eine bestimmte Umgebung oder Umweltbedingung gewöhnt.
+    Abzüge durch diese Umgebung (Beispiele auf S. 38),
+    insbesondere im Kampf, sinken für dich um eine/zwei Stufen.
+    Die Kosten für Angepasst legt der Spielleiter fest, wobei er
+    sich an der Häufigkeit der Umgebung orientieren sollte. Zu
+    allgemein gefasste Umgebungen wie „unsicherer Untergrund“
+    sollte er nicht zulassen. Beispiele für Angepasst sind:
+    • Dunkelheit: verringert Abzüge durch schlechte
+    Lichtverhältnisse (40 EP pro Stufe)
+    • Schnee: verringert Abzüge durch schneebedeckten oder
+    eisigen Untergrund (20 EP pro Stufe)
+    • Wasser: verringert Abzüge durch knie- oder hüfttiefes
+    Wasser und unter Wasser (20 EP pro Stufe)
+    • Wald: verringert Abzüge durch Wurzeln, Gestrüpp und
+    dichtes Unterholz (40 EP pro Stufe)
+    Voraussetzungen: keine/Angepasst I
+    Nachkauf: häufig/selten
+
+magiegespuer:
+  name: Magiegespür
+  quelle: ilaris
+  info: >
+    In der Nähe astraler Kräfte überfällt dich ein Frösteln, du
+    hörst sphärische Klänge oder ein Farbschleier legt sich für
+    dich über die Umgebung. Mit dem Talent Sinnenschärfe
+    kannst du Intensitätsanalysen (S. 80) von magischen
+    Gegenständen durchführen. Nach dem aktiven Einsatz der
+    Gabe erleidest du einen Punkt Erschöpfung.
+    Voraussetzungen: 60 EP
+    Nachkauf: extrem selten
+
+magieabweisend:
+  name: Magieabweisend
+  quelle: ilaris
+  info: >
+    Zauber wirken auf dich deutlich schwächer. Du ignorierst bei allen
+    Zaubern eine Stufe der spontanen Modifikation Mächtige Magie.
+    Zauber ohne Mächtige Magie haben auf dich keine Wirkung.
+    Voraussetzung: 40 EP
+    Nachkauf: extrem selten
 astralsinn:
   name: Astralsinn
   quelle: ilaris
