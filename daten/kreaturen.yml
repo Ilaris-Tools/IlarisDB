@@ -384,9 +384,9 @@ amrifas:
         wert: 36
   eigenschaften:
     - id: magieabweisend
-      name: magieabweisend
+      name: Magieabweisend
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
   kampf:
     waffen:
       - AT: 20
@@ -736,7 +736,7 @@ azzitai:
         wert: 28
   eigenschaften:
     - id: aura
-      name: Aura(Hitze, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde)
+      name: Aura (Hitze, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde)
     - id: immunitaet
       name: Immunität (Feuer)
     - id: resistenz
@@ -744,9 +744,7 @@ azzitai:
     - id: verwundbarkeit
       name: Verwundbarkeit I (Wasser)
     - id: flammenkoerper
-      name:
-        Flammenkörper(Alle Waffen, die Holz beinhalten, gelten gegen den Azzitai
-        als Zerbrechlich (S. 47).)
+      name: "Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Azzitai als Zerbrechlich (S. 47).)"
   kampf:
     vorteile:
       - name: Zusätzliche Attacke I
@@ -950,8 +948,7 @@ balkhabul:
         wert: 28
   eigenschaften:
     - id: aura
-      name:
-        "Aura (Gestank, Zähigkeit (20) jede INI: phase, -2 auf körperliche Proben
+      name: "Aura (Gestank, Zähigkeit (20) jede INI: phase, -2 auf körperliche Proben
         (kumulativ) für 1 Tag, -4 auf Proben in Rededuellen für 1W6 Wochen)"
     - id: formlosigkeit
       name: Formlosigkeit
@@ -1604,11 +1601,11 @@ chakharim:
         wert: 32
   eigenschaften:
     - id: magieabweisend
-      name: magieabweisend
+      name: Magieabweisend
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: tarnung
-      name: Tarnung(unterirdisch)
+      name: Tarnung (unterirdisch)
   kampf:
     waffen:
       - AT: 20
@@ -1667,14 +1664,12 @@ chamuyan:
         wert: 28
   eigenschaften:
     - id: blitzschnell
-      name:
-        Blitzschnell(erleidet keine Passierschläge, wenn sie sich aus dem Nahkampf
-        zurückzieht)
+      name: Blitzschnell (erleidet keine Passierschläge, wenn sie sich aus dem Nahkampf zurückzieht)
     - id: resistenz
-      name: Resistenz I(magisch, geweiht)
+      name: Resistenz I (magisch, geweiht)
     - id: tarnung
       name: Tarnung
-    - id: zusaetzlicheattackeii
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke II
   kampf:
     vorteile:
@@ -2337,19 +2332,14 @@ eisfee:
   beschreibung: nützlicher kalter Geist des hohen Nordens
   eigenschaften:
     - id: herrindergefesseltenseelen
-      name: Herrin der gefesselten Seelen(Eisfeen können gefesselte Seelen an sich binden)
+      name: Herrin der gefesselten Seelen (Eisfeen können gefesselte Seelen an sich binden)
     - id: kussdereisfee
-      name:
-        Kuss der Eisfee(Intervall 1 INI-Ph. 1 Wunde, freiwilliges Opfer; siehe Bannbaladin;
+      name: Kuss der Eisfee (Intervall 1 INI-Ph. 1 Wunde, freiwilliges Opfer; siehe Bannbaladin;
         Vergleichende Probe Willenksraft gegen Betören)
-  info:
-    "Varianten:  Starke Eisfee (6/6 WS, Zusätzliche Zauber: Erinnerung verlass
+  info: "Varianten:  Starke Eisfee (6/6 WS, Zusätzliche Zauber: Erinnerung verlass
     dich!, Herzschlag Ruhe!)
-
     Mächtige Eisfee (6/6 WS, Eigenschaften +2, Fertigkeiten +4, 64 AsP, Einfluss 18.
-    Zusätzliche Zauber: Erinnerung verlass dich!, Herzschlag Ruhe!, Alpgestalt)
-
-    "
+    Zusätzliche Zauber: Erinnerung verlass dich!, Herzschlag Ruhe!, Alpgestalt)"
   kampf:
     waffen:
       - AT: 14
@@ -2515,7 +2505,7 @@ elymelusinias:
     - id: regeneration
       name: Regeneration I
     - id: tarnung
-      name: Tarnung(im Wasser)
+      name: Tarnung (im Wasser)
   kampf:
     waffen:
       - AT: 14
@@ -2934,9 +2924,9 @@ fernhaendlerpaktierer:
   eigenschaften:
     - id: gefahreninstinkt
       name: Gefahreninstinkt
-    - id: kreisderverdammnisi
+    - id: kreisderverdammnis
       name: Kreis der Verdammnis I
-    - id: willensstarki
+    - id: willensstark
       name: Willensstark I
   freiefertigkeiten:
     - name: Händler
@@ -3037,7 +3027,7 @@ fetterzombie:
     - id: astralsinn
       name: Astralsinn
     - id: explosion
-      name: Explosion(3W6, Säure)
+      name: Explosion (3W6, Säure)
   infos:
     - info: Mächtige Magie Explosion(4W6, Säure)
       name: Varianten
@@ -3189,9 +3179,8 @@ feuermaehre:
   beschreibung: großes Feuerross
   eigenschaften:
     - id: jaehzorn
-      name:
-        Jähzorn(Willkürlich greift die Feuermähre an. IN(20 ,I) sonst -8 auf die
-        erste Parade. Ebenso willkürlich endet der Angriff)
+      name: "Jähzorn (Willkürlich greift die Feuermähre an. IN(20 ,I) sonst -8 auf die
+        erste Parade. Ebenso willkürlich endet der Angriff)"
   infos:
     - info:
         Der Reiter ist immun gegen Feuerschaden, nicht aber gegen den Jähzorn der
@@ -3239,9 +3228,9 @@ firndorn:
         wert: 24
   eigenschaften:
     - id: aura
-      name: Aura(Kälte, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde)
+      name: Aura (Kälte, Zähigkeit (20) alle 4 Initiativephasen, 1 Wunde)
     - id: tarnung
-      name: Tarnung(in Schnee und Eis)
+      name: Tarnung (in Schnee und Eis)
   kampf:
     waffen:
       - AT: 16
@@ -3531,12 +3520,12 @@ gargyl:
   eigenschaften:
     - id: flugfaehig
       name: Flugfähig
-    - id: immunitaet
-      name: Immunität(Eigenschaften, Hellsicht, Verwandlung)
+    - id: immunitaetfertigkeit
+      name: Immunität (Eigenschaften, Hellsicht, Verwandlung)
     - id: angepasst
       name: Angepasst II (Dunkelheit)
     - id: tarnung
-      name: Tarnung(in der Stadt)
+      name: Tarnung (in der Stadt)
     - id: geisterpanzer
       name: Geisterpanzer
   info:
@@ -3580,7 +3569,7 @@ gargyl:
 gefesselteseele:
   beschreibung: der schwache Geist eines Menschen
   eigenschaften:
-    - id: vorteilebis80ep
+    - id: vorteile
       name: Vorteile bis 80 EP
   info:
     "Attribute:  2x4, 4x6, 2x8,  Talente:  4x6, 1x10\nVarianten:  \nNützliche\
@@ -3634,13 +3623,13 @@ geisterdrache:
   beschreibung: uralter mächtiger sehr großer untoter Ratgeber
   eigenschaften:
     - id: aura
-      name: Aura(Wahnsinn, Willenskraft (28) jede Initiativephase, 1 Erschöpfung)
+      name: Aura (Wahnsinn, Willenskraft (28) jede Initiativephase, 1 Erschöpfung)
     - id: aura
-      name:
-        Aura(Disruptivo, Alle Zauber anderer Wesen sind in einer Reichweite von
+      name: >
+        Aura (Disruptivo, Alle Zauber anderer Wesen sind in einer Reichweite von
         32 Schritt um 8 erschwert)
     - id: immunitaet
-      name: Immunität(magisch)
+      name: Immunität (magisch)
     - id: schreckgestalt
       name: Schreckgestalt III
   kampf:
@@ -3740,10 +3729,10 @@ geisterschwarm:
   beschreibung: der schwache Geist
   eigenschaften:
     - id: astralsauger
-      name:
-        Astralsauger(Richtet der Geisterschwarm Wunden bei einem Wesen an, das über
+      name: >
+        Astralsauger (Richtet der Geisterschwarm Wunden bei einem Wesen an, das über
         AsP verfügt, so verliert dieses Wesen WS Anzahl der Wunden AsP.)
-    - id: schmerzimmunii
+    - id: schmerzimmun
       name: Schmerzimmun II
     - id: resistenz
       name: Resistenz(Stichwaffen)
@@ -3792,10 +3781,10 @@ ghul:
     MU: 8
   beschreibung: ansteckender und gieriger Leichenfresser
   eigenschaften:
-    - id: empfindlichkeitii
-      name: Empfindlichkeit II(Sonnenlicht)
-    - id: immunitaet
-      name: Immunität(Einfluss)
+    - id: empfindlichkeit
+      name: Empfindlichkeit II (Sonnenlicht)
+    - id: immunitaetfertigkeit
+      name: Immunität (Einfluss)
     - id: lichtscheu
       name: Lichtscheu
     - id: schreckgestalt
@@ -3853,21 +3842,19 @@ ghulkoenig:
     MU: 8
   beschreibung: verschmolzener großer Haufen Leichenfresser
   eigenschaften:
-    - id: empfindlichkeitii
-      name: Empfindlichkeit II(Sonnenlicht)
-    - id: immunitaet
-      name: Immunität(Einfluss)
+    - id: empfindlichkeit
+      name: Empfindlichkeit II (Sonnenlicht)
+    - id: immunitaetfertigkeit
+      name: Immunität (Einfluss)
     - id: lichtscheu
       name: Lichtscheu
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: regemutation
-      name:
-        Regemutation(Verschmelzen mit Ghulen heilt 1 Wunde, bei großen Ghulen sogar
-        2 Wunden)
-    - id: zusaetzlicheattackeiii
+      name: Regemutation (Verschmelzen mit Ghulen heilt 1 Wunde, bei großen Ghulen sogar 2 Wunden)
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke III
-    - id: zusaetzlicheverteidigungi
+    - id: zusaetzlicheverteidigung
       name: Zusätzliche Verteidigung I
     - id: angepasst
       name: Angepasst II (Dunkelheit)
@@ -3932,10 +3919,10 @@ ghulzwei:
     MU: 8
   beschreibung: ansteckender und gieriger Leichenfresser
   eigenschaften:
-    - id: empfindlichkeitii
-      name: Empfindlichkeit II(Sonnenlicht)
-    - id: immunitaet
-      name: Immunität(Einfluss)
+    - id: empfindlichkeit
+      name: Empfindlichkeit II (Sonnenlicht)
+    - id: immunitaetfertigkeit
+      name: Immunität (Einfluss)
     - id: lichtscheu
       name: Lichtscheu
     - id: schreckgestalt
@@ -3998,8 +3985,8 @@ glaathoyub:
         name: Invocatio
         wert: 32
   eigenschaften:
-    - id: praesenz,
-      name: Präsenz,
+    - id: praesenz
+      name: Präsenz
     - id: regeneration
       name: Regeneration II
     - id: schlangenwanst
@@ -4075,7 +4062,7 @@ glacius:
     - id: amphibisch
       name: Amphibisch
     - id: aura
-      name: Aura(Kälte, Zähigkeit (28) alle 4 Initiativephasen, 1 Wunde)
+      name: Aura (Kälte, Zähigkeit (28) alle 4 Initiativephasen, 1 Wunde)
     - id: schreckgestalt
       name: Schreckgestalt I
   freiefertigkeiten:
@@ -4145,9 +4132,9 @@ glazmadraa:
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: verwundbarkeit
-      name: Verwundbarkeit I(Feuer)
-    - id: zusaetzlicheattackei
-      name: Zusätzliche Attacke I(nur Trampeln)
+      name: Verwundbarkeit I (Feuer)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I (nur Trampeln)
   kampf:
     vorteile:
       - name: Sturmangriff
@@ -4285,8 +4272,8 @@ goblin:
   eigenschaften:
     - id: angepasst
       name: Angepasst I (Dunkelheit)
-    - id: resistenzgegenkaelte
-      name: Resistenz gegen Kälte
+    - id: resistenz
+      name: Resistenz (gegen Kälte)
   kampf:
     waffen:
       - AT: 8
@@ -4394,14 +4381,14 @@ grakvaloth:
     - id: flugfaehig
       name: Flugfähig
     - id: resistenz
-      name: Resistenz I(geweiht)
+      name: Resistenz I (geweiht)
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: unsichtbarkeit
       name:
         Unsichtbarkeit(kann sich nach Wunsch nur bestimmten Personen, meist dem
         Opfer, zeigen)
-    - id: zusaetzlicheattackei
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   kampf:
     vorteile:
@@ -4460,7 +4447,7 @@ gregorroth:
     - id: besessenheit
       name: Besessenheit
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
   info:
     "Der Dämon kann von einem Musikinstrument oder ein Wesen Besitz ergreifen.
     Er verliert Besessenheit, WS, GS, Ausweichen und erhält die Eigenschaften/Attacken
@@ -4503,9 +4490,10 @@ greif:
   eigenschaften:
     - id: flugfaehig
       name: Flugfähig
-    - id: willensstarkii
+    - id: willensstark
       name: Willensstark II
     - name: Geisterpanzer (WS 20)
+      id: geisterpanzer
     - id: unbeugsamkeit
       name: Unbeugsamkeit
   info:
@@ -4591,7 +4579,7 @@ grommur:
         name: Herbeirufung des Erzes
         wert: 16
   eigenschaften:
-    - id: zerstoererischi
+    - id: zerstoererisch
       name: Zerstörerisch I
   kampf:
     waffen:
@@ -4802,7 +4790,7 @@ gurgulum:
         wert: 20
   eigenschaften:
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: kritischekonsistenz
       name: Kritische Konsistenz
     - id: opferuebernehmen
@@ -4910,7 +4898,7 @@ hanaestil:
         wert: 28
   eigenschaften:
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
   kampf:
     vorteile:
       - name: Defensiver Kampfstil
@@ -4973,7 +4961,7 @@ haqoum:
     - id: regeneration
       name: Regeneration I
     - id: tarnung
-      name: Tarnung(in Gebäuden)
+      name: Tarnung (in Gebäuden)
   kampf:
     vorteile:
       - name: Reflexschuss
@@ -5079,7 +5067,7 @@ hefashar:
     - id: paraphysikalitaet
       name: Paraphysikalität
     - id: resistenz
-      name: Resistenz I(Stichwaffen)
+      name: Resistenz I (Stichwaffen)
     - id: schreckgestalt
       name: Schreckgestalt I
     - id: wasserwesen
@@ -5151,7 +5139,7 @@ hektabelus:
     - id: rudel
       name: Rudel
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
   kampf:
     waffen:
       - RW: 0
@@ -5351,9 +5339,8 @@ hoehlenspinne:
   eigenschaften:
     - id: angepasst
       name: Angepasst II (Dunkelheit)
-    - name: Immunität (Niederwerfen
-    - id: umreissenundaehnlicheeffekte
-      name: Umreißen und ähnliche Effekte)
+    - name: Immunität (Niederwerfen Umreißen und ähnliche Effekte)
+      id: immunitaet
   info:
     Das Netz der Spinne ist im Fackelschein mit einer Wachsamkeits-Probe (24)
     zu erkennen. Misslingt die Probe, verfängt sich ein Opfer im Netz, das wie ein
@@ -5398,6 +5385,7 @@ hornechse:
     - id: angepasst
       name: Angepasst I (Sumpf)
     - name: Verwundbarkeit I (Eis)
+      id: verwundbarkeit
   kampf:
     vorteile:
       - name: Sturmangriff
@@ -5617,11 +5605,11 @@ hyralkor:
     - id: flugfaehig
       name: Flugfähig
     - id: immunitaet
-      name: Immunität(Feuer)
+      name: Immunität (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: verwundbarkeit
-      name: Verwundbarkeit I(Eis)
+      name: Verwundbarkeit I (Eis)
   kampf:
     vorteile:
       - name: Hammerschlag
@@ -5904,13 +5892,13 @@ irrhalk:
     - id: regeneration
       name: Regeneration I
     - id: resistenz
-      name: Resistenz II(Feuer)
+      name: Resistenz II (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: verwundbarkeit
-      name: Verwundbarkeit I(Wasser)
+      name: Verwundbarkeit I (Wasser)
     - id: explosion
-      name: Explosion(5W6)
+      name: Explosion (5W6)
   kampf:
     vorteile:
       - name: Zusätzliche Attacke I
@@ -5951,7 +5939,7 @@ irrlicht:
   eigenschaften:
     - id: magieabweisend
       name: magieabweisend
-    - id: keineschreckgestalt
+    - id: schreckgestalt
       name: keine Schreckgestalt
   info:
     "Varianten:  Nützliches Hasserfülltes Irrlicht (Einfluss 14 (Bannbaladin,
@@ -6043,7 +6031,7 @@ ivash:
         wert: 20
   eigenschaften:
     - id: flammenkoerper
-      name:
+      name: >
         Flammenkörper(Alle Waffen, die Holz beinhalten, gelten gegen den Ivash als
         zerbrechlich)
     - id: formlosigkeit,
@@ -6095,7 +6083,7 @@ jegvilbaresidde:
     MU: 20
   beschreibung: die ewige Flamme
   eigenschaften:
-    - id: regenerationv
+    - id: regeneration
       name: Regeneration IV
   infos:
     - info:
@@ -6208,7 +6196,7 @@ kahthurakarfai:
     - id: flugfaehig
       name: Flugfähig
     - id: nachtdaemon
-      name:
+      name: >
         "Nachtdämon(Untertags ist der Dämon wesentlich schwächer und versteckt sich
         üblicherweise in einer Blume: WS 13 koloss: 1, MR 12, INI 8 und er verliert
         Regeneration I, Schreckgestalt II, Tarnung)
@@ -6220,7 +6208,7 @@ kahthurakarfai:
       name: Schreckgestalt II
     - id: tarnung
       name: Tarnung
-    - id: zusaetzlicheattackei
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   kampf:
     vorteile:
@@ -6411,8 +6399,8 @@ karmoth:
     Diener Belhalhars, sehr großer Gegner
   eigenschaften:
     - id: aura
-      name:
-        "Aura(Kampfeslust, Willenskraft (28), jede INI: phase, Opfer wird zum Kampf
+      name: >
+        "Aura (Kampfeslust, Willenskraft (28), jede INI: phase, Opfer wird zum Kampf
         mit Karmoth gezwungen)"
     - id: regeneration
       name: Regeneration II
@@ -6420,7 +6408,7 @@ karmoth:
       name: Schreckgestalt III
     - id: unbeugsamkeit
       name: Unbeugsamkeit
-    - id: zusaetzlicheattackeii
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke II
   kampf:
     vorteile:
@@ -6559,7 +6547,7 @@ kharzoreel:
   eigenschaften:
     - id: unsichtbarkeit
       name: unsichtbarkeit
-    - id: zusaetzlicheattackei
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   kampf:
     waffen:
@@ -6610,7 +6598,7 @@ khelevathan:
       name: Lebensraub
     - id: tarnung
       name: Tarnung
-    - id: zusaetzlicheattackei
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   infos:
     - name: Keine
@@ -6778,7 +6766,7 @@ khuralthu:
   eigenschaften:
     - id: regeneration
       name: Regeneration I
-    - id: zusaetzlicheattackeii
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke II
   kampf:
     vorteile:
@@ -6953,7 +6941,7 @@ kriegermumie:
       name: Körperlosigkeit
     - name: Resistenz I (Stichwaffen)
     - name: Verwundbarkeit II (Feuer)
-    - id: schmerzimmunii
+    - id: schmerzimmun
       name: Schmerzimmun II
     - id: schreckgestalt
       name: Schreckgestalt II
@@ -7263,7 +7251,7 @@ kroete:
   beschreibung: Häufiges Vertrautentier
   eigenschaften:
     - id: magiegespuer
-      name: magiegespuer
+      name: Magiegespür
   kampf:
     waffen:
       - RW: 0
@@ -7302,8 +7290,9 @@ lagramagmangr:
         wert: 32
   eigenschaften:
     - id: aura
-      name: Aura(Hitze, Zähigkeit (28) jede Initiativephase, 1 Wunde)
+      name: Aura (Hitze, Zähigkeit (28) jede Initiativephase, 1 Wunde)
     - name: Explosion (8W6)
+      id: explosion
     - id: schreckgestalt
       name: Schreckgestalt II
   kampf:
@@ -7371,17 +7360,13 @@ laraan:
     - id: tarnung
       name: Tarnung
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: verfuehrerischegestalt
-      name: "Verführerische Gestalt(Der Dämon nimmt die Gestalt eines
-
+      name: >
+        Verführerische Gestalt (Der Dämon nimmt die Gestalt eines
         wunderschönen Wesens mit übergroßen Geschlechtsteilen an. In dieser
-
         Gestalt verliert der Dämon Schreckensgestalt und Unsichtbarkeit und
-
-        erhält die Eigenschaften/Attacken der angenommenen Gestalt.
-
-        )"
+        erhält die Eigenschaften/Attacken der angenommenen Gestalt.)"
   infos:
     - info:
         Jeder Dienst des Laraans beginnt damit, dass der Beschwörer ihm ein Körperteil
@@ -7582,7 +7567,7 @@ libaal:
       name: Schreckgestalt II
     - id: regeneration
       name: Regeneration I
-    - id: zusaetzlicheattackeiv
+    - id: zusaetzlicheattackev
       name: Zusätzliche Attacke IV
   kampf:
     waffen:
@@ -7639,9 +7624,7 @@ loewe:
     - id: angepasst
       name: Angepasst II (Dunkelheit)
     - id: blitzschnell
-      name:
-        Blitzschnell(erleidet keine Passierschläge wenn er sich aus dem Nahkampf
-        zurückzieht)
+      name: Blitzschnell
   kampf:
     vorteile:
       - name: Standfest
@@ -7774,7 +7757,7 @@ mactans:
       name: Schreckgestalt II
     - id: verwundbarkeit
       name: Verwundbarkeit(Seeschlangenzähne)
-    - id: zusaetzlicheattackeiv
+    - id: zusaetzlicheattackev
       name: Zusätzliche Attacke IV
   kampf:
     waffen:
@@ -8111,7 +8094,7 @@ marukmethai:
     - id: ausweichen
       name: Ausweichen
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: beschwoererstaerken
       name: Beschwörer stärken
   info:
@@ -8262,7 +8245,7 @@ morcan:
         wert: 16
   eigenschaften:
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: besessenheit
       name: Besessenheit
   info:
@@ -8299,10 +8282,10 @@ morfu:
     MU: 10
   beschreibung: schleimige Giftschnecke, die ihre Stacheln verschießt; großer Gegner
   eigenschaften:
-    - name: Immunität (Niederwerfen
-    - id: umreissenundaehnlicheeffekte
-      name: Umreißen und ähnliche Effekte)
+    - name: Immunität (Niederwerfen, Umreißen und ähnliche Effekte)
+      id: immunitaet
     - name: Resistenz I (Stumpfe Waffen)
+      id: resistenz
   kampf:
     waffen:
       - FK: 8
@@ -8401,10 +8384,10 @@ nachtalp:
   beschreibung: auf der Suche nach Auferstehung
   eigenschaften:
     - id: tarnung
-      name: Tarnung(Dunkelheit)
+      name: Tarnung (Dunkelheit)
     - id: aura
-      name:
-        Aura(Albträume, Willenskraft (28) jede Nacht, Schlafende in 4 Schritt Reichweite
+      name: >
+        Aura (Albträume, Willenskraft (28) jede Nacht, Schlafende in 4 Schritt Reichweite
         erleiden eine Wunde)
   info: "Sonderregeln:
 
@@ -8471,7 +8454,7 @@ nachtwind:
   beschreibung: Sehr kleiner, magiehassender, geflügelter Jäger
   eigenschaften:
     - id: magiegespuer
-      name: magiegespuer
+      name: Magiegespür
     - id: flieger
       name: Flieger
     - id: angepasst
@@ -8515,8 +8498,8 @@ necrophagion:
     - id: astralsinn
       name: Astralsinn
     - id: aura
-      name:
-        Aura(Gestank, Zähigkeit (16) jede Initiativephase, –2 auf körperliche Proben
+      name: >
+        Aura (Gestank, Zähigkeit (16) jede Initiativephase, -2 auf körperliche Proben
         (kumulativ) für 1 Tag)
     - id: resistenz
       name: Resistenz II(Feuer, Stich)
@@ -8668,10 +8651,10 @@ nephazz:
     - id: rudel
       name: Rudel
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: untotenbeseelen
-      name:
-        "Untoten beseelen(Der Dämon kann eine Leiche als Untoten erheben oder fährt
+      name: >
+        "Untoten beseelen (Der Dämon kann eine Leiche als Untoten erheben oder fährt
         in einen bestehenden Untoten ein. Er verliert einige Eigenschaften/Attacken
         und erhält die Eigenschaften/Attacken des Untoten. Der Dämon kontrolliert den
         Untoten vollständig.)
@@ -8806,7 +8789,7 @@ oboraddon:
         wert: 32
   eigenschaften:
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: leichebeseelen
       name: Leiche beseelen
   info:
@@ -8983,12 +8966,10 @@ ogerstatue:
         name: Stein wandle!
         wert: 28
   eigenschaften:
-    - name: Immunität (Gifte
-    - id: krankheiten
-      name: Krankheiten)
-    - name: Resistenz II (Feuer
-    - id: stichwaffen
-      name: Stichwaffen)
+    - name: Immunität (Gifte, Krankheiten)
+      id: immunitaet
+    - name: Resistenz II (Feuer, Stichwaffen)
+      id: resistenz
   kampf:
     vorteile:
       - name: Zusätzliche Attacke I
@@ -9028,10 +9009,10 @@ oghul:
     MU: 20
   beschreibung: ansteckender und gieriger großer Leichenfresser
   eigenschaften:
-    - id: empfindlichkeitii
-      name: Empfindlichkeit II(Sonnenlicht)
+    - id: empfindlichkeit
+      name: Empfindlichkeit II (Sonnenlicht)
     - id: immunitaet
-      name: Immunität(Einfluss)
+      name: Immunität (Einfluss)
     - id: lichtscheu
       name: Lichtscheu
     - id: schreckgestalt
@@ -9280,9 +9261,7 @@ panther:
     - id: angepasst
       name: Angepasst II (Dunkelheit)
     - id: blitzschnell
-      name:
-        Blitzschnell(erleidet keine Passierschläge wenn er sich aus dem Nahkampf
-        zurückzieht)
+      name: Blitzschnell
   kampf:
     vorteile:
       - name: Standfest
@@ -9342,7 +9321,7 @@ perldrache:
     - id: flugfaehig
       name: Flugfähig
     - id: resistenz
-      name: Resistenz II(Feuer)
+      name: Resistenz II (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt I
   kampf:
@@ -9426,13 +9405,11 @@ perldrachewestwinddrache:
     - id: angepasst
       name: Angepasst I (Wasser)
     - id: aura
-      name: Aura(Hitze)
-    - id: zaehigkeit
-      name: Zähigkeit((20) alle 4 INI:phasen 1 Wunde)
+      name: Aura (Hitze, Zähigkeit ((20) alle 4 INI:phasen 1 Wunde)
     - id: flugfaehig
       name: Flugfähig
     - id: resistenz
-      name: Resistenz II(Feuer)
+      name: Resistenz II (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt I
   kampf:
@@ -9516,17 +9493,16 @@ pershirash:
       name: Flieger
     - id: lebensraub
       name: Lebensraub
-    - id: augedespershirashlegen
-      name:
-        "Auge des Pershirash legen(Für ein ausgerissenes Auge legt Pershirash ein
+    - id: verbindungzumbeschwoerer
+      name: Verbindung zum Beschwörer
+  infos:
+    - name: Auge des Pershirash legen
+      info: >
+        Für ein ausgerissenes Auge legt Pershirash ein
         kristallenes Ei. Das Ei erleichtert FK-Angriffe des Beschwörers um +4/+6/+8
         für 7 Tage/7 Monate/7 Jahre, je nachdem ob es von einem Tier/kulturschaffenden
         Wesen/dem Beschwörer selbst stammt. Die Effekte mehrere Eier sind nicht kumulativ,
-        es zählt nur der höchste Bonus.)
-
-        )"
-    - id: verbindungzumbeschwoerer
-      name: Verbindung zum Beschwörer
+        es zählt nur der höchste Bonus.
   kampf:
     vorteile:
       - name: Sturmangriff
@@ -9593,11 +9569,11 @@ pestrattenschwarm:
     - id: astralsinn
       name: Astralsinn
     - id: resistenz
-      name: Resistenz II(Stichwaffen)
-    - id: schmerzimmunii
+      name: Resistenz II (Stichwaffen)
+    - id: schmerzimmun
       name: Schmerzimmun II
-    - id: verwundbarkeitv
-      name: Verwundbarkeit IV(Flächenschaden)
+    - id: verwundbarkeit
+      name: Verwundbarkeit IV (Flächenschaden)
   kampf:
     vorteile:
       - name: Zusätzliche Attacke I
@@ -9656,11 +9632,11 @@ pestrattenschwarmsehrgrosserschwarm:
     - id: astralsinn
       name: Astralsinn
     - id: resistenz
-      name: Resistenz II(Stichwaffen)
-    - id: schmerzimmunii
+      name: Resistenz II (Stichwaffen)
+    - id: schmerzimmun
       name: Schmerzimmun II
     - id: verwundbarkeitv
-      name: Verwundbarkeit IV(Flächenschaden)
+      name: Verwundbarkeit IV (Flächenschaden)
   kampf:
     vorteile:
       - name: Zusätzliche Attacke II
@@ -9713,10 +9689,11 @@ poltergeist:
   eigenschaften:
     - id: tarnung
       name: Tarnung
-    - id: telekinese-feld
-      name:
-        Telekinese-Feld(In einer Reichweite von 8 Schritt kann der Poltergeist Gegenstände
-        telekinetisch bewegen und werfen)
+  infos:
+  - name: Telekinese-Feld
+    info: >
+      In einer Reichweite von 8 Schritt kann der Poltergeist Gegenstände
+        telekinetisch bewegen und werfen
   info:
     "Vorahnung: Gegen Fernkampfangriffe des Poltergeists kann mit IN (24, I) verteidigt
     werden.
@@ -9809,13 +9786,13 @@ qasaar:
         wert: 16
   eigenschaften:
     - id: immunitaet
-      name: Immunität(profan)
+      name: Immunität (profan)
     - id: praesenz
       name: Präsenz
     - id: regeneration
       name: Regeneration I
     - id: resistenz
-      name: Resistenz(magisch, geweiht)
+      name: Resistenz (magisch, geweiht)
   kampf:
     vorteile:
       - name: Defensiver Kampfstil
@@ -9858,12 +9835,13 @@ quitslinga:
       name: Schreckgestalt II
     - id: tarnung
       name: Tarnung
-    - id: gestaltwandeln
-      name:
-        Gestaltwandeln(Der Dämon nimmt die Gestalt einer Person an, von der er einen
+  infos:
+    - name: Gestaltwandeln
+      info: >
+        Der Dämon nimmt die Gestalt einer Person an, von der er einen
         Körperteil besitzt. Jeder Gestaltwechsel senkt seine WS um 1. In einer fremden
         Gestalt verliert der Dämon Eigenschaften/Attacken und erhält die Eigenschaften/Attacken
-        der angenommenen Gestalt.)
+        der angenommenen Gestalt.
   infos:
     - info:
         Jeder Dienst des Quitslingas beginnt damit, dass er in einen Wirtskörper
@@ -10132,7 +10110,7 @@ riese:
       name: Schreckgestalt II
     - id: unbeugsamkeit
       name: Unbeugsamkeit
-    - id: willensstarkii
+    - id: willensstark
       name: Willensstark II
   info: "kampfunfähigkeit: Der Riese flieht, wenn er 6 Wunden erlitten hat."
   kampf:
@@ -10276,12 +10254,12 @@ riesenamoebe:
   beschreibung: allesfressender Schleimhaufen; großer Gegner
   eigenschaften:
     - id: immunitaet
-      name: Immunität(Niederwerfen Umreißen und ähnliche Effekte)
+      name: Immunität (Niederwerfen Umreißen und ähnliche Effekte)
     - id: koerperlosigkeit
       name: Körperlosigkeit
     - id: resistenz
-      name: Resistenz I(Stichwaffen, stumpfe Waffen)
-    - id: schmerzimmunii
+      name: Resistenz I (Stichwaffen, stumpfe Waffen)
+    - id: schmerzimmun
       name: Schmerzimmun II
   kampf:
     waffen:
@@ -10318,18 +10296,15 @@ riesenfeuerkaefer:
     KO: 4
     MU: 4
   beschreibung: flammendes Insekt
-  eigenschaften:
-    - id: ueberhitzung
-      name:
-        Überhitzung(fallen bei der Bestimmung der Trefferpunkte mindestens zwei
-        Sechsen, stirbt der Käfer)
   infos:
+    - name: Überhitzung
+      info: >
+        fallen bei der Bestimmung der Trefferpunkte mindestens zwei
+        Sechsen, stirbt der Käfer
     - info:
         "Zerberstender (-X, Explosion(XW6); maximal 4), Kochendes Blut (-4, Werden
         dem Riesenfeuerkäfer X Wunden zugefügt, muss jedes Wesen in Reichweite eine
-        GE (16,I) ablegen, um nicht je 2XW6 SP zu erleiden)
-
-        "
+        GE (16,I) ablegen, um nicht je 2XW6 SP zu erleiden)"
       name: Spezialfähigkeiten
   kampf:
     waffen:
@@ -10368,9 +10343,9 @@ riesenkaiman:
     - id: amphibisch
       name: Amphibisch
     - id: immunitaet
-      name: Immunität(Niederwerfen Umreißen und ähnliche Effekte)
+      name: Immunität (Niederwerfen Umreißen und ähnliche Effekte)
     - id: verwundbarkeit
-      name: Verwundbarkeit(Eis)
+      name: Verwundbarkeit (Eis)
   kampf:
     vorteile:
       - name: Zusätzliche Attacke I
@@ -10422,7 +10397,7 @@ riesenkraken:
       name: Schreckgestalt III
     - id: wasserwesen
       name: Wasserwesen
-    - id: willensstarkii
+    - id: willensstark
       name: Willensstark II
   kampf:
     vorteile:
@@ -10507,11 +10482,11 @@ riesenspringelschwarm:
     - id: wasserwesen
       name: Wasserwesen
     - id: resistenz
-      name: Resistenz I(Stichwaffen)
-    - id: schmerzimmunii
+      name: Resistenz I (Stichwaffen)
+    - id: schmerzimmun
       name: Schmerzimmun II
     - id: verwundbarkeitv
-      name: Verwundbarkeit IV(Flächenschaden)
+      name: Verwundbarkeit IV (Flächenschaden)
   kampf:
     vorteile:
       - name: Zusätzliche Attacke I
@@ -10661,9 +10636,7 @@ saebelzahntiger:
     - id: angepasst
       name: Angepasst II (Dunkelheit)
     - id: blitzschnell
-      name:
-        Blitzschnell(erleidet keine Passierschläge wenn er sich aus dem Nahkampf
-        zurückzieht)
+      name: Blitzschnell
   kampf:
     vorteile:
       - name: Standfest
@@ -10904,7 +10877,7 @@ schlange:
   beschreibung: Häufiges Vertrautentier
   eigenschaften:
     - id: magiegespuer
-      name: magiegespuer
+      name: Magiegespür
   kampf:
     waffen:
       - AT: 13
@@ -10996,7 +10969,7 @@ schlinger:
     KO: 32
   beschreibung: Hungrige Riesenechse
   eigenschaften:
-    - id: schreckgestallti
+    - id: schreckgestallt
       name: Schreckgestallt I
     - id: kaeltestarre
       name: Kältestarre
@@ -11152,11 +11125,11 @@ scylaphotai:
         wert: 16
   eigenschaften:
     - id: aura
-      name: "Aura(Gestank, Zähigkeit (16) alle 4 INI: phasen, für 1 INI: phase handlungsunfähig)"
+      name: "Aura (Gestank, Zähigkeit (16) alle 4 INI: phasen, für 1 INI: phase handlungsunfähig)"
     - id: wasserwesen
-      name: wasserwesen
+      name: Wasserwesen
     - id: aura
-      name: "Aura(Kochendes Wasser, Zähigkeit (16), alle 4 INI: phasen, 1 Wunde)"
+      name: "Aura (Kochendes Wasser, Zähigkeit (16), alle 4 INI: phasen, 1 Wunde)"
   kampf:
     waffen:
       - FK: 12
@@ -11197,7 +11170,7 @@ sharbazz:
       name: Flugfähig
     - id: regeneration
       name: Regeneration I
-    - id: zusaetzlicheattackei
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   kampf:
     vorteile:
@@ -11262,11 +11235,11 @@ sholtgothar:
   beschreibung: die zähe Glut
   eigenschaften:
     - id: aura
-      name: Aura(Hitze, Zähigkeit (28) alle 4 Initiativephasen, 1 Wunde)
+      name: Aura (Hitze, Zähigkeit (28) alle 4 Initiativephasen, 1 Wunde)
     - id: schreckgestalt
       name: Schreckgestalt I
     - id: tarnung
-      name: Tarnung(Gestein)
+      name: Tarnung (Gestein)
   infos:
     - info:
         Sholtgothar ist heiß wie Glut (400-800 °C, Inervall 1, 1 Wunde, Berührung
@@ -11409,7 +11382,7 @@ skelett:
     - id: astralsinn
       name: Astralsinn
     - id: resistenz
-      name: Resistenz II(Stichwaffen)
+      name: Resistenz II (Stichwaffen)
     - id: rudel
       name: Rudel
   kampf:
@@ -11483,7 +11456,7 @@ skelettruestung:
     - id: astralsinn
       name: Astralsinn
     - id: resistenz
-      name: Resistenz II(Stichwaffen)
+      name: Resistenz II (Stichwaffen)
     - id: rudel
       name: Rudel
   kampf:
@@ -11695,9 +11668,9 @@ soeldnerkommandant:
     MU: 14
   beschreibung: charismatischer Befehlshaber einer größeren Einheit
   eigenschaften:
-    - id: willensstarki
+    - id: willensstark
       name: Willensstark I
-    - id: willensstarkii
+    - id: willensstark
       name: Willensstark II
   kampf:
     vorteile:
@@ -11887,11 +11860,12 @@ sordul:
         wert: 20
   eigenschaften:
     - id: aura
-      name: "Aura(Verseuchung, Zähigkeit (16) alle 4 INI: phasen, 1 Erschöpfung)"
-    - id: daemonischesaeure
-      name:
-        Dämonische Säure(Waffen und Rüstungen, die Holz beinhalten, gelten gegen
-        den Dämon als zerbrechlich.)
+      name: "Aura (Verseuchung, Zähigkeit (16) alle 4 INI: phasen, 1 Erschöpfung)"
+  infos:
+  - name: Dämonische Säure
+    info: >
+      Waffen und Rüstungen, die Holz beinhalten, gelten gegen
+      den Dämon als zerbrechlich.
   kampf:
     waffen:
       - AT: 10
@@ -11932,14 +11906,14 @@ spektral:
   eigenschaften:
     - id: eingeschraenkt
       name:
-        Eingeschränkt(Kann nicht über größere Mengen an Eisen laufen - bspw. Nägel.
+        Eingeschränkt (Kann nicht über größere Mengen an Eisen laufen - bspw. Nägel.
         Dadurch lässt sich auch eine Art Schutzkreis/Bannkreis bilden)
     - id: immunitaet
-      name: Immunität(alles Schadensarten außer Feuer)
+      name: Immunität (alles Schadensarten außer Feuer)
     - id: unsichtbarkeit
-      name: unsichtbarkeit
-    - id: verwundbarkeitv
-      name: Verwundbarkeit IV(Feuer, dass mindestens so heiß brennt wie ein Ignifaxius)
+      name: Unsichtbarkeit
+    - id: Verwundbarkeit
+      name: Verwundbarkeit IV (Feuer, dass mindestens so heiß brennt wie ein Ignifaxius)
   info:
     "Der Spektral entsteht nur bei der Erzeugung eines Meharus-Ogo-Distillat und
     kann nicht beschworen werden. Dabei wird ein lebendes Kulturschaffendes Wesen
@@ -12018,8 +11992,8 @@ spinneschwarm:
       name: Schmerzimmun
     - id: resistenz
       name: Resistenz II(Stichwaffen)
-    - id: verwundbarkeitv
-      name: Verwundbarkeit IV(Flächenschaden)
+    - id: verwundbarkeit
+      name: Verwundbarkeit IV (Flächenschaden)
   info:
     "Durch Einspinnen können die Spinnen kumulativ Erschwernisse auf ihre Umklammerung
     legen, was darstellt dass sie ihr Opfer nach und nach Bewegungsunfähig machen.
@@ -12329,7 +12303,7 @@ taifelel:
         wert: 24
   eigenschaften:
     - id: aura
-      name: "Aura(Hitze, Zähigkeit (16) alle 4 INI: phasen, 1 Wunde)"
+      name: "Aura (Hitze, Zähigkeit (16) alle 4 INI: phasen, 1 Wunde)"
     - name: Immunität (Feuer)
     - name: Verwundbarkeit I (Wasser)
   kampf:
@@ -12369,11 +12343,11 @@ tatzelwurm:
   beschreibung: stinkender Vertreter der niederen Drachen; großer Gegner
   eigenschaften:
     - id: aura
-      name:
-        Aura(Gestank -2 auf körperliche Proben (kumulativ) für 1 Tag Zähigkeit (16)
-        jede INI:phase")
+      name: >
+        Aura (Gestank -2 auf körperliche Proben (kumulativ) für 1 Tag Zähigkeit (16)
+        jede INI:phase)
     - id: resistenz
-      name: Resistenz I(Feuer)
+      name: Resistenz I (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt I
   kampf:
@@ -12445,7 +12419,7 @@ thalon:
   eigenschaften:
     - id: regeneration
       name: Regeneration I
-    - id: zusaetzlicheattackei
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   kampf:
     waffen:
@@ -12498,7 +12472,7 @@ thazlaraanji:
         wert: 20
   eigenschaften:
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
   kampf:
     waffen:
       - RW: 0
@@ -12587,8 +12561,8 @@ tlaluc:
       - name: Invocatio (24), 32 AsP
   eigenschaften:
     - id: aura
-      name:
-        Aura(Gestank, Zähigkeit (28) jede Intitiavephase, kampfunfähigkeit für 1W6
+      name: >
+        Aura (Gestank, Zähigkeit (28) jede Intitiavephase, kampfunfähigkeit für 1W6
         Minuten)
   kampf:
     waffen:
@@ -12630,8 +12604,8 @@ tlaluczombie:
     - id: astralsinn
       name: Astralsinn
     - id: aura
-      name:
-        Aura(Gestank, Zähigkeit (12) alle 4 Intitiavephasen, Kampfunfähigkeit für
+      name: >
+        Aura (Gestank, Zähigkeit (12) alle 4 Intitiavephasen, Kampfunfähigkeit für
         2 Initiativphase)
   infos:
     - info:
@@ -12688,7 +12662,7 @@ trachrhabaar:
         wert: 24
   eigenschaften:
     - id: immunitaet
-      name: Immunität(profan)
+      name: Immunität (profan)
     - id: regeneration
       name: Regeneration II
     - id: schreckgestalt
@@ -12862,15 +12836,14 @@ tuuramash:
         name: Invocatio
         wert: 32
   eigenschaften:
-    - id: kroetensekret
-      name:
-        "Krötensekret(Wenn du dem Tuur-Amash mit einem Nahkampfangriff mindestens
-        2 Kratzer zufügt, musst du eine GE-Probe (20) ablegen. Misslingt die Probe,
-        erleidest du 4W6 SP.
-
-        )"
     - id: regeneration
       name: Regeneration I
+  infos:
+  - name: Krötensekret
+    info: >
+      Wenn du dem Tuur-Amash mit einem Nahkampfangriff mindestens
+      2 Kratzer zufügt, musst du eine GE-Probe (20) ablegen. Misslingt die Probe,
+      erleidest du 4W6 SP.
   kampf:
     vorteile:
       - name: Sturmangriff
@@ -12934,9 +12907,9 @@ tuzaker:
   beschreibung: loyale Hundgefährten
   eigenschaften:
     - id: tierempathie
-      name: Tierempathie(Maraskantarantel)
+      name: Tierempathie (Maraskantarantel)
     - id: immunitaet
-      name: Immunität(Maraskantarantel-Gift)
+      name: Immunität (Maraskantarantel-Gift)
   kampf:
     vorteile:
       - name: Niederwerfen
@@ -12999,7 +12972,7 @@ udapoth:
     - id: regeneration
       name: Regeneration I
     - id: verwundbarkeit
-      name: Verwundbarkeit I(Feuer)
+      name: Verwundbarkeit I (Feuer)
   kampf:
     vorteile:
       - name: Niederwerfen
@@ -13058,7 +13031,7 @@ ugrabaan:
         name: Invocatio
         wert: 28
   eigenschaften:
-    - id: zusaetzlicheattackeii
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke II
   kampf:
     vorteile:
@@ -13119,7 +13092,7 @@ ulchuchu:
     - id: regeneration
       name: Regeneration II
     - id: verwundbarkeit
-      name: Verwundbarkeit I(Feuer)
+      name: Verwundbarkeit I (Feuer)
     - id: wasserwesen
       name: Wasserwesen
   infos:
@@ -13128,7 +13101,6 @@ ulchuchu:
         (Koloss I, Zusätzliche Attacke II,  AT: +2, Umklammern (-6, 16), kann 4 Ziele
         unter Wasser halten)   Riesiger Ulchuchu (Koloss II, Zusätzliche Attacke IV,  AT:
         +2, Umklammern (-8, 20), kann 8 Ziele unter Wasser halten)
-
         "
       name: Varianten
   kampf:
@@ -13172,12 +13144,12 @@ umdoreel:
         wert: 28
   eigenschaften:
     - id: aura
-      name: "Aura(Kälte, Zähigkeit (20), alle 4 INI: phasen, 1Wunde)"
+      name: "Aura (Kälte, Zähigkeit (20), alle 4 INI: phasen, 1Wunde)"
     - id: regeneration
       name: Regeneration I
     - id: schreckgestalt
       name: Schreckgestalt I
-    - id: zusaetzlicheattackeii
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke II
   kampf:
     vorteile:
@@ -13233,13 +13205,14 @@ untoterdrachenbandwurm:
   beschreibung: Cestoda Dracophagus
   eigenschaften:
     - id: resistenz
-      name: Resistenz I(Feuer, Stich)
-    - id: magieabsorption
-      name:
-        Magieabsorption(Zauberern wird 4 AsP pro Initiativephase entzogen. Die entzogenen
-        AsP sind um 1 je volle 8 Schritt Entfernung zum Absorber reduziert)
-    - id: magienahrung
-      name: Magienahrung(regeneriert 1 Wunde pro 2 zugenommene AsP)
+      name: Resistenz I (Feuer, Stich)
+  infos:
+  - name: Magieabsorption 
+    info: >
+      Zauberern wird 4 AsP pro Initiativephase entzogen. Die entzogenen
+      AsP sind um 1 je volle 8 Schritt Entfernung zum Absorber reduziert
+  - name: Magienahrung 
+    info: regeneriert 1 Wunde pro 2 zugenommene AsP
   kampf:
     waffen:
       - AT: 11
@@ -13278,7 +13251,7 @@ uridabash:
       name: Ausweichen in den Limbus
     - id: tarnung
       name: Tarnung
-    - id: zusaetzlicheattackei
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   kampf:
     waffen:
@@ -13344,8 +13317,8 @@ usuzoreel:
         name: Invocatio
         wert: 16
   eigenschaften:
-    - id: empfindlichkeiti
-      name: Empfindlichkeit I(Feuer)
+    - id: empfindlichkeit
+      name: Empfindlichkeit I (Feuer)
     - id: flieger
       name: Flieger
     - id: lichtscheu
@@ -13443,7 +13416,7 @@ vhatacheor:
       name: Schreckgestalt II
     - id: wasserwesen
       name: Wasserwesen
-    - id: zusaetzlicheattackeiv
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke IV
   kampf:
     waffen:
@@ -13604,9 +13577,9 @@ waldschratnichtmagisch:
   beschreibung: baumartiger Hüter der Wälder; großer Gegner
   eigenschaften:
     - id: tarnung
-      name: Tarnung(im Wald)
+      name: Tarnung (im Wald)
     - id: verwundbarkeit
-      name: Verwundbarkeit I(Feuer)
+      name: Verwundbarkeit I (Feuer)
   kampf:
     vorteile:
       - info: Befreiungsschlag
@@ -13701,7 +13674,7 @@ walkuer:
   beschreibung: pflichtbewusster halb-materieller Schutzgeist
   eigenschaften:
     - id: resistenz
-      name: Resistenz(profan)
+      name: Resistenz (profan)
   info:
     "Beseelte Waffe: Der Walkür kann für eine Stunde in eine Waffe einfahren (WM\
     \ +1, TP +1, 1x kostenlos Wurf wiederholen, magisch)\nVarianten:  \nGroßer starker\
@@ -13814,7 +13787,7 @@ widderhyaene:
     MU: 10
   beschreibung: Widder und Hyäne
   eigenschaften:
-    - id: meutei
+    - id: meute
       name: Meute I
   info:
     Fortpflanzungsfähige Widderhyänen können mit einer Erschwernis von -16 erzeugt
@@ -14019,14 +13992,14 @@ wolfsechse:
   eigenschaften:
     - id: angepasst
       name: Angepasst II (Dunkelheit)
-    - id: empfindlichkeiti
-      name: Empfindlichkeit I(Kälte)
+    - id: empfindlichkeit
+      name: Empfindlichkeit I (Kälte)
     - id: meutei
       name: Meute I
     - id: tarnung
-      name: Tarnung(Dschungel, Sumpf)
+      name: Tarnung (Dschungel, Sumpf)
     - id: verwundbarkeit
-      name: Verwundbarkeit I(Eis)
+      name: Verwundbarkeit I (Eis)
   kampf:
     vorteile:
       - name: Niederwerfen
@@ -14088,10 +14061,10 @@ wuerger:
     MU: 8
   beschreibung: ansteckender und gieriger spuckender Leichenfresser
   eigenschaften:
-    - id: empfindlichkeitii
-      name: Empfindlichkeit II(Sonnenlicht)
+    - id: empfindlichkeit
+      name: Empfindlichkeit II (Sonnenlicht)
     - id: immunitaet
-      name: Immunität(Einfluss)
+      name: Immunität (Einfluss)
     - id: lichtscheu
       name: Lichtscheu
     - id: schreckgestalt
@@ -14163,7 +14136,7 @@ xamanoth:
       name: Lebensraub
     - id: limbusreisender
       name: Limbusreisender
-    - id: zusaetzlicheattackeiii
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke III
   freiefertigkeiten:
     - name: Lehrer
@@ -14283,7 +14256,7 @@ yaryuraam:
     - id: limbusreisender
       name: Limbusreisender
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: besessenheit
       name: Besessenheit
   info:
@@ -14409,7 +14382,7 @@ yashoreel:
     - id: regeneration
       name: Regeneration I
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
   kampf:
     waffen:
       - RW: 0
@@ -14457,7 +14430,7 @@ yelarizel:
         wert: 20
   eigenschaften:
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
     - id: besessenheit
       name: Besessenheit
   info:
@@ -14516,8 +14489,8 @@ yeolkhardas:
     - id: regeneration
       name: Regeneration I
     - id: tarnung
-      name: Tarnung(im Wasser)
-    - id: zusaetzlicheattackei
+      name: Tarnung (im Wasser)
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   freiefertigkeiten:
     - name: Bader
@@ -14599,7 +14572,7 @@ yeti:
     - id: angepasst
       name: Angepasst I (Dunkelheit)
     - id: resistenz
-      name: Resistenz(gegen Kälte)
+      name: Resistenz (gegen Kälte)
   kampf:
     vorteile:
       - name: Natürliche Rüstung
@@ -14675,7 +14648,7 @@ yishazrhi:
     - id: kritischekonsistenz
       name: Kritische Konsistenz
     - id: unsichtbarkeit
-      name: unsichtbarkeit
+      name: Unsichtbarkeit
   kampf:
     waffen:
       - AT: 8
@@ -14800,8 +14773,8 @@ yonahoh:
       name: Schreckgestalt III
     - id: wasserwesen
       name: Wasserwesen
-    - id: zusaetzlicheattackeiv
-      name: Zusätzliche Attacke IV(nur Tentakel)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke IV (nur Tentakel)
   kampf:
     vorteile:
       - name: Unaufhaltsam
@@ -15068,8 +15041,8 @@ zazamotlgnakhyaa:
         wert: 24
   eigenschaften:
     - id: resistenz
-      name: Resistenz(dämonisch, magisch)
-    - id: zusaetzlicheattackei
+      name: Resistenz (dämonisch, magisch)
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke I
   kampf:
     waffen:
@@ -15117,7 +15090,7 @@ zilit:
   eigenschaften:
     - id: angepasst
       name: Angepasst II (Wasser, Dunkelheit)
-    - id: natuerlicheruestungi
+    - id: natuerlicheruestung
       name: Natürliche Rüstung I
     - id: amphibisch
       name: Amphibisch
@@ -15174,7 +15147,7 @@ zombie:
     - id: astralsinn
       name: Astralsinn
     - id: resistenz
-      name: Resistenz II(Stichwaffen)
+      name: Resistenz II (Stichwaffen)
     - id: rudel
       name: Rudel
   infos:

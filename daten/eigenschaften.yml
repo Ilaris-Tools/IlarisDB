@@ -258,3 +258,6 @@ zusaetzlicheattacke:
     ihrer Initiativephase 1/2/3/4 zusätzliche Aktionen Konflikt
     für Attacken nutzen. Üblicherweise erfolgen die Angriffe mit
     unterschiedlichen Gliedmaßen.
+blitzschnell:
+  name: Blitzschnell
+  info: erleidet keine Passierschläge wenn er sich aus dem Nahkampf zurückzieht
