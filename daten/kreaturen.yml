@@ -6032,13 +6032,16 @@ ivash:
   eigenschaften:
     - id: flammenkoerper
       name: >
-        Flammenkörper(Alle Waffen, die Holz beinhalten, gelten gegen den Ivash als
+        Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Ivash als
         zerbrechlich)
-    - id: formlosigkeit,
-      name: Formlosigkeit,
-    - name: Immunität (Feuer),
-    - name: Resistenz I (geweiht),
+    - id: formlosigkeit
+      name: Formlosigkeit
+    - name: Immunität (Feuer)
+      id: immunitaet
+    - name: Resistenz I (geweiht)
+      id: resistenz
     - name: Verwundbarkeit I (Wasser)
+      id: verwundbarkeit
   kampf:
     waffen:
       - AT: 12
@@ -6472,6 +6475,7 @@ karunga:
     - id: flieger
       name: Flieger
     - name: Immunität (Schadenszauber)
+      id: immunitaet
     - id: rudel
       name: Rudel
   kampf:
@@ -6940,7 +6944,9 @@ kriegermumie:
     - id: koerperlosigkeit
       name: Körperlosigkeit
     - name: Resistenz I (Stichwaffen)
+      id: resistenz
     - name: Verwundbarkeit II (Feuer)
+      id: verwundbarkeit
     - id: schmerzimmun
       name: Schmerzimmun II
     - id: schreckgestalt
@@ -12305,7 +12311,9 @@ taifelel:
     - id: aura
       name: "Aura (Hitze, Zähigkeit (16) alle 4 INI: phasen, 1 Wunde)"
     - name: Immunität (Feuer)
+      id: immunitaet
     - name: Verwundbarkeit I (Wasser)
+      id: verwundbarkeit
   kampf:
     waffen:
       - AT: 12
