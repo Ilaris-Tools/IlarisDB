@@ -182,6 +182,8 @@ akrhobal:
       name: Tarnung (im Wald)
     - id: daemonenharz
       name: Dämonenharz
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke IV
   info: "Varianten: Alter Arkhobal (für je 50 Jahre: Wundschwelle, AT,  TP: +1)
 
     "
@@ -196,8 +198,7 @@ akrhobal:
         '
       name: Dämonenharz
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke IV
+    vorteile: []
     waffen:
       - AT: 20
         RW: 8
@@ -744,10 +745,13 @@ azzitai:
     - id: verwundbarkeit
       name: Verwundbarkeit I (Wasser)
     - id: flammenkoerper
-      name: "Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Azzitai als Zerbrechlich (S. 47).)"
+      name:
+        Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Azzitai
+        als Zerbrechlich (S. 47).)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 16
         RW: 0
@@ -917,7 +921,7 @@ balirhiadh:
           - name: Totes handle
           - name: Traumgestalt
         wert: 24
-  name: "BAL'IRHIADH"
+  name: BAL'IRHIADH
   quelle: pandaemonium
   talente:
     - name: Pirschen
@@ -948,7 +952,8 @@ balkhabul:
         wert: 28
   eigenschaften:
     - id: aura
-      name: "Aura (Gestank, Zähigkeit (20) jede INI: phase, -2 auf körperliche Proben
+      name:
+        "Aura (Gestank, Zähigkeit (20) jede INI: phase, -2 auf körperliche Proben
         (kumulativ) für 1 Tag, -4 auf Proben in Rededuellen für 1W6 Wochen)"
     - id: formlosigkeit
       name: Formlosigkeit
@@ -958,9 +963,10 @@ balkhabul:
       name: Resistenz I (geweiht)
     - id: unsichtbarkeit
       name: Unsichtbarkeit
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 15
         RW: 1
@@ -1418,10 +1424,11 @@ blutfischschwarm:
       name: Resistenz II (Stichwaffen)
     - id: verwundbarkeit
       name: Verwundbarkeit IV
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke II
   info: MR pro einzelnes Tier, Fortbewegung nur schwimmend
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke II
+    vorteile: []
     waffen:
       - AT: 14
         RW: 0
@@ -1664,7 +1671,9 @@ chamuyan:
         wert: 28
   eigenschaften:
     - id: blitzschnell
-      name: Blitzschnell (erleidet keine Passierschläge, wenn sie sich aus dem Nahkampf zurückzieht)
+      name:
+        Blitzschnell (erleidet keine Passierschläge, wenn sie sich aus dem Nahkampf
+        zurückzieht)
     - id: resistenz
       name: Resistenz I (magisch, geweiht)
     - id: tarnung
@@ -2202,9 +2211,10 @@ duglum:
       name: Regeneration I
     - id: schreckgestalt
       name: Schreckgestalt III
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 16
         RW: 1
@@ -2261,9 +2271,10 @@ eichbart:
       name: Regeneration I
     - id: tarnung
       name: Tarnung(im Wald)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke IV
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke IV
+    vorteile: []
     waffen:
       - AT: 24
         RW: 8
@@ -2332,14 +2343,18 @@ eisfee:
   beschreibung: nützlicher kalter Geist des hohen Nordens
   eigenschaften:
     - id: herrindergefesseltenseelen
-      name: Herrin der gefesselten Seelen (Eisfeen können gefesselte Seelen an sich binden)
+      name:
+        Herrin der gefesselten Seelen (Eisfeen können gefesselte Seelen an sich
+        binden)
     - id: kussdereisfee
-      name: Kuss der Eisfee (Intervall 1 INI-Ph. 1 Wunde, freiwilliges Opfer; siehe Bannbaladin;
-        Vergleichende Probe Willenksraft gegen Betören)
-  info: "Varianten:  Starke Eisfee (6/6 WS, Zusätzliche Zauber: Erinnerung verlass
-    dich!, Herzschlag Ruhe!)
-    Mächtige Eisfee (6/6 WS, Eigenschaften +2, Fertigkeiten +4, 64 AsP, Einfluss 18.
-    Zusätzliche Zauber: Erinnerung verlass dich!, Herzschlag Ruhe!, Alpgestalt)"
+      name:
+        Kuss der Eisfee (Intervall 1 INI-Ph. 1 Wunde, freiwilliges Opfer; siehe
+        Bannbaladin; Vergleichende Probe Willenksraft gegen Betören)
+  info:
+    "Varianten:  Starke Eisfee (6/6 WS, Zusätzliche Zauber: Erinnerung verlass
+    dich!, Herzschlag Ruhe!) Mächtige Eisfee (6/6 WS, Eigenschaften +2, Fertigkeiten
+    +4, 64 AsP, Einfluss 18. Zusätzliche Zauber: Erinnerung verlass dich!, Herzschlag
+    Ruhe!, Alpgestalt)"
   kampf:
     waffen:
       - AT: 14
@@ -3077,11 +3092,13 @@ feuerdschinn:
     KO: 26
     MU: 14
   beschreibung: Gebieter elementarer Kraft
+  eigenschaften:
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
       - name: Niederwerfen
       - name: Sturmangriff
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 15
         RW: 1
@@ -3179,8 +3196,9 @@ feuermaehre:
   beschreibung: großes Feuerross
   eigenschaften:
     - id: jaehzorn
-      name: "Jähzorn (Willkürlich greift die Feuermähre an. IN(20 ,I) sonst -8 auf die
-        erste Parade. Ebenso willkürlich endet der Angriff)"
+      name:
+        Jähzorn (Willkürlich greift die Feuermähre an. IN(20 ,I) sonst -8 auf die
+        erste Parade. Ebenso willkürlich endet der Angriff)
   infos:
     - info:
         Der Reiter ist immun gegen Feuerschaden, nicht aber gegen den Jähzorn der
@@ -3625,13 +3643,17 @@ geisterdrache:
     - id: aura
       name: Aura (Wahnsinn, Willenskraft (28) jede Initiativephase, 1 Erschöpfung)
     - id: aura
-      name: >
-        Aura (Disruptivo, Alle Zauber anderer Wesen sind in einer Reichweite von
+      name:
+        "Aura (Disruptivo, Alle Zauber anderer Wesen sind in einer Reichweite von
         32 Schritt um 8 erschwert)
+
+        "
     - id: immunitaet
       name: Immunität (magisch)
     - id: schreckgestalt
       name: Schreckgestalt III
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
       - name: Hammerschlag
@@ -3640,7 +3662,6 @@ geisterdrache:
       - name: Standfest
       - name: Sturmangriff
       - name: Unaufhaltsam
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 14
         RW: 0
@@ -3729,21 +3750,24 @@ geisterschwarm:
   beschreibung: der schwache Geist
   eigenschaften:
     - id: astralsauger
-      name: >
-        Astralsauger (Richtet der Geisterschwarm Wunden bei einem Wesen an, das über
-        AsP verfügt, so verliert dieses Wesen WS Anzahl der Wunden AsP.)
+      name:
+        "Astralsauger (Richtet der Geisterschwarm Wunden bei einem Wesen an, das
+        über AsP verfügt, so verliert dieses Wesen WS Anzahl der Wunden AsP.)
+
+        "
     - id: schmerzimmun
       name: Schmerzimmun II
     - id: resistenz
       name: Resistenz(Stichwaffen)
     - id: verwundbarkeitv
       name: Verwundbarkeit IV(Flächenschaden)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   info:
     "Varianten:  Starker Geisterschwarm (Koloss II, TP +2, Fertigkeiten +2, Zusätzliche
     Attacke II)"
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 10
         RW: 0
@@ -3851,7 +3875,9 @@ ghulkoenig:
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: regemutation
-      name: Regemutation (Verschmelzen mit Ghulen heilt 1 Wunde, bei großen Ghulen sogar 2 Wunden)
+      name:
+        Regemutation (Verschmelzen mit Ghulen heilt 1 Wunde, bei großen Ghulen sogar
+        2 Wunden)
     - id: zusaetzlicheattacke
       name: Zusätzliche Attacke III
     - id: zusaetzlicheverteidigung
@@ -4492,16 +4518,17 @@ greif:
       name: Flugfähig
     - id: willensstark
       name: Willensstark II
-    - name: Geisterpanzer (WS 20)
-      id: geisterpanzer
+    - id: geisterpanzer
+      name: Geisterpanzer (WS 20)
     - id: unbeugsamkeit
       name: Unbeugsamkeit
+    - id: zusaetzlicheattacke
+      name: Zusätzlicher Attacke I
   info:
     "Gesegnete Waffe, Stärke des Glaubens, gegen unheilige Kreaturen: TP:  +1W6,
     WS +2, AT/VT:  +2, Liturgien +4"
   kampf:
     vorteile:
-      - name: Zusätzlicher Attacke I
       - name: "Kommando: Haltet Stand!"
       - name: Hammerschlag
       - name: Niederwerfen
@@ -5175,9 +5202,11 @@ heshtot:
       - asp: 24
         name: Invocatio
         wert: 20
+  eigenschaften:
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 11
         RW: 2
@@ -5339,8 +5368,8 @@ hoehlenspinne:
   eigenschaften:
     - id: angepasst
       name: Angepasst II (Dunkelheit)
-    - name: Immunität (Niederwerfen Umreißen und ähnliche Effekte)
-      id: immunitaet
+    - id: immunitaet
+      name: Immunität (Niederwerfen Umreißen und ähnliche Effekte)
   info:
     Das Netz der Spinne ist im Fackelschein mit einer Wachsamkeits-Probe (24)
     zu erkennen. Misslingt die Probe, verfängt sich ein Opfer im Netz, das wie ein
@@ -5384,8 +5413,8 @@ hornechse:
   eigenschaften:
     - id: angepasst
       name: Angepasst I (Sumpf)
-    - name: Verwundbarkeit I (Eis)
-      id: verwundbarkeit
+    - id: verwundbarkeit
+      name: Verwundbarkeit I (Eis)
   kampf:
     vorteile:
       - name: Sturmangriff
@@ -5610,12 +5639,13 @@ hyralkor:
       name: Schreckgestalt II
     - id: verwundbarkeit
       name: Verwundbarkeit I (Eis)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
       - name: Hammerschlag
       - name: Offensiver Kampfstil
       - name: Sturmangriff
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 19
         RW: 2
@@ -5899,9 +5929,10 @@ irrhalk:
       name: Verwundbarkeit I (Wasser)
     - id: explosion
       name: Explosion (5W6)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
-      - name: Zusätzliche Attacke I
       - name: Sturmangriff
       - name: Niederwerfen
     waffen:
@@ -6031,17 +6062,19 @@ ivash:
         wert: 20
   eigenschaften:
     - id: flammenkoerper
-      name: >
-        Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Ivash als
-        zerbrechlich)
+      name:
+        "Flammenkörper (Alle Waffen, die Holz beinhalten, gelten gegen den Ivash
+        als zerbrechlich)
+
+        "
     - id: formlosigkeit
       name: Formlosigkeit
-    - name: Immunität (Feuer)
-      id: immunitaet
-    - name: Resistenz I (geweiht)
-      id: resistenz
-    - name: Verwundbarkeit I (Wasser)
-      id: verwundbarkeit
+    - id: immunitaet
+      name: Immunität (Feuer)
+    - id: resistenz
+      name: Resistenz I (geweiht)
+    - id: verwundbarkeit
+      name: Verwundbarkeit I (Wasser)
   kampf:
     waffen:
       - AT: 12
@@ -6199,12 +6232,14 @@ kahthurakarfai:
     - id: flugfaehig
       name: Flugfähig
     - id: nachtdaemon
-      name: >
-        "Nachtdämon(Untertags ist der Dämon wesentlich schwächer und versteckt sich
-        üblicherweise in einer Blume: WS 13 koloss: 1, MR 12, INI 8 und er verliert
+      name:
+        '"Nachtdämon(Untertags ist der Dämon wesentlich schwächer und versteckt
+        sich üblicherweise in einer Blume: WS 13 koloss: 1, MR 12, INI 8 und er verliert
         Regeneration I, Schreckgestalt II, Tarnung)
 
         )"
+
+        '
     - id: regeneration
       name: Regeneration I
     - id: schreckgestalt
@@ -6402,9 +6437,11 @@ karmoth:
     Diener Belhalhars, sehr großer Gegner
   eigenschaften:
     - id: aura
-      name: >
-        "Aura (Kampfeslust, Willenskraft (28), jede INI: phase, Opfer wird zum Kampf
-        mit Karmoth gezwungen)"
+      name:
+        '"Aura (Kampfeslust, Willenskraft (28), jede INI: phase, Opfer wird zum
+        Kampf mit Karmoth gezwungen)"
+
+        '
     - id: regeneration
       name: Regeneration II
     - id: schreckgestalt
@@ -6474,8 +6511,8 @@ karunga:
   eigenschaften:
     - id: flieger
       name: Flieger
-    - name: Immunität (Schadenszauber)
-      id: immunitaet
+    - id: immunitaet
+      name: Immunität (Schadenszauber)
     - id: rudel
       name: Rudel
   kampf:
@@ -6864,9 +6901,10 @@ krakenmolch:
       name: Angepasst II (Wasser)
     - id: schreckgestalt
       name: Schreckgestalt I
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke II
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke II
+    vorteile: []
     waffen:
       - AT: 12
         RW: 1
@@ -6943,10 +6981,10 @@ kriegermumie:
       name: Astralsinn
     - id: koerperlosigkeit
       name: Körperlosigkeit
-    - name: Resistenz I (Stichwaffen)
-      id: resistenz
-    - name: Verwundbarkeit II (Feuer)
-      id: verwundbarkeit
+    - id: resistenz
+      name: Resistenz I (Stichwaffen)
+    - id: verwundbarkeit
+      name: Verwundbarkeit II (Feuer)
     - id: schmerzimmun
       name: Schmerzimmun II
     - id: schreckgestalt
@@ -7297,8 +7335,8 @@ lagramagmangr:
   eigenschaften:
     - id: aura
       name: Aura (Hitze, Zähigkeit (28) jede Initiativephase, 1 Wunde)
-    - name: Explosion (8W6)
-      id: explosion
+    - id: explosion
+      name: Explosion (8W6)
     - id: schreckgestalt
       name: Schreckgestalt II
   kampf:
@@ -7368,11 +7406,15 @@ laraan:
     - id: unsichtbarkeit
       name: Unsichtbarkeit
     - id: verfuehrerischegestalt
-      name: >
-        Verführerische Gestalt (Der Dämon nimmt die Gestalt eines
-        wunderschönen Wesens mit übergroßen Geschlechtsteilen an. In dieser
-        Gestalt verliert der Dämon Schreckensgestalt und Unsichtbarkeit und
-        erhält die Eigenschaften/Attacken der angenommenen Gestalt.)"
+      name:
+        'Verführerische Gestalt (Der Dämon nimmt die Gestalt eines wunderschönen
+        Wesens mit übergroßen Geschlechtsteilen an. In dieser Gestalt verliert der Dämon
+        Schreckensgestalt und Unsichtbarkeit und erhält die Eigenschaften/Attacken der
+        angenommenen Gestalt.)"
+
+        '
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   infos:
     - info:
         Jeder Dienst des Laraans beginnt damit, dass der Beschwörer ihm ein Körperteil
@@ -7381,7 +7423,6 @@ laraan:
   kampf:
     vorteile:
       - name: Niederwerfen
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 16
         RW: 1
@@ -7691,6 +7732,8 @@ lynx:
       name: "Unsichtbarkeit(Ausnahme: Ziel der Jagd)"
     - id: schreckgestalt
       name: Schreckgestalt II
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
       - name: Ausfall
@@ -7699,7 +7742,6 @@ lynx:
       - name: Standfest
       - name: Sturmangriff
       - name: Todesstoß
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 16
         RW: 0
@@ -7762,8 +7804,8 @@ mactans:
     - id: schreckgestalt
       name: Schreckgestalt II
     - id: verwundbarkeit
-      name: Verwundbarkeit(Seeschlangenzähne)
-    - id: zusaetzlicheattackev
+      name: Verwundbarkeit (Seeschlangenzähne)
+    - id: zusaetzlicheattacke
       name: Zusätzliche Attacke IV
   kampf:
     waffen:
@@ -8182,6 +8224,9 @@ mepharasch:
     KO: 10
     MU: 12
   beschreibung: der Feuerwirsch
+  eigenschaften:
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   infos:
     - info:
         Die Modifikation Mehrere Ziele ist nicht erschwert. Für jedes weitere Ziel
@@ -8195,7 +8240,6 @@ mepharasch:
   kampf:
     vorteile:
       - name: Sturmangriff
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 14
         RW: 0
@@ -8288,10 +8332,10 @@ morfu:
     MU: 10
   beschreibung: schleimige Giftschnecke, die ihre Stacheln verschießt; großer Gegner
   eigenschaften:
-    - name: Immunität (Niederwerfen, Umreißen und ähnliche Effekte)
-      id: immunitaet
-    - name: Resistenz I (Stumpfe Waffen)
-      id: resistenz
+    - id: immunitaet
+      name: Immunität (Niederwerfen, Umreißen und ähnliche Effekte)
+    - id: resistenz
+      name: Resistenz I (Stumpfe Waffen)
   kampf:
     waffen:
       - FK: 8
@@ -8392,9 +8436,11 @@ nachtalp:
     - id: tarnung
       name: Tarnung (Dunkelheit)
     - id: aura
-      name: >
-        Aura (Albträume, Willenskraft (28) jede Nacht, Schlafende in 4 Schritt Reichweite
-        erleiden eine Wunde)
+      name:
+        "Aura (Albträume, Willenskraft (28) jede Nacht, Schlafende in 4 Schritt
+        Reichweite erleiden eine Wunde)
+
+        "
   info: "Sonderregeln:
 
     Wiedergeburt: Nachtalpe erhalten +1 WS pro Wunde die sie mit Bissen oder Albträumen
@@ -8504,14 +8550,17 @@ necrophagion:
     - id: astralsinn
       name: Astralsinn
     - id: aura
-      name: >
-        Aura (Gestank, Zähigkeit (16) jede Initiativephase, -2 auf körperliche Proben
-        (kumulativ) für 1 Tag)
+      name:
+        "Aura (Gestank, Zähigkeit (16) jede Initiativephase, -2 auf körperliche
+        Proben (kumulativ) für 1 Tag)
+
+        "
     - id: resistenz
       name: Resistenz II(Feuer, Stich)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
-      - name: Zusätzliche Attacke I
       - name: Standfest
       - name: Unaufhaltsam
     waffen:
@@ -8659,13 +8708,15 @@ nephazz:
     - id: unsichtbarkeit
       name: Unsichtbarkeit
     - id: untotenbeseelen
-      name: >
-        "Untoten beseelen (Der Dämon kann eine Leiche als Untoten erheben oder fährt
-        in einen bestehenden Untoten ein. Er verliert einige Eigenschaften/Attacken
+      name:
+        '"Untoten beseelen (Der Dämon kann eine Leiche als Untoten erheben oder
+        fährt in einen bestehenden Untoten ein. Er verliert einige Eigenschaften/Attacken
         und erhält die Eigenschaften/Attacken des Untoten. Der Dämon kontrolliert den
         Untoten vollständig.)
 
         )"
+
+        '
   kampf:
     waffen:
       - RW: 0
@@ -8972,13 +9023,14 @@ ogerstatue:
         name: Stein wandle!
         wert: 28
   eigenschaften:
-    - name: Immunität (Gifte, Krankheiten)
-      id: immunitaet
-    - name: Resistenz II (Feuer, Stichwaffen)
-      id: resistenz
+    - id: immunitaet
+      name: Immunität (Gifte, Krankheiten)
+    - id: resistenz
+      name: Resistenz II (Feuer, Stichwaffen)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
-      - name: Zusätzliche Attacke I
       - name: Unaufhaltsam
     waffen:
       - AT: 12
@@ -9330,13 +9382,14 @@ perldrache:
       name: Resistenz II (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt I
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
       - name: Niederwerfen
       - name: Standfest
       - name: Sturmangriff
       - name: Zerstörerisch I
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 12
         RW: 2
@@ -9418,13 +9471,14 @@ perldrachewestwinddrache:
       name: Resistenz II (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt I
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
       - name: Niederwerfen
       - name: Standfest
       - name: Sturmangriff
       - name: Zerstörerisch I
-      - name: Zusätzliche Attacke I
     waffen:
       - AT: 12
         RW: 2
@@ -9502,13 +9556,15 @@ pershirash:
     - id: verbindungzumbeschwoerer
       name: Verbindung zum Beschwörer
   infos:
-    - name: Auge des Pershirash legen
-      info: >
-        Für ein ausgerissenes Auge legt Pershirash ein
-        kristallenes Ei. Das Ei erleichtert FK-Angriffe des Beschwörers um +4/+6/+8
-        für 7 Tage/7 Monate/7 Jahre, je nachdem ob es von einem Tier/kulturschaffenden
-        Wesen/dem Beschwörer selbst stammt. Die Effekte mehrere Eier sind nicht kumulativ,
-        es zählt nur der höchste Bonus.
+    - info:
+        "Für ein ausgerissenes Auge legt Pershirash ein kristallenes Ei. Das Ei
+        erleichtert FK-Angriffe des Beschwörers um +4/+6/+8 für 7 Tage/7 Monate/7 Jahre,
+        je nachdem ob es von einem Tier/kulturschaffenden Wesen/dem Beschwörer selbst
+        stammt. Die Effekte mehrere Eier sind nicht kumulativ, es zählt nur der höchste
+        Bonus.
+
+        "
+      name: Auge des Pershirash legen
   kampf:
     vorteile:
       - name: Sturmangriff
@@ -9580,9 +9636,10 @@ pestrattenschwarm:
       name: Schmerzimmun II
     - id: verwundbarkeit
       name: Verwundbarkeit IV (Flächenschaden)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 14
         RW: 0
@@ -9643,9 +9700,10 @@ pestrattenschwarmsehrgrosserschwarm:
       name: Schmerzimmun II
     - id: verwundbarkeitv
       name: Verwundbarkeit IV (Flächenschaden)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke II
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke II
+    vorteile: []
     waffen:
       - AT: 16
         RW: 0
@@ -9695,11 +9753,6 @@ poltergeist:
   eigenschaften:
     - id: tarnung
       name: Tarnung
-  infos:
-  - name: Telekinese-Feld
-    info: >
-      In einer Reichweite von 8 Schritt kann der Poltergeist Gegenstände
-        telekinetisch bewegen und werfen
   info:
     "Vorahnung: Gegen Fernkampfangriffe des Poltergeists kann mit IN (24, I) verteidigt
     werden.
@@ -9713,6 +9766,11 @@ poltergeist:
     18 (Alle), Pirschen 16)
 
     "
+  infos:
+    - info:
+        "In einer Reichweite von 8 Schritt kann der Poltergeist Gegenstände\n  telekinetisch\
+        \ bewegen und werfen\n"
+      name: Telekinese-Feld
   kampf:
     waffen:
       - AT: 8
@@ -9841,13 +9899,8 @@ quitslinga:
       name: Schreckgestalt II
     - id: tarnung
       name: Tarnung
-  infos:
-    - name: Gestaltwandeln
-      info: >
-        Der Dämon nimmt die Gestalt einer Person an, von der er einen
-        Körperteil besitzt. Jeder Gestaltwechsel senkt seine WS um 1. In einer fremden
-        Gestalt verliert der Dämon Eigenschaften/Attacken und erhält die Eigenschaften/Attacken
-        der angenommenen Gestalt.
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke IV
   infos:
     - info:
         Jeder Dienst des Quitslingas beginnt damit, dass er in einen Wirtskörper
@@ -9856,7 +9909,6 @@ quitslinga:
   kampf:
     vorteile:
       - name: Niederwerfen
-      - name: Zusätzliche Attacke IV
     waffen:
       - AT: 12
         RW: 2
@@ -10118,11 +10170,11 @@ riese:
       name: Unbeugsamkeit
     - id: willensstark
       name: Willensstark II
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   info: "kampfunfähigkeit: Der Riese flieht, wenn er 6 Wunden erlitten hat."
   kampf:
     vorteile:
-      - info: nur Trampeln
-        name: Zusätzliche Attacke I
       - name: Standfest
       - name: Sturmangriff
       - name: Unaufhaltsam
@@ -10303,14 +10355,16 @@ riesenfeuerkaefer:
     MU: 4
   beschreibung: flammendes Insekt
   infos:
-    - name: Überhitzung
-      info: >
-        fallen bei der Bestimmung der Trefferpunkte mindestens zwei
-        Sechsen, stirbt der Käfer
     - info:
-        "Zerberstender (-X, Explosion(XW6); maximal 4), Kochendes Blut (-4, Werden
+        "fallen bei der Bestimmung der Trefferpunkte mindestens zwei Sechsen, stirbt
+        der Käfer
+
+        "
+      name: Überhitzung
+    - info:
+        Zerberstender (-X, Explosion(XW6); maximal 4), Kochendes Blut (-4, Werden
         dem Riesenfeuerkäfer X Wunden zugefügt, muss jedes Wesen in Reichweite eine
-        GE (16,I) ablegen, um nicht je 2XW6 SP zu erleiden)"
+        GE (16,I) ablegen, um nicht je 2XW6 SP zu erleiden)
       name: Spezialfähigkeiten
   kampf:
     waffen:
@@ -10352,9 +10406,10 @@ riesenkaiman:
       name: Immunität (Niederwerfen Umreißen und ähnliche Effekte)
     - id: verwundbarkeit
       name: Verwundbarkeit (Eis)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 8
         RW: 0
@@ -10405,10 +10460,10 @@ riesenkraken:
       name: Wasserwesen
     - id: willensstark
       name: Willensstark II
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke IV
   kampf:
     vorteile:
-      - info: nur Tentakel
-        name: Zusätzliche Attacke IV
       - name: Unaufhaltsam
     waffen:
       - AT: 14
@@ -10493,9 +10548,10 @@ riesenspringelschwarm:
       name: Schmerzimmun II
     - id: verwundbarkeitv
       name: Verwundbarkeit IV (Flächenschaden)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 12
         RW: 0
@@ -10979,9 +11035,10 @@ schlinger:
       name: Schreckgestallt I
     - id: kaeltestarre
       name: Kältestarre
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
-      - name: Zusätzliche Attacke I
       - name: Standfest
       - name: Kalte Wut
     waffen:
@@ -11327,9 +11384,10 @@ shruuf:
       name: Schreckgestalt II
     - id: regeneration
       name: Regeneration I
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke IV
   kampf:
     vorteile:
-      - name: Zusätzliche Attacke IV
       - name: Niederwerfen
     waffen:
       - AT: 16
@@ -11868,10 +11926,11 @@ sordul:
     - id: aura
       name: "Aura (Verseuchung, Zähigkeit (16) alle 4 INI: phasen, 1 Erschöpfung)"
   infos:
-  - name: Dämonische Säure
-    info: >
-      Waffen und Rüstungen, die Holz beinhalten, gelten gegen
-      den Dämon als zerbrechlich.
+    - info:
+        "Waffen und Rüstungen, die Holz beinhalten, gelten gegen den Dämon als zerbrechlich.
+
+        "
+      name: Dämonische Säure
   kampf:
     waffen:
       - AT: 10
@@ -12310,10 +12369,10 @@ taifelel:
   eigenschaften:
     - id: aura
       name: "Aura (Hitze, Zähigkeit (16) alle 4 INI: phasen, 1 Wunde)"
-    - name: Immunität (Feuer)
-      id: immunitaet
-    - name: Verwundbarkeit I (Wasser)
-      id: verwundbarkeit
+    - id: immunitaet
+      name: Immunität (Feuer)
+    - id: verwundbarkeit
+      name: Verwundbarkeit I (Wasser)
   kampf:
     waffen:
       - AT: 12
@@ -12351,16 +12410,19 @@ tatzelwurm:
   beschreibung: stinkender Vertreter der niederen Drachen; großer Gegner
   eigenschaften:
     - id: aura
-      name: >
-        Aura (Gestank -2 auf körperliche Proben (kumulativ) für 1 Tag Zähigkeit (16)
-        jede INI:phase)
+      name:
+        "Aura (Gestank -2 auf körperliche Proben (kumulativ) für 1 Tag Zähigkeit
+        (16) jede INI:phase)
+
+        "
     - id: resistenz
       name: Resistenz I (Feuer)
     - id: schreckgestalt
       name: Schreckgestalt I
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
-      - name: Zusätzliche Attacke I
       - name: Standfest
     waffen:
       - AT: 15
@@ -12569,9 +12631,11 @@ tlaluc:
       - name: Invocatio (24), 32 AsP
   eigenschaften:
     - id: aura
-      name: >
-        Aura (Gestank, Zähigkeit (28) jede Intitiavephase, kampfunfähigkeit für 1W6
-        Minuten)
+      name:
+        "Aura (Gestank, Zähigkeit (28) jede Intitiavephase, kampfunfähigkeit für
+        1W6 Minuten)
+
+        "
   kampf:
     waffen:
       - AT: 4
@@ -12612,9 +12676,11 @@ tlaluczombie:
     - id: astralsinn
       name: Astralsinn
     - id: aura
-      name: >
-        Aura (Gestank, Zähigkeit (12) alle 4 Intitiavephasen, Kampfunfähigkeit für
-        2 Initiativphase)
+      name:
+        "Aura (Gestank, Zähigkeit (12) alle 4 Intitiavephasen, Kampfunfähigkeit
+        für 2 Initiativphase)
+
+        "
   infos:
     - info:
         Mächtige Magie (Gestank, Zähigkeit (16) alle 4 Intitiavephasen, Kampfunfähigkeit
@@ -12847,11 +12913,12 @@ tuuramash:
     - id: regeneration
       name: Regeneration I
   infos:
-  - name: Krötensekret
-    info: >
-      Wenn du dem Tuur-Amash mit einem Nahkampfangriff mindestens
-      2 Kratzer zufügt, musst du eine GE-Probe (20) ablegen. Misslingt die Probe,
-      erleidest du 4W6 SP.
+    - info:
+        "Wenn du dem Tuur-Amash mit einem Nahkampfangriff mindestens 2 Kratzer zufügt,
+        musst du eine GE-Probe (20) ablegen. Misslingt die Probe, erleidest du 4W6 SP.
+
+        "
+      name: Krötensekret
   kampf:
     vorteile:
       - name: Sturmangriff
@@ -13103,17 +13170,17 @@ ulchuchu:
       name: Verwundbarkeit I (Feuer)
     - id: wasserwesen
       name: Wasserwesen
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   infos:
     - info:
         "Ein Ulchuchu kann über die Jahre immer weiter wachsen: Großer Ulchuchu
         (Koloss I, Zusätzliche Attacke II,  AT: +2, Umklammern (-6, 16), kann 4 Ziele
         unter Wasser halten)   Riesiger Ulchuchu (Koloss II, Zusätzliche Attacke IV,  AT:
-        +2, Umklammern (-8, 20), kann 8 Ziele unter Wasser halten)
-        "
+        +2, Umklammern (-8, 20), kann 8 Ziele unter Wasser halten) "
       name: Varianten
   kampf:
-    vorteile:
-      - name: Zusätzliche Attacke I
+    vorteile: []
     waffen:
       - AT: 12
         RW: 2
@@ -13215,12 +13282,14 @@ untoterdrachenbandwurm:
     - id: resistenz
       name: Resistenz I (Feuer, Stich)
   infos:
-  - name: Magieabsorption 
-    info: >
-      Zauberern wird 4 AsP pro Initiativephase entzogen. Die entzogenen
-      AsP sind um 1 je volle 8 Schritt Entfernung zum Absorber reduziert
-  - name: Magienahrung 
-    info: regeneriert 1 Wunde pro 2 zugenommene AsP
+    - info:
+        "Zauberern wird 4 AsP pro Initiativephase entzogen. Die entzogenen AsP sind
+        um 1 je volle 8 Schritt Entfernung zum Absorber reduziert
+
+        "
+      name: Magieabsorption
+    - info: regeneriert 1 Wunde pro 2 zugenommene AsP
+      name: Magienahrung
   kampf:
     waffen:
       - AT: 11
@@ -13751,9 +13820,10 @@ weisserhetzer:
   eigenschaften:
     - id: angepasst
       name: Angepasst II (Dunkelheit)
+    - id: zusaetzlicheattacke
+      name: Zusätzliche Attacke I
   kampf:
     vorteile:
-      - name: Zusätzliche Attacke I
       - name: Niederwerfen
       - name: Standfest
       - name: Sturmangriff
