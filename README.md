@@ -1,7 +1,9 @@
+> Wir ziehen um: https://ilaris-online.de/app/kreaturen
+Diese Datenbank soll Teil von einem grösseeren Projekt werden. Die Daten sollen über eine WebAPI weiterhin für alle verfügbar bleiben und zudem von der Community bearbeitet werden können, damit ihr Inhalt in Zukunft schneller wachsen und Fehler behoben werden können.
+
 # IlarisDB
 Sammelstelle für strukturierte Ilaris Daten, wie Kreaturen, NSCs, Zauber usw.. Eine Webansicht befindet sich in Arbeit, der aktuelle Stand ist hier zu begutachten: [https://ilaris-tools.github.io/IlarisDB](https://ilaris-tools.github.io/IlarisDB/db/kreaturen/)
 
-> Hinweis: Die Datenbank befindet sich noch im Aufbau, die Strukturen und technische Details ändern sich möglicherweise schneller, als die Beschreibungen und Änderungen müssen aktuell noch manuell exportiert werden.
 
 
 ## Die Idee
